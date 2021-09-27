@@ -1,0 +1,173 @@
+{
+  "life_insurance_companies":[
+    {
+      "id": 1,
+      "name": "Life Insurance Corporation of India",
+      "ownership": "govt",
+      "since": 1956,
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "HDFC Standard Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2000,
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Max Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2000,
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "ICICI Prudential Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2000,
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "Kotak Mahindra Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2001,
+      "active": true
+    },
+    {
+      "id": 6,
+      "name": "Aditya Birla Sun Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2000,
+      "active": true
+    },
+    {
+      "id": 7,
+      "name": "TATA AIG Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2001,
+      "active": true
+    },
+    {
+      "id": 8,
+      "name": "SBI Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2001,
+      "active": true
+    },
+    {
+      "id": 9,
+      "name": "Exide Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2001,
+      "active": true
+    },
+    {
+      "id": 10,
+      "name": "Bajaj Allianz Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2001,
+      "active": true
+    },
+    {
+      "id": 11,
+      "name": "PNB MetLife India Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2001,
+      "active": true
+    },
+    {
+      "id": 12,
+      "name": "Reliance Nippon Life Insurance Company",
+      "ownership": "private",
+      "since": 2001,
+      "active": true
+    },
+    {
+      "id": 13,
+      "name": "Aviva Life Insurance Company India Ltd.",
+      "ownership": "private",
+      "since": 2002,
+      "active": true
+    },
+    {
+      "id": 14,
+      "name": "Sahara India Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2004,
+      "active": true
+    },
+    {
+      "id": 15,
+      "name": "Shriram Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2005,
+      "active": true
+    },
+    {
+      "id": 16,
+      "name": "Bharti AXA Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2008,
+      "active": true
+    },
+    {
+      "id": 17,
+      "name": "Future Generali India Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2007,
+      "active": true
+    },
+    {
+      "id": 18,
+      "name": "IDBI Federal Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2008,
+      "active": true
+    },
+    {
+      "id": 19,
+      "name": "Canara HSBC Oriental Bank of Commerce Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2008,
+      "active": true
+    },
+    {
+      "id": 20,
+      "name": "Aegon Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2008,
+      "active": true
+    },
+    {
+      "id": 21,
+      "name": "Pramerica Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2008,
+      "active": true
+    },
+    {
+      "id": 22,
+      "name": "Star Union Dai-Ichi Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2008,
+      "active": true
+    },
+    {
+      "id": 23,
+      "name": "Edelweiss Tokio Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2009,
+      "active": true
+    },
+    {
+      "id": 24,
+      "name": "Edelweiss Tokio Life Insurance Co. Ltd.",
+      "ownership": "private",
+      "since": 2011,
+      "active": true
+    }
+
+  ]
+}
