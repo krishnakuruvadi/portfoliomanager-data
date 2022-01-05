@@ -44,8 +44,8 @@ def update_ms_details():
                                 if code in data:
                                     m = False
                                     prev = data[code]
-                                    if data[code]['ms_name'] != subrow['Name']:
-                                        data[code]['ms_name'] = subrow['Name']
+                                    if data[code]['ms_name'] != subrow['LegalName']:
+                                        data[code]['ms_name'] = subrow['LegalName']
                                         m = True
                                     if data[code]['ms_category'] != cat_name:
                                         data[code]['ms_category'] = cat_name
@@ -80,8 +80,8 @@ def update_ms_details():
                         if det['isin1'] == isin or det['isin2'] == isin:
                             if code in data:
                                 m = False
-                                if data[code]['ms_name'] != row['Name']:
-                                    data[code]['ms_name'] = row['Name']
+                                if data[code]['ms_name'] != row['LegalName']:
+                                    data[code]['ms_name'] = row['LegalName']
                                     m = True
                                 if data[code]['ms_category'] != cat_name:
                                     data[code]['ms_category'] = cat_name
