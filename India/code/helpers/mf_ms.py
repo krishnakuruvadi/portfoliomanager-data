@@ -2,6 +2,31 @@ import requests
 from .mf_entry import get_mf_entries, get_new_entry, write_entries
 from .mf_amfi import get_schemes
 
+
+
+def get_json(page, category):
+    funds_url = 'https://lt.morningstar.com/api/rest.svc/dk7pkae7kl/security/screener?page=' + str(page) + \
+                '&pageSize=50&sortOrder=LegalName%20asc&outputType=json&version=1&languageId=en-GB&currencyId=INR'+ \
+                '&universeIds=FOIND%24%24ALL%7CFCIND%24%24ALL&securityDataPoints=SecId%7CName%7CPriceCurrency'+ \
+                '%7CTenforeId%7CLegalName%7CClosePrice%7CClosePriceDate%7CYield_M12%7COngoingCharge%7CCategoryName'+ \
+                '%7CAnalystRatingScale%7CStarRatingM255%7CSustainabilityRank%7CGBRReturnD1%7CGBRReturnW1%7CGBRReturnM1'+ \
+                '%7CGBRReturnM3%7CGBRReturnM6%7CHoldingTypeId%7CGBRReturnM0%7CGBRReturnM12%7CGBRReturnM36%7CGBRReturnM60'+ \
+                '%7CGBRReturnM120%7CMaxFrontEndLoad%7CManagerTenure%7CMaxDeferredLoad%7CInitialPurchase%7CExpenseRatio'+ \
+                '%7CFundTNAV%7CEquityStyleBox%7CBondStyleBox%7CAverageMarketCapital%7CAverageCreditQualityCode%7CEffectiveDuration'+ \
+                '%7CMorningstarRiskM255%7CAlphaM36%7CBetaM36%7CR2M36%7CStandardDeviationM36%7CSharpeM36%7CTrackRecordExtension%7CISIN'+ \
+                '&filters=CategoryId%3AIN%3A' + category + '&term=&subUniverseId='
+    att = 0
+    while att < 5:
+        att += 1
+        try:
+            print(f'getting funds from {funds_url}')
+            page_list_funds = requests.get(funds_url, timeout=15)
+            if page_list_funds.status_code == 200:
+                page_list_funds_json = page_list_funds.json()
+                return page_list_funds_json
+        except Exception as ex:
+            print(f'exception {ex} getting {funds_url} attempt {att}')
+
 def update_ms_details():
     data = get_mf_entries()
     added = 0
@@ -11,28 +36,29 @@ def update_ms_details():
     a_schemes, _ = get_schemes()
 
     for cat,cat_name in ic.items():
-        page = 1
         print("getting a list of funds for: " + cat)
+        a, m = update_ms_details_category(cat, cat_name, a_schemes, data, b)
+        added += a
+        modified += m
+
+    print(f'added {added} modified {modified}')
+    if added >0 or modified > 0:
+        write_entries(data)
+
+def update_ms_details_category(cat, cat_name, a_schemes, data, b):
+    added = 0
+    modified = 0
+    page = 1
+    while True:
+        
+        print(f"getting a list of funds for {cat} page {page}")
         number_of_loops = None
-
-        while True:
-
-            funds_url = 'https://lt.morningstar.com/api/rest.svc/dk7pkae7kl/security/screener?page=' + str(page) + \
-                        '&pageSize=50&sortOrder=LegalName%20asc&outputType=json&version=1&languageId=en-GB&currencyId=INR'+ \
-                        '&universeIds=FOIND%24%24ALL%7CFCIND%24%24ALL&securityDataPoints=SecId%7CName%7CPriceCurrency'+ \
-                        '%7CTenforeId%7CLegalName%7CClosePrice%7CClosePriceDate%7CYield_M12%7COngoingCharge%7CCategoryName'+ \
-                        '%7CAnalystRatingScale%7CStarRatingM255%7CSustainabilityRank%7CGBRReturnD1%7CGBRReturnW1%7CGBRReturnM1'+ \
-                        '%7CGBRReturnM3%7CGBRReturnM6%7CHoldingTypeId%7CGBRReturnM0%7CGBRReturnM12%7CGBRReturnM36%7CGBRReturnM60'+ \
-                        '%7CGBRReturnM120%7CMaxFrontEndLoad%7CManagerTenure%7CMaxDeferredLoad%7CInitialPurchase%7CExpenseRatio'+ \
-                        '%7CFundTNAV%7CEquityStyleBox%7CBondStyleBox%7CAverageMarketCapital%7CAverageCreditQualityCode%7CEffectiveDuration'+ \
-                        '%7CMorningstarRiskM255%7CAlphaM36%7CBetaM36%7CR2M36%7CStandardDeviationM36%7CSharpeM36%7CTrackRecordExtension%7CISIN'+ \
-                        '&filters=CategoryId%3AIN%3A' + cat + '&term=&subUniverseId='
-            
-            page_list_funds = requests.get(funds_url, timeout=15)
-            page_list_funds_json = page_list_funds.json()
+        
+        page_list_funds_json = get_json(page, cat)
+        if page_list_funds_json:
             if not number_of_loops:
                 number_of_loops = page_list_funds_json['total'] // page_list_funds_json['pageSize'] + 1
-            
+                        
             for row in page_list_funds_json['rows']:
                 if type(row) is list:
                     for subrow in row:
@@ -106,13 +132,12 @@ def update_ms_details():
                                 data[code]['ms_id'] = row['SecId']
                                 added += 1
                             break
-            
             page += 1
             if page > number_of_loops:
                 break
-    print(f'added {added} modified {modified}')
-    if added >0 or modified > 0:
-        write_entries(data)
+        else:
+            print(f'issue with getting results for category {cat}')                
+    return added, modified
 
 def blend_mapping():
     return {
