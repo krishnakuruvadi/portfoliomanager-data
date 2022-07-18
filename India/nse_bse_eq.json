@@ -26814,7 +26814,7 @@
   "nse_symbol": "SRIPIPES",
   "mc_code": "LI03",
   "cap": "Micro-Cap",
-  "suspension_date": ""
+  "suspension_date": "13-JAN-2022"
  },
  "INE634E01010": {
   "bse_security_code": "513609",
@@ -110160,7 +110160,7 @@
   "nse_name": "Motherson Sumi Wiring India Limited",
   "listing_date": "28-MAR-2022",
   "face_value": "1",
-  "old_nse_symbol": "",
+  "old_nse_symbol": "MOTHERSUMI",
   "nse_symbol": "MSUMI",
   "mc_code": "",
   "cap": "",
