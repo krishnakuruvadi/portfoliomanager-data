@@ -782,9 +782,9 @@
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "BINANIIND",
   "mc_code": "BI10",
-  "suspension_date": ""
+  "suspension_date": "4-NOV-2019"
  },
  "INE800A01015": {
   "bse_security_code": "500060",
@@ -3549,9 +3549,9 @@
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "UTTAMVALUE",
   "mc_code": "LSI",
-  "suspension_date": ""
+  "suspension_date": "20-NOV-2020"
  },
  "INE862A01015": {
   "bse_security_code": "500255",
@@ -19543,7 +19543,7 @@
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "DHFL",
   "mc_code": "DHF",
   "suspension_date": "14-JUN-2021"
  },
@@ -70861,11 +70861,11 @@
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
-  "listing_date": "",
+  "listing_date": "10-MAR-2006",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "GITANJALI",
   "mc_code": "GG03",
-  "suspension_date": ""
+  "suspension_date": "10-SEP-2018"
  },
  "INE047B01011": {
   "bse_security_code": "532716",
@@ -79392,9 +79392,9 @@
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "LAKSHVILAS",
   "mc_code": "LVB",
-  "suspension_date": ""
+  "suspension_date": "27-NOV-2020"
  },
  "INE456N01019": {
   "bse_security_code": "534691",
@@ -87478,9 +87478,9 @@
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "MANPASAND",
   "mc_code": "MB04",
-  "suspension_date": ""
+  "suspension_date": "4-NOV-2019"
  },
  "INE653S01010": {
   "bse_security_code": "539216",
