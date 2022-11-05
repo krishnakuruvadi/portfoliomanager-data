@@ -144,7 +144,7 @@ def update_nse(download_dir):
 
             if row['SYMBOL'] != stocks[isin]['nse_symbol']:
                 if not stocks[isin]['nse_symbol'] == '':
-                    stocks[isin]['old_nse_symbol'] = add_or_append(stocks[isin].get('old_nse_symbol', None), row['SYMBOL'])
+                    stocks[isin]['old_nse_symbol'] = add_or_append(stocks[isin].get('old_nse_symbol', None), stocks[isin]['nse_symbol'])
                 stocks[isin]['nse_symbol'] = row['SYMBOL']
       
     for cap in ['Large','Mid','Small','Micro']:
