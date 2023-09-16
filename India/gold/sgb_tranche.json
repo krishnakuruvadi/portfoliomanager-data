@@ -14,7 +14,7 @@
             "maturity":"28/06/2030",
             "nse":"SGBJUN30",
             "bse": "SGBJUNE30",
-            "coupon_rate": 2.5,
+            "coupon_rate": 2.5
         },
         "2022-23 Series II": {
             "subscription_start": "22/08/2022",
@@ -27,7 +27,7 @@
             "maturity":"30/08/2030",
             "nse":"SGBAUG30",
             "bse": "SGBAUG30",
-            "coupon_rate": 2.5,
+            "coupon_rate": 2.5
         },
         "2022-23 Series III": {
             "subscription_start": "19/12/2022",
@@ -40,7 +40,7 @@
             "maturity":"27/12/2030",
             "nse":"SGBDE30III",
             "bse": "SGBDEC30",
-            "coupon_rate": 2.5,
+            "coupon_rate": 2.5
         },
         "2022-23 Series IV": {
             "subscription_start": "06/03/2023",
@@ -53,7 +53,7 @@
             "maturity":"14/03/2031",
             "nse":"SGBMAR31IV",
             "bse": "SGBMAR31",
-            "coupon_rate": 2.5,
+            "coupon_rate": 2.5
         },
         "2023-24 Series I": {
             "subscription_start": "19/06/2023",
@@ -66,7 +66,7 @@
             "maturity":"27/06/2031",
             "nse":"SGBJUN31I",
             "bse": "SGBJUNE31",
-            "coupon_rate": 2.5,
+            "coupon_rate": 2.5
         },
         "2023-24 Series II": {
             "subscription_start": "11/09/2023",
