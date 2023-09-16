@@ -11,7 +11,10 @@
             "online_price": 5041.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"28/06/2030"
+            "maturity":"28/06/2030",
+            "nse":"SGBJUN30",
+            "bse": "SGBJUNE30",
+            "coupon_rate": 2.5,
         },
         "2022-23 Series II": {
             "subscription_start": "22/08/2022",
@@ -21,7 +24,10 @@
             "online_price": 5147.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"30/08/2030"
+            "maturity":"30/08/2030",
+            "nse":"SGBAUG30",
+            "bse": "SGBAUG30",
+            "coupon_rate": 2.5,
         },
         "2022-23 Series III": {
             "subscription_start": "19/12/2022",
@@ -31,7 +37,10 @@
             "online_price": 5359.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"27/12/2030"
+            "maturity":"27/12/2030",
+            "nse":"SGBDE30III",
+            "bse": "SGBDEC30",
+            "coupon_rate": 2.5,
         },
         "2022-23 Series IV": {
             "subscription_start": "06/03/2023",
@@ -41,7 +50,10 @@
             "online_price": 5561.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"14/03/2031"
+            "maturity":"14/03/2031",
+            "nse":"SGBMAR31IV",
+            "bse": "SGBMAR31",
+            "coupon_rate": 2.5,
         },
         "2023-24 Series I": {
             "subscription_start": "19/06/2023",
@@ -51,7 +63,10 @@
             "online_price": 5876.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"27/06/2031"
+            "maturity":"27/06/2031",
+            "nse":"SGBJUN31I",
+            "bse": "SGBJUNE31",
+            "coupon_rate": 2.5,
         },
         "2023-24 Series II": {
             "subscription_start": "11/09/2023",
