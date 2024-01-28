@@ -77,6 +77,16 @@
             "min_wt":1,
             "max_wt":4000,
             "maturity":"20/09/2031"
+        },
+        "2023-24 Series III": {
+            "subscription_start": "18/12/2023",
+            "subscription_end": "22/12/2023",
+            "issuance": "28/12/2023",
+            "price": 6199.0,
+            "online_price": 6149.0,
+            "min_wt":1,
+            "max_wt":4000,
+            "maturity":"28/12/2031"
         }
     }
 }
