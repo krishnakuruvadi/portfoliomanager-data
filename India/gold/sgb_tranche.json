@@ -87,6 +87,16 @@
             "min_wt":1,
             "max_wt":4000,
             "maturity":"28/12/2031"
+        },
+        "2023-24 Series IV": {
+            "subscription_start": "12/2/2024",
+            "subscription_end": "14/2/2024",
+            "issuance": "21/2/2024",
+            "price": 6263.0,
+            "online_price": 6213.0,
+            "min_wt":1,
+            "max_wt":4000,
+            "maturity":"21/2/2032"
         }
     }
 }
