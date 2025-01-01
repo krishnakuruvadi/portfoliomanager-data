@@ -1,0 +1,12 @@
+{
+    "date_format": "dd/mm/yyyy",
+    "currency": "INR",
+    "weight": "gram",
+    "prices": {
+        "01/01/2025": {
+            "24K" : 7658.0,
+            "22K" : 7015.0,
+            "digital": 7916.76
+        }
+    }
+}
