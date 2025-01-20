@@ -1,4 +1,6 @@
 from mftool import Mftool
+import json
+import pandas as pd
 from .mf_entry import write_entries, get_new_entry, get_mf_entries
 from .utils import get_float_or_zero_from_string
 
@@ -76,7 +78,19 @@ def get_schemes(as_json=False):
                 print(f'ignoring fund with no isin: {scheme_data}')
                 ignored += 1
 
-    return mf.render_response(scheme_info, as_json), ignored
+    return render_response(scheme_info, as_json), ignored
+
+def render_response(data, as_json=False, as_Dataframe=False):
+    if as_json is True:
+        return json.dumps(data)
+    # parameter 'as_Dataframe' only works with get_scheme_historical_nav()
+    elif as_Dataframe is True:
+        df = pd.DataFrame.from_records(data['data'])
+        df['dayChange'] = df['nav'].astype(float).diff(periods=-1)
+        df = df.set_index('date')
+        return df
+    else:
+        return data
 
 '''
 def get_amfi_schemes():

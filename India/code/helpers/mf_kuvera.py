@@ -28,7 +28,7 @@ def update_kuvera_mapping():
                     for fund in fund_details:
                         name = fund['n']
                         code = fund['c']
-                        scheme_url = f"https://api.kuvera.in/mf/api/v4/fund_schemes/{code}.json"
+                        scheme_url = f"https://api.kuvera.in/mf/api/v5/fund_schemes/{code}.json?v=1.230.10"
 
                         response = requests.get(scheme_url, timeout=15)
                         if response.status_code != 200:
@@ -36,7 +36,7 @@ def update_kuvera_mapping():
                             continue
                         j = response.json()
                         #dt = fund['r'].get('date')
-                        #print(j)
+                        print(f'{scheme_url} got {j}')
                         k_isin = j[0]['ISIN']
                         for code,det in a_schemes.items():
                             if k_isin != '' and (det['isin1'] == k_isin or det['isin2'] == k_isin):
