@@ -76,7 +76,10 @@
             "online_price": 5873.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"20/09/2031"
+            "maturity":"20/09/2031",
+            "nse": "SGBSEP31II",
+            "bse": "SGBSEP31II",
+            "coupon_rate": 2.5
         },
         "2023-24 Series III": {
             "subscription_start": "18/12/2023",
@@ -86,7 +89,10 @@
             "online_price": 6149.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"28/12/2031"
+            "maturity":"28/12/2031",
+            "nse": "SGBDE31III",
+            "bse": "SGBDE31III",
+            "coupon_rate": 2.5
         },
         "2023-24 Series IV": {
             "subscription_start": "12/02/2024",
@@ -96,7 +102,10 @@
             "online_price": 6213.0,
             "min_wt":1,
             "max_wt":4000,
-            "maturity":"21/02/2032"
+            "maturity":"21/02/2032",
+            "nse": "SGBFEB24",
+            "bse": "SGBFEB24",
+            "coupon_rate": 2.5
         }
     }
 }
