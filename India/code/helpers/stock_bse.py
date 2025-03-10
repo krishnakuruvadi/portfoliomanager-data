@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -17,21 +18,29 @@ def pull_bse(download_dir):
     chrome_options = webdriver.ChromeOptions()
     prefs = {'download.default_directory' : download_dir}
     chrome_options.add_experimental_option('prefs', prefs)
-    chrome_options.add_argument("--headless")
-    driver = webdriver.Chrome(executable_path=get_path_to_chrome_driver(),options=chrome_options)
+    #chrome_options.add_argument("--headless")
+    service = Service()
+
+    driver = webdriver.Chrome(service=service, options=chrome_options)
     driver.get(bse_url)
     timeout = 10
     try:
+        time.sleep(3)
         WebDriverWait(driver, timeout).until(EC.visibility_of_element_located((By.ID, "ddlsegment")))
         print('select element located')
-        driver.find_element("xpath", "//select[@id='ddlsegment']/option[text()='Equity']").click()
+        time.sleep(3)
+        driver.find_element("xpath", "//select[@id='ddlsegment']/option[text()='Equity T+1']").click()
         print('select element clicked')
+        time.sleep(3)
         driver.find_element("xpath", "//input[@id='btnSubmit']").click()
         print('submit element clicked')
+        time.sleep(3)
         dload = WebDriverWait(driver, timeout).until(EC.visibility_of_element_located((By.ID,'lnkDownload')))
         print('download element located')
+        time.sleep(3)
         dload.click()
         print('download element clicked')
+        time.sleep(3)
         dload_file_name = None
         for _ in range(5):
             time.sleep(5)

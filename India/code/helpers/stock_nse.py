@@ -2,13 +2,15 @@ import csv
 import json
 import os
 import requests
+import webbrowser
+import time
 
 
-nse_url = 'http://www1.nseindia.com/content/equities/EQUITY_L.csv'
-nse_midcap_url = 'https://www1.nseindia.com/content/indices/ind_niftymidcap150list.csv'
-nse_largecap_url = 'https://www1.nseindia.com/content/indices/ind_nifty100list.csv'
-nse_smallcap_url = 'https://www1.nseindia.com/content/indices/ind_niftysmallcap250list.csv'
-nse_microcap_url = 'https://www1.nseindia.com/content/indices/ind_niftymicrocap250_list.csv'
+nse_url = 'https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv'
+nse_midcap_url = 'https://nsearchives.nseindia.com/content/indices/ind_niftymidcap150list.csv'
+nse_largecap_url = 'https://nsearchives.nseindia.com/content/indices/ind_nifty100list.csv'
+nse_smallcap_url = 'https://nsearchives.nseindia.com/content/indices/ind_niftysmallcap250list.csv'
+nse_microcap_url = 'https://nsearchives.nseindia.com/content/indices/ind_niftymicrocap250_list.csv'
 
 
 def nse_headers():
@@ -24,36 +26,54 @@ def nse_headers():
             }
 
 def nse_eq_file_path(download_dir):
-    full_file_path = os.path.join(download_dir, 'nse_eq.csv')
+    full_file_path = os.path.join(download_dir, 'EQUITY_L.csv')
     return full_file_path
 
-def pull_nse(download_dir):
-    headers = nse_headers()
-    r = requests.get(nse_url, headers=headers, timeout=15)
-    full_file_path = nse_eq_file_path(download_dir)
-    with open(full_file_path, 'wb') as f:
-        f.write(r.content)
+def remove_file_if_exists(full_file_path):
+    if os.path.exists(full_file_path):
+        os.remove(full_file_path)
 
-def pull_nse_cap_file(cap):
-    headers = nse_headers()
+def pull_nse(download_dir):
+    full_file_path = nse_eq_file_path(download_dir)
+    remove_file_if_exists(full_file_path)
+    webbrowser.open(nse_url)
+    time.sleep(3)
+
+    for i in range(10):
+        if os.path.exists(full_file_path):
+            break
+        time.sleep(3)
+
+
+def pull_nse_cap_file(cap, download_dir):
     if cap == 'Large':
         url = nse_largecap_url
+        f = 'ind_nifty100list.csv'
     elif cap == 'Mid':
         url = nse_midcap_url
+        f = 'ind_niftymidcap150list.csv'
     elif cap == 'Small':
         url = nse_smallcap_url
+        f = 'ind_niftysmallcap250list.csv'
     else:
         url = nse_microcap_url
-    r = requests.get(url, headers=headers, timeout=15)
-    if r.status_code==200:
-        decoded_content = r.content.decode('utf-8')
-        csv_reader = csv.DictReader(decoded_content.splitlines(), delimiter=',')
+        f = 'ind_niftymicrocap250_list.csv'
+    full_file_path = os.path.join(download_dir, f)
+    remove_file_if_exists(full_file_path)
+    webbrowser.open(url)
+    time.sleep(3)
+    
+    for i in range(10):
+        if os.path.exists(full_file_path):
+            break
+        time.sleep(3)
+    with open(full_file_path, mode='r', encoding='utf-8-sig') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
         ret = list()
         for row in csv_reader:
             #print(row)
             ret.append({'isin':row['ISIN Code'], 'symbol':row['Symbol'], 'industry':row['Industry']})
         return ret
-    print(f'Got different response {r.status_code}')
     return None
 
 def is_nse_eq_file_exists(download_dir):
@@ -148,7 +168,7 @@ def update_nse(download_dir):
                 stocks[isin]['nse_symbol'] = row['SYMBOL']
       
     for cap in ['Large','Mid','Small','Micro']:
-        ret = pull_nse_cap_file(cap)
+        ret = pull_nse_cap_file(cap, download_dir)
         for entry in ret:
             if entry['isin'] in stocks:
                 stocks[entry['isin']]['cap'] = cap+'-Cap'
