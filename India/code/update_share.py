@@ -106,19 +106,24 @@ def copy_selected_fields(download_dir):
                     dict2[key]['cap'] = value.get('cap')
                 if value.get('face_value','').strip() != '':
                     dict2[key]['face_value'] = value.get('face_value')
-    # Copy only if NSE info is missing
+    # Copy NSE
     for key, value in dict1.items():
         if key in dict2:
             # Check if the 'bse_security_id', 'bse_security_code', and 'nse_symbol' match
             if (dict1[key].get('bse_security_id') == dict2[key].get('bse_security_id') and
-                dict1[key].get('bse_security_code') == dict2[key].get('bse_security_code') and
-                dict1[key].get('nse_symbol', '') != '' and
-                dict2[key].get('nse_symbol', '') == ''):
-                dict2[key]['nse_symbol'] = value.get('nse_symbol')
-                dict2[key]['listing_date'] = value.get('listing_date')
-                dict2[key]['nse_name'] = value.get('nse_name')
-                dict2[key]['industry'] = value.get('industry')
-
+                dict1[key].get('bse_security_code') == dict2[key].get('bse_security_code')):
+                # if nse info is missing or if nse symbol is same while info needs updates
+                if (dict1[key].get('nse_symbol', '') != '' and
+                    dict2[key].get('nse_symbol', '') == ''):
+                        dict2[key]['nse_symbol'] = value.get('nse_symbol')
+                        dict2[key]['listing_date'] = value.get('listing_date')
+                        dict2[key]['nse_name'] = value.get('nse_name')
+                        dict2[key]['industry'] = value.get('industry')
+                elif (dict1[key].get('nse_symbol', '') != '' and
+                    dict2[key].get('nse_symbol', '') == dict1[key].get('nse_symbol')):
+                    dict2[key]['listing_date'] = value.get('listing_date')
+                    dict2[key]['nse_name'] = value.get('nse_name')
+                    dict2[key]['industry'] = value.get('industry')
 
     # Write the updated dictionary back to the second JSON file
     with open(orig_file_path, 'w') as file2:
