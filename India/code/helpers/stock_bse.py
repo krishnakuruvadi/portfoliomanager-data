@@ -7,7 +7,7 @@ import csv
 import json
 import os
 import time
-from .utils import get_files_in_dir, get_new_files_added, get_path_to_chrome_driver
+from .utils import get_files_in_dir, get_new_files_added
 
 bse_url = 'https://www.bseindia.com/corporates/List_Scrips.aspx'
 
@@ -123,7 +123,10 @@ def update_bse(download_dir):
             if isin == '' or isin == 'NA' or not isin.startswith('IN'):
                 print(f'ignoring isin {isin}')
                 continue
-            if not isin in stocks: 
+            if not isin in stocks:
+                # dont track rights entitled shares
+                if '-RE' in row['Security Id']:
+                    continue
                 stocks[isin] = {
                                 'bse_security_code':row['Security Code'], 
                                 'bse_security_id':row['Security Id'], 
@@ -153,6 +156,7 @@ def update_bse(download_dir):
                 stocks[isin]['status'] = row['Status']
                 stocks[isin]['face_value'] = row['Face Value']
                 stocks[isin]['industry'] = row['Industry']
+                stocks[isin]['bse_name'] = row['Security Name']
 
     
     with open(n_b_path, 'w') as json_file:

@@ -57,9 +57,10 @@ def merge_new_info(download_dir):
                 print(f'found no matching data {isin} {data}')
     
     for isin, data in update_data.items():
-        if isin.startswith("INF"):
-            #print(f'ignoring isin {isin} because its a ETF or MF')
-            continue
+        # we most likely want etf to be tracked here
+        #if isin.startswith("INF"):
+        #    print(f'ignoring isin {isin} because its a ETF or MF')
+        #    continue
         if isin in merged_data:
             for key, value in data.items():
                 if value.strip() != '':
@@ -70,16 +71,18 @@ def merge_new_info(download_dir):
                 merged_data[isin] = data
             else:
                 print(f'found matching data {matching_isin} {matching_data} {isin} {data}')
+    merged_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'modified_nse_bse_eq.json')
+
     # Write the updated JSON back to the output file while maintaining order
-    with open(orig_file_path, 'w', encoding='utf-8') as f:
+    with open(merged_file_path, 'w', encoding='utf-8') as f:
         json.dump(merged_data, f, indent=1, ensure_ascii=False)
 
     print(f"Updated JSON has been saved to {orig_file_path}")
 
 
-def copy_selected_fields(download_dir):
+def copy_selected_fields():
     orig_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'nse_bse_eq.json')
-    new_file_path = os.path.join(download_dir, 'nse_bse_eq.json')
+    new_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'modified_nse_bse_eq.json')
     # Load the first JSON file into a dictionary
     with open(new_file_path, 'r') as file1:
         dict1 = json.load(file1)
@@ -92,7 +95,8 @@ def copy_selected_fields(download_dir):
     for key, value in dict1.items():
         if key in dict2:
             # Check if the 'bse_security_id', 'bse_security_code', and 'nse_symbol' match
-            if (dict1[key].get('bse_security_id') == dict2[key].get('bse_security_id') and
+            if (dict1[key].get('bse_security_id') != '' and
+                dict1[key].get('bse_security_id') == dict2[key].get('bse_security_id') and
                 dict1[key].get('bse_security_code') == dict2[key].get('bse_security_code') and
                 dict1[key].get('nse_symbol') == dict2[key].get('nse_symbol')):
                 
@@ -124,21 +128,33 @@ def copy_selected_fields(download_dir):
                     dict2[key]['listing_date'] = value.get('listing_date')
                     dict2[key]['nse_name'] = value.get('nse_name')
                     dict2[key]['industry'] = value.get('industry')
-
+    # Copy BSE
+    for key, value in dict1.items():
+        if key in dict2:
+            # Check if the 'nse_symbol', 'bse_security_code', and 'nse_symbol' match
+            if (dict1[key].get('nse_symbol', '') != '' and
+                dict1[key].get('nse_symbol') == dict2[key].get('nse_symbol') and
+                dict2[key].get('bse_security_code') == '' and
+                dict2[key].get('bse_security_id') == '' and
+                dict2[key].get('nse_symbol') == dict1[key].get('bse_security_id')):
+                # if bse info is missing while nse symbol matches and is same as new bse security id
+                    print(f'right here for isin {key}')
+                    print(f'before {dict2[key]}')
+                    dict2[key]['bse_security_code'] = value.get('bse_security_code')
+                    dict2[key]['bse_security_id'] = value.get('bse_security_id')
+                    dict2[key]['bse_name'] = value.get('bse_name')
+                    dict2[key]['status'] = value.get('status')
+                    print(f'after {dict2[key]}')
     # Write the updated dictionary back to the second JSON file
     with open(orig_file_path, 'w') as file2:
         json.dump(dict2, file2, indent=1)
 
-    print("Selected fields copied successfully.")
-
+    print(f"Selected fields copied successfully and written to {orig_file_path}.")
 
 
 if __name__ == "__main__":
     update_nse(download_dir())
     update_bse(download_dir())
-    # You could merge whole info or select fields
-    # choose this for whole info
-    #merge_new_info(download_dir())
-    # choose this for select fields
-    #copy_selected_fields(download_dir())
+    merge_new_info(download_dir())
+    copy_selected_fields()
     
