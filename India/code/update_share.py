@@ -77,7 +77,7 @@ def merge_new_info(download_dir):
     with open(merged_file_path, 'w', encoding='utf-8') as f:
         json.dump(merged_data, f, indent=1, ensure_ascii=False)
 
-    print(f"Updated JSON has been saved to {orig_file_path}")
+    print(f"Updated JSON has been saved to {merged_file_path}")
 
 
 def copy_selected_fields():
