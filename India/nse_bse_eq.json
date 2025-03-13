@@ -2485,10 +2485,10 @@
   "cap": "Large-Cap",
   "suspension_date": ""
  },
- "INE546A1014 ": {
+ "INE546A1014": {
   "bse_security_code": "500181",
   "bse_security_id": "HRBTSON-B",
-  "bse_name": "HERBERTSONS LTD.",
+  "bse_name": "Herbertsons Ltd",
   "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
@@ -2499,6 +2499,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE158A01026": {
@@ -3044,13 +3045,13 @@
   "suspension_date": "",
   "cap": "Micro-Cap"
  },
- "INE711C01010": {
+ "INE711C01028": {
   "bse_security_code": "500220",
   "bse_security_id": "JASCH",
-  "bse_name": "JASCH INDUSTRIES LTD.",
+  "bse_name": "Jasch Industries Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "Textiles",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -3058,6 +3059,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "JI04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE851A01018": {
@@ -3635,20 +3637,21 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE965B01014": {
+ "INE965B01022": {
   "bse_security_code": "500262",
-  "bse_security_id": "MAFATLAFIN",
-  "bse_name": "MAFATLAL FINANCE CO.LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "old_bse_security_id": "MAFATLAFIN",
+  "bse_security_id": "HYBRIDFIN",
+  "bse_name": "Hybrid Financial Services Ltd",
+  "status": "Active",
+  "face_value": "5.00",
+  "industry": "Stockbroking & Allied",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Hybrid Financial Services Limited",
+  "listing_date": "05-DEC-2022",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "HYBRIDFIN",
   "mc_code": "MFC",
+  "cap": "",
   "suspension_date": ""
  },
  "INE270B01035": {
@@ -11120,12 +11123,12 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE359D01016": {
+ "INE359D01024": {
   "bse_security_code": "504746",
   "bse_security_id": "INLCM",
-  "bse_name": "INDIAN LINK CHAIN MANUFACTURES LTD.",
+  "bse_name": "Indian Link Chain Manufacturers Ltd",
   "status": "Active",
-  "face_value": "100.00",
+  "face_value": "10.00",
   "industry": "Other Industrial Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -11134,6 +11137,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ILC",
+  "cap": "",
   "suspension_date": ""
  },
  "INE501B01017": {
@@ -11668,13 +11672,13 @@
   "mc_code": "SAN",
   "suspension_date": ""
  },
- "INE187D01011": {
+ "INE187D01029": {
   "bse_security_code": "505160",
   "bse_security_id": "TALBROAUTO",
-  "bse_name": "TALBROS AUTOMOTIVE COMPONENTS LTD.",
+  "bse_name": "Talbros Automotive Components Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Auto Parts & Equipment",
+  "face_value": "2.00",
+  "industry": "Auto Components & Equipments",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Talbros Automotive Components Limited",
@@ -11682,6 +11686,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "TALBROAUTO",
   "mc_code": "TAC",
+  "cap": "",
   "suspension_date": ""
  },
  "INE116C01012": {
@@ -12009,20 +12014,21 @@
   "mc_code": "MI08",
   "suspension_date": ""
  },
- "INE098E01018": {
+ "INE098E01026": {
   "bse_security_code": "505336",
-  "bse_security_id": "MIRCH",
-  "bse_name": "Mirch Technologies (India) Ltd",
+  "bse_security_id": "HARSHILAGR",
+  "bse_name": "Harshil Agrotech Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Industrial Machinery",
+  "face_value": "1.00",
+  "industry": "Industrial Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "MIRCH",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MTL03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE811D01024": {
@@ -15512,22 +15518,6 @@
   "mc_code": "PSO",
   "suspension_date": ""
  },
- "            ": {
-  "bse_security_code": "MAXVILLR",
-  "bse_security_id": "CHAMPGN",
-  "bse_name": "CHAMPGN",
-  "status": "Suspended",
-  "face_value": "0.05",
-  "industry": " ",
-  "old_bse_security_code": "532635;532970;532971;533020;533453;533562;535585;750318;750389;750398;750523;750614",
-  "old_bse_security_id": "ETCBBPH;GREATOFBBPH;SASKENBBPH;RAINBBPH;PVRBBPH;ONMOBBBPH;MAHSEAMBBPH;SIRPURLR;BENGALTEALR;SHALIMARLR;NETWORK18R;MAXVILLR",
-  "nse_name": "",
-  "listing_date": "",
-  "old_nse_symbol": "",
-  "nse_symbol": "",
-  "mc_code": "",
-  "suspension_date": ""
- },
  "INE687B01014": {
   "bse_security_code": "507435",
   "bse_security_id": "KHODAY",
@@ -16363,12 +16353,12 @@
   "mc_code": "TCP",
   "suspension_date": ""
  },
- "INE048B01027": {
+ "INE048B01035": {
   "bse_security_code": "507789",
   "bse_security_id": "JAGSNPHARM",
-  "bse_name": "JAGSONPAL PHARMACEUTICALS LTD.",
+  "bse_name": "Jagsonpal Pharmaceuticals Ltd",
   "status": "Active",
-  "face_value": "5.00",
+  "face_value": "2.00",
   "industry": "Pharmaceuticals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -16377,6 +16367,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "JAGSNPHARM",
   "mc_code": "JP02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE956D01019": {
@@ -16877,13 +16868,13 @@
   "mc_code": "BSI01",
   "suspension_date": ""
  },
- "INE845A01010": {
+ "INE845A01028": {
   "bse_security_code": "507946",
   "bse_security_id": "KIDUJA",
-  "bse_name": "KIDUJA INDIA LTD.",
+  "bse_name": "Kiduja India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -16891,6 +16882,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "KI28",
+  "cap": "",
   "suspension_date": ""
  },
  "INE130F01016": {
@@ -18032,12 +18024,12 @@
   "mc_code": "BFL02",
   "suspension_date": ""
  },
- "INE392A01013": {
+ "INE392A01021": {
   "bse_security_code": "509055",
   "bse_security_id": "VISAKAIND",
-  "bse_name": "VISAKA INDUSTRIES LTD.",
+  "bse_name": "Visaka Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Cement & Cement Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -18046,6 +18038,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "VISAKAIND",
   "mc_code": "VI11",
+  "cap": "",
   "suspension_date": ""
  },
  "INE669A01022": {
@@ -18257,20 +18250,21 @@
   "mc_code": "MMR",
   "suspension_date": ""
  },
- "INE034D01031": {
+ "INE034D01049": {
   "bse_security_code": "509220",
   "bse_security_id": "PTL",
-  "bse_name": "PTL ENTERPRISES LTD.-$",
+  "bse_name": "PTL Enterprises Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "Comm.Trading  & Distribution",
+  "industry": "Diversified Commercial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "PTL Enterprises Limited",
   "listing_date": "29-JAN-2007",
+  "face_value": "1.00",
   "old_nse_symbol": "",
   "nse_symbol": "PTL",
-  "mc_code": "PTL06",
+  "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE421C01016": {
@@ -18742,13 +18736,13 @@
   "mc_code": "HDO",
   "suspension_date": ""
  },
- "INE545A01016": {
+ "INE545A01024": {
   "bse_security_code": "509631",
   "bse_security_id": "HEG",
-  "bse_name": "HEG LTD.",
+  "bse_name": "HEG Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Industrial Goods",
+  "face_value": "2.00",
+  "industry": "Electrodes & Refractories",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "HEG Limited",
@@ -24859,13 +24853,13 @@
   "mc_code": "SE08",
   "suspension_date": ""
  },
- "INE183U01014": {
+ "INE183U01022": {
   "bse_security_code": "512591",
   "bse_security_id": "PULSRIN",
-  "bse_name": "PULSAR INTERNATIONAL LTD.",
+  "bse_name": "Pulsar International Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -24873,6 +24867,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "PI01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE348N01034": {
@@ -25181,15 +25176,15 @@
   "mc_code": "JMT01",
   "suspension_date": ""
  },
- "INE725A01022": {
+ "INE725A01030": {
   "bse_security_code": "513023",
-  "bse_security_id": "NBVENTURES*",
-  "bse_name": "NAVA BHARAT VENTURES LTD.",
+  "bse_security_id": "NAVA",
+  "bse_name": "Nava Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "Electric Utilities",
+  "face_value": "1.00",
+  "industry": "Power Generation",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "NBVENTURES",
   "nse_name": "NAVA LIMITED",
   "listing_date": "03-APR-1996",
   "old_nse_symbol": "NBVENTURES",
@@ -25631,13 +25626,13 @@
   "mc_code": "JU",
   "suspension_date": ""
  },
- "INE802C01017": {
+ "INE802C01033": {
   "bse_security_code": "513262",
   "bse_security_id": "SSWL",
-  "bse_name": "STEEL STRIPS WHEELS LTD.-$",
+  "bse_name": "Steel Strips Wheels Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Auto Parts & Equipment",
+  "face_value": "1.00",
+  "industry": "Auto Components & Equipments",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Steel Strips Wheels Limited",
@@ -110320,23 +110315,6 @@
   "nse_symbol": "PRUDENT",
   "mc_code": "",
   "cap": "Micro-Cap",
-  "suspension_date": ""
- },
- "INE034D01049": {
-  "bse_security_code": "509220",
-  "bse_security_id": "PTL",
-  "bse_name": "PTL Enterprises Ltd",
-  "status": "Active",
-  "industry": "Diversified Commercial Services",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "PTL Enterprises Limited",
-  "listing_date": "29-JAN-2007",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "PTL",
-  "mc_code": "",
-  "cap": "",
   "suspension_date": ""
  },
  "INE961O01016": {
