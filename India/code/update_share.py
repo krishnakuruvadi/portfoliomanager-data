@@ -4,7 +4,8 @@ import json
 from helpers.stock_nse import update_nse
 from helpers.stock_bse import update_bse
 from datetime import datetime
-
+from rich.console import Console
+from rich.table import Table
 
 def download_dir():
     # ~/Downloads is a valid path on MAC.  Adjust this according to your OS
@@ -157,18 +158,21 @@ def interactive_mapping():
     new_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'modified_nse_bse_eq.json')
     # Load the first JSON file into a dictionary
     with open(new_file_path, 'r') as file1:
-        dict1 = json.load(file1)
+        new_data = json.load(file1)
 
     # Load the second JSON file into a dictionary
     with open(orig_file_path, 'r') as file2:
-        dict2 = json.load(file2)
+        orig_data = json.load(file2)
 
     merged_data = dict()
     result = -1
+    updated_isins = list()
     # Loop through each key in dict1
-    for o_key, o_value in dict2.items():
-        if o_key not in dict1 and result != 2:
-            for nk, nv in dict1.items():
+    for o_key, o_value in orig_data.items():
+        if o_key in updated_isins:
+            continue
+        if result != 2 and o_key not in new_data:
+            for nk, nv in new_data.items():
                 # Check if the 'bse_security_id', 'bse_security_code', or 'nse_symbol' match
                 if ((o_value.get('bse_security_id', '') != '' and
                     o_value.get('bse_security_id') == nv.get('bse_security_id', '')) or
@@ -181,6 +185,7 @@ def interactive_mapping():
                     result = ask_yes_no("Do you want to merge?")
                     if result == 0:
                         merged_data[nk] = accept_data
+                        updated_isins.append(nk)
                     else:
                         merged_data[o_key] = o_value
         else:
@@ -192,92 +197,152 @@ def interactive_mapping():
 
     print(f"Merged approved data successfully and written to {orig_file_path}.")
 
-def print_as_table(new_isin, new_item, old_isin, old_item):
-    from rich.console import Console
-    from rich.table import Table
-
-    console = Console()
+def print_as_table(new_isin, new_dict, old_isin, old_dict):
+    
     merged_item = dict()
-    table = Table(show_header=True, header_style="bold magenta")
-    table.add_column("", style="dim", width=25)
-    table.add_column('NEW')
-    table.add_column('OLD')
-    table.add_column('MERGED')
+    new_item = Item(new_isin, new_dict)
+    old_item = Item(old_isin, old_dict)
+    merged_item = Item(new_isin, dict())
+    
     # isin
-    table.add_row('isin', new_isin, old_isin, new_isin)
+    merged_item.isin = new_item.isin
     # bse_security_code
-    if new_item.get('bse_security_code', '') != '':
-        if old_item.get('bse_security_code', '') != '':
-            if new_item['bse_security_code'] != old_item['bse_security_code']:
-                if old_item.get('old_bse_security_code', '') != '':
-                    merged_item['old_bse_security_code'] = old_item['old_bse_security_code'] + ',' + old_item['bse_security_code']
-        merged_item['bse_security_code'] = new_item['bse_security_code']
+    if new_item.bse_security_code != '':
+        if old_item.bse_security_code != '':
+            if new_item.bse_security_code != old_item.bse_security_code:
+                if old_item.old_bse_security_code != '':
+                    merged_item.old_bse_security_code = old_item.old_bse_security_code + ',' + old_item.bse_security_code
+        merged_item.bse_security_code = new_item.bse_security_code
     else:
-        merged_item['bse_security_code'] = new_item['bse_security_code']
-    table.add_row('bse_security_code', new_item.get('bse_security_code', ''), old_item.get('bse_security_code', ''), merged_item['bse_security_code'])
+        merged_item.bse_security_code = new_item.bse_security_code
     # bse_security_id
-    if new_item.get('bse_security_id', '') != '':
-        if old_item.get('bse_security_id', '') != '':
-            if new_item['bse_security_id'] != old_item['bse_security_id']:
-                if old_item.get('old_bse_security_id', '') != '':
-                    merged_item['old_bse_security_id'] = old_item['old_bse_security_id'] + ',' + old_item['bse_security_id']
+    if new_item.bse_security_id != '':
+        if old_item.bse_security_id != '':
+            if new_item.bse_security_id != old_item.bse_security_id:
+                if old_item.old_bse_security_id != '':
+                    merged_item.old_bse_security_id = old_item.old_bse_security_id + ',' + old_item.bse_security_id
                 else:
-                    merged_item['old_bse_security_id'] = old_item['bse_security_id']
-        merged_item['bse_security_id'] = new_item['bse_security_id']            
+                    merged_item.old_bse_security_id = old_item.bse_security_id
+        merged_item.bse_security_id = new_item.bse_security_id            
     else:
-        merged_item['bse_security_id'] = old_item.get('bse_security_id', '')
-    table.add_row('bse_security_id', new_item.get('bse_security_id', ''), old_item.get('bse_security_id', ''), merged_item['bse_security_id'])
+        merged_item.bse_security_id = old_item.bse_security_id
     # bse_name
-    merged_item['bse_name'] = new_item['bse_name'] if new_item.get('bse_name', '') != '' else old_item.get('bse_name', '')
-    table.add_row('bse_name', new_item.get('bse_name', ''), old_item.get('bse_name', ''), merged_item['bse_name'])
+    merged_item.bse_name = new_item.bse_name if new_item.bse_name != '' else old_item.bse_name
     # status
-    merged_item['status'] = new_item['status'] if new_item.get('status', '') != '' else old_item.get('status', '')
-    table.add_row('status', new_item.get('status', ''), old_item.get('status', ''), merged_item['status'])
+    merged_item.status = new_item.status if new_item.status != '' else old_item.status
     # face_value
-    merged_item['face_value'] = new_item['face_value'] if new_item.get('face_value', '') != '' else old_item.get('face_value', '')
-    table.add_row('face_value', new_item.get('face_value', ''), old_item.get('face_value', ''), merged_item['face_value'])
+    merged_item.face_value = new_item.face_value if new_item.face_value != '' else old_item.face_value
     # industry
-    merged_item['industry'] = new_item['industry'] if new_item.get('industry', '') != '' else old_item.get('industry', '')
-    table.add_row('industry', new_item.get('industry', ''), old_item.get('industry', ''), merged_item['industry'])
+    merged_item.industry = new_item.industry if new_item.industry != '' else old_item.industry
     # old_bse_security_code
-    merged_item['old_bse_security_code'] = merged_item.get('old_bse_security_code', '') if merged_item.get('old_bse_security_code', '') != '' else old_item.get('old_bse_security_code', '')
-    table.add_row('old_bse_security_code', new_item.get('old_bse_security_code', ''), old_item.get('old_bse_security_code', ''), merged_item['old_bse_security_code'])
+    merged_item.old_bse_security_code = merged_item.old_bse_security_code if merged_item.old_bse_security_code != '' else old_item.old_bse_security_code
     # old_bse_security_id
-    merged_item['old_bse_security_id'] = merged_item.get('old_bse_security_id', '') if merged_item.get('old_bse_security_id', '') != '' else old_item.get('old_bse_security_id', '')
-    table.add_row('old_bse_security_id', new_item.get('old_bse_security_id', ''), old_item.get('old_bse_security_id', ''), merged_item['old_bse_security_id'])
+    merged_item.old_bse_security_id = merged_item.old_bse_security_id if merged_item.old_bse_security_id != '' else old_item.old_bse_security_id
     # nse_name
-    merged_item['nse_name'] = new_item['nse_name'] if new_item.get('nse_name', '') != '' else old_item.get('nse_name', '')
-    table.add_row('nse_name', new_item.get('nse_name', ''), old_item.get('nse_name', ''), merged_item['nse_name'])
+    merged_item.nse_name = new_item.nse_name if new_item.nse_name != '' else old_item.nse_name
     # listing_date
-    merged_item['listing_date'] = find_older_date(new_item['listing_date'], old_item.get('listing_date', ''))
-    table.add_row('listing_date', new_item.get('listing_date', ''), old_item.get('listing_date', ''), merged_item['listing_date'])
+    merged_item.listing_date = find_older_date(new_item.listing_date, old_item.listing_date)
     # old_nse_symbol
-    merged_item['old_nse_symbol'] = merged_item.get('old_nse_symbol', '') if merged_item.get('old_nse_symbol', '') != '' else old_item.get('old_nse_symbol', '')
-    table.add_row('old_nse_symbol', new_item.get('old_nse_symbol', ''), old_item.get('old_nse_symbol', ''), merged_item['old_nse_symbol'])
+    merged_item.old_nse_symbol = merged_item.old_nse_symbol if merged_item.old_nse_symbol != '' else old_item.old_nse_symbol
     # nse_symbol
-    if new_item.get('nse_symbol', '') != '':
-        if old_item.get('nse_symbol', '') != '':
-            if new_item['nse_symbol'] != old_item['nse_symbol']:
-                if old_item.get('old_nse_symbol', '') != '':
-                    merged_item['old_nse_symbol'] = old_item['old_nse_symbol'] + ',' + old_item['nse_symbol']
+    if new_item.nse_symbol != '':
+        if old_item.nse_symbol != '':
+            if new_item.nse_symbol != old_item.nse_symbol:
+                if old_item.old_nse_symbol != '':
+                    merged_item.old_nse_symbol = old_item.old_nse_symbol + ',' + old_item.nse_symbol
                 else:
-                    merged_item['old_nse_symbol'] = old_item['nse_symbol']
-        merged_item['nse_symbol'] = new_item['nse_symbol']            
+                    merged_item.old_nse_symbol = old_item.nse_symbol
+        merged_item.nse_symbol = new_item.nse_symbol            
     else:
-        merged_item['nse_symbol'] = old_item.get('nse_symbol', '')
-    table.add_row('nse_symbol', new_item.get('nse_symbol', ''), old_item.get('nse_symbol', ''), merged_item['nse_symbol'])
+        merged_item.nse_symbol = old_item.nse_symbol
     # mc_code
-    merged_item['mc_code'] = new_item['mc_code'] if new_item.get('mc_code', '') != '' else old_item.get('mc_code', '')
-    table.add_row('mc_code', new_item.get('mc_code', ''), old_item.get('mc_code', ''), merged_item['mc_code'])
+    merged_item.mc_code = new_item.mc_code if new_item.mc_code != '' else old_item.mc_code
     # cap
-    merged_item['cap'] = new_item['cap'] if new_item.get('cap', '') != '' else old_item.get('cap', '')
-    table.add_row('cap', new_item.get('cap', ''), old_item.get('cap', ''), merged_item['cap'])
+    merged_item.cap = new_item.cap if new_item.cap != '' else old_item.cap
     # suspension_date
-    merged_item['suspension_date'] = find_newer_date(new_item['suspension_date'], old_item.get('suspension_date', ''))
-    table.add_row('suspension_date', new_item.get('suspension_date', ''), old_item.get('suspension_date', ''), merged_item['suspension_date'])
-    console.print(table)
-    return merged_item
+    merged_item.suspension_date = find_newer_date(new_item.suspension_date, old_item.suspension_date)
+    table = InfoTable(old_item, new_item, merged_item)
+    table.print_table()
+    return merged_item.to_json()
 
+class Item:
+    def __init__(self, isin, j_dict):
+        self.isin = isin
+        self.bse_security_code = j_dict.get('bse_security_code', '')
+        self.bse_security_id = j_dict.get('bse_security_id', '')
+        self.status = j_dict.get('status', '')
+        self.bse_name = j_dict.get('bse_name', '')
+        self.face_value = j_dict.get('face_value', '')
+        self.industry = j_dict.get('industry', '')
+        self.old_bse_security_code = j_dict.get('old_bse_security_code', '')
+        self.old_bse_security_id = j_dict.get('old_bse_security_id', '')
+        self.nse_name = j_dict.get('nse_name', '')
+        self.listing_date = j_dict.get('listing_date', '')
+        self.old_nse_symbol = j_dict.get('old_nse_symbol', '')
+        self.nse_symbol = j_dict.get('nse_symbol', '')
+        self.mc_code = j_dict.get('mc_code', '')
+        self.cap = j_dict.get('cap', '')
+        self.suspension_date = j_dict.get('suspension_date', '')
+    
+    def to_json(self):
+        return {
+            'bse_security_code': self.bse_security_code,
+            'bse_security_id': self.bse_security_id,
+            'bse_name': self.bse_name,
+            'status': self.status,
+            'face_value': self.face_value,
+            'industry': self.industry,
+            'old_bse_security_code': self.old_bse_security_code,
+            'old_bse_security_id': self.old_bse_security_id,
+            'nse_name': self.nse_name,
+            'listing_date': self.listing_date,
+            'old_nse_symbol': self.old_nse_symbol,
+            'nse_symbol': self.nse_symbol,
+            'mc_code': self.mc_code,
+            'cap': self.cap,
+            'suspension_date': self.suspension_date
+        }
+
+class InfoTable:
+    def __init__(self, old_item, new_item, merged_item):
+        self.merged_item = merged_item
+        self.old_item = old_item
+        self.new_item = new_item
+        self.console = Console()
+        self.table = Table(show_header=True, header_style="bold magenta")
+        self.table.add_column("", style="dim", width=25)
+        self.table.add_column('NEW')
+        self.table.add_column('OLD')
+        self.table.add_column('MERGED')
+        self.attributes = [
+            'isin',
+            'bse_security_code',
+            'bse_security_id',
+            'bse_name',
+            'status',
+            'face_value',
+            'industry',
+            'old_bse_security_code',
+            'old_bse_security_id',
+            'nse_name',
+            'listing_date',
+            'old_nse_symbol',
+            'nse_symbol',
+            'mc_code',
+            'cap',
+            'suspension_date'
+        ]
+
+    def add_row(self, key, new_value, old_value, merged_value):
+        self.table.add_row(key, new_value, old_value, merged_value)
+
+    def add_rows(self):
+        for att in self.attributes:
+            self.add_row(att, getattr(self.new_item, att), getattr(self.old_item, att), getattr(self.merged_item, att))
+    
+    def print_table(self):
+        self.add_rows()
+        self.console.print(self.table)
 
 def find_newer_date(first_dt, second_dt):
     if first_dt == '':
@@ -324,9 +389,9 @@ def ask_yes_no(question):
         return 2
 
 if __name__ == "__main__":
-    update_nse(download_dir())
-    update_bse(download_dir())
-    merge_new_info(download_dir())
-    copy_selected_fields()
+    #update_nse(download_dir())
+    #update_bse(download_dir())
+    #merge_new_info(download_dir())
+    #copy_selected_fields()
     interactive_mapping()
     
