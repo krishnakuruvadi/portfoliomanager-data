@@ -6710,8 +6710,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "EXCEL",
   "mc_code": "EI10",
-  "suspension_date": "",
-  "cap": "Micro-Cap"
+  "cap": "Micro-Cap",
+  "suspension_date": ""
  },
  "INE291A01017": {
   "bse_security_code": "500655",
@@ -30386,6 +30386,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "IHC01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE143C01024": {
@@ -41294,12 +41295,12 @@
   "mc_code": "SVC",
   "suspension_date": ""
  },
- "INE571A01020": {
+ "INE571A01038": {
   "bse_security_code": "524494",
   "bse_security_id": "IPCALAB",
-  "bse_name": "IPCA LABORATORIES LTD.",
+  "bse_name": "Ipca Laboratories Ltd",
   "status": "Active",
-  "face_value": "2.00",
+  "face_value": "1.00",
   "industry": "Pharmaceuticals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -44436,12 +44437,12 @@
   "mc_code": "ASM04",
   "suspension_date": ""
  },
- "INE759I01016": {
+ "INE759I01024": {
   "bse_security_code": "526435",
   "bse_security_id": "PERFEPA",
-  "bse_name": "PERFECTPAC LTD.",
+  "bse_name": "Perfectpac Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Paper & Paper Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -44450,6 +44451,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "P03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE674F01013": {
@@ -44756,12 +44758,12 @@
   "mc_code": "N05",
   "suspension_date": ""
  },
- "INE206C01011": {
+ "INE206C01029": {
   "bse_security_code": "526490",
   "bse_security_id": "PRATIK",
-  "bse_name": "PRATIK PANELS LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
+  "bse_name": "Pratik Panels Ltd",
+  "status": "Active",
+  "face_value": "1.00",
   "industry": "Forest Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -44770,6 +44772,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "PP17",
+  "cap": "",
   "suspension_date": ""
  },
  "INE582D01013": {
@@ -44868,13 +44871,13 @@
   "mc_code": "DMS",
   "suspension_date": ""
  },
- "INE356B01016": {
+ "INE356B01024": {
   "bse_security_code": "526506",
   "bse_security_id": "SYSTMTXC",
-  "bse_name": "SYSTEMATIX CORPORATE SERVICES LTD.",
+  "bse_name": "Systematix Corporate Services Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Financial Services",
+  "face_value": "1.00",
+  "industry": "Stockbroking & Allied",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -44882,6 +44885,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SCS05",
+  "cap": "",
   "suspension_date": ""
  },
  "INE825D01016": {
@@ -44997,28 +45001,29 @@
   "mc_code": "WLE",
   "suspension_date": ""
  },
- "INE670C01018": {
+ "INE670C01026": {
   "bse_security_code": "526530",
-  "bse_security_id": "SUDIN",
-  "bse_name": "SUDEV INDUSTRIES LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "bse_security_id": "IIRM",
+  "bse_name": "IIRM Holdings India Ltd",
+  "status": "Active",
+  "face_value": "5.00",
+  "industry": "Consulting Services",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "SUDIN",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SI42",
+  "cap": "",
   "suspension_date": ""
  },
- "INE716K01012": {
+ "INE716K01020": {
   "bse_security_code": "526532",
   "bse_security_id": "SFPIL",
-  "bse_name": "Square Four Projects India Limited",
+  "bse_name": "Square Four Projects India Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "5.00",
   "industry": "Commodity Chemicals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -45027,6 +45032,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ESI02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE321A01012": {
@@ -46055,13 +46061,13 @@
   "mc_code": "GC01",
   "suspension_date": ""
  },
- "INE025B01017": {
+ "INE025B01025": {
   "bse_security_code": "526729",
   "bse_security_id": "GOLDIAM",
-  "bse_name": "GOLDIAM INTERNATIONAL LTD.",
+  "bse_name": "Goldiam International Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "2.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Goldiam International Limited",
@@ -46069,6 +46075,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GOLDIAM",
   "mc_code": "GI10",
+  "cap": "",
   "suspension_date": ""
  },
  "INE630D01010": {
@@ -46247,13 +46254,13 @@
   "mc_code": "HH02",
   "suspension_date": ""
  },
- "INE891E01016": {
+ "INE891E01024": {
   "bse_security_code": "526773",
   "bse_security_id": "PRESSURS",
-  "bse_name": "PRESSURE SENSITIVE SYSTEMS (INDIA) LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Textiles",
+  "bse_name": "Pressure Sensitive Systems India Ltd",
+  "status": "Active",
+  "face_value": "1.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -46261,6 +46268,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "PSS",
+  "cap": "",
   "suspension_date": ""
  },
  "INE760B01019": {
@@ -46762,13 +46770,13 @@
   "mc_code": "IS05",
   "suspension_date": ""
  },
- "INE184D01018": {
+ "INE184D01026": {
   "bse_security_code": "526873",
   "bse_security_id": "RAJGASES",
-  "bse_name": "RAJASTHAN GASES LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Oil Marketing & Distribution",
+  "bse_name": "Rajasthan Gases Ltd",
+  "status": "Active",
+  "face_value": "3.00",
+  "industry": "Refineries & Marketing",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -46776,6 +46784,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RG",
+  "cap": "",
   "suspension_date": ""
  },
  "INE797C01019": {
@@ -47744,13 +47753,13 @@
   "mc_code": "JJE",
   "suspension_date": ""
  },
- "INE055E01026": {
+ "INE055E01034": {
   "bse_security_code": "530053",
   "bse_security_id": "REALECO",
   "bse_name": "Real Eco-Energy Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Oil Marketing & Distribution",
+  "face_value": "2.00",
+  "industry": "Refineries & Marketing",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -47758,6 +47767,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "HAF",
+  "cap": "",
   "suspension_date": ""
  },
  "INE264N01017": {
@@ -47776,12 +47786,12 @@
   "mc_code": "HCS",
   "suspension_date": ""
  },
- "INE984E01027": {
+ "INE984E01035": {
   "bse_security_code": "530057",
   "bse_security_id": "VIVANZA",
   "bse_name": "Vivanza Biosciences Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Pharmaceuticals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -47790,6 +47800,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "II06",
+  "cap": "",
   "suspension_date": ""
  },
  "INE087D01013": {
@@ -47920,13 +47931,13 @@
   "mc_code": "PCF",
   "suspension_date": ""
  },
- "INE989A01024": {
+ "INE989A01032": {
   "bse_security_code": "530073",
   "bse_security_id": "SANGHVIMOV",
-  "bse_name": "SANGHVI MOVERS LTD.",
+  "bse_name": "Sanghvi Movers Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "Transport Related Services",
+  "face_value": "1.00",
+  "industry": "Construction Vehicles",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Sanghvi Movers Limited",
@@ -47934,6 +47945,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SANGHVIMOV",
   "mc_code": "SM10",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE818A01017": {
@@ -48016,13 +48028,13 @@
   "mc_code": "AIF",
   "suspension_date": ""
  },
- "INE656B01019": {
+ "INE656B01027": {
   "bse_security_code": "530095",
   "bse_security_id": "PRADHIN",
   "bse_name": "Pradhin Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Iron & Steel/Interm.Products",
+  "face_value": "1.00",
+  "industry": "Iron & Steel Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -48030,15 +48042,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BM04",
+  "cap": "",
   "suspension_date": ""
  },
- "INE069B01015": {
+ "INE069B01023": {
   "bse_security_code": "530109",
   "bse_security_id": "ANUPAM",
   "bse_name": "Anupam Finserv Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -48046,6 +48059,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "VCS",
+  "cap": "",
   "suspension_date": ""
  },
  "INE639C01013": {
@@ -48626,12 +48640,12 @@
   "mc_code": "BC",
   "suspension_date": ""
  },
- "INE083B01016": {
+ "INE083B01024": {
   "bse_security_code": "530199",
   "bse_security_id": "THEMISMED",
-  "bse_name": "THEMIS MEDICARE LTD.",
+  "bse_name": "Themis Medicare Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Pharmaceuticals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -48640,6 +48654,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "THEMISMED",
   "mc_code": "TM04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE629F01025": {
@@ -48866,13 +48881,13 @@
   "mc_code": "SLS01",
   "suspension_date": ""
  },
- "INE820B01011": {
+ "INE820B01029": {
   "bse_security_code": "530243",
   "bse_security_id": "MANGASOF",
-  "bse_name": "MANGALYA SOFT-TECH LTD.",
+  "bse_name": "Mangalya Soft Tech Ltd",
   "status": "Suspended",
   "face_value": "10.00",
-  "industry": "IT Software Products",
+  "industry": "Software Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -48880,6 +48895,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MST",
+  "cap": "",
   "suspension_date": ""
  },
  "INE032E01017": {
@@ -48898,12 +48914,12 @@
   "mc_code": "AFS02",
   "suspension_date": ""
  },
- "INE958C01017": {
+ "INE958C01025": {
   "bse_security_code": "530249",
   "bse_security_id": "BRIDGESE",
-  "bse_name": "BRIDGE SECURITIES LTD.",
+  "bse_name": "Bridge Securities Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -48912,6 +48928,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BS08",
+  "cap": "",
   "suspension_date": ""
  },
  "INE001O01029": {
@@ -49010,13 +49027,13 @@
   "mc_code": "ATC",
   "suspension_date": ""
  },
- "INE062C01034": {
+ "INE062C01042": {
   "bse_security_code": "530263",
   "bse_security_id": "GLOBALCA",
-  "bse_name": "GLOBAL CAPITAL MARKETS LTD.",
+  "bse_name": "Global Capital Markets Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -49024,6 +49041,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "GCM",
+  "cap": "",
   "suspension_date": ""
  },
  "INE584B01013": {
@@ -49282,13 +49300,13 @@
   "mc_code": "CLS",
   "suspension_date": ""
  },
- "INE368D01017": {
+ "INE368D01025": {
   "bse_security_code": "530309",
   "bse_security_id": "CHANDRAP",
-  "bse_name": "CHANDRA PRABHU INTERNATIONAL LTD.-$",
+  "bse_name": "Chandra Prabhu International Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "2.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -49296,6 +49314,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CPI02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE285U01025": {
@@ -49571,12 +49590,12 @@
   "mc_code": "AOS",
   "suspension_date": ""
  },
- "INE883D01015": {
+ "INE883D01023": {
   "bse_security_code": "530357",
   "bse_security_id": "KBSINDIA",
-  "bse_name": "KBS INDIA LIMITED",
+  "bse_name": "KBS India Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -49585,6 +49604,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "KBS",
+  "cap": "",
   "suspension_date": ""
  },
  "INE428P01013": {
@@ -50549,20 +50569,21 @@
   "mc_code": "VI10",
   "suspension_date": ""
  },
- "INE786J01017": {
+ "INE786J01033": {
   "bse_security_code": "530525",
-  "bse_security_id": "SHEETAL",
-  "bse_name": "SHEETAL DIAMONDS LTD.",
+  "bse_security_id": "RRETAIL",
+  "bse_name": "Rajnish Retail Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "1.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "SHEETAL",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SD",
+  "cap": "",
   "suspension_date": ""
  },
  "INE390D01011": {
@@ -50694,13 +50715,13 @@
   "mc_code": "PC01",
   "suspension_date": ""
  },
- "INE132F01020": {
+ "INE132F01038": {
   "bse_security_code": "530557",
   "bse_security_id": "NCLRESE",
-  "bse_name": "NCL RESEARCH & FINANCIAL SERVICES LTD.",
+  "bse_name": "NCL Research & Financial Services Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "Other Financial Services",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -50708,6 +50729,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "NCL01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE783M01026": {
@@ -50870,13 +50892,13 @@
   "mc_code": "VT04",
   "suspension_date": ""
  },
- "INE691C01014": {
+ "INE691C01022": {
   "bse_security_code": "530585",
   "bse_security_id": "SWASTIKA",
-  "bse_name": "SWASTIKA INVESTMART LTD.",
+  "bse_name": "Swastika Investsmart Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Financial Services",
+  "face_value": "2.00",
+  "industry": "Stockbroking & Allied",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -50884,6 +50906,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SI87",
+  "cap": "",
   "suspension_date": ""
  },
  "INE573B01016": {
@@ -51270,20 +51293,21 @@
   "mc_code": "WHC",
   "suspension_date": ""
  },
- "INE035401012": {
+ "INE035401020": {
   "bse_security_code": "530669",
-  "bse_security_id": "PRESOFI",
-  "bse_name": "PREM SOMANI FINANCIAL SERVICES LTD.",
+  "bse_security_id": "ACEENGITEC",
+  "bse_name": "Ace Engitech Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "Other Financial Services",
+  "industry": "IT Enabled Services",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "PRESOFI",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "PSF",
+  "cap": "",
   "suspension_date": ""
  },
  "INE057Q01018": {
@@ -51398,20 +51422,21 @@
   "mc_code": "NT03",
   "suspension_date": ""
  },
- "INE533D01024": {
+ "INE533D01032": {
   "bse_security_code": "530699",
-  "bse_security_id": "RAJRAYON",
-  "bse_name": "Raj Rayon Industries Limited-$",
+  "bse_security_id": "RAJRILTD",
+  "bse_name": "Raj Rayon Industries Ltd",
   "status": "Active",
   "face_value": "1.00",
-  "industry": "Textiles",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "RAJRAYON",
   "nse_name": "Raj Rayon Industries Limited",
   "listing_date": "04-JAN-2007",
-  "old_nse_symbol": "",
-  "nse_symbol": "RAJRAYON",
+  "old_nse_symbol": "RAJRAYON",
+  "nse_symbol": "RAJRILTD",
   "mc_code": "RR01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE089E01025": {
@@ -51958,13 +51983,13 @@
   "mc_code": "PCP",
   "suspension_date": ""
  },
- "INE055O01025": {
+ "INE055O01033": {
   "bse_security_code": "530787",
   "bse_security_id": "INLANPR",
-  "bse_name": "INLAND PRINTERS LTD.",
-  "status": "Suspended",
-  "face_value": "2.00",
-  "industry": "Comm.Printing/Stationery",
+  "bse_name": "Inland Printers Ltd",
+  "status": "Active",
+  "face_value": "10.00",
+  "industry": "Printing & Publication",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -51972,6 +51997,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "IP03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE358C01010": {
@@ -52086,12 +52112,12 @@
   "mc_code": "BD02",
   "suspension_date": ""
  },
- "INE125F01024": {
+ "INE125F01032": {
   "bse_security_code": "530805",
   "bse_security_id": "OIVL",
-  "bse_name": "Onesource Ideas Venture Ltd",
+  "bse_name": "Onesource Industries And Ventures Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Consulting Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -52100,6 +52126,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AJ",
+  "cap": "",
   "suspension_date": ""
  },
  "INE098H01011": {
@@ -52295,13 +52322,13 @@
   "mc_code": "BI07",
   "suspension_date": ""
  },
- "INE509F01011": {
+ "INE509F01029": {
   "bse_security_code": "530843",
   "bse_security_id": "CUPID",
-  "bse_name": "CUPID LTD.-$",
+  "bse_name": "Cupid Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Personal Products",
+  "face_value": "1.00",
+  "industry": "Personal Care",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Cupid Limited",
@@ -52309,6 +52336,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CUPID",
   "mc_code": "CR02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE199E01014": {
@@ -52455,13 +52483,13 @@
   "mc_code": "MFC03",
   "suspension_date": ""
  },
- "INE345H01016": {
+ "INE345H01024": {
   "bse_security_code": "530879",
   "bse_security_id": "CIFL",
   "bse_name": "Capital India Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "2.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -52469,14 +52497,15 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BTF04",
+  "cap": "",
   "suspension_date": ""
  },
- "INE485K01014": {
+ "INE485K01022": {
   "bse_security_code": "530881",
   "bse_security_id": "ABVL",
   "bse_name": "Arunjyoti Bio Ventures Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -52485,6 +52514,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CP02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE366G01022": {
@@ -52711,13 +52741,13 @@
   "mc_code": "RRS",
   "suspension_date": ""
  },
- "INE474C01015": {
+ "INE474C01023": {
   "bse_security_code": "530919",
   "bse_security_id": "REMSONSIND",
-  "bse_name": "REMSONS INDUSTRIES LTD.",
+  "bse_name": "Remsons Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Auto Parts & Equipment",
+  "face_value": "2.00",
+  "industry": "Auto Components & Equipments",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Remsons Industries Limited",
@@ -52725,6 +52755,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "REMSONSIND",
   "mc_code": "RI10",
+  "cap": "",
   "suspension_date": ""
  },
  "INE038N01015": {
@@ -52807,20 +52838,21 @@
   "mc_code": "SI76",
   "suspension_date": ""
  },
- "INE416A01036": {
+ "INE416A01044": {
   "bse_security_code": "530943",
-  "bse_security_id": "SABTN",
-  "bse_name": "SRI ADHIKARI BROTHERS TELEVISION NETWORK LTD.",
-  "status": "Suspended",
+  "bse_security_id": "SABTNL",
+  "bse_name": "Sri Adhikari Brothers Television Network Ltd",
+  "status": "Active",
   "face_value": "10.00",
-  "industry": "Movies & Entertainment",
+  "industry": "TV Broadcasting & Software Production",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "SABTN",
   "nse_name": "Sri Adhikari Brothers Television Network Limited",
   "listing_date": "16-NOV-2007",
-  "old_nse_symbol": "",
-  "nse_symbol": "SABTN",
+  "old_nse_symbol": "SABTN",
+  "nse_symbol": "SABTNL",
   "mc_code": "SAB",
+  "cap": "",
   "suspension_date": ""
  },
  "INE437F01023": {
@@ -53289,12 +53321,12 @@
   "mc_code": "SJP",
   "suspension_date": ""
  },
- "INE309H01020": {
+ "INE309H01038": {
   "bse_security_code": "531025",
   "bse_security_id": "VISAGAR",
-  "bse_name": "VISAGAR FINANCIAL SERVICES LTD.",
+  "bse_name": "Visagar Financial Services Ltd",
   "status": "Active",
-  "face_value": "2.00",
+  "face_value": "1.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -53303,6 +53335,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "IF",
+  "cap": "",
   "suspension_date": ""
  },
  "INE267E01019": {
@@ -53353,20 +53386,21 @@
   "mc_code": "RFC",
   "suspension_date": ""
  },
- "INE432F01024": {
+ "INE432F01032": {
   "bse_security_code": "531035",
-  "bse_security_id": "JRELTD",
-  "bse_name": "Justride Enterprises Ltd",
+  "bse_security_id": "ERAAYA",
+  "bse_name": "Eraaya Lifespaces Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "2/3 Wheelers",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "JRELTD",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "TE03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE823B01015": {
@@ -53529,13 +53563,13 @@
   "mc_code": "OOL02",
   "suspension_date": ""
  },
- "INE080G01011": {
+ "INE080G01029": {
   "bse_security_code": "531067",
   "bse_security_id": "CONTILI",
-  "bse_name": "CONTIL INDIA LTD.",
+  "bse_name": "Contil India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "2.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -53543,6 +53577,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CI41",
+  "cap": "",
   "suspension_date": ""
  },
  "INE362D01010": {
@@ -53962,13 +53997,13 @@
   "mc_code": "SCL",
   "suspension_date": ""
  },
- "INE148B01025": {
+ "INE148B01033": {
   "bse_security_code": "531127",
   "bse_security_id": "MENAMANI",
   "bse_name": "Mena Mani Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -53976,6 +54011,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "EF04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE485E01017": {
@@ -54202,13 +54238,13 @@
   "mc_code": "SRM",
   "suspension_date": ""
  },
- "INE650C01028": {
+ "INE650C01036": {
   "bse_security_code": "531153",
   "bse_security_id": "DILIGENT",
-  "bse_name": "DILIGENT INDUSTRIES LTD.",
+  "bse_name": "Diligent Industries Ltd",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Edible Oils",
+  "face_value": "1.00",
+  "industry": "Edible Oil",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -54216,6 +54252,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "YS01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE601F01016": {
@@ -54234,13 +54271,13 @@
   "mc_code": "EP13",
   "suspension_date": ""
  },
- "INE883B01019": {
+ "INE883B01027": {
   "bse_security_code": "531156",
   "bse_security_id": "ALFAVIO",
-  "bse_name": "ALFAVISION OVERSEAS (INDIA) LTD.",
+  "bse_name": "Alfavision Overseas India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Other Agricultural Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -54248,6 +54285,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ASF",
+  "cap": "",
   "suspension_date": ""
  },
  "INE412E01011": {
@@ -54475,13 +54513,13 @@
   "mc_code": "BI26",
   "suspension_date": ""
  },
- "INE186C01015": {
+ "INE186C01023": {
   "bse_security_code": "531176",
   "bse_security_id": "MEFCOMCAP",
-  "bse_name": "MEFCOM CAPITAL MARKETS LTD.",
+  "bse_name": "Mefcom Capital Markets Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "2.00",
+  "industry": "Other Capital Market related Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -54489,6 +54527,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MCM",
+  "cap": "",
   "suspension_date": ""
  },
  "INE930A01010": {
@@ -54747,20 +54786,21 @@
   "mc_code": "SFS",
   "suspension_date": ""
  },
- "INE179O01015": {
+ "INE179O01031": {
   "bse_security_code": "531205",
-  "bse_security_id": "KANSAFB",
-  "bse_name": "KANSAL FIBRES LTD.",
+  "bse_security_id": "SPRIGHT",
+  "bse_name": "Spright Agro Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "KANSAFB",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "KF03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE577C01015": {
@@ -54893,13 +54933,13 @@
   "mc_code": "RTS",
   "suspension_date": ""
  },
- "INE819A01031": {
+ "INE819A01049": {
   "bse_security_code": "531216",
   "bse_security_id": "COMFINTE",
-  "bse_name": "COMFORT INTECH LTD.-$",
+  "bse_name": "Comfort Intech Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Breweries & Distilleries",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -54907,6 +54947,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CI32",
+  "cap": "",
   "suspension_date": ""
  },
  "INE382C01028": {
@@ -55149,20 +55190,21 @@
   "mc_code": "SIC",
   "suspension_date": ""
  },
- "INE802B01019": {
+ "INE802B01027": {
   "bse_security_code": "531241",
-  "bse_security_id": "LINCPENQ",
-  "bse_name": "LINC PEN & PLASTICS LTD.-$",
+  "bse_security_id": "LINC",
+  "bse_name": "Linc Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Non-Durable Household Prod.",
+  "face_value": "5.00",
+  "industry": "Stationary",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "LINCPENQ",
   "nse_name": "Linc Limited",
   "listing_date": "09-MAR-2015",
   "old_nse_symbol": "",
   "nse_symbol": "LINC",
   "mc_code": "LPP",
+  "cap": "",
   "suspension_date": ""
  },
  "INE723N01012": {
@@ -55470,13 +55512,13 @@
   "mc_code": "NGF",
   "suspension_date": ""
  },
- "INE986B01036": {
+ "INE986B01044": {
   "bse_security_code": "531273",
   "bse_security_id": "RADHEDE",
-  "bse_name": "RADHE DEVELOPERS (INDIA) LTD.",
+  "bse_name": "Radhe Developers India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Realty",
+  "face_value": "1.00",
+  "industry": "Residential- Commercial Projects",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -55484,6 +55526,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RDI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE674M01019": {
@@ -55534,13 +55577,13 @@
   "mc_code": "ACM03",
   "suspension_date": ""
  },
- "INE238C01014": {
+ "INE238C01022": {
   "bse_security_code": "531279",
   "bse_security_id": "TRISHAKT",
-  "bse_name": "TRISHAKTI ELECTRONICS & INDUSTRIES LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "bse_name": "Trishakti Industries Ltd",
+  "status": "Active",
+  "face_value": "2.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -55548,6 +55591,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "TEI02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE698B01011": {
@@ -56014,13 +56058,13 @@
   "mc_code": "CI30",
   "suspension_date": ""
  },
- "INE128R01015": {
+ "INE128R01023": {
   "bse_security_code": "531328",
   "bse_security_id": "KRETTOSYS",
   "bse_name": "Kretto Syscon Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Realty",
+  "face_value": "1.00",
+  "industry": "Residential- Commercial Projects",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -56028,6 +56072,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "IO",
+  "cap": "",
   "suspension_date": ""
  },
  "INE443N01017": {
@@ -56786,13 +56831,13 @@
   "mc_code": "GGA",
   "suspension_date": ""
  },
- "INE326B01027": {
+ "INE326B01035": {
   "bse_security_code": "531400",
   "bse_security_id": "ALMONDZ",
-  "bse_name": "ALMONDZ GLOBAL SECURITIES LTD.",
+  "bse_name": "Almondz Global Securities Ltd",
   "status": "Active",
-  "face_value": "6.00",
-  "industry": "Other Financial Services",
+  "face_value": "1.00",
+  "industry": "Stockbroking & Allied",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Almondz Global Securities Limited",
@@ -56800,6 +56845,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ALMONDZ",
   "mc_code": "AGS",
+  "cap": "",
   "suspension_date": ""
  },
  "INE843C01011": {
@@ -57443,13 +57489,13 @@
   "mc_code": "IPI02",
   "suspension_date": ""
  },
- "INE317B01034": {
+ "INE317B01042": {
   "bse_security_code": "531465",
   "bse_security_id": "NOUVEAU",
-  "bse_name": "NOUVEAU GLOBAL VENTURES LTD.",
+  "bse_name": "Nouveau Global Ventures Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -57457,6 +57503,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "NF04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE647D01014": {
@@ -57715,20 +57762,21 @@
   "mc_code": "PT",
   "suspension_date": ""
  },
- "INE268H01010": {
+ "INE268H01036": {
   "bse_security_code": "531494",
-  "bse_security_id": "NAVBLDR",
-  "bse_name": "NAVKAR BUILDERS LTD.",
+  "bse_security_id": "NAVKARURB",
+  "bse_name": "Navkar Urbanstructure Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Realty",
+  "face_value": "2.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "NAVBLDR",
+  "nse_name": "Navkar Urbanstructure Limited",
+  "listing_date": "17-JAN-2025",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "NAVKARURB",
   "mc_code": "NB01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE472B01011": {
@@ -57973,13 +58021,13 @@
   "mc_code": "AS12",
   "suspension_date": ""
  },
- "INE735D01033": {
+ "INE735D01041": {
   "bse_security_code": "531515",
   "bse_security_id": "MAHANIN",
-  "bse_name": "MAHAN INDUSTRIES LTD.",
+  "bse_name": "Mahan Industries Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -57987,6 +58035,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MI47",
+  "cap": "",
   "suspension_date": ""
  },
  "INE848C01010": {
@@ -58262,13 +58311,13 @@
   "mc_code": "SM15",
   "suspension_date": ""
  },
- "INE681K01018": {
+ "INE681K01026": {
   "bse_security_code": "531537",
   "bse_security_id": "JYOTHI",
-  "bse_name": "JYOTHI INFRAVENTURES LTD.",
-  "status": "Suspended",
+  "bse_name": "Jyothi Infraventures Ltd",
+  "status": "Active",
   "face_value": "10.00",
-  "industry": "Misc.Commercial Services",
+  "industry": "Diversified Commercial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -58276,6 +58325,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BS09",
+  "cap": "",
   "suspension_date": ""
  },
  "INE627B01010": {
@@ -58310,13 +58360,13 @@
   "mc_code": "RDS",
   "suspension_date": ""
  },
- "INE392G01010": {
+ "INE392G01028": {
   "bse_security_code": "531540",
   "bse_security_id": "MAINFRA",
-  "bse_name": "MARUTI INFRASTRUCTURE LTD.",
+  "bse_name": "Maruti Infrastructure Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "face_value": "2.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -58324,6 +58374,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MI33",
+  "cap": "",
   "suspension_date": ""
  },
  "INE881A01015": {
@@ -58840,13 +58891,13 @@
   "mc_code": "IE05",
   "suspension_date": ""
  },
- "INE180C01026": {
+ "INE180C01042": {
   "bse_security_code": "531595",
   "bse_security_id": "CGCL",
-  "bse_name": "Capri Global Capital Limited",
+  "bse_name": "Capri Global Capital Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Capri Global Capital Limited",
@@ -58857,12 +58908,12 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE046M01028": {
+ "INE046M01036": {
   "bse_security_code": "531597",
   "bse_security_id": "MIDPOLY",
-  "bse_name": "MIDLAND POLYMERS LTD.",
-  "status": "Suspended",
-  "face_value": "1.00",
+  "bse_name": "Midland Polymers Ltd",
+  "status": "Active",
+  "face_value": "10.00",
   "industry": "Commodity Chemicals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -58871,6 +58922,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MPL03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE301B01020": {
@@ -59435,12 +59487,12 @@
   "mc_code": "RF15",
   "suspension_date": ""
  },
- "INE265C01017": {
+ "INE265C01025": {
   "bse_security_code": "531647",
   "bse_security_id": "BJDUP",
-  "bse_name": "B.J.DUPLEX BOARDS LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
+  "bse_name": "BJ Duplex Boards Ltd",
+  "status": "Active",
+  "face_value": "1.00",
   "industry": "Paper & Paper Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -59449,6 +59501,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BJD",
+  "cap": "",
   "suspension_date": ""
  },
  "INE987M01023": {
@@ -60220,13 +60273,13 @@
   "suspension_date": "",
   "cap": "Micro-Cap"
  },
- "INE414D01019": {
+ "INE414D01027": {
   "bse_security_code": "531719",
   "bse_security_id": "BHAGCHEM",
-  "bse_name": "BHAGIRADHA CHEMICALS & INDUSTRIES LTD.",
+  "bse_name": "Bhagiradha Chemicals & Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Agrochemicals",
+  "face_value": "1.00",
+  "industry": "Pesticides & Agrochemicals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Bhagiradha Chemicals & Industries Limited",
@@ -60234,6 +60287,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BHAGCHEM",
   "mc_code": "BCI01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE952B01020": {
@@ -60444,13 +60498,13 @@
   "mc_code": "PF10",
   "suspension_date": ""
  },
- "INE414C01029": {
+ "INE414C01045": {
   "bse_security_code": "531737",
   "bse_security_id": "GREENCREST",
-  "bse_name": "Greencrest Financial Services Limited",
-  "status": "Suspended",
+  "bse_name": "Greencrest Financial Services Ltd",
+  "status": "Active",
   "face_value": "1.00",
-  "industry": "Misc.Commercial Services",
+  "industry": "Diversified Commercial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -60458,6 +60512,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MGI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE913A01024": {
@@ -61678,12 +61733,12 @@
   "mc_code": "JC05",
   "suspension_date": ""
  },
- "INE842D01011": {
+ "INE842D01029": {
   "bse_security_code": "531862",
   "bse_security_id": "BHARATAGRI",
-  "bse_name": "BHARAT AGRI FERT & REALTY LTD.",
+  "bse_name": "Bharat Agri Fert & Realty Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Fertilizers",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -61692,6 +61747,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BF02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE633D01022": {
@@ -61758,12 +61814,12 @@
   "mc_code": "UI13",
   "suspension_date": ""
  },
- "INE433G01012": {
+ "INE433G01020": {
   "bse_security_code": "531869",
   "bse_security_id": "SACHEMT",
-  "bse_name": "SACHETA METALS LTD.",
+  "bse_name": "Sacheta Metals Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Aluminium",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -61772,6 +61828,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SM12",
+  "cap": "",
   "suspension_date": ""
  },
  "INE370C01015": {
@@ -61966,20 +62023,21 @@
   "mc_code": "REC",
   "suspension_date": ""
  },
- "INE882B01029": {
+ "INE882B01037": {
   "bse_security_code": "531889",
-  "bse_security_id": "INTECH",
-  "bse_name": "INTEGRATED TECHNOLOGIES LTD.",
+  "bse_security_id": "IIL",
+  "bse_name": "Integrated Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Electronic Components",
+  "face_value": "1.00",
+  "industry": "Packaged Foods",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "INTECH",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "IT02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE734A01016": {
@@ -63358,20 +63416,21 @@
   "mc_code": "SI55",
   "suspension_date": ""
  },
- "INE185E01013": {
+ "INE185E01021": {
   "bse_security_code": "532022",
   "bse_security_id": "FILATFASH",
-  "bse_name": "FILATEX FASHIONS LTD.",
+  "bse_name": "Filatex Fashions Ltd",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Textiles",
+  "face_value": "1.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Filatex Fashions Limited",
+  "listing_date": "06-MAY-2024",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "FILATFASH",
   "mc_code": "FF08",
+  "cap": "",
   "suspension_date": ""
  },
  "INE056J01015": {
@@ -63454,20 +63513,21 @@
   "mc_code": "SFL08",
   "suspension_date": ""
  },
- "INE325D01017": {
+ "INE325D01025": {
   "bse_security_code": "532029",
   "bse_security_id": "SINDHUTRAD",
-  "bse_name": "Sindhu Trade Links Limited",
+  "bse_name": "Sindhu Trade Links Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Misc.Commercial Services",
+  "face_value": "1.00",
+  "industry": "Diversified",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Sindhu Trade Links Limited",
+  "listing_date": "20-JUN-2023",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "SINDHUTRAD",
   "mc_code": "BCF03",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE003E01026": {
@@ -63598,13 +63658,13 @@
   "mc_code": "ZL",
   "suspension_date": ""
  },
- "INE597C01013": {
+ "INE597C01021": {
   "bse_security_code": "532041",
   "bse_security_id": "HINDBIO",
-  "bse_name": "HINDUSTAN BIO SCIENCES LTD.",
+  "bse_name": "Hindustan Bio Sciences Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "IT Software Products",
+  "face_value": "2.00",
+  "industry": "Software Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -63612,6 +63672,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "HBS01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE092D01013": {
@@ -64479,13 +64540,13 @@
   "mc_code": "GS11",
   "suspension_date": ""
  },
- "INE154B01015": {
+ "INE154B01023": {
   "bse_security_code": "532140",
   "bse_security_id": "MOHITE",
   "bse_name": "Mohite Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Textiles",
+  "face_value": "1.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -64493,22 +64554,24 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RMM",
+  "cap": "",
   "suspension_date": ""
  },
- "INE666E01012": {
+ "INE666E01020": {
   "bse_security_code": "532141",
-  "bse_security_id": "ANDHRACEMT",
-  "bse_name": "ANDHRA CEMENTS LTD.",
+  "bse_security_id": "ACL",
+  "bse_name": "Andhra Cements Ltd",
   "status": "Active",
   "face_value": "10.00",
   "industry": "Cement & Cement Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ANDHRACEMT",
   "nse_name": "Andhra Cements Limited",
   "listing_date": "08-NOV-2010",
-  "old_nse_symbol": "",
-  "nse_symbol": "ANDHRACEMT",
+  "old_nse_symbol": "ANDHRACEMT",
+  "nse_symbol": "ACL",
   "mc_code": "AC16",
+  "cap": "",
   "suspension_date": ""
  },
  "INE411D01015": {
@@ -64625,20 +64688,21 @@
   "mc_code": "RC09",
   "suspension_date": ""
  },
- "INE560F01014": {
+ "INE560F01022": {
   "bse_security_code": "532154",
-  "bse_security_id": "SUNSHINE",
-  "bse_name": "SUN AND SHINE WORLDWIDE LTD.",
+  "bse_security_id": "JOHNPHARMA",
+  "bse_name": "Johnson Pharmacare Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Misc.Commercial Services",
+  "face_value": "1.00",
+  "industry": "Diversified Commercial Services",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "SUNSHINE",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RWT",
+  "cap": "",
   "suspension_date": ""
  },
  "INE129A01019": {
@@ -64740,13 +64804,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE979A01017": {
+ "INE979A01025": {
   "bse_security_code": "532163",
   "bse_security_id": "SAREGAMA",
-  "bse_name": "SAREGAMA INDIA LTD.",
+  "bse_name": "Saregama India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Movies & Entertainment",
+  "face_value": "1.00",
+  "industry": "Media & Entertainment",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Saregama India Limited",
@@ -64754,15 +64818,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "SAREGAMA",
   "mc_code": "SI67",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE514C01018": {
+ "INE514C01026": {
   "bse_security_code": "532164",
   "bse_security_id": "MINOLTAF",
-  "bse_name": "MINOLTA FINANCE LTD.",
+  "bse_name": "Minolta Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -64770,6 +64835,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MFL06",
+  "cap": "",
   "suspension_date": ""
  },
  "INE247B01017": {
@@ -67111,20 +67177,21 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE716B01011": {
+ "INE716B01029": {
   "bse_security_code": "532375",
-  "bse_security_id": "TIPSINDLTD",
-  "bse_name": "TIPS INDUSTRIES LTD.",
+  "bse_security_id": "TIPSMUSIC",
+  "bse_name": "Tips Music Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Movies & Entertainment",
+  "face_value": "1.00",
+  "industry": "Media & Entertainment",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "TIPS Industries Limited",
+  "old_bse_security_id": "TIPSINDLTD",
+  "nse_name": "Tips Music Limited",
   "listing_date": "10-NOV-2000",
-  "old_nse_symbol": "",
-  "nse_symbol": "TIPSINDLTD",
+  "old_nse_symbol": "TIPSINDLTD",
+  "nse_symbol": "TIPSMUSIC",
   "mc_code": "TI25",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE398B01018": {
@@ -67578,20 +67645,21 @@
   "mc_code": "CCS01",
   "suspension_date": ""
  },
- "INE005B01019": {
+ "INE005B01027": {
   "bse_security_code": "532406",
   "bse_security_id": "AVANTEL",
-  "bse_name": "AVANTEL LTD.",
+  "bse_name": "Avantel Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Telecom Equipment",
+  "face_value": "2.00",
+  "industry": "Aerospace & Defense",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Avantel Limited",
+  "listing_date": "31-JUL-2024",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "AVANTEL",
   "mc_code": "A19",
+  "cap": "",
   "suspension_date": ""
  },
  "INE935B01025": {
@@ -67869,13 +67937,13 @@
   "cap": "Large-Cap",
   "suspension_date": ""
  },
- "INE799C01023": {
+ "INE799C01031": {
   "bse_security_code": "532435",
   "bse_security_id": "SANINFRA",
-  "bse_name": "Sanmit Infra Limited",
+  "bse_name": "Sanmit Infra Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Realty",
+  "face_value": "1.00",
+  "industry": "Refineries & Marketing",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -67883,6 +67951,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AHR03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE260D01016": {
@@ -68194,13 +68263,13 @@
   "cap": "Mid-Cap",
   "suspension_date": ""
  },
- "INE550F01031": {
+ "INE550F01049": {
   "bse_security_code": "532467",
   "bse_security_id": "HAZOOR",
-  "bse_name": "HAZOOR MULTI PROJECTS LTD.-$",
+  "bse_name": "Hazoor Multi Projects Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Movies & Entertainment",
+  "face_value": "1.00",
+  "industry": "Residential- Commercial Projects",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -68208,6 +68277,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE411F01010": {
@@ -68389,13 +68459,13 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE476A01014": {
+ "INE476A01022": {
   "bse_security_code": "532483",
   "bse_security_id": "CANBK",
-  "bse_name": "CANARA BANK",
+  "bse_name": "Canara Bank",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Banks",
+  "face_value": "2.00",
+  "industry": "Public Sector Bank",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Canara Bank",
@@ -68403,16 +68473,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "CANBK",
   "mc_code": "CB06",
-  "cap": "Mid-Cap",
+  "cap": "Large-Cap",
   "suspension_date": ""
  },
- "INE525F01017": {
+ "INE525F01025": {
   "bse_security_code": "532485",
   "bse_security_id": "BLIL",
-  "bse_name": "BALMER LAWRIE INVESTMENTS LTD.",
+  "bse_name": "Balmer Lawrie Investments Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -68420,6 +68490,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BLI01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE637C01025": {
@@ -68982,13 +69053,13 @@
   "mc_code": "DPC02",
   "suspension_date": ""
  },
- "INE399G01015": {
+ "INE399G01023": {
   "bse_security_code": "532527",
   "bse_security_id": "RKFORGE",
-  "bse_name": "RAMKRISHNA FORGINGS LTD.",
+  "bse_name": "Ramkrishna Forgings Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Industrial Products",
+  "face_value": "2.00",
+  "industry": "Auto Components & Equipments",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Ramkrishna Forgings Limited",
@@ -68996,7 +69067,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "RKFORGE",
   "mc_code": "RF17",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE365B01017": {
@@ -69297,13 +69368,13 @@
   "mc_code": "SAL03",
   "suspension_date": ""
  },
- "INE927D01028": {
+ "INE927D01051": {
   "bse_security_code": "532605",
   "bse_security_id": "JBMA",
-  "bse_name": "JBM AUTO LTD.",
+  "bse_name": "JBM Auto Ltd",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Auto Parts & Equipment",
+  "face_value": "1.00",
+  "industry": "Auto Components & Equipments",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "JBM Auto Limited",
@@ -69311,7 +69382,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "JBMA",
   "mc_code": "JBM03",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE620C01013": {
@@ -69589,20 +69660,21 @@
   "mc_code": "JP11",
   "suspension_date": ""
  },
- "INE063E01046": {
+ "INE063E01053": {
   "bse_security_code": "532626",
-  "bse_security_id": "PONDYOXIDE",
-  "bse_name": "PONDY OXIDES & CHEMICALS LTD.",
+  "bse_security_id": "POCL",
+  "bse_name": "Pondy Oxides & Chemicals Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Non-Ferrous Metals",
+  "face_value": "5.00",
+  "industry": "Diversified Metals",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "PONDYOXIDE",
+  "nse_name": "Pondy Oxides & Chemicals Limited",
+  "listing_date": "06-MAR-2023",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "POCL",
   "mc_code": "PO03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE351F01018": {
@@ -69622,20 +69694,21 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE748C01020": {
+ "INE748C01038": {
   "bse_security_code": "532628",
-  "bse_security_id": "3IINFOTECH",
-  "bse_name": "3I INFOTECH LTD.",
+  "bse_security_id": "3IINFOLTD",
+  "bse_name": "3i Infotech Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "IT Consulting & Software",
+  "industry": "Computers - Software & Consulting",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "3IINFOTECH",
   "nse_name": "3i Infotech Limited",
   "listing_date": "22-APR-2005",
-  "old_nse_symbol": "",
-  "nse_symbol": "3IINFOTECH",
+  "old_nse_symbol": "3IINFOTECH",
+  "nse_symbol": "3IINFOLTD",
   "mc_code": "I11",
+  "cap": "",
   "suspension_date": ""
  },
  "INE748A01016": {
@@ -70580,20 +70653,21 @@
   "mc_code": "PL9",
   "suspension_date": ""
  },
- "INE855F01034": {
+ "INE855F01042": {
   "bse_security_code": "532694",
-  "bse_security_id": "BARTRONICS",
-  "bse_name": "BARTRONICS INDIA LTD.",
+  "bse_security_id": "ASMS",
+  "bse_name": "Bartronics India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Misc.Commercial Services",
+  "face_value": "1.00",
+  "industry": "IT Enabled Services",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "BARTRONICS",
   "nse_name": "Bartronics India Limited",
   "listing_date": "12-JAN-2006",
-  "old_nse_symbol": "",
-  "nse_symbol": "BARTRONICS",
+  "old_nse_symbol": "BARTRONICS",
+  "nse_symbol": "ASMS",
   "mc_code": "BI21",
+  "cap": "",
   "suspension_date": ""
  },
  "INE185H01016": {
@@ -71212,13 +71286,13 @@
   "cap": "Mid-Cap",
   "suspension_date": ""
  },
- "INE177H01013": {
+ "INE177H01039": {
   "bse_security_code": "532734",
   "bse_security_id": "GPIL",
-  "bse_name": "GODAWARI POWER & ISPAT LTD.",
+  "bse_name": "Godawari Power and Ispat Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Iron & Steel/Interm.Products",
+  "face_value": "1.00",
+  "industry": "Iron & Steel Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Godawari Power And Ispat limited",
@@ -71226,7 +71300,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GPIL",
   "mc_code": "GPI7",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE411H01032": {
@@ -71278,20 +71352,21 @@
   "mc_code": "EGF",
   "suspension_date": ""
  },
- "INE388G01018": {
+ "INE388G01026": {
   "bse_security_code": "532738",
-  "bse_security_id": "TANTIACONS",
-  "bse_name": "TANTIA CONSTRUCTIONS LTD.",
+  "bse_security_id": "TICL",
+  "bse_name": "Twamev Construction And Infrastructure Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "face_value": "1.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Tantia Constructions Limited",
+  "old_bse_security_id": "TANTIACONS",
+  "nse_name": "Twamev Construction and Infrastructure Limited",
   "listing_date": "19-FEB-2008",
-  "old_nse_symbol": "",
-  "nse_symbol": "TANTIACONS",
+  "old_nse_symbol": "TANTIACONS",
+  "nse_symbol": "TICL",
   "mc_code": "TC15",
+  "cap": "",
   "suspension_date": ""
  },
  "INE491H01018": {
@@ -71326,13 +71401,13 @@
   "mc_code": "LMS",
   "suspension_date": ""
  },
- "INE390H01012": {
+ "INE390H01020": {
   "bse_security_code": "532741",
   "bse_security_id": "KAMDHENU",
   "bse_name": "Kamdhenu Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Iron & Steel/Interm.Products",
+  "face_value": "1.00",
+  "industry": "Iron & Steel Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Kamdhenu Limited",
@@ -71340,6 +71415,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "KAMDHENU",
   "mc_code": "KI24",
+  "cap": "",
   "suspension_date": ""
  },
  "INE111F01016": {
@@ -72337,13 +72413,13 @@
   "mc_code": "CI38",
   "suspension_date": ""
  },
- "INE940H01014": {
+ "INE940H01022": {
   "bse_security_code": "532808",
   "bse_security_id": "PGIL",
-  "bse_name": "Pearl Global Industries Limited",
+  "bse_name": "Pearl Global Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "5.00",
+  "industry": "Garments & Apparels",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Pearl Global Industries Limited",
@@ -72351,6 +72427,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "PGIL",
   "mc_code": "HPF01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE684F01012": {
@@ -72975,20 +73052,21 @@
   "mc_code": "BC14",
   "suspension_date": ""
  },
- "INE287C01029": {
+ "INE287C01037": {
   "bse_security_code": "532850",
-  "bse_security_id": "MIC",
-  "bse_name": "MIC ELECTRONICS LTD.",
-  "status": "Suspended",
+  "bse_security_id": "MICEL",
+  "bse_name": "MIC Electronics Ltd",
+  "status": "Active",
   "face_value": "2.00",
-  "industry": "Electronic Components",
+  "industry": "Industrial Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "MIC",
+  "nse_name": "MIC Electronics Limited",
+  "listing_date": "17-DEC-2021",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "MICEL",
   "mc_code": "ME12",
+  "cap": "",
   "suspension_date": ""
  },
  "INE070I01018": {
@@ -73509,12 +73587,12 @@
   "mc_code": "ZS",
   "suspension_date": ""
  },
- "INE056I01017": {
+ "INE056I01025": {
   "bse_security_code": "532884",
   "bse_security_id": "REFEX",
-  "bse_name": "Refex Industries Limited",
+  "bse_name": "Refex Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Industrial Gases",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -73523,6 +73601,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "REFEX",
   "mc_code": "RR05",
+  "cap": "",
   "suspension_date": ""
  },
  "INE483A01010": {
@@ -73542,20 +73621,21 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE105I01012": {
+ "INE105I01020": {
   "bse_security_code": "532886",
-  "bse_security_id": "SELMCL",
-  "bse_name": "SEL MANUFACTURING COMPANY LTD.",
-  "status": "Suspended",
+  "bse_security_id": "SELMC",
+  "bse_name": "SEL Manufacturing Company Ltd",
+  "status": "Active",
   "face_value": "10.00",
-  "industry": "Textiles",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "SELMCL",
+  "nse_name": "SEL Manufacturing Company Limited",
+  "listing_date": "26-OCT-2021",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "SELMC",
   "mc_code": "SMC01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE333I01036": {
@@ -73591,13 +73671,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE930H01023": {
+ "INE930H01031": {
   "bse_security_code": "532889",
   "bse_security_id": "KPRMILL",
   "bse_name": "K.P.R. Mill Limited",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Textiles",
+  "face_value": "1.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "K.P.R. Mill Limited",
@@ -73605,7 +73685,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "KPRMILL",
   "mc_code": "M15",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE142I01023": {
@@ -73757,13 +73837,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE420C01042": {
+ "INE420C01059": {
   "bse_security_code": "532900",
   "bse_security_id": "PAISALO",
   "bse_name": "Paisalo Digital Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Paisalo Digital Limited",
@@ -73854,13 +73934,13 @@
   "mc_code": "SBI15",
   "suspension_date": ""
  },
- "INE215I01019": {
+ "INE215I01027": {
   "bse_security_code": "532906",
   "bse_security_id": "MAANALU",
-  "bse_name": "MAAN ALUMINIUM LTD.",
+  "bse_name": "Maan Aluminium Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "face_value": "5.00",
+  "industry": "Aluminium",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Maan Aluminium Limited",
@@ -73868,6 +73948,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "MAANALU",
   "mc_code": "MA03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE369I01014": {
@@ -74162,13 +74243,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE234I01010": {
+ "INE234I01028": {
   "bse_security_code": "532925",
   "bse_security_id": "KAUSHALYA",
-  "bse_name": "KAUSHALYA INFRASTRUCTURE DEVELOPMENT CORPORATION LTD.",
+  "bse_name": "Kaushalya Infrastructure Development Corporation Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "face_value": "1000.00",
+  "industry": "Hotels & Resorts",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Kaushalya Infrastructure Development Corporation Limited",
@@ -74176,6 +74257,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "KAUSHALYA",
   "mc_code": "KID",
+  "cap": "",
   "suspension_date": ""
  },
  "INE668F01031": {
@@ -74504,13 +74586,13 @@
   "mc_code": "BO02",
   "suspension_date": ""
  },
- "INE821I01014": {
+ "INE821I01022": {
   "bse_security_code": "532947",
   "bse_security_id": "IRB",
-  "bse_name": "IRB INFRASTRUCTURE DEVELOPERS LTD.",
+  "bse_name": "IRB Infrastructure Developers Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Roads & Highways",
+  "face_value": "1.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "IRB Infrastructure Developers Limited",
@@ -74518,7 +74600,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "IRB",
   "mc_code": "IID01",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE474I01012": {
@@ -74878,13 +74960,13 @@
   "mc_code": "AT15",
   "suspension_date": ""
  },
- "INE091G01018": {
+ "INE091G01026": {
   "bse_security_code": "532976",
   "bse_security_id": "JAIBALAJI",
-  "bse_name": "JAI BALAJI INDUSTRIES LTD.",
+  "bse_name": "Jai Balaji Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Iron & Steel/Interm.Products",
+  "face_value": "2.00",
+  "industry": "Iron & Steel",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Jai Balaji Industries Limited",
@@ -74892,6 +74974,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "JAIBALAJI",
   "mc_code": "JBI",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE917I01010": {
@@ -75008,20 +75091,21 @@
   "mc_code": "ES09",
   "suspension_date": ""
  },
- "INF373I01031": {
+ "INF174KA1JD7": {
   "bse_security_code": "532985",
-  "bse_security_id": "KTKSENSEX",
-  "bse_name": "KOTAK SENSEX ETF",
+  "bse_security_id": "SENSEX1",
+  "bse_name": "Kotak S&P BSE Sensex ETF",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Financial Services",
+  "face_value": "1.00",
+  "industry": "Mutual Fund Scheme - ETF",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "KTKSENSEX",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "KSE01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE368I01016": {
@@ -75136,20 +75220,21 @@
   "mc_code": "CHL",
   "suspension_date": ""
  },
- "INE955I01036": {
+ "INE955I01044": {
   "bse_security_code": "532993",
-  "bse_security_id": "SEZAL",
-  "bse_name": "Sezal Glass Limited",
-  "status": "Suspended",
+  "bse_security_id": "SEJALLTD",
+  "bse_name": "Sejal Glass Ltd",
+  "status": "Active",
   "face_value": "10.00",
-  "industry": "Construction Materials",
+  "industry": "Glass - Industrial",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "SEZAL",
+  "nse_name": "Sejal Glass Limited",
+  "listing_date": "13-DEC-2021",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "SEJALLTD",
   "mc_code": "SAG",
+  "cap": "",
   "suspension_date": ""
  },
  "INE877I01016": {
@@ -75456,13 +75541,13 @@
   "mc_code": "RMM01",
   "suspension_date": ""
  },
- "INE457H01019": {
+ "INE457H01027": {
   "bse_security_code": "533018",
   "bse_security_id": "SIMPLXMIL",
-  "bse_name": "SIMPLEX MILLS COMPANY LTD.",
+  "bse_name": "Simplex Mills Company Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Textiles",
+  "face_value": "1000.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -75470,14 +75555,15 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SMC08",
+  "cap": "",
   "suspension_date": ""
  },
- "INE456H01011": {
+ "INE456H01029": {
   "bse_security_code": "533019",
   "bse_security_id": "SIMPLXPAP",
-  "bse_name": "SIMPLEX PAPERS LTD.",
+  "bse_name": "Simplex Papers Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1000.00",
   "industry": "Paper & Paper Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -75486,6 +75572,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SP40",
+  "cap": "",
   "suspension_date": ""
  },
  "INE144J01027": {
@@ -75587,20 +75674,21 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE065J01016": {
+ "INE065J01024": {
   "bse_security_code": "533048",
-  "bse_security_id": "GISOLUTION",
-  "bse_name": "GI ENGINEERING SOLUTIONS LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "bse_security_id": "TPHQ",
+  "bse_name": "Teamo Productions HQ Ltd",
+  "status": "Active",
+  "face_value": "1.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "GISOLUTION",
+  "nse_name": "Teamo Productions HQ Limited",
+  "listing_date": "30-JAN-2009",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "TPHQ",
   "mc_code": "GIE01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE889J01019": {
@@ -75845,22 +75933,6 @@
   "mc_code": "TTS",
   "suspension_date": ""
  },
- "INE688J01015": {
-  "bse_security_code": "533090",
-  "bse_security_id": "EXCEL",
-  "bse_name": "Excel Realty N Infra Ltd",
-  "status": "Active",
-  "face_value": "10.00",
-  "industry": "BPO/KPO",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Excel Realty N Infra Limited",
-  "listing_date": "03-AUG-2009",
-  "old_nse_symbol": "",
-  "nse_symbol": "EXCEL",
-  "mc_code": "EI07",
-  "suspension_date": ""
- },
  "INE294G01026": {
   "bse_security_code": "533093",
   "bse_security_id": "RAJOIL",
@@ -76009,20 +76081,21 @@
   "cap": "Mid-Cap",
   "suspension_date": ""
  },
- "INE542F01012": {
+ "INE542F01020": {
   "bse_security_code": "533107",
-  "bse_security_id": "RNAVAL",
-  "bse_name": "Reliance Naval and Engineering Ltd",
+  "bse_security_id": "SWANDEF",
+  "bse_name": "Swan Defence And Heavy Industries Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "Defence",
+  "industry": "Ship Building & Allied Services",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Reliance Naval and Engineering Limited",
+  "old_bse_security_id": "RNAVAL",
+  "nse_name": "Swan Defence and Heavy Industries Limited",
   "listing_date": "09-OCT-2009",
-  "old_nse_symbol": "",
-  "nse_symbol": "RNAVAL",
+  "old_nse_symbol": "RNAVAL",
+  "nse_symbol": "SWANDEF",
   "mc_code": "PS04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE274K01012": {
@@ -76287,12 +76360,12 @@
   "mc_code": "ICS01",
   "suspension_date": ""
  },
- "INE797F01012": {
+ "INE797F01020": {
   "bse_security_code": "533155",
   "bse_security_id": "JUBLFOOD",
   "bse_name": "Jubilant FoodWorks Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Restaurants",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -76301,7 +76374,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "JUBLFOOD",
   "mc_code": "JF04",
-  "cap": "Large-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE893I01013": {
@@ -76595,13 +76668,13 @@
   "mc_code": "PO04",
   "suspension_date": ""
  },
- "INE262H01013": {
+ "INE262H01021": {
   "bse_security_code": "533179",
   "bse_security_id": "PERSISTENT",
-  "bse_name": "PERSISTENT SYSTEMS LTD.",
+  "bse_name": "Persistent Systems Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "IT Consulting & Software",
+  "face_value": "5.00",
+  "industry": "Computers - Software & Consulting",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Persistent Systems Limited",
@@ -77256,13 +77329,13 @@
   "mc_code": "TS03",
   "suspension_date": ""
  },
- "INE068L01016": {
+ "INE068L01024": {
   "bse_security_code": "533267",
   "bse_security_id": "CANTABIL",
-  "bse_name": "CANTABIL RETAIL INDIA LTD.",
+  "bse_name": "Cantabil Retail India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "2.00",
+  "industry": "Garments & Apparels",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Cantabil Retail India Limited",
@@ -77270,6 +77343,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CANTABIL",
   "mc_code": "CRI01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE351L01016": {
@@ -77486,13 +77560,13 @@
   "mc_code": "RIP01",
   "suspension_date": ""
  },
- "INE245L01010": {
+ "INE245L01028": {
   "bse_security_code": "533285",
   "bse_security_id": "RDBRIL",
-  "bse_name": "RDB REALTY & INFRASTRUCTURE LTD.",
+  "bse_name": "RDB Realty & Infrastructure Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Realty",
+  "face_value": "1.00",
+  "industry": "Residential- Commercial Projects",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -77500,6 +77574,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RDB01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE490G01020": {
@@ -77681,20 +77756,21 @@
   "mc_code": "SV05",
   "suspension_date": ""
  },
- "INE268L01020": {
+ "INE268L01046": {
   "bse_security_code": "533301",
-  "bse_security_id": "SPYL",
-  "bse_name": "SHEKHAWATI POLY-YARN LTD.",
-  "status": "Suspended",
-  "face_value": "1.00",
-  "industry": "Textiles",
+  "bse_security_id": "SHEKHAWATI",
+  "bse_name": "Shekhawati Industries Ltd",
+  "status": "Active",
+  "face_value": "10.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "SPYL",
+  "nse_name": "Shekhawati Industries Limited",
+  "listing_date": "12-JAN-2011",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "SHEKHAWATI",
   "mc_code": "SP09",
+  "cap": "",
   "suspension_date": ""
  },
  "INE029L01018": {
@@ -78312,13 +78388,13 @@
   "mc_code": "BPM",
   "suspension_date": ""
  },
- "INE573K01017": {
+ "INE573K01025": {
   "bse_security_code": "533470",
   "bse_security_id": "RUSHIL",
-  "bse_name": "RUSHIL DECOR LTD.",
+  "bse_name": "Rushil Decor Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Forest Products",
+  "face_value": "1.00",
+  "industry": "Plywood Boards/ Laminates",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Rushil Decor Limited",
@@ -78326,6 +78402,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "RUSHIL",
   "mc_code": "RD02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE130L01014": {
@@ -78572,12 +78649,12 @@
   "mc_code": "VI14",
   "suspension_date": ""
  },
- "INE457L01011": {
+ "INE457L01029": {
   "bse_security_code": "533581",
   "bse_security_id": "PGEL",
-  "bse_name": "PG ELECTROPLAST LTD.",
+  "bse_name": "PG Electroplast Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Consumer Electronics",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -78586,6 +78663,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "PGEL",
   "mc_code": "PE06",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE050L01048": {
@@ -78910,12 +78988,12 @@
   "mc_code": "FS9",
   "suspension_date": ""
  },
- "INE123D01016": {
+ "INE123D01024": {
   "bse_security_code": "534064",
   "bse_security_id": "AIML",
-  "bse_name": "ALLIANCE INTEGRATED METALIKS LTD.",
-  "status": "Suspended",
-  "face_value": "10.00",
+  "bse_name": "Alliance Integrated Metaliks Ltd",
+  "status": "Active",
+  "face_value": "1.00",
   "industry": "Iron & Steel Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -78924,6 +79002,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AIM",
+  "cap": "",
   "suspension_date": ""
  },
  "INE743M01012": {
@@ -79186,11 +79265,11 @@
   "mc_code": "LGJ",
   "suspension_date": ""
  },
- "INE958L01018": {
+ "INE958L01026": {
   "bse_security_code": "534535",
   "bse_security_id": "BGPL",
   "bse_name": "Bio Green Papers Ltd",
-  "status": "Suspended",
+  "status": "Active",
   "face_value": "10.00",
   "industry": "Paper & Paper Products",
   "old_bse_security_code": "",
@@ -79200,6 +79279,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BGP",
+  "cap": "",
   "suspension_date": ""
  },
  "INE253N01010": {
@@ -79283,20 +79363,21 @@
   "mc_code": "SEP03",
   "suspension_date": ""
  },
- "INE391J01016": {
+ "INE391J01032": {
   "bse_security_code": "534600",
-  "bse_security_id": "JTLINFRA",
-  "bse_name": "JTL INFRA LTD.",
+  "bse_security_id": "JTLIND",
+  "bse_name": "JTL Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Iron & Steel Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "JTLINFRA",
+  "nse_name": "JTL INDUSTRIES LIMITED",
+  "listing_date": "12-JUN-2023",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "JTLIND",
   "mc_code": "JTL01",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE436N01029": {
@@ -79331,20 +79412,21 @@
   "mc_code": "NEC01",
   "suspension_date": ""
  },
- "INE299N01013": {
+ "INE299N01021": {
   "bse_security_code": "534618",
-  "bse_security_id": "SAREL",
-  "bse_name": "Sangam Renewables Ltd",
+  "bse_security_id": "WAAREERTL",
+  "bse_name": "Waaree Renewable Technologies Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Electric Utilities",
+  "face_value": "2.00",
+  "industry": "Power Generation",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "SAREL",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SA04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE524N01014": {
@@ -79749,13 +79831,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE785M01013": {
+ "INE785M01021": {
   "bse_security_code": "534809",
   "bse_security_id": "PCJEWELLER",
-  "bse_name": "PC JEWELLER LTD.",
+  "bse_name": "PC Jeweller Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "1.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "PC Jeweller Limited",
@@ -79944,13 +80026,13 @@
   "mc_code": "HB02",
   "suspension_date": ""
  },
- "INE274M01018": {
+ "INE274M01026": {
   "bse_security_code": "535267",
   "bse_security_id": "COMFINCAP",
-  "bse_name": "COMFORT FINCAP LTD.",
+  "bse_name": "Comfort Fincap Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "2.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -79958,6 +80040,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CF10",
+  "cap": "",
   "suspension_date": ""
  },
  "INF200K01VT2": {
@@ -80445,13 +80528,13 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE340O01013": {
+ "INE340O01021": {
   "bse_security_code": "535910",
   "bse_security_id": "MMLF",
   "bse_name": "Money Masters Leasing & Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -80459,6 +80542,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MML04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE030P01017": {
@@ -80493,36 +80577,38 @@
   "mc_code": "GCD01",
   "suspension_date": ""
  },
- "INE418N01027": {
+ "INE418N01035": {
   "bse_security_code": "535958",
-  "bse_security_id": "INTEGRA",
-  "bse_name": "Integra Garments And Textiles Ltd",
-  "status": "Suspended",
-  "face_value": "3.00",
-  "industry": "Other Apparels & Accessories",
+  "bse_security_id": "ESSENTIA",
+  "bse_name": "Integra Essentia Ltd",
+  "status": "Active",
+  "face_value": "1.00",
+  "industry": "Other Food Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "INTEGRA",
+  "nse_name": "Integra Essentia Limited",
+  "listing_date": "20-AUG-2013",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "ESSENTIA",
   "mc_code": "IGT",
+  "cap": "",
   "suspension_date": ""
  },
- "INE890N01019": {
+ "INE890N01027": {
   "bse_security_code": "536073",
-  "bse_security_id": "SILINFRA",
-  "bse_name": "Silverpoint Infratech Ltd",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "bse_security_id": "JULIEN",
+  "bse_name": "Julien Agro Infratech Ltd",
+  "status": "Active",
+  "face_value": "5.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "SILINFRA",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE211P01021": {
@@ -80557,13 +80643,13 @@
   "mc_code": "KT06",
   "suspension_date": ""
  },
- "INE906O01011": {
+ "INE906O01029": {
   "bse_security_code": "536264",
   "bse_security_id": "TIGERLOGS",
   "bse_name": "Tiger Logistics (India) Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Transportation - Logistics",
+  "face_value": "1.00",
+  "industry": "Logistics Solution Provider",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -80571,6 +80657,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "TLI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE594O01015": {
@@ -81038,20 +81125,21 @@
   "mc_code": "ICI11",
   "suspension_date": ""
  },
- "INF109KA1962": {
+ "INF109KC16V9": {
   "bse_security_code": "537008",
-  "bse_security_id": "ICICINF100",
+  "bse_security_id": "NIF100IETF",
   "bse_name": "ICICI Prudential Nifty 100 ETF",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ICICINF100",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ICI12",
+  "cap": "",
   "suspension_date": ""
  },
  "INE394F01018": {
@@ -82126,13 +82214,13 @@
   "mc_code": "JTI03",
   "suspension_date": ""
  },
- "INE012Q01013": {
+ "INE012Q01021": {
   "bse_security_code": "538119",
   "bse_security_id": "RNBDENIMS",
   "bse_name": "R&B Denims Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Textiles",
+  "face_value": "2.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -82140,6 +82228,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RD03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE174Q01011": {
@@ -82623,13 +82712,13 @@
   "mc_code": "DF08",
   "suspension_date": ""
  },
- "INE114O01012": {
+ "INE114O01020": {
   "bse_security_code": "538451",
   "bse_security_id": "WORTH",
   "bse_name": "Worth Investment & Trading Co Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Investment Companies",
+  "face_value": "1.00",
+  "industry": "Investment Company",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -82637,15 +82726,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "WIT",
+  "cap": "",
   "suspension_date": ""
  },
- "INE855P01033": {
+ "INE855P01041": {
   "bse_security_code": "538452",
   "bse_security_id": "QUASAR",
   "bse_name": "Quasar India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -82653,6 +82743,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "QI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE901C01017": {
@@ -82815,13 +82906,13 @@
   "mc_code": "CT10",
   "suspension_date": ""
  },
- "INE378P01028": {
+ "INE378P01036": {
   "bse_security_code": "538537",
   "bse_security_id": "OMANSH",
   "bse_name": "Omansh Enterprises Ltd",
   "status": "Active",
   "face_value": "2.00",
-  "industry": "Comm.Trading  & Distribution",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -82829,6 +82920,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "OE04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE072P01019": {
@@ -83778,13 +83870,13 @@
   "mc_code": "PA9",
   "suspension_date": ""
  },
- "INE010R01015": {
+ "INE010R01023": {
   "bse_security_code": "538706",
   "bse_security_id": "ULTRACAB",
   "bse_name": "Ultracab (India) Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Elect.Equip./ Prod.",
+  "face_value": "2.00",
+  "industry": "Cables - Electricals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -83792,6 +83884,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "UI20",
+  "cap": "",
   "suspension_date": ""
  },
  "INE929D01016": {
@@ -84338,20 +84431,21 @@
   "mc_code": "AC28",
   "suspension_date": ""
  },
- "INE149Q01013": {
+ "INE149Q01021": {
   "bse_security_code": "538778",
-  "bse_security_id": "AKASHDEEP",
-  "bse_name": "Akashdeep Metal Industries Ltd",
+  "bse_security_id": "KALYANCAP",
+  "bse_name": "Kalyan Capitals Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "2.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "AKASHDEEP",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AMI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE473L01018": {
@@ -84386,13 +84480,13 @@
   "mc_code": "GBF",
   "suspension_date": ""
  },
- "INE918C01011": {
+ "INE918C01029": {
   "bse_security_code": "538788",
   "bse_security_id": "GILADAFINS",
   "bse_name": "Gilada Finance & Investments Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "5.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -84400,6 +84494,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "GFI02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE948C01026": {
@@ -84546,13 +84641,13 @@
   "mc_code": "AI36",
   "suspension_date": ""
  },
- "INE513R01018": {
+ "INE513R01026": {
   "bse_security_code": "538817",
   "bse_security_id": "CAPPIPES",
   "bse_name": "Captain Pipes Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Plastic Products",
+  "face_value": "1.00",
+  "industry": "Plastic Products - Industrial",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -84560,6 +84655,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CP12",
+  "cap": "",
   "suspension_date": ""
  },
  "INF200K018Y7": {
@@ -84947,13 +85043,13 @@
   "mc_code": "SAF06",
   "suspension_date": ""
  },
- "INE183Q01012": {
+ "INE183Q01020": {
   "bse_security_code": "538868",
   "bse_security_id": "CSL",
   "bse_name": "Continental Securities Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "2.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -84961,6 +85057,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CS21",
+  "cap": "",
   "suspension_date": ""
  },
  "INE111C01013": {
@@ -84995,13 +85092,13 @@
   "mc_code": "NCA",
   "suspension_date": ""
  },
- "INE195F01019": {
+ "INE195F01027": {
   "bse_security_code": "538875",
   "bse_security_id": "SELLWIN",
   "bse_name": "Sellwin Traders Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Misc.Commercial Services",
+  "face_value": "2.00",
+  "industry": "Diversified Commercial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -85009,6 +85106,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ST23",
+  "cap": "",
   "suspension_date": ""
  },
  "INE907D01012": {
@@ -85075,20 +85173,21 @@
   "mc_code": "MKE",
   "suspension_date": ""
  },
- "INE613C01018": {
+ "INE613C01026": {
   "bse_security_code": "538891",
   "bse_security_id": "MCLOUD",
   "bse_name": "Magellanic Cloud Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "IT Consulting & Software",
+  "face_value": "2.00",
+  "industry": "Computers - Software & Consulting",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Magellanic Cloud Limited",
+  "listing_date": "07-FEB-2025",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "MCLOUD",
   "mc_code": "SIP06",
+  "cap": "",
   "suspension_date": ""
  },
  "INF109KA14O3": {
@@ -85347,13 +85446,13 @@
   "mc_code": "NAP01",
   "suspension_date": ""
  },
- "INE554R01012": {
+ "INE554R01020": {
   "bse_security_code": "538928",
   "bse_security_id": "KARNAVATI",
   "bse_name": "Karnavati Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -85361,6 +85460,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "KF09",
+  "cap": "",
   "suspension_date": ""
  },
  "INE723C01015": {
@@ -85684,13 +85784,13 @@
   "mc_code": "MDC02",
   "suspension_date": ""
  },
- "INE397C01018": {
+ "INE397C01026": {
   "bse_security_code": "538975",
   "bse_security_id": "SHREESEC",
   "bse_name": "Shree Securities Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -85698,17 +85798,18 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SS58",
+  "cap": "",
   "suspension_date": ""
  },
- "INE544R01013": {
+ "INE544R01021": {
   "bse_security_code": "538979",
-  "bse_security_id": "GRNLAMIND",
+  "bse_security_id": "GREENLAM",
   "bse_name": "Greenlam Industries Ltd",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Furniture-Furnishing-Paints",
+  "face_value": "1.00",
+  "industry": "Plywood Boards/ Laminates",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "GRNLAMIND",
   "nse_name": "Greenlam Industries Limited",
   "listing_date": "02-MAR-2015",
   "old_nse_symbol": "",
@@ -86022,13 +86123,13 @@
   "mc_code": "N53",
   "suspension_date": ""
  },
- "INE526R01010": {
+ "INE526R01028": {
   "bse_security_code": "539017",
   "bse_security_id": "STARHFL",
   "bse_name": "Star Housing Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Housing Finance ",
+  "face_value": "5.00",
+  "industry": "Housing Finance Company",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -86036,6 +86137,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ASH01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE213D01015": {
@@ -86134,20 +86236,21 @@
   "mc_code": "MM03",
   "suspension_date": ""
  },
- "INE976R01017": {
+ "INE976R01025": {
   "bse_security_code": "539042",
   "bse_security_id": "AGIIL",
   "bse_name": "AGI Infra Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Realty",
+  "face_value": "5.00",
+  "industry": "Residential- Commercial Projects",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Agi Infra Limited",
+  "listing_date": "15-JUL-2024",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "AGIIL",
   "mc_code": "AI43",
+  "cap": "",
   "suspension_date": ""
  },
  "INE831Q01016": {
@@ -86424,13 +86527,13 @@
   "mc_code": "RIF01",
   "suspension_date": ""
  },
- "INE187R01011": {
+ "INE187R01029": {
   "bse_security_code": "539091",
   "bse_security_id": "CITL",
   "bse_name": "Consecutive Investment & Trading Company Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Investment Companies",
+  "face_value": "1.00",
+  "industry": "Investment Company",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -86438,6 +86541,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CIT01",
+  "cap": "",
   "suspension_date": ""
  },
  "INF109KB1573": {
@@ -86793,13 +86897,13 @@
   "mc_code": "PM08",
   "suspension_date": ""
  },
- "INE104F01011": {
+ "INE104F01029": {
   "bse_security_code": "539122",
   "bse_security_id": "BODHTREE",
   "bse_name": "Bodhtree Consulting Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "IT Consulting & Software",
+  "industry": "IT Enabled Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -86807,6 +86911,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BC17",
+  "cap": "",
   "suspension_date": ""
  },
  "INE334E01017": {
@@ -87130,12 +87235,12 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE784R01015": {
+ "INE784R01023": {
   "bse_security_code": "539151",
   "bse_security_id": "ARFIN",
   "bse_name": "Arfin India Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Aluminium",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -87144,6 +87249,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AI70",
+  "cap": "",
   "suspension_date": ""
  },
  "INE347L01014": {
@@ -87242,20 +87348,21 @@
   "mc_code": "HE02",
   "suspension_date": ""
  },
- "INE206F01014": {
+ "INE206F01022": {
   "bse_security_code": "539177",
   "bse_security_id": "AIIL",
   "bse_name": "Authum Investment & Infrastructure Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Authum Investment & Infrastructure Limited",
+  "listing_date": "23-APR-2024",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "AIIL",
   "mc_code": "AII01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE813P01016": {
@@ -87338,12 +87445,12 @@
   "mc_code": "DF9",
   "suspension_date": ""
  },
- "INE035S01010": {
+ "INE035S01028": {
   "bse_security_code": "539195",
   "bse_security_id": "POEL",
   "bse_name": "POCL Enterprises Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Commodity Chemicals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -87352,6 +87459,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "POC",
+  "cap": "",
   "suspension_date": ""
  },
  "INE829P01020": {
@@ -87547,13 +87655,13 @@
   "mc_code": "MB04",
   "suspension_date": "4-NOV-2019"
  },
- "INE653S01010": {
+ "INE653S01028": {
   "bse_security_code": "539216",
   "bse_security_id": "GARMNTMNTR",
   "bse_name": "Garment Mantra Lifestyle Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Textiles",
+  "face_value": "1.00",
+  "industry": "Garments & Apparels",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -87561,15 +87669,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "JFA02",
+  "cap": "",
   "suspension_date": ""
  },
- "INE606K01023": {
+ "INE606K01049": {
   "bse_security_code": "539217",
   "bse_security_id": "SRESTHA",
   "bse_name": "Srestha Finvest Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "Investment Companies",
+  "face_value": "1.00",
+  "industry": "Investment Company",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -87577,6 +87686,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MSI07",
+  "cap": "",
   "suspension_date": ""
  },
  "INE563C01015": {
@@ -87595,12 +87705,12 @@
   "mc_code": "SC54",
   "suspension_date": ""
  },
- "INE150D01019": {
+ "INE150D01027": {
   "bse_security_code": "539219",
   "bse_security_id": "MUL",
   "bse_name": "Mauria Udyog Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Other Industrial Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -87609,6 +87719,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MU02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE540S01019": {
@@ -87627,13 +87738,13 @@
   "mc_code": "ME16",
   "suspension_date": ""
  },
- "INE885H01011": {
+ "INE885H01029": {
   "bse_security_code": "539221",
   "bse_security_id": "SPORTKING",
   "bse_name": "Sportking India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Textiles",
+  "face_value": "1.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Sportking India Limited",
@@ -87641,22 +87752,24 @@
   "old_nse_symbol": "",
   "nse_symbol": "SPORTKING",
   "mc_code": "SI97",
+  "cap": "",
   "suspension_date": ""
  },
- "INE451S01019": {
+ "INE451S01027": {
   "bse_security_code": "539222",
-  "bse_security_id": "VMV",
-  "bse_name": "VMV Holidays Ltd",
+  "bse_security_id": "GROWINGTON",
+  "bse_name": "Growington Ventures India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Travel Support Services",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "VMV",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "VH02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE563S01011": {
@@ -87707,13 +87820,13 @@
   "mc_code": "JEP",
   "suspension_date": ""
  },
- "INE027T01015": {
+ "INE027T01023": {
   "bse_security_code": "539226",
   "bse_security_id": "RUDRA",
   "bse_name": "Rudra Global Infra Products Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Iron & Steel/Interm.Products",
+  "face_value": "5.00",
+  "industry": "Iron & Steel Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -87721,6 +87834,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MIC",
+  "cap": "",
   "suspension_date": ""
  },
  "INE876S01017": {
@@ -88029,12 +88143,12 @@
   "mc_code": "K03",
   "suspension_date": ""
  },
- "INE184S01016": {
+ "INE184S01024": {
   "bse_security_code": "539277",
   "bse_security_id": "ALSTONE",
   "bse_name": "Alstone Textiles (India) Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -88043,6 +88157,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SH14",
+  "cap": "",
   "suspension_date": ""
  },
  "INE653R01012": {
@@ -88255,13 +88370,13 @@
   "mc_code": "RST",
   "suspension_date": ""
  },
- "INE365S01037": {
+ "INE365S01045": {
   "bse_security_code": "539310",
   "bse_security_id": "THINKINK",
   "bse_name": "Thinkink Picturez Ltd",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Advertising & Media",
+  "face_value": "1.00",
+  "industry": "Advertising & Media Agencies",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -88269,6 +88384,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE217Q01018": {
@@ -88303,12 +88419,12 @@
   "mc_code": "UTI20",
   "suspension_date": ""
  },
- "INF789FB1X41": {
+ "INF789F1AZC0": {
   "bse_security_code": "539313",
   "bse_security_id": "UTINIFTETF",
-  "bse_name": "UTI NIFTY ETF",
+  "bse_name": "UTI NIFTY 50 ETF",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -88317,6 +88433,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE203T01012": {
@@ -89072,13 +89189,13 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE030T01019": {
+ "INE030T01027": {
   "bse_security_code": "539428",
   "bse_security_id": "TEJNAKSH",
   "bse_name": "Tejnaksh Healthcare Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Healthcare Facilities",
+  "face_value": "5.00",
+  "industry": "Healthcare Service Provider",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -89086,6 +89203,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "TH02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE400S01016": {
@@ -89347,13 +89465,13 @@
   "mc_code": "TFS",
   "suspension_date": ""
  },
- "INE258R01010": {
+ "INE258R01028": {
   "bse_security_code": "539469",
   "bse_security_id": "PANORAMA",
   "bse_name": "Panorama Studios International Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Movies & Entertainment",
+  "face_value": "2.00",
+  "industry": "Film Production- Distribution & Exhibition",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -89361,14 +89479,15 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AIC04",
+  "cap": "",
   "suspension_date": ""
  },
- "INE051N01018": {
+ "INE051N01026": {
   "bse_security_code": "539470",
   "bse_security_id": "SHREEGANES",
   "bse_name": "Shree Ganesh Biotech (India) Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Biotechnology",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -89377,6 +89496,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SGB",
+  "cap": "",
   "suspension_date": ""
  },
  "INE910R01016": {
@@ -89507,13 +89627,13 @@
   "mc_code": "ACS05",
   "suspension_date": ""
  },
- "INE766D01012": {
+ "INE766D01020": {
   "bse_security_code": "539494",
   "bse_security_id": "SMARTFIN",
   "bse_name": "Smart Finsec Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -89521,6 +89641,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SF27",
+  "cap": "",
   "suspension_date": ""
  },
  "INE176R01014": {
@@ -89539,13 +89660,13 @@
   "mc_code": "RIT01",
   "suspension_date": ""
  },
- "INE805Q01010": {
+ "INE805Q01028": {
   "bse_security_code": "539506",
   "bse_security_id": "ADCON",
   "bse_name": "Adcon Capital Services Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -89553,6 +89674,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ACS06",
+  "cap": "",
   "suspension_date": ""
  },
  "INE641R01017": {
@@ -89587,20 +89709,21 @@
   "mc_code": "HDF04",
   "suspension_date": ""
  },
- "INF179KC1973": {
+ "INF179KC1HX2": {
   "bse_security_code": "539517",
-  "bse_security_id": "SXETF",
-  "bse_name": "HDFC Sensex ETF - Open Ended Traded Fund",
+  "bse_security_id": "HDFCSENSEX",
+  "bse_name": "HDFC S&P BSE Sensex ETF",
   "status": "Active",
-  "face_value": "250.36",
+  "face_value": "25.04",
   "industry": " ",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "SXETF",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "HDF05",
+  "cap": "",
   "suspension_date": ""
  },
  "INE551B01012": {
@@ -89619,20 +89742,21 @@
   "mc_code": "UJI",
   "suspension_date": ""
  },
- "INE280E01020": {
+ "INE280E01038": {
   "bse_security_code": "539519",
-  "bse_security_id": "MAYUKH",
-  "bse_name": "Mayukh Dealtrade Ltd",
+  "bse_security_id": "SATTVASUKU",
+  "bse_name": "Sattva Sukun Lifecare Ltd",
   "status": "Active",
-  "face_value": "5.00",
+  "face_value": "1.00",
   "industry": "Distributors",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "MAYUKH",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MD02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE195R01014": {
@@ -89765,12 +89889,12 @@
   "mc_code": "CC30",
   "suspension_date": ""
  },
- "INE430R01015": {
+ "INE430R01023": {
   "bse_security_code": "539528",
   "bse_security_id": "AAYUSH",
-  "bse_name": "Aayush Food and Herbs Ltd",
+  "bse_name": "Aayush Wellness Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Packaged Foods",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -89779,6 +89903,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AFH01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE669R01018": {
@@ -89911,13 +90036,13 @@
   "mc_code": "FMI01",
   "suspension_date": ""
  },
- "INE005G01018": {
+ "INE005G01026": {
   "bse_security_code": "539559",
   "bse_security_id": "DDIL",
   "bse_name": "Deep Diamond India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "1.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -89925,6 +90050,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "DDI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE994N01019": {
@@ -89943,13 +90069,13 @@
   "mc_code": "ATC01",
   "suspension_date": ""
  },
- "INE549S01010": {
+ "INE549S01036": {
   "bse_security_code": "539561",
   "bse_security_id": "REMLIFE",
   "bse_name": "Remedium Lifecare Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -89957,6 +90083,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RE10",
+  "cap": "",
   "suspension_date": ""
  },
  "INE750R01016": {
@@ -89991,13 +90118,13 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE974F01017": {
+ "INE974F01025": {
   "bse_security_code": "539574",
   "bse_security_id": "SCL",
   "bse_name": "Sunshine Capital Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -90005,6 +90132,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SC55",
+  "cap": "",
   "suspension_date": ""
  },
  "INE104S01022": {
@@ -90104,20 +90232,21 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE727C01016": {
+ "INE727C01024": {
   "bse_security_code": "539598",
-  "bse_security_id": "ORACLECR",
-  "bse_name": "Oracle Credit Ltd",
+  "bse_security_id": "CGFL",
+  "bse_name": "Credent Global Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "2.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ORACLECR",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "OC11",
+  "cap": "",
   "suspension_date": ""
  },
  "INE079C01012": {
@@ -90152,13 +90281,13 @@
   "mc_code": "CH02",
   "suspension_date": ""
  },
- "INE373T01039": {
+ "INE373T01047": {
   "bse_security_code": "539607",
   "bse_security_id": "BLUECLOUDS",
   "bse_name": "Blue Cloud Softech Solutions Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "IT Software Products",
+  "face_value": "1.00",
+  "industry": "Software Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -90166,6 +90295,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BCS03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE534E01020": {
@@ -90184,13 +90314,13 @@
   "mc_code": "AI74",
   "suspension_date": ""
  },
- "INE368E01015": {
+ "INE368E01023": {
   "bse_security_code": "539621",
   "bse_security_id": "BCLENTERPR",
   "bse_name": "BCL Enterprises Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -90198,6 +90328,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BCL08",
+  "cap": "",
   "suspension_date": ""
  },
  "INF109KB1PZ6": {
@@ -90410,12 +90541,12 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE792P01012": {
+ "INE792P01020": {
   "bse_security_code": "539673",
   "bse_security_id": "RCL",
   "bse_name": "Radhagobind Commercial Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -90424,6 +90555,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RCL03",
+  "cap": "",
   "suspension_date": ""
  },
  "INE306L01010": {
@@ -90523,20 +90655,21 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE127T01013": {
+ "INE127T01021": {
   "bse_security_code": "539686",
   "bse_security_id": "KPEL",
   "bse_name": "K.P. Energy Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Electric Utilities",
+  "face_value": "5.00",
+  "industry": "Power Generation",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "K.P. Energy Limited",
+  "listing_date": "14-NOV-2024",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "KPEL",
   "mc_code": "KEL04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE836D01013": {
@@ -90747,12 +90880,12 @@
   "mc_code": "RCM02",
   "suspension_date": ""
  },
- "INE427T01017": {
+ "INE427T01025": {
   "bse_security_code": "539761",
   "bse_security_id": "VKAL",
   "bse_name": "Vantage Knowledge Academy Ltd",
-  "status": "Suspended",
-  "face_value": "10.00",
+  "status": "Active",
+  "face_value": "1.00",
   "industry": "Education",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -90761,6 +90894,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "VKA",
+  "cap": "",
   "suspension_date": ""
  },
  "INE250S01015": {
@@ -91037,13 +91171,13 @@
   "mc_code": "BC18",
   "suspension_date": ""
  },
- "INE574R01010": {
+ "INE574R01028": {
   "bse_security_code": "539835",
   "bse_security_id": "SUPERIOR",
   "bse_name": "Superior Finlease Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Finance (including NBFCs)",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -91051,6 +91185,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SFL11",
+  "cap": "",
   "suspension_date": ""
  },
  "INE812T01010": {
@@ -91101,13 +91236,13 @@
   "mc_code": "FLF02",
   "suspension_date": ""
  },
- "INE359U01010": {
+ "INE359U01028": {
   "bse_security_code": "539841",
   "bse_security_id": "LANCER",
   "bse_name": "Lancer Container Lines Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Transportation - Logistics",
+  "face_value": "5.00",
+  "industry": "Logistics Solution Provider",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Lancer Container Lines Limited",
@@ -91115,6 +91250,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "LANCER",
   "mc_code": "LCL",
+  "cap": "",
   "suspension_date": ""
  },
  "INE410U01011": {
@@ -91330,13 +91466,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE671T01010": {
+ "INE671T01028": {
   "bse_security_code": "539884",
   "bse_security_id": "DARSHANORNA",
   "bse_name": "Darshan Orna Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "2.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -91344,6 +91480,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "DO04",
+  "cap": "",
   "suspension_date": ""
  },
  "INF109KB1UT9": {
@@ -91507,13 +91644,13 @@
   "mc_code": "KOC",
   "suspension_date": ""
  },
- "INE730R01034": {
+ "INE730R01042": {
   "bse_security_code": "539911",
   "bse_security_id": "SNIM",
   "bse_name": "Svarnim Trade Udyog Ltd",
-  "status": "Suspended",
-  "face_value": "1.00",
-  "industry": "Comm.Trading  & Distribution",
+  "status": "Active",
+  "face_value": "10.00",
+  "industry": "Trading - Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -91521,6 +91658,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE454M01024": {
@@ -91539,12 +91677,12 @@
   "mc_code": "NFC",
   "suspension_date": ""
  },
- "INE440T01010": {
+ "INE440T01028": {
   "bse_security_code": "539921",
   "bse_security_id": "SEIL",
   "bse_name": "Shanti Educational Initiatives Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Education",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -91553,6 +91691,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SEI07",
+  "cap": "",
   "suspension_date": ""
  },
  "INE364S01014": {
@@ -91635,20 +91774,21 @@
   "mc_code": "MVI",
   "suspension_date": ""
  },
- "INF109KB1WY5": {
+ "INF109KC11V0": {
   "bse_security_code": "539945",
-  "bse_security_id": "ICICINV20",
-  "bse_name": "ICICI Prudential NV20 ETF",
+  "bse_security_id": "NV20IETF",
+  "bse_name": "ICICI Prudential Nifty50 Value 20 ETF",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ICICINV20",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ICI13",
+  "cap": "",
   "suspension_date": ""
  },
  "INE217E01014": {
@@ -91764,13 +91904,13 @@
   "mc_code": "QFS",
   "suspension_date": ""
  },
- "INE819S01017": {
+ "INE819S01025": {
   "bse_security_code": "539963",
   "bse_security_id": "ZEAL",
   "bse_name": "Zeal Aqua Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Food Products",
+  "face_value": "1.00",
+  "industry": "Seafood",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -91778,6 +91918,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ZA",
+  "cap": "",
   "suspension_date": ""
  },
  "INE615P01015": {
@@ -91797,36 +91938,38 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE731U01010": {
+ "INE731U01028": {
   "bse_security_code": "539979",
-  "bse_security_id": "DIGJAMLTD",
+  "bse_security_id": "DIGJAMLMTD",
   "bse_name": "Digjam Ltd",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Textiles",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
-  "old_nse_symbol": "",
-  "nse_symbol": "",
-  "mc_code": "D05",
-  "suspension_date": ""
- },
- "INF109KB1XT3": {
-  "bse_security_code": "539980",
-  "bse_security_id": "ICICIMCAP",
-  "bse_name": "ICICI Prudential Midcap Select ETF",
   "status": "Active",
   "face_value": "10.00",
+  "industry": "Other Textile Products",
+  "old_bse_security_code": "",
+  "old_bse_security_id": "DIGJAMLTD",
+  "nse_name": "Digjam Limited",
+  "listing_date": "18-OCT-2021",
+  "old_nse_symbol": "",
+  "nse_symbol": "DIGJAMLMTD",
+  "mc_code": "D05",
+  "cap": "",
+  "suspension_date": ""
+ },
+ "INF109KC10W0": {
+  "bse_security_code": "539980",
+  "bse_security_id": "MIDSELIETF",
+  "bse_name": "ICICI Prudential BSE Midcap Select ETF",
+  "status": "Active",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ICICIMCAP",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ICI14",
+  "cap": "",
   "suspension_date": ""
  },
  "INE153U01017": {
@@ -91925,13 +92068,13 @@
   "mc_code": "CSB01",
   "suspension_date": ""
  },
- "INE700F01016": {
+ "INE700F01024": {
   "bse_security_code": "539991",
   "bse_security_id": "CFEL",
   "bse_name": "Confidence Futuristic Energetech Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "5.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -91939,6 +92082,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "GIR",
+  "cap": "",
   "suspension_date": ""
  },
  "INE093R01011": {
@@ -92006,12 +92150,12 @@
   "mc_code": "BBA",
   "suspension_date": ""
  },
- "INF209KB1119": {
+ "INF209KB10E8": {
   "bse_security_code": "540008",
   "bse_security_id": "BSLSENETFG",
-  "bse_name": "BIRLA SUN LIFE SENSEX ETF",
+  "bse_name": "Aditya Birla Sun Life BSE Sensex ETF",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -92020,15 +92164,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
- "INE621I01026": {
+ "INE621I01042": {
   "bse_security_code": "540023",
   "bse_security_id": "COLORCHIPS",
   "bse_name": "Colorchips New Media Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "Broadcasting & Cable TV",
+  "industry": "TV Broadcasting & Software Production",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -92036,6 +92181,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ME17",
+  "cap": "",
   "suspension_date": ""
  },
  "INE361S01010": {
@@ -92136,12 +92282,12 @@
   "mc_code": "A",
   "suspension_date": ""
  },
- "INE412U01017": {
+ "INE412U01025": {
   "bse_security_code": "540061",
   "bse_security_id": "BIGBLOC",
   "bse_name": "Bigbloc Construction Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Cement & Cement Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -92150,6 +92296,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BIGBLOC",
   "mc_code": "BC19",
+  "cap": "",
   "suspension_date": ""
  },
  "INE222U01010": {
@@ -92299,12 +92446,12 @@
   "mc_code": "MCP01",
   "suspension_date": ""
  },
- "INE537U01011": {
+ "INE537U01029": {
   "bse_security_code": "540079",
   "bse_security_id": "SPRAYKING",
-  "bse_name": "Sprayking Agro Equipment Ltd",
+  "bse_name": "Sprayking Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Other Industrial Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -92313,22 +92460,24 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SAE03",
+  "cap": "",
   "suspension_date": ""
  },
- "INE715T01015": {
+ "INE715T01031": {
   "bse_security_code": "540080",
-  "bse_security_id": "NARAYANI",
-  "bse_name": "Narayani Steels Ltd",
+  "bse_security_id": "DHATRE",
+  "bse_name": "Dhatre Udyog Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Iron & Steel/Interm.Products",
+  "face_value": "1.00",
+  "industry": "Iron & Steel Products",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "NARAYANI",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "NS10",
+  "cap": "",
   "suspension_date": ""
  },
  "INE860T01019": {
@@ -92395,20 +92544,21 @@
   "mc_code": "SEM04",
   "suspension_date": ""
  },
- "INE890S01018": {
+ "INE890S01026": {
   "bse_security_code": "540097",
-  "bse_security_id": "VISCO",
-  "bse_name": "Visco Trade Associates Ltd",
+  "bse_security_id": "GAMCO",
+  "bse_name": "Gamco Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "VISCO",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "VTA",
+  "cap": "",
   "suspension_date": ""
  },
  "INF209KB1499": {
@@ -92556,13 +92706,13 @@
   "mc_code": "A03",
   "suspension_date": ""
  },
- "INE583V01013": {
+ "INE583V01021": {
   "bse_security_code": "540125",
   "bse_security_id": "RADHIKAJWE",
   "bse_name": "Radhika Jeweltech Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "2.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Radhika Jeweltech Limited",
@@ -92570,6 +92720,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "RADHIKAJWE",
   "mc_code": "RJI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE400R01018": {
@@ -92621,12 +92772,12 @@
   "mc_code": "IIA",
   "suspension_date": ""
  },
- "INE202R01018": {
+ "INE202R01026": {
   "bse_security_code": "540135",
   "bse_security_id": "ARCFIN",
   "bse_name": "ARC Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -92635,6 +92786,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ARC01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE495S01016": {
@@ -92718,13 +92870,13 @@
   "mc_code": "ACM01",
   "suspension_date": ""
  },
- "INE700V01013": {
+ "INE700V01021": {
   "bse_security_code": "540147",
   "bse_security_id": "SHASHIJIT",
   "bse_name": "Shashijit Infraprojects Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "face_value": "2.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -92732,6 +92884,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SI43",
+  "cap": "",
   "suspension_date": ""
  },
  "INE564V01013": {
@@ -92976,13 +93129,13 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE200M01013": {
+ "INE200M01039": {
   "bse_security_code": "540180",
   "bse_security_id": "VBL",
   "bse_name": "Varun Beverages Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Non-alcoholic Beverages",
+  "face_value": "2.00",
+  "industry": "Other Beverages",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Varun Beverages Limited",
@@ -92990,7 +93143,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "VBL",
   "mc_code": "VB05",
-  "cap": "Mid-Cap",
+  "cap": "Large-Cap",
   "suspension_date": ""
  },
  "INE894E01028": {
@@ -93025,13 +93178,13 @@
   "mc_code": "UT05",
   "suspension_date": ""
  },
- "INE789R01014": {
+ "INE789R01022": {
   "bse_security_code": "540190",
   "bse_security_id": "FRANKLININD",
   "bse_name": "Franklin Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -93039,6 +93192,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MPP01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE341H01023": {
@@ -93186,20 +93340,21 @@
   "mc_code": "NI19",
   "suspension_date": ""
  },
- "INE679V01019": {
+ "INE679V01027": {
   "bse_security_code": "540205",
   "bse_security_id": "AVL",
   "bse_name": "Aditya Vision Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Specialty Retail",
+  "face_value": "1.00",
+  "industry": "Speciality Retail",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Aditya Vision Limited",
+  "listing_date": "06-NOV-2024",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "AVL",
   "mc_code": "AV",
+  "cap": "",
   "suspension_date": ""
  },
  "INE759V01019": {
@@ -93284,13 +93439,13 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE835U01019": {
+ "INE835U01027": {
   "bse_security_code": "540243",
   "bse_security_id": "NEWLIGHT",
   "bse_name": "New Light Apparels Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -93298,6 +93453,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "NLA",
+  "cap": "",
   "suspension_date": ""
  },
  "INF846K01YK5": {
@@ -93364,13 +93520,13 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE607V01010": {
+ "INE607V01028": {
   "bse_security_code": "540252",
   "bse_security_id": "VSL",
   "bse_name": "Veeram Securities Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "2.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -93378,6 +93534,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "VO06",
+  "cap": "",
   "suspension_date": ""
  },
  "INE066E01015": {
@@ -93524,20 +93681,21 @@
   "mc_code": "FC08",
   "suspension_date": ""
  },
- "INE615R01011": {
+ "INE615R01029": {
   "bse_security_code": "540268",
-  "bse_security_id": "DHANVARSHA",
-  "bse_name": "Dhanvarsha Finvest Ltd",
+  "bse_security_id": "TRU",
+  "bse_name": "TruCap Finance Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Financial Services",
+  "face_value": "2.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "old_bse_security_id": "DHANVARSHA",
+  "nse_name": "TruCap Finance Limited",
+  "listing_date": "20-JUN-2023",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "TRU",
   "mc_code": "DF10",
+  "cap": "",
   "suspension_date": ""
  },
  "INE459U01018": {
@@ -93813,13 +93971,13 @@
   "mc_code": "PPL04",
   "suspension_date": ""
  },
- "INE715Q01011": {
+ "INE715Q01029": {
   "bse_security_code": "540360",
   "bse_security_id": "LLFICL",
   "bse_name": "Leading Leasing Finance And Investment Company Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Financial Services",
+  "face_value": "1.00",
+  "industry": "Non Banking Financial Company (NBFC)",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -93827,15 +93985,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "LLF",
+  "cap": "",
   "suspension_date": ""
  },
- "INE575D01033": {
+ "INE575D01041": {
   "bse_security_code": "540361",
   "bse_security_id": "DANUBE",
   "bse_name": "Danube Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "2.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -93843,6 +94002,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "DI28",
+  "cap": "",
   "suspension_date": ""
  },
  "INE919I01024": {
@@ -93974,12 +94134,12 @@
   "mc_code": "VIT03",
   "suspension_date": ""
  },
- "INE989S01034": {
+ "INE989S01042": {
   "bse_security_code": "540386",
   "bse_security_id": "ONTIC",
   "bse_name": "Ontic Finserve Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -93988,6 +94148,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE017W01010": {
@@ -94054,13 +94215,13 @@
   "mc_code": "MTI05",
   "suspension_date": ""
  },
- "INE544W01013": {
+ "INE544W01021": {
   "bse_security_code": "540401",
   "bse_security_id": "MAXIMUS",
   "bse_name": "Maximus International Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -94068,6 +94229,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "MI28",
+  "cap": "",
   "suspension_date": ""
  },
  "INE800W01019": {
@@ -94086,12 +94248,12 @@
   "mc_code": "MP17",
   "suspension_date": ""
  },
- "INE201M01011": {
+ "INE201M01029": {
   "bse_security_code": "540403",
   "bse_security_id": "CLEDUCATE",
   "bse_name": "CL Educate Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "5.00",
   "industry": "Education",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -94100,6 +94262,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CLEDUCATE",
   "mc_code": "CE09",
+  "cap": "",
   "suspension_date": ""
  },
  "INE442V01012": {
@@ -94407,13 +94570,13 @@
   "mc_code": "CLF",
   "suspension_date": ""
  },
- "INE594W01034": {
+ "INE594W01042": {
   "bse_security_code": "540492",
   "bse_security_id": "STARLENT",
   "bse_name": "Starlineps Enterprises Ltd",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading - Minerals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -94421,6 +94584,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "PG05",
+  "cap": "",
   "suspension_date": ""
  },
  "INE807K01035": {
@@ -94601,13 +94765,13 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE717F01010": {
+ "INE717F01028": {
   "bse_security_code": "540570",
   "bse_security_id": "VARIMAN",
   "bse_name": "Variman Global Enterprises Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -94615,6 +94779,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SFI04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE460H01021": {
@@ -94812,13 +94977,13 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE319U01014": {
+ "INE319U01022": {
   "bse_security_code": "540597",
   "bse_security_id": "CONTAINER",
   "bse_name": "Containerway International Ltd",
-  "status": "Suspended",
-  "face_value": "10.00",
-  "industry": "Transportation - Logistics",
+  "status": "Active",
+  "face_value": "5.00",
+  "industry": "Logistics Solution Provider",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -94826,6 +94991,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "CI16",
+  "cap": "",
   "suspension_date": ""
  },
  "INE869I01013": {
@@ -94862,20 +95028,21 @@
   "cap": "Mid-Cap",
   "suspension_date": ""
  },
- "INF109KB10T8": {
+ "INF109KC19U5": {
   "bse_security_code": "540612",
-  "bse_security_id": "ICICILOVOL",
-  "bse_name": "ICICI Prudential Nifty Low Vol 30 ETF",
+  "bse_security_id": "LOWVOLIETF",
+  "bse_name": "ICICI Prudential Nifty 100 Low Volatility 30 ETF",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ICICILOVOL",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ICICI21254",
+  "cap": "",
   "suspension_date": ""
  },
  "INE721X01015": {
@@ -94894,12 +95061,12 @@
   "mc_code": "GEL",
   "suspension_date": ""
  },
- "INE694X01022": {
+ "INE694X01030": {
   "bse_security_code": "540614",
   "bse_security_id": "GGENG",
   "bse_name": "G G Engineering Ltd",
   "status": "Active",
-  "face_value": "2.00",
+  "face_value": "1.00",
   "industry": "Heavy Electrical Equipment",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -94908,15 +95075,16 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "E10",
+  "cap": "",
   "suspension_date": ""
  },
- "INE413X01019": {
+ "INE413X01035": {
   "bse_security_code": "540615",
   "bse_security_id": "7NR",
   "bse_name": "7NR Retail Ltd",
   "status": "Active",
   "face_value": "10.00",
-  "industry": "Specialty Retail",
+  "industry": "Speciality Retail",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -94924,6 +95092,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "7RL",
+  "cap": "",
   "suspension_date": ""
  },
  "INE517U01013": {
@@ -95150,13 +95319,13 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INE170V01019": {
+ "INE170V01027": {
   "bse_security_code": "540642",
   "bse_security_id": "SALASAR",
   "bse_name": "Salasar Techno Engineering Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "face_value": "1.00",
+  "industry": "Industrial Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Salasar Techno Engineering Limited",
@@ -95164,6 +95333,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SALASAR",
   "mc_code": "STE02",
+  "cap": "",
   "suspension_date": ""
  },
  "INE335W01016": {
@@ -95359,13 +95529,13 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE704P01017": {
+ "INE704P01025": {
   "bse_security_code": "540678",
   "bse_security_id": "COCHINSHIP",
   "bse_name": "Cochin Shipyard Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Shipping",
+  "face_value": "5.00",
+  "industry": "Ship Building & Allied Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Cochin Shipyard Limited",
@@ -95373,7 +95543,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "COCHINSHIP",
   "mc_code": "CS",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE320X01016": {
@@ -95538,13 +95708,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE145Y01015": {
+ "INE145Y01023": {
   "bse_security_code": "540693",
   "bse_security_id": "SHISHIND",
   "bse_name": "Shish Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Plastic Products",
+  "face_value": "1.00",
+  "industry": "Plastic Products - Industrial",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -95552,6 +95722,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SI62",
+  "cap": "",
   "suspension_date": ""
  },
  "INE236W01016": {
@@ -95586,13 +95757,13 @@
   "mc_code": "DW",
   "suspension_date": ""
  },
- "INE185U01027": {
+ "INE185U01035": {
   "bse_security_code": "540696",
   "bse_security_id": "KCDGROUP",
   "bse_name": "KCD Industries India Ltd",
   "status": "Active",
-  "face_value": "5.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -95600,6 +95771,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RII01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE319X01018": {
@@ -95863,13 +96035,13 @@
   "cap": "Large-Cap",
   "suspension_date": ""
  },
- "INE689M01017": {
+ "INE689M01025": {
   "bse_security_code": "540717",
   "bse_security_id": "PQIF",
   "bse_name": "Polo Queen Industrial and Fintech Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "2.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -95877,6 +96049,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "PQI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE777X01017": {
@@ -95929,13 +96102,13 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE932X01018": {
+ "INE932X01026": {
   "bse_security_code": "540725",
   "bse_security_id": "SHAREINDIA",
   "bse_name": "Share India Securities Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Financial Services",
+  "face_value": "2.00",
+  "industry": "Stockbroking & Allied",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Share India Securities Limited",
@@ -95943,8 +96116,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "SHAREINDIA",
   "mc_code": "SIS09",
-  "suspension_date": "",
-  "cap": "Micro-Cap"
+  "cap": "Micro-Cap",
+  "suspension_date": ""
  },
  "INE071Y01013": {
   "bse_security_code": "540726",
@@ -96074,13 +96247,13 @@
   "mc_code": "SGR",
   "suspension_date": ""
  },
- "INE402Y01010": {
+ "INE402Y01028": {
   "bse_security_code": "540738",
   "bse_security_id": "STL",
   "bse_name": "Shreeji Translogistics Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Transportation - Logistics",
+  "face_value": "2.00",
+  "industry": "Logistics Solution Provider",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -96088,6 +96261,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ST26",
+  "cap": "",
   "suspension_date": ""
  },
  "INF209KB1IZ0": {
@@ -96611,13 +96785,13 @@
   "mc_code": "SBP03",
   "suspension_date": ""
  },
- "INE669Y01014": {
+ "INE669Y01022": {
   "bse_security_code": "540786",
   "bse_security_id": "SHARIKA",
   "bse_name": "Sharika Enterprises Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Elect.Equip./ Prod.",
+  "face_value": "5.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -96625,6 +96799,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SE22",
+  "cap": "",
   "suspension_date": ""
  },
  "INF109KB15Y7": {
@@ -96932,13 +97107,13 @@
   "mc_code": "KMS01",
   "suspension_date": ""
  },
- "INE994R01010": {
+ "INE994R01028": {
   "bse_security_code": "540821",
   "bse_security_id": "SADHNA",
   "bse_name": "Sadhna Broadcast Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Broadcasting & Cable TV",
+  "face_value": "1.00",
+  "industry": "TV Broadcasting & Software Production",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -96946,6 +97121,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SBL04",
+  "cap": "",
   "suspension_date": ""
  },
  "INE576C01017": {
@@ -97188,13 +97364,13 @@
   "mc_code": "ST22",
   "suspension_date": ""
  },
- "INE713T01010": {
+ "INE713T01028": {
   "bse_security_code": "540879",
   "bse_security_id": "APOLLO",
   "bse_name": "Apollo Micro Systems Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Defence",
+  "face_value": "1.00",
+  "industry": "Aerospace & Defense",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Apollo Micro Systems Limited",
@@ -97202,6 +97378,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "APOLLO",
   "mc_code": "AMS",
+  "cap": "",
   "suspension_date": ""
  },
  "INF204KB1TJ6": {
@@ -97415,12 +97592,12 @@
   "mc_code": "GGL54093",
   "suspension_date": ""
  },
- "INE630Y01016": {
+ "INE630Y01024": {
   "bse_security_code": "540937",
   "bse_security_id": "MEDICO",
   "bse_name": "Medico Remedies Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Pharmaceuticals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -97429,6 +97606,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "MEDICO",
   "mc_code": "MR",
+  "cap": "",
   "suspension_date": ""
  },
  "INE578V01013": {
@@ -97543,13 +97721,13 @@
   "mc_code": "LA01",
   "suspension_date": ""
  },
- "INE923Y01015": {
+ "INE923Y01023": {
   "bse_security_code": "540953",
   "bse_security_id": "KENVI",
   "bse_name": "Kenvi Jewels Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "1.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -97557,6 +97735,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "KJ",
+  "cap": "",
   "suspension_date": ""
  },
  "INE586E01020": {
@@ -97591,13 +97770,13 @@
   "mc_code": "TDS",
   "suspension_date": ""
  },
- "INE341Z01017": {
+ "INE341Z01025": {
   "bse_security_code": "540956",
   "bse_security_id": "BHATIA",
   "bse_name": "Bhatia Communications & Retail (India) Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Specialty Retail",
+  "face_value": "1.00",
+  "industry": "Speciality Retail",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -97605,6 +97784,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "BCR",
+  "cap": "",
   "suspension_date": ""
  },
  "INE644Y01017": {
@@ -98041,13 +98221,13 @@
   "mc_code": "AHFL541133",
   "suspension_date": ""
  },
- "INE171Z01018": {
+ "INE171Z01026": {
   "bse_security_code": "541143",
   "bse_security_id": "BDL",
   "bse_name": "Bharat Dynamics Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Defence",
+  "face_value": "5.00",
+  "industry": "Aerospace & Defense",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Bharat Dynamics Limited",
@@ -98055,7 +98235,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BDL",
   "mc_code": "BDL01",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE380Z01015": {
@@ -98090,20 +98270,21 @@
   "mc_code": "RCE",
   "suspension_date": ""
  },
- "INE705X01018": {
+ "INE705X01026": {
   "bse_security_code": "541152",
-  "bse_security_id": "ADVITIYA",
-  "bse_name": "Advitiya Trade India Ltd",
+  "bse_security_id": "GOYALALUM",
+  "bse_name": "Goyal Aluminiums Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ADVITIYA",
   "nse_name": "Goyal Aluminiums Limited",
   "listing_date": "04-NOV-2022",
   "old_nse_symbol": "",
   "nse_symbol": "GOYALALUM",
   "mc_code": "ATI",
+  "cap": "",
   "suspension_date": ""
  },
  "INE545U01014": {
@@ -98123,13 +98304,13 @@
   "cap": "Mid-Cap",
   "suspension_date": ""
  },
- "INE066F01012": {
+ "INE066F01020": {
   "bse_security_code": "541154",
   "bse_security_id": "HAL",
   "bse_name": "Hindustan Aeronautics Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Aerospace",
+  "face_value": "5.00",
+  "industry": "Aerospace & Defense",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Hindustan Aeronautics Limited",
@@ -98140,20 +98321,21 @@
   "cap": "Large-Cap",
   "suspension_date": ""
  },
- "INE278R01026": {
+ "INE278R01034": {
   "bse_security_code": "541161",
-  "bse_security_id": "KARDA",
-  "bse_name": "Karda Constructions Ltd",
+  "bse_security_id": "KBCGLOBAL",
+  "bse_name": "KBC Global Ltd",
   "status": "Active",
-  "face_value": "2.00",
-  "industry": "Realty",
+  "face_value": "1.00",
+  "industry": "Residential- Commercial Projects",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Karda Constructions Limited",
+  "old_bse_security_id": "KARDA",
+  "nse_name": "KBC Global Limited",
   "listing_date": "02-APR-2018",
-  "old_nse_symbol": "",
-  "nse_symbol": "KARDA",
+  "old_nse_symbol": "KARDA",
+  "nse_symbol": "KBCGLOBAL",
   "mc_code": "KC19",
+  "cap": "",
   "suspension_date": ""
  },
  "INE278H01035": {
@@ -98384,13 +98566,13 @@
   "mc_code": "CA01",
   "suspension_date": ""
  },
- "INE626Z01011": {
+ "INE626Z01029": {
   "bse_security_code": "541276",
   "bse_security_id": "HARDWYN",
   "bse_name": "Hardwyn India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Furniture- Home Furnishing",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Hardwyn India Limited",
@@ -98398,6 +98580,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "HARDWYN",
   "mc_code": "GI34",
+  "cap": "",
   "suspension_date": ""
  },
  "INE871Z01013": {
@@ -98449,13 +98632,13 @@
   "mc_code": "DCS01",
   "suspension_date": ""
  },
- "INE256Z01017": {
+ "INE256Z01025": {
   "bse_security_code": "541303",
   "bse_security_id": "AKSHAR",
   "bse_name": "Akshar Spintex Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Textiles",
+  "face_value": "1.00",
+  "industry": "Other Textile Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Akshar Spintex Limited",
@@ -98463,6 +98646,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "AKSHAR",
   "mc_code": "ASL",
+  "cap": "",
   "suspension_date": ""
  },
  "INE250Z01010": {
@@ -98545,20 +98729,21 @@
   "mc_code": "",
   "suspension_date": ""
  },
- "INF109KC1CZ3": {
+ "INF109KC1V59": {
   "bse_security_code": "541313",
-  "bse_security_id": "ICICI500",
-  "bse_name": "ICICI Prudential S&P BSE 500 ETF",
+  "bse_security_id": "BSE500IETF",
+  "bse_name": "ICICI Prudential BSE 500 ETF",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ICICI500",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ICICI3001",
+  "cap": "",
   "suspension_date": ""
  },
  "INE896L01010": {
@@ -98984,12 +99169,12 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE685Z01017": {
+ "INE685Z01033": {
   "bse_security_code": "541601",
   "bse_security_id": "RAJNISH",
   "bse_name": "Rajnish Wellness Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Pharmaceuticals",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -98998,6 +99183,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "RW",
+  "cap": "",
   "suspension_date": ""
  },
  "INE173V01013": {
@@ -99209,13 +99395,13 @@
   "mc_code": "SML05",
   "suspension_date": ""
  },
- "INE694W01016": {
+ "INE694W01024": {
   "bse_security_code": "541702",
   "bse_security_id": "ASHNI",
   "bse_name": "Ashnisha Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -99223,6 +99409,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "",
+  "cap": "",
   "suspension_date": ""
  },
  "INE00WY01013": {
@@ -99322,13 +99509,13 @@
   "cap": "Mid-Cap",
   "suspension_date": ""
  },
- "INE299W01014": {
+ "INE299W01022": {
   "bse_security_code": "541735",
   "bse_security_id": "VIVANTA",
   "bse_name": "Vivanta Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Construction & Engineering",
+  "face_value": "1.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -99336,6 +99523,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "VIVAN54173",
+  "cap": "",
   "suspension_date": ""
  },
  "INE401Z01019": {
@@ -99756,12 +99944,12 @@
   "mc_code": "MH05",
   "suspension_date": ""
  },
- "INE00VM01010": {
+ "INE00VM01036": {
   "bse_security_code": "541974",
   "bse_security_id": "MANORAMA",
   "bse_name": "Manorama Industries Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "2.00",
   "industry": "Other Food Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -99770,6 +99958,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "MANORAMA",
   "mc_code": "MI45",
+  "cap": "",
   "suspension_date": ""
  },
  "INE492Y01011": {
@@ -99966,29 +100155,30 @@
   "mc_code": "SP15",
   "suspension_date": ""
  },
- "INE642Z01018": {
+ "INE642Z01026": {
   "bse_security_code": "542020",
   "bse_security_id": "AKI",
   "bse_name": "AKI India Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "2.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "AKI India Limited",
+  "listing_date": "06-APR-2023",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "AKI",
   "mc_code": "AI80",
+  "cap": "",
   "suspension_date": ""
  },
- "INE206Z01012": {
+ "INE206Z01020": {
   "bse_security_code": "542025",
   "bse_security_id": "SUNRETAIL",
   "bse_name": "Sun Retail Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Comm.Trading  & Distribution",
+  "face_value": "1.00",
+  "industry": "Trading & Distributors",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -99996,6 +100186,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "SR10",
+  "cap": "",
   "suspension_date": ""
  },
  "INE00Q901014": {
@@ -100014,13 +100205,13 @@
   "mc_code": "SG13",
   "suspension_date": ""
  },
- "INE647Z01017": {
+ "INE647Z01025": {
   "bse_security_code": "542046",
   "bse_security_id": "VIVIDM",
   "bse_name": "Vivid Mercantile Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Realty",
+  "face_value": "1.00",
+  "industry": "Residential- Commercial Projects",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -100028,6 +100219,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "VIE",
+  "cap": "",
   "suspension_date": ""
  },
  "INE00SW01015": {
@@ -100289,12 +100481,12 @@
   "cap": "Mid-Cap",
   "suspension_date": ""
  },
- "INF209KB1B87": {
+ "INF209KB16D7": {
   "bse_security_code": "542230",
   "bse_security_id": "ABSLNN50ET",
   "bse_name": "Aditya Birla Sun Life Nifty Next 50 ETF",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": " ",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -100303,6 +100495,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "ABSLN7339",
+  "cap": "",
   "suspension_date": ""
  },
  "INE00S901012": {
@@ -100449,28 +100642,29 @@
   "mc_code": "AC29",
   "suspension_date": ""
  },
- "INE542W01017": {
+ "INE542W01025": {
   "bse_security_code": "542323",
-  "bse_security_id": "KPIGLOBAL",
-  "bse_name": "K.P.I. Global Infrastructure Ltd",
+  "bse_security_id": "KPIGREEN",
+  "bse_name": "KPI Green Energy Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Electric Utilities",
+  "face_value": "5.00",
+  "industry": "Power Generation",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "KPIGLOBAL",
   "nse_name": "KPI Green Energy Limited",
   "listing_date": "27-JUL-2021",
   "old_nse_symbol": "",
   "nse_symbol": "KPIGREEN",
   "mc_code": "KPIGL54232",
+  "cap": "",
   "suspension_date": ""
  },
- "INE302R01016": {
+ "INE302R01024": {
   "bse_security_code": "542332",
   "bse_security_id": "HIKLASS",
   "bse_name": "Hi-Klass Trading and Investment Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "5.00",
   "industry": "Other Financial Services",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -100479,6 +100673,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "HIKLA54233",
+  "cap": "",
   "suspension_date": ""
  },
  "INE425Y01011": {
@@ -100773,13 +100968,13 @@
   "mc_code": "JYOTI54254",
   "suspension_date": ""
  },
- "INE05FR01011": {
+ "INE05FR01029": {
   "bse_security_code": "542579",
   "bse_security_id": "AGOL",
   "bse_name": "Ashapuri Gold Ornament Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Other Apparels & Accessories",
+  "face_value": "1.00",
+  "industry": "Gems- Jewellery And Watches",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
@@ -100787,30 +100982,32 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AGO",
+  "cap": "",
   "suspension_date": ""
  },
- "INE01C001018": {
+ "INE01C001026": {
   "bse_security_code": "542580",
   "bse_security_id": "AARTECH",
   "bse_name": "Aartech Solonics Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "5.00",
   "industry": "Heavy Electrical Equipment",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
-  "nse_name": "",
-  "listing_date": "",
+  "nse_name": "Aartech Solonics Limited",
+  "listing_date": "10-JUL-2023",
   "old_nse_symbol": "",
-  "nse_symbol": "",
+  "nse_symbol": "AARTECH",
   "mc_code": "AS27",
+  "cap": "",
   "suspension_date": ""
  },
- "INE02PC01019": {
+ "INE02PC01027": {
   "bse_security_code": "542592",
   "bse_security_id": "HBEL",
   "bse_name": "Humming Bird Education Ltd",
   "status": "Active",
-  "face_value": "10.00",
+  "face_value": "1.00",
   "industry": "Education",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
@@ -100819,6 +101016,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "HBE01",
+  "cap": "",
   "suspension_date": ""
  },
  "INE255X01014": {
@@ -101099,20 +101297,21 @@
   "mc_code": "BMW54266",
   "suspension_date": ""
  },
- "INE757T01017": {
+ "INE757T01025": {
   "bse_security_code": "542670",
-  "bse_security_id": "ARTEMISELC",
-  "bse_name": "Artemis Electricals Ltd",
+  "bse_security_id": "AEPL",
+  "bse_name": "Artemis Electricals and Projects Ltd",
   "status": "Active",
-  "face_value": "10.00",
-  "industry": "Non-Durable Household Prod.",
+  "face_value": "1.00",
+  "industry": "Other Electrical Equipment",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "ARTEMISELC",
   "nse_name": "",
   "listing_date": "",
   "old_nse_symbol": "",
   "nse_symbol": "",
   "mc_code": "AE22",
+  "cap": "",
   "suspension_date": ""
  },
  "INE01MO01013": {
@@ -108640,23 +108839,6 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE748C01038": {
-  "bse_security_code": "532628",
-  "bse_security_id": "3IINFOLTD",
-  "bse_name": "3i Infotech Ltd",
-  "status": "Active",
-  "industry": "Computers - Software & Consulting",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "3i Infotech Limited",
-  "listing_date": "22-OCT-2021",
-  "face_value": "10.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "3IINFOLTD",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
  "INE251C01025": {
   "bse_security_code": "",
   "bse_security_id": "",
@@ -108912,23 +109094,6 @@
   "cap": "",
   "suspension_date": ""
  },
- "INE412U01025": {
-  "bse_security_code": "540061",
-  "bse_security_id": "BIGBLOC",
-  "bse_name": "Bigbloc Construction Ltd",
-  "status": "Active",
-  "industry": "Cement & Cement Products",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Bigbloc Construction Limited",
-  "listing_date": "02-SEP-2016",
-  "face_value": "2.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "BIGBLOC",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
  "INE278Y01022": {
   "bse_security_code": "543523",
   "bse_security_id": "CAMPUS",
@@ -109012,23 +109177,6 @@
   "nse_symbol": "CLEAN",
   "mc_code": "",
   "cap": "Small-Cap",
-  "suspension_date": ""
- },
- "INE201M01029": {
-  "bse_security_code": "543961",
-  "bse_security_id": "CLEDUCATE7",
-  "bse_name": "CL Educate Ltd",
-  "status": "Delisted",
-  "industry": "",
-  "old_bse_security_code": "543961",
-  "old_bse_security_id": "CLEDUCATE7",
-  "nse_name": "CL Educate Limited",
-  "listing_date": "31-MAR-2017",
-  "face_value": "5.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "CLEDUCATE",
-  "mc_code": "",
-  "cap": "",
   "suspension_date": ""
  },
  "INE925R01014": {
@@ -109133,40 +109281,6 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE615R01029": {
-  "bse_security_code": "540268",
-  "bse_security_id": "TRU",
-  "bse_name": "TruCap Finance Ltd",
-  "status": "Active",
-  "industry": "Non Banking Financial Company (NBFC)",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "TruCap Finance Limited",
-  "listing_date": "20-JUN-2023",
-  "face_value": "2.00",
-  "old_nse_symbol": "DHANVARSHA",
-  "nse_symbol": "TRU",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
- "INE731U01028": {
-  "bse_security_code": "539979",
-  "bse_security_id": "DIGJAMLMTD",
-  "bse_name": "Digjam Ltd",
-  "status": "Active",
-  "industry": "Other Textile Products",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Digjam Limited",
-  "listing_date": "18-OCT-2021",
-  "face_value": "10.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "DIGJAMLMTD",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
  "INE411Y01011": {
   "bse_security_code": "",
   "bse_security_id": "",
@@ -109267,23 +109381,6 @@
   "nse_symbol": "EMUDHRA",
   "mc_code": "",
   "cap": "Micro-Cap",
-  "suspension_date": ""
- },
- "INE418N01035": {
-  "bse_security_code": "535958",
-  "bse_security_id": "ESSENTIA",
-  "bse_name": "Integra Essentia Ltd",
-  "status": "Active",
-  "industry": "Other Food Products",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Integra Essentia Limited",
-  "listing_date": "20-AUG-2013",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "ESSENTIA",
-  "mc_code": "",
-  "cap": "",
   "suspension_date": ""
  },
  "INE04TZ01018": {
@@ -109473,23 +109570,6 @@
   "cap": "",
   "suspension_date": ""
  },
- "INE025B01025": {
-  "bse_security_code": "526729",
-  "bse_security_id": "GOLDIAM",
-  "bse_name": "Goldiam International Ltd",
-  "status": "Active",
-  "industry": "Gems- Jewellery And Watches",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Goldiam International Limited",
-  "listing_date": "29-AUG-2005",
-  "face_value": "2.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "GOLDIAM",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
  "INE177H01021": {
   "bse_security_code": "",
   "bse_security_id": "",
@@ -109503,23 +109583,6 @@
   "face_value": "5",
   "old_nse_symbol": "",
   "nse_symbol": "GPIL",
-  "mc_code": "",
-  "cap": "Micro-Cap",
-  "suspension_date": ""
- },
- "INE544R01021": {
-  "bse_security_code": "538979",
-  "bse_security_id": "GREENLAM",
-  "bse_name": "Greenlam Industries Ltd",
-  "status": "Active",
-  "industry": "Plywood Boards/ Laminates",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Greenlam Industries Limited",
-  "listing_date": "02-MAR-2015",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "GREENLAM",
   "mc_code": "",
   "cap": "Micro-Cap",
   "suspension_date": ""
@@ -109607,23 +109670,6 @@
   "nse_symbol": "HPAL",
   "mc_code": "",
   "cap": "",
-  "suspension_date": ""
- },
- "INE571A01038": {
-  "bse_security_code": "524494",
-  "bse_security_id": "IPCALAB",
-  "bse_name": "Ipca Laboratories Ltd",
-  "status": "Active",
-  "industry": "Pharmaceuticals",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "IPCA Laboratories Limited",
-  "listing_date": "08-FEB-1995",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "IPCALAB",
-  "mc_code": "",
-  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE0D6701023": {
@@ -109743,57 +109789,6 @@
   "nse_symbol": "JTLINFRA",
   "mc_code": "",
   "cap": "",
-  "suspension_date": ""
- },
- "INE797F01020": {
-  "bse_security_code": "533155",
-  "bse_security_id": "JUBLFOOD",
-  "bse_name": "Jubilant FoodWorks Ltd",
-  "status": "Active",
-  "industry": "Restaurants",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Jubilant Foodworks Limited",
-  "listing_date": "08-FEB-2010",
-  "face_value": "2.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "JUBLFOOD",
-  "mc_code": "",
-  "cap": "Mid-Cap",
-  "suspension_date": ""
- },
- "INE278R01034": {
-  "bse_security_code": "541161",
-  "bse_security_id": "KBCGLOBAL",
-  "bse_name": "KBC Global Ltd",
-  "status": "Active",
-  "industry": "Residential- Commercial Projects",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "KBC Global Limited",
-  "listing_date": "02-APR-2018",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "KBCGLOBAL",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
- "INE930H01031": {
-  "bse_security_code": "532889",
-  "bse_security_id": "KPRMILL",
-  "bse_name": "K.P.R. Mill Limited",
-  "status": "Active",
-  "industry": "Other Textile Products",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "K.P.R. Mill Limited",
-  "listing_date": "28-AUG-2007",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "KPRMILL",
-  "mc_code": "",
-  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE00Z501029": {
@@ -110000,23 +109995,6 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE287C01037": {
-  "bse_security_code": "532850",
-  "bse_security_id": "MICEL",
-  "bse_name": "MIC Electronics Ltd",
-  "status": "Active",
-  "industry": "Industrial Products",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "MIC Electronics Limited",
-  "listing_date": "17-DEC-2021",
-  "face_value": "2.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "MICEL",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
  "INE828O01033": {
   "bse_security_code": "",
   "bse_security_id": "",
@@ -110134,23 +110112,6 @@
   "nse_symbol": "ONEPOINT",
   "mc_code": "",
   "cap": "",
-  "suspension_date": ""
- },
- "INE420C01059": {
-  "bse_security_code": "532900",
-  "bse_security_id": "PAISALO",
-  "bse_name": "Paisalo Digital Ltd",
-  "status": "Active",
-  "industry": "Non Banking Financial Company (NBFC)",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Paisalo Digital Limited",
-  "listing_date": "17-OCT-2011",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "PAISALO",
-  "mc_code": "",
-  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE697V01011": {
@@ -110323,23 +110284,6 @@
   "cap": "Micro-Cap",
   "suspension_date": ""
  },
- "INE399G01023": {
-  "bse_security_code": "532527",
-  "bse_security_id": "RKFORGE",
-  "bse_name": "Ramkrishna Forgings Ltd",
-  "status": "Active",
-  "industry": "Auto Components & Equipments",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Ramkrishna Forgings Limited",
-  "listing_date": "05-MAY-2004",
-  "face_value": "2.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "RKFORGE",
-  "mc_code": "",
-  "cap": "Small-Cap",
-  "suspension_date": ""
- },
  "INE645S01016": {
   "bse_security_code": "543325",
   "bse_security_id": "ROLEXRINGS",
@@ -110370,23 +110314,6 @@
   "face_value": "5",
   "old_nse_symbol": "",
   "nse_symbol": "RPPL",
-  "mc_code": "",
-  "cap": "",
-  "suspension_date": ""
- },
- "INE170V01027": {
-  "bse_security_code": "540642",
-  "bse_security_id": "SALASAR",
-  "bse_name": "Salasar Techno Engineering Ltd",
-  "status": "Active",
-  "industry": "Industrial Products",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Salasar Techno Engineering Limited",
-  "listing_date": "25-JUL-2017",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "SALASAR",
   "mc_code": "",
   "cap": "",
   "suspension_date": ""
@@ -110425,23 +110352,6 @@
   "cap": "Small-Cap",
   "suspension_date": ""
  },
- "INE979A01025": {
-  "bse_security_code": "532163",
-  "bse_security_id": "SAREGAMA",
-  "bse_name": "Saregama India Ltd",
-  "status": "Active",
-  "industry": "Media & Entertainment",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Saregama India Limited",
-  "listing_date": "30-JUL-1997",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "SAREGAMA",
-  "mc_code": "",
-  "cap": "Small-Cap",
-  "suspension_date": ""
- },
  "INE04AK01028": {
   "bse_security_code": "542725",
   "bse_security_id": "SBC",
@@ -110474,23 +110384,6 @@
   "nse_symbol": "SCHAEFFLER",
   "mc_code": "",
   "cap": "Mid-Cap",
-  "suspension_date": ""
- },
- "INE955I01044": {
-  "bse_security_code": "532993",
-  "bse_security_id": "SEJALLTD",
-  "bse_name": "Sejal Glass Ltd",
-  "status": "Active",
-  "industry": "Glass - Industrial",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Sejal Glass Limited",
-  "listing_date": "13-DEC-2021",
-  "face_value": "10.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "SEJALLTD",
-  "mc_code": "",
-  "cap": "",
   "suspension_date": ""
  },
  "INE782X01033": {
@@ -110933,23 +110826,6 @@
   "nse_symbol": "VIJAYA",
   "mc_code": "",
   "cap": "Small-Cap",
-  "suspension_date": ""
- },
- "INE533D01032": {
-  "bse_security_code": "530699",
-  "bse_security_id": "RAJRILTD",
-  "bse_name": "Raj Rayon Industries Ltd",
-  "status": "Active",
-  "industry": "Other Textile Products",
-  "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Raj Rayon Industries Limited",
-  "listing_date": "16-MAR-2022",
-  "face_value": "1.00",
-  "old_nse_symbol": "",
-  "nse_symbol": "RAJRILTD",
-  "mc_code": "",
-  "cap": "",
   "suspension_date": ""
  },
  "INE082W01014": {

@@ -172,6 +172,7 @@ def interactive_mapping():
         if o_key in updated_isins:
             continue
         if result != 2 and o_key not in new_data:
+            unhandled = True
             for nk, nv in new_data.items():
                 # Check if the 'bse_security_id', 'bse_security_code', or 'nse_symbol' match
                 if ((o_value.get('bse_security_id', '') != '' and
@@ -188,6 +189,9 @@ def interactive_mapping():
                         updated_isins.append(nk)
                     else:
                         merged_data[o_key] = o_value
+                    unhandled = False
+            if unhandled:
+                merged_data[o_key] = o_value
         else:
             merged_data[o_key] = o_value
     
