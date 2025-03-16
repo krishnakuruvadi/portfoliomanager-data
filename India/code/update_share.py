@@ -115,7 +115,7 @@ def copy_selected_fields():
     # Copy NSE
     for key, value in dict1.items():
         if key in dict2:
-            # Check if the 'bse_security_id', 'bse_security_code', and 'nse_symbol' match
+            # Check if the 'bse_security_id', 'bse_security_code' match
             if (dict1[key].get('bse_security_id') == dict2[key].get('bse_security_id') and
                 dict1[key].get('bse_security_code') == dict2[key].get('bse_security_code')):
                 # if nse info is missing or if nse symbol is same while info needs updates
@@ -140,13 +140,10 @@ def copy_selected_fields():
                 dict2[key].get('bse_security_id') == '' and
                 dict2[key].get('nse_symbol') == dict1[key].get('bse_security_id')):
                 # if bse info is missing while nse symbol matches and is same as new bse security id
-                    print(f'right here for isin {key}')
-                    print(f'before {dict2[key]}')
                     dict2[key]['bse_security_code'] = value.get('bse_security_code')
                     dict2[key]['bse_security_id'] = value.get('bse_security_id')
                     dict2[key]['bse_name'] = value.get('bse_name')
                     dict2[key]['status'] = value.get('status')
-                    print(f'after {dict2[key]}')
     # Write the updated dictionary back to the second JSON file
     with open(orig_file_path, 'w') as file2:
         json.dump(dict2, file2, indent=1)
@@ -191,6 +188,19 @@ def interactive_mapping():
                         merged_data[o_key] = o_value
                     unhandled = False
             if unhandled:
+                merged_data[o_key] = o_value
+        elif result != 2 and o_key in new_data:
+            new_item = Item(o_key, new_data[o_key])
+            old_item = Item(o_key, o_value)
+            if new_item != old_item:
+                accept_data = print_as_table(o_key, new_data[o_key], o_key, o_value)
+                result = ask_yes_no("Do you want to merge?")
+                if result == 0:
+                    merged_data[o_key] = accept_data
+                    updated_isins.append(o_key)
+                else:
+                    merged_data[o_key] = o_value
+            else:
                 merged_data[o_key] = o_value
         else:
             merged_data[o_key] = o_value
@@ -351,6 +361,20 @@ class Item:
             'cap': self.cap,
             'suspension_date': self.suspension_date
         }
+    def __eq__(self, other):
+        if not isinstance(other, Item):
+            return NotImplemented
+        return (self.bse_security_code == other.bse_security_code and
+                self.bse_security_id == other.bse_security_id and
+                self.bse_name == other.bse_name and
+                self.status == other.status and
+                self.face_value == other.face_value and
+                self.industry == other.industry and
+                self.nse_name == other.nse_name and
+                self.listing_date == other.listing_date and
+                self.nse_symbol == other.nse_symbol and
+                self.cap == other.cap and
+                self.suspension_date == other.suspension_date)
 
 class InfoTable:
     def __init__(self, old_item, new_item, merged_item):
