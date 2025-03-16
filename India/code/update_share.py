@@ -201,6 +201,22 @@ def interactive_mapping():
 
     print(f"Merged approved data successfully and written to {orig_file_path}.")
 
+def clean_any_stale_data():
+    orig_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'nse_bse_eq.json')
+    # Load the JSON file into a dictionary
+    with open(orig_file_path, 'r') as file2:
+        orig_data = json.load(file2)
+    clean_data = dict()
+    for o_key, o_value in orig_data.items():
+        if '-RE' in o_value['bse_security_id']:
+            continue
+        clean_data[o_key] = o_value
+    # Write the updated dictionary back to the JSON file
+    with open(orig_file_path, 'w') as file2:
+        json.dump(clean_data, file2, indent=1)
+
+    print(f"Cleaned data successfully and written to {orig_file_path}.")
+
 def add_new_data():
     orig_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'nse_bse_eq.json')
     new_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'modified_nse_bse_eq.json')
@@ -213,6 +229,10 @@ def add_new_data():
         orig_data = json.load(file2)
     for nk, nv in new_data.items():
         if nk not in orig_data:
+            if '-RE' in nv['bse_security_id']:
+                continue
+            if nv['status'] in ['Delisted', 'Suspended']:
+                continue
             accept_data = print_as_table(nk, nv, "", dict())
             result = ask_yes_no("Do you want to add?")
             if result == 0:
@@ -424,4 +444,5 @@ if __name__ == "__main__":
     copy_selected_fields()
     interactive_mapping()
     add_new_data()
+    clean_any_stale_data()
     
