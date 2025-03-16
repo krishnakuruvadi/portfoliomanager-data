@@ -1,7 +1,6 @@
 import csv
 import json
 import os
-import requests
 import webbrowser
 import time
 
@@ -45,7 +44,7 @@ def pull_nse(download_dir):
         time.sleep(3)
 
 
-def pull_nse_cap_file(cap, download_dir):
+def pull_nse_cap_file(cap, download_dir, delete_downloaded_files):
     if cap == 'Large':
         url = nse_largecap_url
         f = 'ind_nifty100list.csv'
@@ -67,14 +66,16 @@ def pull_nse_cap_file(cap, download_dir):
         if os.path.exists(full_file_path):
             break
         time.sleep(3)
+    ret = None
     with open(full_file_path, mode='r', encoding='utf-8-sig') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         ret = list()
         for row in csv_reader:
             #print(row)
             ret.append({'isin':row['ISIN Code'], 'symbol':row['Symbol'], 'industry':row['Industry']})
-        return ret
-    return None
+    if delete_downloaded_files:
+        os.remove(full_file_path)
+    return ret
 
 def is_nse_eq_file_exists(download_dir):
     full_file_path = nse_eq_file_path(download_dir)
@@ -106,7 +107,7 @@ def clean(d):
         res[k.strip()] = v
     return res
 
-def update_nse(download_dir):
+def update_nse(download_dir, delete_downloaded_files, delete_processed_files):
     n_path = nse_eq_file_path(download_dir)
     n_b_path = nse_bse_eq_file_path(download_dir)
     
@@ -168,7 +169,7 @@ def update_nse(download_dir):
                 stocks[isin]['nse_symbol'] = row['SYMBOL']
       
     for cap in ['Large','Mid','Small','Micro']:
-        ret = pull_nse_cap_file(cap, download_dir)
+        ret = pull_nse_cap_file(cap, download_dir, delete_downloaded_files)
         for entry in ret:
             if entry['isin'] in stocks:
                 stocks[entry['isin']]['cap'] = cap+'-Cap'
@@ -179,5 +180,5 @@ def update_nse(download_dir):
 
     with open(n_b_path, 'w') as json_file:
         json.dump(stocks, json_file, indent=1)
-    
-    os.remove(n_path)
+    if delete_downloaded_files:
+        os.remove(n_path)

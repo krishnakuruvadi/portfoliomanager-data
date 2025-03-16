@@ -98,7 +98,7 @@ def is_nse_bse_eq_file_exists(download_dir):
         return True
     return False
 
-def update_bse(download_dir):
+def update_bse(download_dir, delete_downloaded_files, delete_processed_files):
     print(f'download directory {download_dir}')
     b_path = bse_eq_file_path(download_dir)
     n_b_path = nse_bse_eq_file_path(download_dir)
@@ -161,6 +161,6 @@ def update_bse(download_dir):
     
     with open(n_b_path, 'w') as json_file:
         json.dump(stocks, json_file, indent=1)
-    
-    os.remove(b_path)
+    if delete_downloaded_files:
+        os.remove(b_path)
     

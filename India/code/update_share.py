@@ -29,7 +29,7 @@ def check_matching_symbols(orig_data, new_data):
             return isin, data
     return None, None
 
-def merge_new_info(download_dir):
+def merge_new_info(download_dir, delete_downloaded_files, delete_processed_files):
     orig_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'nse_bse_eq.json')
     new_file_path = os.path.join(download_dir, 'nse_bse_eq.json')
     # Load the original JSON file
@@ -78,11 +78,12 @@ def merge_new_info(download_dir):
     # Write the updated JSON back to the output file while maintaining order
     with open(merged_file_path, 'w', encoding='utf-8') as f:
         json.dump(merged_data, f, indent=1, ensure_ascii=False)
-
+    if delete_processed_files:
+        os.remove(new_file_path)
     print(f"Updated JSON has been saved to {merged_file_path}")
 
 
-def copy_selected_fields():
+def copy_selected_fields(delete_downloaded_files, delete_processed_files):
     orig_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'nse_bse_eq.json')
     new_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'modified_nse_bse_eq.json')
     # Load the first JSON file into a dictionary
@@ -150,7 +151,7 @@ def copy_selected_fields():
 
     print(f"Selected fields copied successfully and written to {orig_file_path}.")
 
-def interactive_mapping():
+def interactive_mapping(delete_downloaded_files, delete_processed_files):
     orig_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'nse_bse_eq.json')
     new_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'modified_nse_bse_eq.json')
     # Load the first JSON file into a dictionary
@@ -227,7 +228,7 @@ def clean_any_stale_data():
 
     print(f"Cleaned data successfully and written to {orig_file_path}.")
 
-def add_new_data():
+def add_new_data(delete_downloaded_files, delete_processed_files):
     orig_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'nse_bse_eq.json')
     new_file_path = os.path.join(str(pathlib.Path(__file__).parent.parent.absolute()), 'modified_nse_bse_eq.json')
     # Load the first JSON file into a dictionary
@@ -253,7 +254,8 @@ def add_new_data():
     # Write the updated dictionary back to the second JSON file
     with open(orig_file_path, 'w') as file2:
         json.dump(orig_data, file2, indent=1)
-
+    if delete_processed_files:
+        os.remove(new_file_path)
     print(f"Merged approved data successfully and written to {orig_file_path}.")
 
 def print_as_table(new_isin, new_dict, old_isin, old_dict):
@@ -462,11 +464,13 @@ def ask_yes_no(question):
         return 2
 
 if __name__ == "__main__":
-    update_nse(download_dir())
-    update_bse(download_dir())
-    merge_new_info(download_dir())
-    copy_selected_fields()
-    interactive_mapping()
-    add_new_data()
+    delete_downloaded_files = True
+    delete_processed_files = True
+    update_nse(download_dir(), delete_downloaded_files, delete_processed_files)
+    update_bse(download_dir(), delete_downloaded_files, delete_processed_files)
+    merge_new_info(download_dir(), delete_downloaded_files, delete_processed_files)
+    copy_selected_fields(delete_downloaded_files, delete_processed_files)
+    interactive_mapping(delete_downloaded_files, delete_processed_files)
+    add_new_data(delete_downloaded_files, delete_processed_files)
     clean_any_stale_data()
     
