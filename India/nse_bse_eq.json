@@ -880,7 +880,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BLUESTARCO",
   "mc_code": "BS",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE131C01011": {
@@ -1238,7 +1238,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CGPOWER",
   "mc_code": "CG",
-  "cap": "Mid-Cap",
+  "cap": "Large-Cap",
   "suspension_date": ""
  },
  "INE107D01019": {
@@ -1402,7 +1402,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BHEL",
   "mc_code": "BHE",
-  "cap": "Large-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE094A01015": {
@@ -1619,7 +1619,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "IDBI",
   "mc_code": "",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE500A01029": {
@@ -2966,17 +2966,17 @@
  },
  "INE209A01019": {
   "bse_security_code": "500215",
-  "bse_security_id": "ATFL",
-  "bse_name": "Agro Tech Foods Ltd",
+  "bse_security_id": "SUNDROP",
+  "bse_name": "Sundrop Brands Ltd",
   "status": "Active",
   "face_value": "10.00",
   "industry": "Edible Oil",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
-  "nse_name": "Agro Tech Foods Limited",
+  "old_bse_security_id": "ATFL",
+  "nse_name": "Sundrop Brands Limited",
   "listing_date": "06-DEC-2002",
-  "old_nse_symbol": "",
-  "nse_symbol": "ATFL",
+  "old_nse_symbol": "ATFL",
+  "nse_symbol": "SUNDROP",
   "mc_code": "ATF",
   "cap": "Micro-Cap",
   "suspension_date": ""
@@ -3454,7 +3454,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "KSB",
   "mc_code": "KSB",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE337A01034": {
@@ -4570,7 +4570,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BIRLACORPN",
   "mc_code": "BC07",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE335A01020": {
@@ -4620,7 +4620,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "PRSMJOHNSN",
   "mc_code": "PC",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE855B01025": {
@@ -6311,7 +6311,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SKFINDIA",
   "mc_code": "SKF01",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE208A01029": {
@@ -6798,7 +6798,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SANOFI",
   "mc_code": "AP26",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE264A01014": {
@@ -6864,7 +6864,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GSFC",
   "mc_code": "GSF",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE030A01027": {
@@ -6996,7 +6996,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "TATACHEM",
   "mc_code": "TC",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE148A01019": {
@@ -7163,7 +7163,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "INDHOTEL",
   "mc_code": "IHC",
-  "cap": "Mid-Cap",
+  "cap": "Large-Cap",
   "suspension_date": ""
  },
  "INE172A01027": {
@@ -7827,7 +7827,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "SHAILY",
   "mc_code": "SEP02",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE050A01025": {
   "bse_security_code": "501425",
@@ -10946,7 +10947,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SARDAEN",
   "mc_code": "SEM",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE904B01013": {
@@ -14005,7 +14006,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BAYERCROP",
   "mc_code": "BC12",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE789D01014": {
@@ -16669,7 +16670,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "VIPIND",
   "mc_code": "VIP",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE679D01017": {
@@ -18653,7 +18654,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GARFIBRES",
   "mc_code": "GWR",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE925D01014": {
@@ -24402,7 +24403,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "LLOYDSENT",
   "mc_code": "SGT",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE386L01038": {
   "bse_security_code": "512465",
@@ -24804,7 +24806,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "AVANTIFEED",
   "mc_code": "AF21",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE110D01013": {
@@ -25213,7 +25215,7 @@
   "old_nse_symbol": "NBVENTURES",
   "nse_symbol": "NAVA",
   "mc_code": "NBV",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE582K01018": {
@@ -26006,7 +26008,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CARBORUNIV",
   "mc_code": "CU",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE123F01029": {
@@ -27667,7 +27669,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "GANECOS",
   "mc_code": "GP01",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE760J01012": {
   "bse_security_code": "514171",
@@ -31395,7 +31398,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "WEBELSOLAR",
   "mc_code": "WSL",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE535D01037": {
   "bse_security_code": "517500",
@@ -35814,7 +35818,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "TIMKEN",
   "mc_code": "TI23",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE677A01017": {
@@ -36338,7 +36342,7 @@
   "bse_security_code": "522237",
   "bse_security_id": "SHIVAGR",
   "bse_name": "Shivagrico Implements Ltd",
-  "status": "Active",
+  "status": "Suspended",
   "face_value": "10.00",
   "industry": "Industrial Products",
   "old_bse_security_code": "",
@@ -36544,7 +36548,7 @@
   "old_nse_symbol": "GET&D",
   "nse_symbol": "GVT&D",
   "mc_code": "ATD",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE087C01015": {
@@ -37865,7 +37869,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "DCMSHRIRAM",
   "mc_code": "DCM02",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE843D01027": {
@@ -37931,7 +37935,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "APARINDS",
   "mc_code": "AI40",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE178B01014": {
@@ -39891,7 +39895,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "POONAWALLA",
   "mc_code": "MF20",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE974A01018": {
@@ -40509,7 +40513,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GAEL",
   "mc_code": "GAE",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE027A01015": {
@@ -40575,7 +40579,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "FACT",
   "mc_code": "FCT",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE189F01012": {
@@ -41659,7 +41663,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "NEULANDLAB",
   "mc_code": "NL",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE052E01015": {
@@ -53256,7 +53260,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BALAMINES",
   "mc_code": "BA05",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE728D01012": {
@@ -53965,7 +53969,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "BALUFORGE",
   "mc_code": "BAL01",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE946B01014": {
   "bse_security_code": "531114",
@@ -57249,7 +57254,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "SHAKTIPUMP",
   "mc_code": "SPI08",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE07P301011": {
   "bse_security_code": "531432",
@@ -57955,7 +57961,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "RAJESHEXPO",
   "mc_code": "RE07",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE404L01039": {
@@ -65587,7 +65593,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "NATIONALUM",
   "mc_code": "NAC",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE307A01011": {
@@ -66057,7 +66063,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GLENMARK",
   "mc_code": "GP08",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE899A01017": {
@@ -66106,7 +66112,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "WOCKPHARMA",
   "mc_code": "W05",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE493A01027": {
@@ -66317,7 +66323,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "MAHLIFE",
   "mc_code": "MLD",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE968A01010": {
@@ -67519,7 +67525,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "IOB",
   "mc_code": "IOB",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE624C01015": {
@@ -68494,7 +68500,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "UNIONBANK",
   "mc_code": "UBI01",
-  "cap": "Large-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE686F01025": {
@@ -69946,7 +69952,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SHOPERSTOP",
   "mc_code": "SS51",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE278G01037": {
@@ -69995,7 +70001,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "JSWHL",
   "mc_code": "JSW",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE883G01018": {
@@ -70418,7 +70424,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "AURIONPRO",
   "mc_code": "PS12",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE371B01023": {
   "bse_security_code": "532669",
@@ -71751,7 +71758,7 @@
   "old_nse_symbol": "MAHINDCIE",
   "nse_symbol": "CIEINDIA",
   "mc_code": "MF19",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE540H01012": {
@@ -72159,7 +72166,7 @@
   "old_nse_symbol": "DAAWAT",
   "nse_symbol": "LTFOODS",
   "mc_code": "LTF",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE671H01015": {
@@ -72551,7 +72558,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "PGIL",
   "mc_code": "HPF01",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE684F01012": {
@@ -73531,7 +73538,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SPARC",
   "mc_code": "SPA",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE191I01012": {
@@ -73725,7 +73732,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "REFEX",
   "mc_code": "RR05",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE483A01010": {
@@ -73860,7 +73867,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "MOTILALOFS",
   "mc_code": "MOF01",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE222F01029": {
@@ -74433,7 +74440,8 @@
   "old_nse_symbol": "TARIL",
   "nse_symbol": "TARIL",
   "mc_code": "TRI",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Small-Cap"
  },
  "INE791I01019": {
   "bse_security_code": "532929",
@@ -74594,7 +74602,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "RPOWER",
   "mc_code": "RP",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE576I01022": {
@@ -75719,7 +75727,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ZFCVINDIA",
   "mc_code": "WAB",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE213J01012": {
@@ -76111,7 +76119,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "NHPC",
   "mc_code": "N07",
-  "cap": "Large-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE429K01012": {
@@ -76539,7 +76547,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "THANGAMAYL",
   "mc_code": "TJ",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE544K01026": {
   "bse_security_code": "533159",
@@ -77663,7 +77672,7 @@
   "nse_symbol": "GRAVITA",
   "mc_code": "GI09",
   "suspension_date": "",
-  "cap": "Micro-Cap"
+  "cap": "Small-Cap"
  },
  "INE324L01013": {
   "bse_security_code": "533284",
@@ -78216,7 +78225,7 @@
   "nse_symbol": "ZENTEC",
   "mc_code": "ZT01",
   "suspension_date": "",
-  "cap": "Micro-Cap"
+  "cap": "Small-Cap"
  },
  "INE597L01014": {
   "bse_security_code": "533343",
@@ -78788,7 +78797,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "PGEL",
   "mc_code": "PE06",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE050L01048": {
@@ -82680,7 +82689,7 @@
   "bse_security_code": "538418",
   "bse_security_id": "RCLEDIIADD",
   "bse_name": "Reliance Close Ended Equity Fund II- Series A - Direct Plan Dividend Payout Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -82696,7 +82705,7 @@
   "bse_security_code": "538419",
   "bse_security_id": "RCLEDIIADG",
   "bse_name": "Reliance Close Ended Equity Fund II- Series A - Direct Plan Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -82712,7 +82721,7 @@
   "bse_security_code": "538420",
   "bse_security_id": "RCLENDIIAD",
   "bse_name": "Reliance Close Ended Equity Fund II- Series A - Dividend Payout Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -82728,7 +82737,7 @@
   "bse_security_code": "538421",
   "bse_security_id": "RCLENDIIAG",
   "bse_name": "Reliance Close Ended Equity Fund II- Series A - Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -83223,7 +83232,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "SKIPPER",
   "mc_code": "S21",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE673E01018": {
   "bse_security_code": "538563",
@@ -83885,7 +83895,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SHARDACROP",
   "mc_code": "SC04",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE785O01019": {
@@ -84749,7 +84759,7 @@
   "bse_security_code": "538811",
   "bse_security_id": "D3YRCEEDDP",
   "bse_name": "DSP BlackRock 3 Years Close Ended Equity Fund-Direct Plan - Dividend Payout",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -87162,7 +87172,7 @@
   "bse_security_code": "539133",
   "bse_security_id": "KTKKIGFG",
   "bse_name": "Kotak Mahindra Mutual Fund - Kotak India Growth Fund Series I Non Direct Plan- Growth option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -87194,7 +87204,7 @@
   "bse_security_code": "539135",
   "bse_security_id": "KTKKIGFD",
   "bse_name": "Kotak Mahindra Mutual Fund - Kotak India Growth Fund Series I Non Direct Plan- Dividend option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -87210,7 +87220,7 @@
   "bse_security_code": "539136",
   "bse_security_id": "KTKKIGFGD",
   "bse_name": "Kotak Mahindra Mutual Fund - Kotak India Growth Fund Series I Direct Plan- Growth option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -87226,7 +87236,7 @@
   "bse_security_code": "539137",
   "bse_security_id": "KTKKIGFDD",
   "bse_name": "Kotak Mahindra Mutual Fund - Kotak India Growth Fund Series I Direct Plan- Dividend Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -87510,7 +87520,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "AIIL",
   "mc_code": "AII01",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE813P01016": {
@@ -93523,7 +93533,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "AVL",
   "mc_code": "AV",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE759V01019": {
@@ -95054,7 +95064,7 @@
   "bse_security_code": "540591",
   "bse_security_id": "HEOFDG1126",
   "bse_name": "HDFC EOF- II- 1126D May 2017(1)  plan under HDFC Equity Opportunities Fund- Series 2- Direct",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -95070,7 +95080,7 @@
   "bse_security_code": "540592",
   "bse_security_id": "HEOFDD1126",
   "bse_name": "HDFC EOF - II - 1126D May 2017(1)  plan under HDFC Equity Opportunities Fund - Series 2 - Direct",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -95086,7 +95096,7 @@
   "bse_security_code": "540593",
   "bse_security_id": "HEOFRG1126",
   "bse_name": "HDFC EOF- II - 1126D May 2017(1) plan under HDFC Equity Opportunities Fund - Series2 - Regular",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -95102,7 +95112,7 @@
   "bse_security_code": "540594",
   "bse_security_id": "HEOFRD1126",
   "bse_name": "HDFC EOF - II - 1126D May 2017(1)  plan under HDFC Equity Opportunities Fund - Series 2 - Regular",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -95430,7 +95440,7 @@
   "bse_security_code": "540634",
   "bse_security_id": "HEOFDG1100",
   "bse_name": "HDFC EQUITY OPPORTUNITIES FUND-II-1100D JUNE 2017(1) SERIES 2-DIRECT OPTION-GROWTH OPTION",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -95446,7 +95456,7 @@
   "bse_security_code": "540635",
   "bse_security_id": "HEOFDD1100",
   "bse_name": "HDFC EQUITY OPPORTUNITIES FUND-II-1100D JUNE 2017(1) SERIES 2-DIRECT OPTION-DIVIDEND PAYOUT OPTION",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -95462,7 +95472,7 @@
   "bse_security_code": "540636",
   "bse_security_id": "HEOFRG1100",
   "bse_name": "HDFC EQUITY OPPORTUNITIES FUND-II-1100D JUNE 2017(1) SERIES 2-REGULAR OPTION-GROWTH OPTION",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -95478,7 +95488,7 @@
   "bse_security_code": "540637",
   "bse_security_id": "HEOFRD1100",
   "bse_name": "HDFC EQUITY OPPORTUNITIES FUND-II-1100D JUNE 2017(1) SERIES 2-REGULAR OPTION-DIVIDEND PAYOUT OPTION",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -96888,7 +96898,7 @@
   "bse_security_code": "540778",
   "bse_security_id": "NIVBDDP",
   "bse_name": "NIPPON INDIA MUTUAL FUND  CAPITAL BUILDER FD SR B DR DVP 06JN21",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -96904,7 +96914,7 @@
   "bse_security_code": "540779",
   "bse_security_id": "NIVBDGP",
   "bse_name": "NIPPON INDIA MUTUAL FUND  CAPITAL BUILDER FD SR B DR GWTH 06JN21",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -96920,7 +96930,7 @@
   "bse_security_code": "540780",
   "bse_security_id": "NIVBDP",
   "bse_name": "NIPPON INDIA MUTUAL FUND  CAPITAL BUILDER FD SR B RG DVP 06JN21",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -96936,7 +96946,7 @@
   "bse_security_code": "540781",
   "bse_security_id": "NIVBGP",
   "bse_name": "NIPPON INDIA MUTUAL FUND  CAPITAL BUILDER FD SR B RG GWTH 06JN21",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -97049,7 +97059,7 @@
   "bse_security_code": "540791",
   "bse_security_id": "HHOF1140DG",
   "bse_name": "HDFC HOF-I-1140D November 2017(1) - Direct Option - Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -97065,7 +97075,7 @@
   "bse_security_code": "540792",
   "bse_security_id": "HHOF1140DD",
   "bse_name": "HDFC HOF-I-1140D November 2017(1) - Direct Option - Dividend Payout Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -97081,7 +97091,7 @@
   "bse_security_code": "540793",
   "bse_security_id": "HHOF1140RG",
   "bse_name": "HDFC HOF-I-1140D November 2017(1) - Regular Option - Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -97097,7 +97107,7 @@
   "bse_security_code": "540794",
   "bse_security_id": "HHOF1140RD",
   "bse_name": "HDFC HOF-I-1140D November 2017(1) - Regular  Option - Dividend Payout Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98023,7 +98033,7 @@
   "bse_security_code": "540981",
   "bse_security_id": "KTINDF4RG",
   "bse_name": "Kotak India Growth Fund   Series 4 - Regular Plan Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98039,7 +98049,7 @@
   "bse_security_code": "540982",
   "bse_security_id": "KTINDF4RD",
   "bse_name": "Kotak India Growth Fund   Series 4 - Regular Plan Dividend Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98055,7 +98065,7 @@
   "bse_security_code": "540983",
   "bse_security_id": "KTINDF4DG",
   "bse_name": "KOTAK INDIA GROWTH FUND SERIES 4 DIRECT PLAN DIVIDEND OPTION",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98071,7 +98081,7 @@
   "bse_security_code": "540984",
   "bse_security_id": "KTINDF4DD",
   "bse_name": "Kotak India Growth Fund   Series 4 - Direct Plan Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98232,7 +98242,7 @@
   "bse_security_code": "541084",
   "bse_security_id": "DACE2RG",
   "bse_name": "DSP ACE Fund Series 2 Reg Growth Mat Dt 28 Jun 2021",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98248,7 +98258,7 @@
   "bse_security_code": "541085",
   "bse_security_id": "DACE2RDP",
   "bse_name": "DSP A.C.E. Fund - Series 2 - Reg - IDCW - Reg Pay Mat Dt.28-Jun-2021",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98264,7 +98274,7 @@
   "bse_security_code": "541086",
   "bse_security_id": "DACE2DG",
   "bse_name": "DSP A.C.E. Fund - Series 2 - Dir - Growth Mat Dt.28-Jun-2021",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98280,7 +98290,7 @@
   "bse_security_code": "541087",
   "bse_security_id": "DACE2DDP",
   "bse_name": "DSP A.C.E. Fund - Series 2 - Dir - IDCW - Reg Pay Mat Dt.28-Jun-2021",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98983,7 +98993,7 @@
   "bse_security_code": "541341",
   "bse_security_id": "KTKIND5RG",
   "bse_name": "Kotak India Growth Fund Series 5 - Regular Plan - Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -98999,7 +99009,7 @@
   "bse_security_code": "541343",
   "bse_security_id": "KTKIND5RD",
   "bse_name": "Kotak India Growth Fund Series 5 - Regular Plan - Dividend Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -99015,7 +99025,7 @@
   "bse_security_code": "541345",
   "bse_security_id": "KTKIND5DG",
   "bse_name": "Kotak India Growth Fund Series 5 - Direct Plan - Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -99031,7 +99041,7 @@
   "bse_security_code": "541346",
   "bse_security_id": "KTKIND5DD",
   "bse_name": "Kotak India Growth Fund Series 5 - Direct Plan - Dividend Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -99334,7 +99344,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "FINEORG",
   "mc_code": "FOI",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE665L01035": {
@@ -99351,7 +99361,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "VARROC",
   "mc_code": "VE08",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE685Z01033": {
@@ -99960,7 +99970,7 @@
   "bse_security_code": "541879",
   "bse_security_id": "KTKIND7RG",
   "bse_name": "Kotak India Growth Fund Series 7 - Regular Plan - Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -99976,7 +99986,7 @@
   "bse_security_code": "541881",
   "bse_security_id": "KTKIND7RD",
   "bse_name": "Kotak India Growth Fund Series 7 - Regular Plan - Dividend Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -99992,7 +100002,7 @@
   "bse_security_code": "541882",
   "bse_security_id": "KTKIND7DG",
   "bse_name": "Kotak India Growth Fund Series 7 - Direct Plan - Growth Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -100008,7 +100018,7 @@
   "bse_security_code": "541884",
   "bse_security_id": "KTKIND7DD",
   "bse_name": "Kotak India Growth Fund Series 7 - Direct Plan - Dividend Option",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -100170,7 +100180,7 @@
   "bse_security_code": "541984",
   "bse_security_id": "NIOSAG",
   "bse_name": "NIPPON INDIA MUTUAL FUND  INDIA OPPT FD  SR A RG GWTH31JN22",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -100186,7 +100196,7 @@
   "bse_security_code": "541985",
   "bse_security_id": "NIOSAD",
   "bse_name": "NIPPON INDIA MUTUAL FUND  INDIA OPPT FD  SR A RG DVP31JN22",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -100202,7 +100212,7 @@
   "bse_security_code": "541986",
   "bse_security_id": "NIOSADG",
   "bse_name": "NIPPON INDIA MUTUAL FUND  INDIA OPPT FD  SR A DR GWTH31JN22",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -100218,7 +100228,7 @@
   "bse_security_code": "541987",
   "bse_security_id": "NIOSADD",
   "bse_name": "NIPPON INDIA MUTUAL FUND  INDIA OPPT FD  SR A DR DVP31JN22",
-  "status": "Suspended",
+  "status": "Delisted",
   "face_value": "10.00",
   "industry": " ",
   "old_bse_security_code": "",
@@ -100442,7 +100452,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ATGL",
   "mc_code": "ADG01",
-  "cap": "Large-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE478B01018": {
@@ -100847,7 +100857,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "KPIGREEN",
   "mc_code": "KPIGL54232",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE302R01024": {
@@ -101060,7 +101070,8 @@
   "old_nse_symbol": "",
   "nse_symbol": "ANUP",
   "mc_code": "ANUP54246",
-  "suspension_date": ""
+  "suspension_date": "",
+  "cap": "Micro-Cap"
  },
  "INE03CM01014": {
   "bse_security_code": "542477",
@@ -101864,7 +101875,7 @@
   "old_nse_symbol": "IIFLWAM",
   "nse_symbol": "360ONE",
   "mc_code": "IIFLW54277",
-  "cap": "Small-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE489L01022": {
@@ -102236,7 +102247,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "IRCTC",
   "mc_code": "IRC",
-  "cap": "Large-Cap",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INF204KB15E8": {
@@ -102642,7 +102653,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "UJJIVANSFB",
   "mc_code": "USF",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE05AN01011": {
@@ -104015,7 +104026,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "EQUITASBNK",
   "mc_code": "ESF",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE0BLY01023": {
@@ -104433,7 +104444,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "EASEMYTRIP",
   "mc_code": "ETP01",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE0CJD01011": {
@@ -108941,7 +108952,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CHEMPLASTS",
   "mc_code": "",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE227W01023": {
@@ -109026,7 +109037,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "DELHIVERY",
   "mc_code": "",
-  "cap": "Mid-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE060X01026": {
@@ -109264,7 +109275,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ALIVUS",
   "mc_code": "",
-  "cap": "Micro-Cap",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE0CU601026": {
@@ -109281,7 +109292,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GMRP&UI",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE0BJS01011": {
@@ -109315,7 +109326,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "GRINFRA",
   "mc_code": "",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE00EV01017": {
@@ -109723,7 +109734,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "NUVOCO",
   "mc_code": "",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE388Y01029": {
@@ -110828,7 +110839,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ABDL",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE00YB01017": {
@@ -110862,7 +110873,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ACI",
   "mc_code": "",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE622W01025": {
@@ -110879,7 +110890,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ACMESOLAR",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE024001021": {
@@ -110913,7 +110924,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "AFCONS",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE916Y01019": {
@@ -110952,13 +110963,13 @@
  },
  "INE00ZE01026": {
   "bse_security_code": "543712",
-  "bse_security_id": "AHL",
+  "bse_security_id": "AFSL",
   "bse_name": "Abans Holdings Ltd",
   "status": "Active",
   "face_value": "2.00",
   "industry": "Holding Company",
   "old_bse_security_code": "",
-  "old_bse_security_id": "",
+  "old_bse_security_id": "AHL",
   "nse_name": "Abans Holdings Limited",
   "listing_date": "23-DEC-2022",
   "old_nse_symbol": "",
@@ -111100,7 +111111,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "AWFIS",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE02IJ01035": {
@@ -111134,7 +111145,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BAJAJHFL",
   "mc_code": "",
-  "cap": "",
+  "cap": "Large-Cap",
   "suspension_date": ""
  },
  "INE0O9T01021": {
@@ -111202,7 +111213,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BANSALWIRE",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE01EE01011": {
@@ -111270,7 +111281,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "BLACKBUCK",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE0N7W01012": {
@@ -111406,7 +111417,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CEIGALL",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE0LMW01024": {
@@ -111423,7 +111434,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "CELLO",
   "mc_code": "",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE037Z01029": {
@@ -111695,7 +111706,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "EIEL",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE050401020": {
@@ -111814,7 +111825,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "EUREKAFORB",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE777F01014": {
@@ -111865,7 +111876,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "FIRSTCRY",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE128S01021": {
@@ -112188,7 +112199,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "HYUNDAI",
   "mc_code": "",
-  "cap": "",
+  "cap": "Large-Cap",
   "suspension_date": ""
  },
  "INE349Y01013": {
@@ -112239,7 +112250,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "IGIL",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE0LOJ01019": {
@@ -112273,7 +112284,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "IKS",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE065X01017": {
@@ -112919,7 +112930,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "MAXESTATES",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE474Q01031": {
@@ -113140,7 +113151,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "NIVABUPA",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE850M01015": {
@@ -113225,7 +113236,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "NTPCGREEN",
   "mc_code": "",
-  "cap": "",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE531F01015": {
@@ -113293,7 +113304,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "OLAELEC",
   "mc_code": "",
-  "cap": "",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE013P01021": {
@@ -113463,7 +113474,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "PNGJL",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE0BS701011": {
@@ -113480,7 +113491,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "PREMIERENE",
   "mc_code": "",
-  "cap": "",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE004A01022": {
@@ -113837,7 +113848,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SAGILITY",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE035801013": {
@@ -113871,7 +113882,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SAILIFE",
   "mc_code": "",
-  "cap": "",
+  "cap": "Small-Cap",
   "suspension_date": ""
  },
  "INE08U801020": {
@@ -113922,7 +113933,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SANOFICONR",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE08NE01025": {
@@ -114296,7 +114307,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "SWIGGY",
   "mc_code": "",
-  "cap": "",
+  "cap": "Large-Cap",
   "suspension_date": ""
  },
  "INE555Z01020": {
@@ -114398,7 +114409,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "TRANSRAILL",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE0O3901029": {
@@ -114432,7 +114443,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "TVSSCS",
   "mc_code": "",
-  "cap": "Small-Cap",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE851I01011": {
@@ -114483,7 +114494,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "UNIMECH",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE244O01017": {
@@ -114585,7 +114596,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "VENTIVE",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE01KI01027": {
@@ -114636,7 +114647,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "VMM",
   "mc_code": "",
-  "cap": "",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE0AE001013": {
@@ -114704,7 +114715,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "WAAREEENER",
   "mc_code": "",
-  "cap": "",
+  "cap": "Mid-Cap",
   "suspension_date": ""
  },
  "INE0CJF01024": {
@@ -114772,7 +114783,7 @@
   "old_nse_symbol": "",
   "nse_symbol": "ZAGGLE",
   "mc_code": "",
-  "cap": "",
+  "cap": "Micro-Cap",
   "suspension_date": ""
  },
  "INE02ZA01012": {
@@ -120777,12 +120788,12 @@
   "suspension_date": ""
  },
  "INE01EO01010": {
-  "bse_security_code": "",
-  "bse_security_id": "",
-  "bse_name": "",
-  "status": "",
-  "face_value": "10",
-  "industry": "",
+  "bse_security_code": "544386",
+  "bse_security_id": "SPECTRUM",
+  "bse_name": "Spectrum Electrical Industries Ltd",
+  "status": "Active",
+  "face_value": "10.00",
+  "industry": "Industrial Products",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "Spectrum Electrical Industries Limited",
@@ -120814,7 +120825,7 @@
   "bse_security_code": "543269",
   "bse_security_id": "ADJIA",
   "bse_name": "Adjia Technologies Ltd",
-  "status": "Active",
+  "status": "Suspended",
   "face_value": "10.00",
   "industry": "Computers - Software & Consulting",
   "old_bse_security_code": "",
@@ -120851,6 +120862,23 @@
   "status": "Active",
   "face_value": "10.00",
   "industry": " ",
+  "old_bse_security_code": "",
+  "old_bse_security_id": "",
+  "nse_name": "",
+  "listing_date": "",
+  "old_nse_symbol": "",
+  "nse_symbol": "",
+  "mc_code": "",
+  "cap": "",
+  "suspension_date": ""
+ },
+ "INE0TGG01014": {
+  "bse_security_code": "544387",
+  "bse_security_id": "DESCO",
+  "bse_name": "Desco Infratech Ltd",
+  "status": "Active",
+  "face_value": "10.00",
+  "industry": "Civil Construction",
   "old_bse_security_code": "",
   "old_bse_security_id": "",
   "nse_name": "",
