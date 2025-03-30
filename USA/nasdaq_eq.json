@@ -250,5 +250,42 @@
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
     "etf": false
+  },
+  {
+  "US46090E1038": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "10-MAR-1999",
+    "symbol": "QQQ",
+    "name": "Invesco QQQ Trust",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financials",
+    "industry": "Exchange-Traded Funds",
+    "etf": true
+  },
+  "US9229087690": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "04-APR-2001",
+    "symbol": "VTI",
+    "name": "Vanguard Total Stock Market ETF",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financials",
+    "industry": "Exchange-Traded Funds",
+    "etf": true
+  },
+  "US9229086374": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "09-Sep-2010",
+    "symbol": "VOO",
+    "name": "Vanguard S&P 500 ETF",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financials",
+    "industry": "Exchange-Traded Funds",
+    "etf": true
   }
 }
