@@ -35,7 +35,7 @@
     "industry": "Internet Content & Information",
     "etf": false
   },
-  "US0231351067": {
+  "US0079031078": {
     "status": "Listed",
     "delisted_date": null,
     "listing_date": "01-JUN-1980",
@@ -59,7 +59,7 @@
     "industry": "E-Commerce",
     "etf": false
   },
-  "US0291131087": {
+  "US0404131064": {
     "status": "Listed",
     "delisted_date": null,
     "listing_date": "10-JUN-2014",
@@ -143,7 +143,7 @@
     "industry": "Software",
     "etf": false
   },
-  "US3021301094": {
+  "CA11134P1009": {
     "status": "Listed",
     "delisted_date": null,
     "listing_date": "02-MAY-2009",
@@ -155,7 +155,7 @@
     "industry": "Semiconductors",
     "etf": false
   },
-  "US31620M1062": {
+  "US64110L1061": {
     "status": "Listed",
     "delisted_date": null,
     "listing_date": "29-JUN-2002",
@@ -167,7 +167,7 @@
     "industry": "Television Services",
     "etf": false
   },
-  "US35152A1097": {
+  "US3580541049": {
     "status": "Listed",
     "delisted_date": null,
     "listing_date": "03-SEP-2015",
@@ -275,7 +275,7 @@
     "industry": "Exchange-Traded Funds",
     "etf": true
   },
-  "US9229086374": {
+  "US9229083632": {
     "status": "Listed",
     "delisted_date": null,
     "listing_date": "09-Sep-2010",
@@ -286,5 +286,150 @@
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
     "etf": true
+  },
+  "US2561631068": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "12-Apr-2018",
+    "symbol": "DOCU",
+    "name": "DocuSign, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "etf": false
+  },
+  "US81762P1021": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "06-Jun-2012",
+    "symbol": "NOW",
+    "name": "ServiceNow, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Information Technology Services",
+    "etf": false
+  },
+  "US6974351057": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "02-June-2019",
+    "symbol": "PANW",
+    "name": "Palo Alto Networks, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Information Technology Services",
+    "etf": false
+  },
+  "US7134481081": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "02-June-1959",
+    "symbol": "PEP",
+    "name": "PepsiCo, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic",
+    "etf": false
+  },
+  "US8030542042": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "10-Jan-1999",
+    "symbol": "SAP",
+    "name": "SAP SE",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "etf": false
+  },
+  "US86800U3023": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "14-Sep-2010",
+    "symbol": "SMCI",
+    "name": "Super Micro Computer, Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Technology",
+    "industry": "Computer Hardware",
+    "etf": false
+  },
+  "US92189F6768": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "05-Nov-2012",
+    "symbol": "SMH",
+    "name": "VanEck Semiconductor ETF",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Exchange-Traded Funds",
+    "etf": true
+  },
+  "US83304A1060": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "02-Mar-2017",
+    "symbol": "SNAP",
+    "name": "Snap Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "etf": false
+  },
+  "ARBCOM460358": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "19-Sep-2019",
+    "symbol": "SNOW",
+    "name": "Snowflake Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "etf": false
+  },
+  "US8740391003": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "05-Jul-1994",
+    "symbol": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing Company",
+    "cap": "Large-Cap",
+    "market_cap_type": "Mega-Cap",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "etf": false
+  },
+  "US90353T1007": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "29-Apr-2019",
+    "symbol": "UBER",
+    "name": "Uber Technologies, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Information Technology Services",
+    "etf": false
+  },
+  "CA93267X1006": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "01-Jul-1972",
+    "symbol": "WMT",
+    "name": "Walmart Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Consumer Defensive",
+    "industry": "Discount Stores",
+    "etf": false
   }
 }
+
