@@ -430,6 +430,41 @@
     "sector": "Consumer Defensive",
     "industry": "Discount Stores",
     "etf": false
-  }
+  },
+  "US7475251036": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "06-Apr-1994",
+    "symbol": "QCOM",
+    "name": "Qualcomm Incorporated",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "etf": false
+  },
+  "US8552441094": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "26-Jun-1992",
+    "symbol": "SBUX",
+    "name": "Starbucks Corporation",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Consumer Cyclical",
+    "industry": "Restaurants",
+    "etf": false
+  },
+  "US88160R1014": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "29-Jun-2010",
+    "symbol": "TSLA",
+    "name": "Tesla, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Mega-Cap",
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "etf": false
+  }  
 }
-
