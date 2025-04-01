@@ -14,7 +14,7 @@
   "US87612E1064": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "19-Apr-1983",
+    "listing_date": "19-APR-1983",
     "symbol": "TGT",
     "name": "Target Corporation",
     "cap": "Large-Cap",
@@ -26,7 +26,7 @@
   "US2546871060": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "11-Dec-1957",
+    "listing_date": "11-DEC-1957",
     "symbol": "DIS",
     "name": "The Walt Disney Company",
     "cap": "Large-Cap",
@@ -38,7 +38,7 @@
   "US1912161007": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "01-May-1960",
+    "listing_date": "01-MAY-1960",
     "symbol": "KO",
     "name": "Coca-Cola Company",
     "cap": "Large-Cap",
@@ -50,7 +50,7 @@
   "US68389X1054": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "12-Mar-1986",
+    "listing_date": "12-MAR-1986",
     "symbol": "ORCL",
     "name": "Oracle Corporation",
     "cap": "Large-Cap",
@@ -58,5 +58,5 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "etf": false
-  },
+  }
 }
