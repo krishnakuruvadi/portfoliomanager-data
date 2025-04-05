@@ -58,5 +58,17 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "etf": false
+  },
+  "US69608A1088": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "30-SEP-2020",
+    "symbol": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software & IT Services",
+    "etf": false
   }
 }
