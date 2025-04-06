@@ -70,5 +70,17 @@
     "sector": "Technology",
     "industry": "Software & IT Services",
     "etf": false
+  },
+  "US18915M1071": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "12-SEP-2019",
+    "symbol": "NET",
+    "name": "Cloudflare, Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "etf": false
   }
 }
