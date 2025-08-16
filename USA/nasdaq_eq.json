@@ -478,5 +478,18 @@
     "sector": "Technology",
     "industry": "Software & IT Services",
     "etf": false
-  }
+  },
+  "CA82509L1076": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "21-MAY-2015",
+    "symbol": "SHOP",
+    "name": "Shopify Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software & IT Services",
+    "etf": false
+  },
+  
 }
