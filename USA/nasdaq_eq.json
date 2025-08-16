@@ -491,5 +491,16 @@
     "industry": "Software & IT Services",
     "etf": false
   },
-  
+  "US21873S1087": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "28-MAR-2025",
+    "symbol": "CRWV",
+    "name": "CoreWeave Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "etf": false
+  }
 }
