@@ -70,5 +70,29 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "etf": false
+  },
+  "US3168411052": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "30-JUL-2025",
+    "symbol": "FIG",
+    "name": "Figma Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "etf": false
+  },
+  "KYG169101204": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "13-AUG-2025",
+    "symbol": "BLSH",
+    "name": "Bullish Ord Shs",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "etf": false
   }
 }
