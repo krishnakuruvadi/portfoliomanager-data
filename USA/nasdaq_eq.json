@@ -27,6 +27,18 @@
     "status": "Listed",
     "delisted_date": null,
     "listing_date": "19-AUG-2004",
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc. (Class A)",
+    "cap": "Large-Cap",
+    "market_cap_type": "Mega-Cap",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "etf": false
+  },
+  "US02079K1079: {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "19-AUG-2004",
     "symbol": "GOOG",
     "name": "Alphabet Inc. (Class C)",
     "cap": "Large-Cap",
