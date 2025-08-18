@@ -130,7 +130,7 @@ def update_bse(download_dir, delete_downloaded_files, delete_processed_files):
                 stocks[isin] = {
                                 'bse_security_code':row['Security Code'], 
                                 'bse_security_id':row['Security Id'], 
-                                'bse_name': row['Security Name'], 
+                                'bse_name': row['Security Name'].replace('-$', ''),
                                 'status':row['Status'], 
                                 'face_value':row['Face Value'], 
                                 'industry':row['Industry'],
@@ -163,4 +163,4 @@ def update_bse(download_dir, delete_downloaded_files, delete_processed_files):
         json.dump(stocks, json_file, indent=1)
     if delete_downloaded_files:
         os.remove(b_path)
-    
+
