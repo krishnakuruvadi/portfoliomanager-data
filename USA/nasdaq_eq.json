@@ -516,15 +516,15 @@
     "etf": false
   },
   "US03831W1080": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "15-APR-2021",
-    "symbol": "APP",
-    "name": "AppLovin Corporation",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Technology",
-    "industry": "Application Software",
-    "etf": false
-  }
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "15-APR-2021",
+    "symbol": "APP",
+    "name": "AppLovin Corporation",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Application Software",
+    "etf": false
+  }
 }
