@@ -526,5 +526,89 @@
     "sector": "Technology",
     "industry": "Application Software",
     "etf": false
+  },
+  "US63010H1086": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "08-MAY-2024",
+    "symbol": "NNE",
+    "name": "NANO Nuclear Energy Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Energy",
+    "industry": "Renewable Electricity",
+    "etf": false
+  },
+  "US76655K1034": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "02-MAR-2022",
+    "symbol": "RGTI",
+    "name": "Rigetti Computing, Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Technology",
+    "industry": "Computer Hardware",
+    "etf": false
+  },
+  "US7731211089": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "25-AUG-2021",
+    "symbol": "RKLB",
+    "name": "Rocket Lab Corporation",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "etf": false
+  },
+  "US46438R1059": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "24-JUN-2024",
+    "symbol": "ETHA",
+    "name": "iShares Ethereum Trust ETF",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financial Services",
+    "industry": "Cryptocurrency",
+    "etf": true
+  },
+  "US46438F1012": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "05-JAN-2024",
+    "symbol": "IBIT",
+    "name": "iShares Bitcoin Trust",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financial Services",
+    "industry": "Cryptocurrency",
+    "etf": true
+  },
+  "US3493811034": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "11-SEP-2025",
+    "symbol": "FIGR",
+    "name": "Figure Technology Solutions, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financial Services",
+    "industry": "Credit Services",
+    "etf": false
+  },
+  "US36866J1051": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "11-SEP-2025",
+    "symbol": "GEMI",
+    "name": "Gemini Space Station, Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Financial Services",
+    "industry": "Cryptocurrency",
+    "etf": false
   }
 }

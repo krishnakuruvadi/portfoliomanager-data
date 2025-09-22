@@ -94,5 +94,101 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "etf": false
+  },
+  "US02156V1098": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "11-MAY-2024",
+    "symbol": "OKLO",
+    "name": "Oklo Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Energy",
+    "industry": "Renewable Electricity",
+    "etf": false
+  },
+  "US67079K1007": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "02-MAY-2022",
+    "symbol": "SMR",
+    "name": "NuScale Power Corporation",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Energy",
+    "industry": "Renewable Electricity",
+    "etf": false
+  },
+  "US03945R1023": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "17-SEP-2021",
+    "symbol": "ACHR",
+    "name": "Archer Aviation Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "etf": false
+  },
+  "KYG651631007": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "11-AUG-2021",
+    "symbol": "JOBY",
+    "name": "Joby Aviation, Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "etf": false
+  },
+  "US46222L1089": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "01-OCT-2021",
+    "symbol": "IONQ",
+    "name": "IonQ, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Computer Hardware",
+    "etf": false
+  },
+    "US26740W1099": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "08-AUG-2022",
+    "symbol": "QBTS",
+    "name": "D-Wave Quantum Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Technology",
+    "industry": "Computer Hardware",
+    "etf": false
+  },
+  "US85208P3038": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "03-DEC-2019",
+    "symbol": "URNM",
+    "name": "Sprott Uranium Miners ETF",
+    "cap": "Small-Cap",
+    "market_cap_type": "Small-Cap",
+    "sector": "Materials",
+    "industry": "Uranium Mining",
+    "etf": true
+  },
+  "GB00BMHVL512": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "10-SEP-2025",
+    "symbol": "KLAR",
+    "name": "Klarna Group plc",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financial Services",
+    "industry": "Credit Services",
+    "etf": false
   }
 }
