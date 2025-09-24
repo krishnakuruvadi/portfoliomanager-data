@@ -610,5 +610,29 @@
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
     "etf": false
+  },
+  "US25809K1051": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "09-DEC-2020",
+    "symbol": "DASH",
+    "name": "DoorDash, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Consumer Discretionary",
+    "industry": "Internet Retail",
+    "etf": false
+  },
+  "US5951121038": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "16-MAY-1984",
+    "symbol": "MU",
+    "name": "Micron Technology, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "etf": false
   }
 }
