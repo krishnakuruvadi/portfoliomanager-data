@@ -190,5 +190,29 @@
     "sector": "Financial Services",
     "industry": "Credit Services",
     "etf": false
+  },
+  "US9229087690": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "24-MAY-2001",
+    "symbol": "VTI",
+    "name": "Vanguard Total Stock Market ETF",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financial Services",
+    "industry": "Asset Management",
+    "etf": true
+  },
+  "US81369Y8030": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "22-DEC-1998",
+    "symbol": "XLK",
+    "name": "The Technology Select Sector SPDR® Fund",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Information Technology",
+    "industry": "Broad-based/Sector Technology ETF",
+    "etf": true
   }
 }

@@ -275,18 +275,6 @@
     "industry": "Exchange-Traded Funds",
     "etf": true
   },
-  "US9229087690": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "04-APR-2001",
-    "symbol": "VTI",
-    "name": "Vanguard Total Stock Market ETF",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Financials",
-    "industry": "Exchange-Traded Funds",
-    "etf": true
-  },
   "US9229083632": {
     "status": "Listed",
     "delisted_date": null,
