@@ -622,5 +622,17 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false
+  },
+  "US46138G6492": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "13-OCT-2020",
+    "symbol": "QQQM",
+    "name": "Invesco NASDAQ 100 ETF",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Financials",
+    "industry": "Exchange-Traded Funds",
+    "etf": true
   }
 }
