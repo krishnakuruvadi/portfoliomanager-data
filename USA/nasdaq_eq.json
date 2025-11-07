@@ -634,5 +634,29 @@
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
     "etf": true
+  },
+  "US9581021055": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "08-NOV-1985",
+    "symbol": "WDC",
+    "name": "Western Digital Corp.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Information Technology",
+    "industry": "Technology Hardware, Storage & Peripherals",
+    "etf": false
+  },
+  "IE00BKVD2N49": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "10-DEC-2002",
+    "symbol": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Information Technology",
+    "industry": "Technology Hardware, Storage & Peripherals",
+    "etf": false
   }
 }
