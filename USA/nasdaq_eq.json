@@ -658,5 +658,17 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals",
     "etf": false
-  }
+  },
+  "US25381A1088": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "06-OCT-1989",
+    "symbol": "DGII",
+    "name": "Digi International Inc.",
+    "cap": "Small-Cap",
+    "market_cap_type": "Small-Cap",
+    "sector": "Technology",
+    "industry": "Communications Equipment",
+    "etf": false
+  },
 }
