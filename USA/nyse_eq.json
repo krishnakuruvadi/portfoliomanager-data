@@ -214,5 +214,17 @@
     "sector": "Information Technology",
     "industry": "Broad-based/Sector Technology ETF",
     "etf": true
+  },
+  "US3647601083": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "19-MAY-1976",
+    "symbol": "GAP",
+    "name": "Gap Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Consumer Cyclical",
+    "industry": "Specialty Retail",
+    "etf": false
   }
 }
