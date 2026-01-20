@@ -46,14 +46,14 @@ def merge_new_info(download_dir, delete_downloaded_files, delete_processed_files
             n_data = update_data[isin]
             merged_data[isin] = data
             for key, value in n_data.items():
-                if value.strip() != '':
+                if value and value.strip() != '':
                     merged_data[isin][key] = value
         else:
             matching_isin, matching_data = check_matching_symbols(merged_data, data)
             if matching_isin:
                 merged_data[matching_isin] = data
                 for key, value in matching_data.items():
-                    if value.strip() != '':
+                    if value and value.strip() != '':
                         merged_data[matching_isin][key] = value
             else:
                 print(f'found no matching data {isin} {data}')
@@ -65,7 +65,7 @@ def merge_new_info(download_dir, delete_downloaded_files, delete_processed_files
         #    continue
         if isin in merged_data:
             for key, value in data.items():
-                if value.strip() != '':
+                if value and value.strip() != '':
                     merged_data[isin][key] = value  # Replace or add the key-value pair
         else:
             matching_isin, matching_data = check_matching_symbols(merged_data, data)

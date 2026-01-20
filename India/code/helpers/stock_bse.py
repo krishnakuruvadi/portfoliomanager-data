@@ -85,7 +85,8 @@ def add_or_append(inp, new_str):
 def clean(d):
     res = dict()
     for k,v in d.items():
-        res[k.strip()] = v
+        if k:
+            res[k.strip()] = v
     return res
 
 def nse_bse_eq_file_path(download_dir):
@@ -133,7 +134,7 @@ def update_bse(download_dir, delete_downloaded_files, delete_processed_files):
                                 'bse_name': row['Security Name'].replace('-$', ''),
                                 'status':row['Status'], 
                                 'face_value':row['Face Value'], 
-                                'industry':row['Industry'],
+                                'industry':row.get('Industry', ""),
                                 'old_bse_security_code':'',
                                 'old_bse_security_id':'',
                                 'nse_name':'',
@@ -155,7 +156,7 @@ def update_bse(download_dir, delete_downloaded_files, delete_processed_files):
                     stocks[isin]['bse_security_id'] = row['Security Id']
                 stocks[isin]['status'] = row['Status']
                 stocks[isin]['face_value'] = row['Face Value']
-                stocks[isin]['industry'] = row['Industry']
+                stocks[isin]['industry'] = row.get('Industry', "")
                 stocks[isin]['bse_name'] = row['Security Name']
 
     
