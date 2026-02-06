@@ -5,7 +5,6 @@ import bs4
 import json
 import os
 from helpers.utils import get_float_or_none_from_string, get_date_or_none_from_string
-from dateutil.relativedelta import relativedelta
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException

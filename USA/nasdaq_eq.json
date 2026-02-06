@@ -218,18 +218,6 @@
   "US67066G1040": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "06-JUN-2012",
-    "symbol": "NOW",
-    "name": "ServiceNow, Inc.",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Technology",
-    "industry": "Software",
-    "etf": false
-  },
-  "US67066G1040": {
-    "status": "Listed",
-    "delisted_date": null,
     "listing_date": "06-JUN-2013",
     "symbol": "NVDA",
     "name": "NVIDIA Corporation",
@@ -308,7 +296,7 @@
     "cap": "Large-Cap",
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
-    "industry": "Information Technology Services",
+    "industry": "Software",
     "etf": false
   },
   "US6974351057": {
@@ -670,5 +658,89 @@
     "sector": "Technology",
     "industry": "Communications Equipment",
     "etf": false
+  },
+  "US55024U1097": {
+    "status": "Listed",
+    "listing_date": "04-AUG-2015",
+    "delisted_date": null,
+    "name": "Lumentum Holdings Inc.",
+    "symbol": "LITE",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "industry": "Communications Equipment",
+    "sector": "Technology",
+    "etf": false
+  },
+  "US21037T1097": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "19-JAN-2022",
+    "symbol": "CEG",
+    "name": "Constellation Energy Corporation",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Utilities",
+    "industry": "Electric Utilities",
+    "etf": false
+  },
+  "US83417M1045": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "26-MAR-2015",
+    "symbol": "SEDG",
+    "name": "SolarEdge Technologies, Inc.",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Energy",
+    "industry": "Renewable Electricity",
+    "etf": false
+  },
+  "US2787681061": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "02-JAN-2008",
+    "symbol": "SATS",
+    "name": "EchoStar Corporation",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Communication Services",
+    "industry": "Telecom Services",
+    "etf": false
+  },
+  "US65290E1010": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "09-FEB-2023",
+    "symbol": "NXT",
+    "name": "Nextpower, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Electronic Technology",
+    "industry": "Electronic Equipment & Instruments",
+    "etf": false
+  },
+  "US0301112076": {
+    "status": "Listed",
+    "cap": "Small-Cap",
+    "market_cap_type": "Small-Cap",
+    "listing_date": "09-APR-1987",
+    "symbol": "AMSC",
+    "name": "American Superconductor Corporation",
+    "delisted_date": null,
+    "sector": "Industrials",
+    "industry": "Electrical Equipment & Components",
+    "etf": false
+  },
+  "CA8795123097": {
+    "symbol": "TSAT",
+    "cap": "Small-Cap",
+    "market_cap_type": "Small-Cap",
+    "listing_date": "18-NOV-2021",
+    "name": "Telesat Corporation",
+    "delisted_date": null,
+    "sector": "Communication Services",
+    "industry": "Specialized Telecommunications",
+    "etf": false,
+    "status": "Listed"
   }
 }
