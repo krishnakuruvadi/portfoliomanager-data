@@ -30,6 +30,7 @@ def get_mf_entries(csv_file=None):
                     data[row[0]]['kuvera_name'] = row[9]
                     data[row[0]]['kuvera_fund_category'] = row[10]
                     data[row[0]]['kuvera_code'] = row[11]
+                    data[row[0]]['inception_date'] = row[12]
                 header = False
     return data
 
@@ -45,15 +46,16 @@ def get_new_entry():
         'ms_id': '',
         'kuvera_name': '',
         'kuvera_fund_category': '',
-        'kuvera_code': ''
+        'kuvera_code': '',
+        'inception_date': ''
     }
 
 def write_entries(data, csv_file=None):
     if not csv_file:
         csv_file = get_path_to_csv()
-    fields = ['code','name','isin','isin2','fund_house','ms_name','ms_category','ms_investment_style','ms_id', 'kuvera_name', 'kuvera_fund_category', 'kuvera_code']
+    fields = ['code','name','isin','isin2','fund_house','ms_name','ms_category','ms_investment_style','ms_id', 'kuvera_name', 'kuvera_fund_category', 'kuvera_code', 'inception_date']
     with open(csv_file, 'w') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(fields)
         for i in sorted (data.keys()) :
-            csvwriter.writerow([i, data[i]['name'],data[i]['isin'],data[i]['isin2'],data[i]['fund_house'],data[i]['ms_name'], data[i]['ms_category'], data[i]['ms_investment_style'], data[i]['ms_id'], data[i]['kuvera_name'],data[i]['kuvera_fund_category'],data[i]['kuvera_code']])
+            csvwriter.writerow([i, data[i]['name'],data[i]['isin'],data[i]['isin2'],data[i]['fund_house'],data[i]['ms_name'], data[i]['ms_category'], data[i]['ms_investment_style'], data[i]['ms_id'], data[i]['kuvera_name'],data[i]['kuvera_fund_category'],data[i]['kuvera_code'], data[i]['inception_date']])

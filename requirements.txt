@@ -15,7 +15,7 @@ httpx==0.23.0
 idna==3.7
 litellm==1.81.0
 lxml==5.2.2
-mftool==2.8
+mftool==3.0
 multitasking==0.0.11
 numpy==1.26.4
 outcome==1.2.0
