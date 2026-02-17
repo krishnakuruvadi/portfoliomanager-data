@@ -1,6 +1,5 @@
 import requests
 from .mf_entry import get_mf_entries, get_new_entry, write_entries
-from .mf_amfi import get_schemes
 
 
 
@@ -27,14 +26,12 @@ def get_json(page, category):
         except Exception as ex:
             print(f'exception {ex} getting {funds_url} attempt {att}')
 
-def update_ms_details():
-    data = get_mf_entries()
+def update_ms_details(data):
     added = 0
     modified = 0
     ic = get_investment_categories()
     b = blend_mapping()
-    a_schemes, _ = get_schemes()
-
+    a_schemes = data
     for cat,cat_name in ic.items():
         print("getting a list of funds for: " + cat)
         a, m = update_ms_details_category(cat, cat_name, a_schemes, data, b)
@@ -66,7 +63,7 @@ def update_ms_details_category(cat, cat_name, a_schemes, data, b):
                             continue
                         isin = subrow['ISIN']
                         for code,det in a_schemes.items():
-                            if det['isin1'] == isin or det['isin2'] == isin:
+                            if det['isin'] == isin or det['isin2'] == isin:
                                 if code in data:
                                     m = False
                                     prev = data[code]
@@ -103,7 +100,7 @@ def update_ms_details_category(cat, cat_name, a_schemes, data, b):
                         continue
                     isin = row['ISIN']
                     for code,det in a_schemes.items():
-                        if det['isin1'] == isin or det['isin2'] == isin:
+                        if det['isin'] == isin or det['isin2'] == isin:
                             if code in data:
                                 m = False
                                 if data[code]['ms_name'] != row['LegalName']:

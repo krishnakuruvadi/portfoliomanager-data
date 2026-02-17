@@ -1,49 +1,74 @@
 from mftool import Mftool
-import json
-import pandas as pd
+import datetime
 import requests
-from .mf_entry import write_entries, get_new_entry, get_mf_entries
-from .utils import get_float_or_zero_from_string
+from .utils import get_date_or_none_from_string, get_date_or_none_from_string, get_float_or_zero_from_string
 
-def update_amfi_details():
-    print('updating amfi details')
-    
-    mf_schemes, ignored = get_schemes(False)
-    data = get_mf_entries()
-    added = 0
-    modified = 0
-    for code, details in mf_schemes.items():
-        isin2 = ''
-        if details['isin2'] and details['isin2'] != '' and details['isin2'] != '-':
-            isin2 = details['isin2']
-        if code not in data:
-            data[code] = get_new_entry()
-            data[code]['name'] = details['name']
-            data[code]['isin'] = details['isin1']
-            data[code]["isin2"] = isin2
-            data[code]['fund_house'] = details['fund_house']            
-            added += 1
-        else:
-            changed = False
-            prev = data[code]
-            if data[code]['name'] != details['name']:
-                data[code]['name'] = details['name']
-                changed = True
-            if data[code]['isin'] != details['isin1']:
-                data[code]['isin'] = details['isin1']
-                changed = True
-            if data[code]['isin2'] != isin2:
-                data[code]['isin2'] = isin2
-                changed = True
-            if data[code]['fund_house'] != details['fund_house']:
-                data[code]['fund_house'] = details['fund_house']
-                changed = True
-            if changed:
-                modified += 1
-                print(f'before: {prev} after {data[code]}')
-    print(f'added {added} modified {modified} ignored {ignored}')
-    if added > 0 or modified > 0:
-        write_entries(data)
+
+
+def get_all_schemes()->dict:
+    try:
+        mf = Mftool()
+        url = mf._get_quote_url
+        response = mf._session.get(url)
+        data = response.text.split("\n")
+    except Exception as e:
+        print(f'ERROR: exception fetching amfi details using Mftool: {e}.  Trying alternate')
+        data = get_schemes_alternate()
+    scheme_info = {}
+    fund_house = ""
+    amfi_fund_type = ""
+    amfi_fund_category = ""
+    ignored_zero_nav = 0
+    ignored_no_isin = 0
+    count = 0
+    month_ago = datetime.datetime.today() - datetime.timedelta(days=30)
+    month_ago = month_ago.date()
+    for scheme_data in data:
+        if ";INF" in scheme_data:
+            try:
+                scheme = scheme_data.rstrip().split(";")
+                if get_float_or_zero_from_string(scheme[4]) > 0:
+                    isin = ''
+                    if scheme[1] and scheme[1] != '' and scheme[1] != '-':
+                        isin = scheme[1]
+                    isin2 = ''
+                    if scheme[2] and scheme[2] != '' and scheme[2] != '-':
+                        isin2 = scheme[2]
+                    scheme_info[scheme[0]] = {'isin': isin,
+                                            'isin2':isin2,
+                                            'name':scheme[3],
+                                            'nav':scheme[4],
+                                            'date':scheme[5],
+                                            'fund_house':fund_house,
+                                            'amfi_fund_type':amfi_fund_type,
+                                            'amfi_category':amfi_fund_category}
+                    dt = get_date_or_none_from_string(scheme[5], '%d-%b-%Y')
+                    if dt and dt < month_ago:
+                        scheme_info[scheme[0]]['end_date'] = dt.strftime('%d-%m-%Y')
+                    count += 1
+            except Exception as e:
+                print(f'ERROR: exception processing scheme data {scheme_data}: {e}')
+                
+        elif scheme_data.strip() != "":
+            if ';' not in scheme_data:
+                if '(' in scheme_data and ')' in scheme_data and 'Mutual Fund' not in scheme_data:
+                    fund_house = scheme_data.strip()
+                    # extract content between parentheses
+                    fund_type_info = scheme_data[scheme_data.find("(")+1:scheme_data.find(")")].strip()
+                    if '-' in fund_type_info:
+                        splits = fund_type_info.split('-')
+                        amfi_fund_type = splits[0].strip() if splits else ''
+                        amfi_fund_category = splits[1].strip() if len(splits) > 1 else ''
+                        if 'hildren' in amfi_fund_category.lower():
+                            amfi_fund_category = "Children's Fund"
+                    else:
+                        amfi_fund_type = fund_type_info.strip()
+                else:
+                    fund_house = scheme_data.strip()
+    print(f'found {count} funds. ignored {ignored_zero_nav} zero nav funds and {ignored_no_isin} no isin funds')
+
+    return scheme_info
+
 
 def get_schemes_alternate():
     url = "https://portal.amfiindia.com/spages/NAVAll.txt"
@@ -53,7 +78,7 @@ def get_schemes_alternate():
     data = response.text.split("\n")
     return data
 
-def get_scheme_details_alternate(code):
+def get_details_amfi(code):
         """
         gets the scheme info for a given scheme code
         :param code: scheme code
@@ -67,111 +92,35 @@ def get_scheme_details_alternate(code):
         _session = requests.Session()
         _session.verify = False
         response = _session.get(url).json()
+        # close the session after use
+        _session.close()
         scheme_data = response['meta']
         scheme_info['fund_house'] = scheme_data['fund_house']
-        scheme_info['scheme_type'] = scheme_data['scheme_type']
-        scheme_info['scheme_category'] = scheme_data['scheme_category']
+        splits = scheme_data['scheme_category'].split('-')
+        fund_type = splits[0].strip() if splits else ''
+        fund_category = splits[1].strip() if len(splits) > 1 else ''
+        scheme_info['amfi_fund_type'] = fund_type
+        scheme_info['amfi_fund_category'] = fund_category
         scheme_info['scheme_code'] = scheme_data['scheme_code']
-        scheme_info['scheme_name'] = scheme_data['scheme_name']
-        scheme_info['scheme_start_date'] = response['data'][int(len(response['data']) -1)]
+        scheme_info['name'] = scheme_data['scheme_name']
+        last_day = response['data'][int(len(response['data']) -1)]
+        scheme_info['scheme_start_date'] = last_day['date']
+        first_date = get_date_or_none_from_string(response['data'][0]['date'], '%d-%m-%Y')
+        month_ago = datetime.datetime.today() - datetime.timedelta(days=30)
+        month_ago = month_ago.date()
+        if first_date and first_date < month_ago:
+            scheme_info['scheme_end_date'] = response['data'][0]['date']
+        else:            
+            scheme_info['scheme_end_date'] = ''
         return scheme_info
 
-def get_schemes(as_json=False):
-    """
-    returns a dictionary with key as scheme code and value as scheme name.
-    cache handled internally
-    :return: dict / json
-    """
-    mf = None
-    try:
-        mf = Mftool()
-        url = mf._get_quote_url
-        response = mf._session.get(url)
-        data = response.text.split("\n")
-    except Exception as e:
-        print(f'ERROR: exception fetching amfi details using Mftool: {e}.  Trying alternate')
-        data = get_schemes_alternate()
-    scheme_info = {}
-    fund_house = ""
-    ignored_zero_nav = 0
-    ignored_no_isin = 0
-    count = 0
-    for scheme_data in data:
-        if ";INF" in scheme_data:
-            scheme = scheme_data.rstrip().split(";")
-            if get_float_or_zero_from_string(scheme[4]) > 0:
-                #print(scheme[1],', ',scheme[2])
-                scheme_info[scheme[0]] = {'isin1': scheme[1],
-                                        'isin2':scheme[2],
-                                        'name':scheme[3],
-                                        'nav':scheme[4],
-                                        'date':scheme[5],
-                                        'fund_house':fund_house}
-                if mf:
-                    details = mf.get_scheme_details(scheme[0])
-                    if 'scheme_start_date' in details:
-                        scheme_info[scheme[0]]['inception_date'] = details['scheme_start_date']['date']
-                else:
-                    details = get_scheme_details_alternate(scheme[0])
-                    if 'scheme_start_date' in details:
-                        scheme_info[scheme[0]]['inception_date'] = details['scheme_start_date']
-                count += 1
-            else:
-                ignored_zero_nav += 1
-        elif scheme_data.strip() != "":
-            if ';' not in scheme_data:
-                fund_house = scheme_data.strip()
-            else:
-                print(f'ignoring fund with no isin: {scheme_data}')
-                ignored_no_isin += 1
-    print(f'found {count} funds. ignored {ignored_zero_nav} zero nav funds and {ignored_no_isin} no isin funds')
 
-    return render_response(scheme_info, as_json), ignored_no_isin + ignored_zero_nav
-
-def render_response(data, as_json=False, as_Dataframe=False):
-    if as_json is True:
-        return json.dumps(data)
-    # parameter 'as_Dataframe' only works with get_scheme_historical_nav()
-    elif as_Dataframe is True:
-        df = pd.DataFrame.from_records(data['data'])
-        df['dayChange'] = df['nav'].astype(float).diff(periods=-1)
-        df = df.set_index('date')
-        return df
-    else:
-        return data
-
-'''
-def get_amfi_schemes():
-    """
-    returns a dictionary with key as scheme code and value as scheme name.
-    cache handled internally
-    :return: dict / json
-    """
-    mf = Mftool()
-    scheme_info = {}
-    url = mf._get_quote_url
-    response = mf._session.get(url)
-    data = response.text.split("\n")
-    fund_house = ""
-    for scheme_data in data:
-        if ";INF" in scheme_data:
-            scheme = scheme_data.rstrip().split(";")
-            if get_float_or_zero_from_string(scheme[4]) > 0:
-                d = get_date_or_none_from_string(scheme[5], '%d-%b-%Y')
-                #print(scheme[1],', ',scheme[2])
-                if d:
-                    scheme_info[scheme[0]] = {'isin1': scheme[1],
-                                            'isin2':scheme[2],
-                                            'name':scheme[3],
-                                            'nav':get_float_or_zero_from_string(scheme[4]),
-                                            'date':d,
-                                            'fund_house':fund_house}
-            else:
-                print(f'ignoring {scheme[4]} nav fund {scheme[3]}')
-        elif scheme_data.strip() != "":
-            if ';' not in scheme_data:
-                fund_house = scheme_data.strip()
-    return scheme_info
-'''
-
-
+def check_amfi_entry_complete(entry):
+    required_fields = ['name', 'fund_house', 'inception_date', 'amfi_fund_type', 'amfi_category']
+    for field in required_fields:
+        if not entry.get(field):
+            #print(f'entry {entry} is missing required field {field}')
+            return False
+    if entry['isin'] == '' and entry['isin2'] == '':
+        return False
+    return True

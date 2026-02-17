@@ -1,107 +1,233 @@
-import datetime
 import requests
-from .mf_entry import get_mf_entries, get_new_entry, write_entries
-from .mf_amfi import get_schemes
 
-def update_kuvera_mapping():
-    data = get_mf_entries()
-    start = datetime.datetime.now()
-    url = "https://api.kuvera.in/mf/api/v4/fund_schemes/list.json"
-    r = requests.get(url, timeout=30)
-    status = r.status_code
-    if status != 200:
-        print(f"An error has occured. [Status code {status} ]")
-    else:
-        ak_mapping = get_amfi_kuvera_fund_house_mapping()
-        a_schemes, _ = get_schemes()
-        #print(a_schemes)
-        modified = 0
-        added = 0
-        mod_list = list()
+class Kuvera:
+    def __init__(self):
+        self.fund_schemes = dict()
+        self.sub_categories = set()
+        self.get_fund_schemes()
+        self.isin_to_kuvera_code_mapping = dict()
 
-        for fund_type,v in r.json().items():
-            #print(fund_type)
-            for sub_category, details in v.items():
-                #print(sub_category)
-                for fund_house, fund_details in details.items():
-                    #print(fund_house)
-                    for fund in fund_details:
-                        name = fund['n']
-                        code = fund['c']
-                        scheme_url = f"https://api.kuvera.in/mf/api/v5/fund_schemes/{code}.json?v=1.230.10"
+    def get_sub_categories(self):
+        return self.sub_categories
+    
+    def get_known_isin_mapping(self):
+        return self.isin_to_kuvera_code_mapping
+    
+    def get_fund_schemes(self):
+        att = 0
+        while att < 5:
+            try:
+                url = "https://api.kuvera.in/mf/api/v4/fund_schemes/list.json"
+                att += 1
+                print(f'getting funds from {url}')
+                page_list_funds = requests.get(url, timeout=15)
+                if page_list_funds.status_code == 200:
+                    page_list_funds_json = page_list_funds.json()
+                    for k,v in page_list_funds_json.items():
+                        self.fund_schemes[k] = dict()
+                        for sub_category, sub_category_details in v.items():
+                            #print('sub category is ', sub_category)
+                            self.sub_categories.add(sub_category)
+                            self.fund_schemes[k][sub_category] = dict()
+                            for fund_house, fund_details in sub_category_details.items():
+                                amfi_fund_house = Kuvera.get_amfi_kuvera_fund_house_mapping().get(fund_house)
+                                self.fund_schemes[k][sub_category][amfi_fund_house] = dict()
+                                for fund in fund_details:
+                                    code = fund['c']
+                                    self.fund_schemes[k][sub_category][amfi_fund_house][code] = {
+                                        'name': fund['n'],
+                                        'nav': fund['v']
+                                    }
+                    break
+            except Exception as ex:
+                print(f'exception {ex} getting {url} attempt {att}')
+        return None
+        
+    def get_fund_info(self, name, isin, amfi_fund_type, amfi_fund_category, fund_house):
+        # Not sure how to process non direct plans.
+        if not 'direct' in name.lower():
+            return None
+        if isin in self.isin_to_kuvera_code_mapping:
+            return self.isin_to_kuvera_code_mapping[isin]
+        fund_type = Kuvera.get_amfi_kuvera_fund_type_mapping().get(amfi_fund_type.replace(' Scheme', '').strip())
+        if not fund_type:
+            print(f'found no fund type for {amfi_fund_type}')
+            return None
+        fund_categories = Kuvera.get_amfi_kuvera_fund_category_mapping().get(amfi_fund_category)
+        if isinstance(fund_categories, str):
+            fund_categories = [fund_categories]
+        try:
+            # filter by fund_type
+            funds_of_type = self.fund_schemes[fund_type]
+            funds_of_sub_category = list()
+            for sub_category in fund_categories:
+                funds_of_sub_category.append(funds_of_type[sub_category])
+            fund_house_funds = list()
+            for sub_category_funds in funds_of_sub_category:
+                for fund_house_k, fund_details in sub_category_funds.items():
+                    if fund_house_k == fund_house:
+                        fund_house_funds.append(fund_details)
+            for fund_details in fund_house_funds:
+                for code, details in fund_details.items():
+                    scheme_info = Kuvera.get_scheme_info(code)
+                    if scheme_info and scheme_info.get('isin', '') != '':
+                        self.isin_to_kuvera_code_mapping[scheme_info.get('isin')] = scheme_info
+                        if scheme_info.get('isin') == isin:
+                            return scheme_info
+        except Exception as e:
+            print(f'exception {e} getting fund info for name {name} isin {isin} fund type {fund_type} fund categories {fund_categories} amfi fund category {amfi_fund_category} fund house {fund_house}')
+        return None
 
-                        response = requests.get(scheme_url, timeout=15)
-                        if response.status_code != 200:
-                            print('failed to get scheme details for {scheme_url}')
-                            continue
-                        j = response.json()
-                        #dt = fund['r'].get('date')
-                        print(f'{scheme_url} got {j}')
-                        k_isin = j[0]['ISIN']
-                        for code,det in a_schemes.items():
-                            if k_isin != '' and (det['isin1'] == k_isin or det['isin2'] == k_isin):
-                                if code in data:
-                                    prev = data[code]
-                                    changed = False
-                                    if data[code]['kuvera_name'] != j[0]['name']:
-                                        data[code]['kuvera_name'] = j[0]['name']
-                                        changed = True
-                                    if data[code]['kuvera_fund_category'] != j[0]['fund_category']:
-                                        data[code]['kuvera_fund_category'] = j[0]['fund_category']
-                                        changed = True
-                                    if data[code]['kuvera_code'] != j[0]['code']:
-                                        data[code]['kuvera_code'] = j[0]['code']
-                                        changed = True
-                                    if data[code].get('category', '') != j[0]['category']:
-                                        data[code]['category'] = j[0]['category']
-                                        changed = True
-                                    if changed:
-                                        modified += 1
-                                        print(f'before {prev} after {data[code]}')
-                                else:
-                                    data[code] = get_new_entry()
-                                    data[code]['category'] = j[0]['category']
-                                    data[code]['kuvera_name'] = j[0]['name']
-                                    data[code]['kuvera_code'] = j[0]['code']
-                                    data[code]['kuvera_fund_category'] = j[0]['fund_category']
-                                    added += 1
-                                break
-                        
-    print(f'added {added} modified {modified}')
+    @staticmethod
+    def get_scheme_info(code):
+        try:
+            scheme_url = f"https://api.kuvera.in/mf/api/v5/fund_schemes/{code}.json?v=1.230.10"
+            response = requests.get(scheme_url, timeout=15)
+            if response.status_code == 200:
+                j = response.json()
+                entry = j[0]
+                return {
+                    'name': entry['name'],
+                    'short_name': entry['short_name'],
+                    'fund_category': entry['fund_category'],
+                    'fund_type': entry['fund_type'],
+                    'fund_house': entry['fund_house'],
+                    'isin': entry['ISIN'],
+                    'kuvera_code': code
+                }
+        except Exception as ex:
+            print(f'exception {ex} getting {scheme_url}')
 
-    if added > 0 or modified > 0:
-        write_entries(data)
-
-    print(f'finished in {(datetime.datetime.now()-start).total_seconds()} s')
-
-def get_amfi_kuvera_fund_house_mapping():
-    return {
-        'BirlaSunLifeMutualFund_MF':'Aditya Birla Sun Life Mutual Fund',
-        'AXISMUTUALFUND_MF':'Axis Mutual Fund',
-        'BARODAMUTUALFUND_MF':'Baroda Mutual Fund',
-        'BNPPARIBAS_MF':'BNP Paribas Mutual Fund',
-        'BHARTIAXAMUTUALFUND_MF':'BOI AXA Mutual Fund',
-        'CANARAROBECOMUTUALFUND_MF':'Canara Robeco Mutual Fund',
-        'DSP_MF':'DSP Mutual Fund',
-        'EDELWEISSMUTUALFUND_MF':'Edelweiss Mutual Fund',
-        'FRANKLINTEMPLETON':'Franklin Templeton Mutual Fund',
-        'HDFCMutualFund_MF':'HDFC Mutual Fund',
-        'HSBCMUTUALFUND_MF':'HSBC Mutual Fund',
-        'ICICIPrudentialMutualFund_MF':'ICICI Prudential Mutual Fund',
-        'IDBIMUTUALFUND_MF':'IDBI Mutual Fund',
-        'IDFCMUTUALFUND_MF':'IDFC Mutual Fund',
-        'JM FINANCIAL MUTUAL FUND_MF':'JM Financial Mutual Fund',
-        'KOTAKMAHINDRAMF':'Kotak Mahindra Mutual Fund',
-        'LICMUTUALFUND_MF':'LIC Mutual Fund',
-        'MOTILALOSWAL_MF':'Motilal Oswal Mutual Fund',
-        'NipponIndiaMutualFund_MF':'Nippon India Mutual Fund',
-        'PGIMINDIAMUTUALFUND_MF':'PGIM India Mutual Fund',
-        'PRINCIPALMUTUALFUND_MF':'Principal Mutual Fund',
-        'QUANTMUTUALFUND_MF':'quant Mutual Fund',
-        'SBIMutualFund_MF':'SBI Mutual Fund',
-        'SUNDARAMMUTUALFUND_MF':'Sundaram Mutual Fund',
-        'TATAMutualFund_MF':'Tata Mutual Fund',
-        'TAURUSMUTUALFUND_MF':'Taurus Mutual Fund',
-        'UNIONMUTUALFUND_MF':'Union Mutual Fund'
-    }
-
+    @staticmethod
+    def get_amfi_kuvera_fund_type_mapping():
+        return {
+            'Equity': 'Equity',
+            'Debt': 'Debt',
+            'Hybrid': 'Hybrid',
+            'Other': 'Others',
+            'Solution Oriented': 'Solution Oriented',
+            'Income': 'Income',
+            'ELSS': 'ELSS',
+        }
+    
+    @staticmethod
+    def get_amfi_kuvera_fund_category_mapping():
+        return {
+            'Banking and PSU Fund':'Banking and PSU Fund',
+            'Corporate Bond Fund':'Corporate Bond Fund',
+            'Credit Risk Fund':'Credit Risk Fund',
+            'Dynamic Bond':'Dynamic Bond',
+            'Floater Fund':'Floater Fund',
+            'Gilt Fund':'Gilt Fund',
+            'Gilt Fund with 10 year constant duration':'Gilt Fund with 10 year constant duration',
+            'Liquid Fund':'Liquid Fund',
+            'Long Duration Fund':'Long Duration Fund',
+            'Medium Duration Fund':'Medium Duration Fund',
+            'Medium to Long Duration Fund':'Medium to Long Duration Fund',
+            'Money Market Fund':'Money Market Fund',
+            'Overnight Fund':'Overnight Fund',
+            'Short Duration Fund':'Short Duration Fund',
+            'Ultra Short Duration Fund':'Ultra Short Duration Fund',
+            'Contra Fund':'Contra Fund',
+            'Dividend Yield Fund':'Dividend Yield Fund',
+            'ELSS': 'ELSS',
+            'Flexi Cap Fund':'Flexi Cap Fund',
+            'Focused Fund':'Focused Fund',
+            'Large & Mid Cap Fund':'Large & Mid Cap fund',
+            'Large Cap Fund':'Large Cap Fund',
+            'Mid Cap Fund':'Mid Cap Fund',
+            'Multi Cap Fund':'Multi Cap Fund',
+            'Sectoral/ Thematic':['Sectoral/Thematic','Equity - ESG Fund'],
+            'Small Cap Fund':'Small Cap Fund',
+            'Value Fund':'Value Fund',
+            'Gilt': 'Gilt',
+            'Growth': 'Growth',
+            'Aggressive Hybrid Fund':'Aggressive Hybrid Fund',
+            'Arbitrage Fund':'Arbitrage Fund',
+            'Balanced Hybrid Fund':'Balanced Hybrid Fund',
+            'Conservative Hybrid Fund':'Conservative Hybrid Fund',
+            'Dynamic Asset Allocation or Balanced Advantage':'Dynamic Asset Allocation or Balanced Advantage',
+            'Equity Savings':'Equity Savings',
+            'Multi Asset Allocation':'Multi Asset Allocation',
+            'Income': 'Index Funds - Fixed Income',
+            'Money Market': 'Money Market',
+            'FoF Domestic':'Fund of Funds',
+            'FoF Overseas':['FoF Overseas', 'Other Bond'],
+            'Gold ETF':'Gold ETF',
+            'Index Funds':'Index Funds',
+            'Other  ETFs':'Other  ETFs',
+            "Children's Fund":'Childrens Fund',
+            'Childrens Fund':'Childrens Fund',
+            'Retirement Fund':'Retirement Fund',
+            'Low Duration Fund':'Low Duration Fund'
+        }
+    
+    @staticmethod
+    def get_amfi_kuvera_fund_house_mapping():
+        return {
+            'BirlaSunLifeMutualFund_MF':'Aditya Birla Sun Life Mutual Fund',
+            'AXISMUTUALFUND_MF':'Axis Mutual Fund',
+            'BARODAMUTUALFUND_MF':'Baroda Mutual Fund',
+            'BNPPARIBAS_MF':'BNP Paribas Mutual Fund',
+            'BHARTIAXAMUTUALFUND_MF':'BOI AXA Mutual Fund',
+            'CANARAROBECOMUTUALFUND_MF':'Canara Robeco Mutual Fund',
+            'DSP_MF':'DSP Mutual Fund',
+            'EDELWEISSMUTUALFUND_MF':'Edelweiss Mutual Fund',
+            'FRANKLINTEMPLETON':'Franklin Templeton Mutual Fund',
+            'HDFCMutualFund_MF':'HDFC Mutual Fund',
+            'HSBCMUTUALFUND_MF':'HSBC Mutual Fund',
+            'ICICIPrudentialMutualFund_MF':'ICICI Prudential Mutual Fund',
+            'IDBIMUTUALFUND_MF':'IDBI Mutual Fund',
+            'IDFCMUTUALFUND_MF':'IDFC Mutual Fund',
+            'JM FINANCIAL MUTUAL FUND_MF':'JM Financial Mutual Fund',
+            'KOTAKMAHINDRAMF':'Kotak Mahindra Mutual Fund',
+            'LICMUTUALFUND_MF':'LIC Mutual Fund',
+            'MOTILALOSWAL_MF':'Motilal Oswal Mutual Fund',
+            'NipponIndiaMutualFund_MF':'Nippon India Mutual Fund',
+            'PGIMINDIAMUTUALFUND_MF':'PGIM India Mutual Fund',
+            'PRINCIPALMUTUALFUND_MF':'Principal Mutual Fund',
+            'QUANTMUTUALFUND_MF':'quant Mutual Fund',
+            'SBIMutualFund_MF':'SBI Mutual Fund',
+            'SUNDARAMMUTUALFUND_MF':'Sundaram Mutual Fund',
+            'TATAMutualFund_MF':'Tata Mutual Fund',
+            'TAURUSMUTUALFUND_MF':'Taurus Mutual Fund',
+            'UNIONMUTUALFUND_MF':'Union Mutual Fund',
+            'ABAKKUSMUTUALFUND_MF':'Abakkus Mutual Fund',
+            'BAJAJ FINSERV_MF':'Bajaj Finserv Mutual Fund',
+            'TRUSTMUTUALFUND_MF':'Trust Mutual Fund',
+            '360_ONE_MUTUALFUND_MF':'360 ONE Mutual Fund',
+            'WHITEOAKCAPITALMUTUALFUND_MF':'WhiteOak Capital Mutual Fund',
+            'QUANTMUTUALFUND_MF_SIF':'quant Mutual Fund',
+            'INVESCOMUTUALFUND_MF':'Invesco Mutual Fund',
+            'BARODABNPPARIBASMUTUALFUND_MF':'Baroda BNP Paribas Mutual Fund',
+            'UTIMUTUALFUND_MF':'UTI Mutual Fund',
+            'MIRAEASSET':'Mirae Asset Mutual Fund',
+            'BANDHANMUTUALFUND_MF':'Bandhan Mutual Fund',
+            'BANKOFINDIAMUTUALFUND_MF':'Bank of India Mutual Fund',
+            'NAVIMUTUALFUND_MF':'Navi Mutual Fund',
+        }
+    
+    @staticmethod
+    def check_kuvera_entry_complete(details):
+        required_fields = ['kuvera_name', 'kuvera_fund_category', 'kuvera_code']
+        for field in required_fields:
+            if not details.get(field):
+                return False
+        return True
+    
+    @staticmethod
+    def check_kuvera_skip_entry(details):
+        if details.get('isin', '') == '' and details.get('isin2', '') == '':
+            return True
+        if details.get('amfi_fund_type','') == 'Income' or details.get('end_date', '') != '':
+            return True
+        return False
+'''
+name = 'Sundaram Banking & PSU Debt Fund - Direct Quarterly Dividend'
+isin = 'INF903J019I1'
+amfi_fund_type = 'Debt Scheme'
+amfi_fund_category = 'Banking and PSU Fund'
+fund_house = 'Sundaram Mutual Fund'
+kuvera = Kuvera()
+kuvera.get_fund_info(name, isin, amfi_fund_type, amfi_fund_category, fund_house)
+'''
