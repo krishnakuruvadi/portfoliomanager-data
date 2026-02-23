@@ -1,10 +1,16 @@
 import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 class Kuvera:
     def __init__(self):
         self.fund_schemes = dict()
         self.sub_categories = set()
         self.get_fund_schemes()
+        self.get_fund_mapping_per_fund_house()
         self.isin_to_kuvera_code_mapping = dict()
 
     def get_sub_categories(self):
@@ -23,26 +29,25 @@ class Kuvera:
                 page_list_funds = requests.get(url, timeout=15)
                 if page_list_funds.status_code == 200:
                     page_list_funds_json = page_list_funds.json()
-                    for k,v in page_list_funds_json.items():
-                        self.fund_schemes[k] = dict()
+                    for category,v in page_list_funds_json.items():
+                        self.fund_schemes[category] = dict()
                         for sub_category, sub_category_details in v.items():
                             #print('sub category is ', sub_category)
                             self.sub_categories.add(sub_category)
-                            self.fund_schemes[k][sub_category] = dict()
+                            self.fund_schemes[category][sub_category] = dict()
                             for fund_house, fund_details in sub_category_details.items():
                                 amfi_fund_house = Kuvera.get_amfi_kuvera_fund_house_mapping().get(fund_house)
-                                self.fund_schemes[k][sub_category][amfi_fund_house] = dict()
+                                self.fund_schemes[category][sub_category][amfi_fund_house] = dict()
                                 for fund in fund_details:
                                     code = fund['c']
-                                    self.fund_schemes[k][sub_category][amfi_fund_house][code] = {
+                                    self.fund_schemes[category][sub_category][amfi_fund_house][code] = {
                                         'name': fund['n'],
                                         'nav': fund['v']
                                     }
                     break
             except Exception as ex:
                 print(f'exception {ex} getting {url} attempt {att}')
-        return None
-        
+    
     def get_fund_info(self, name, isin, amfi_fund_type, amfi_fund_category, fund_house):
         # Not sure how to process non direct plans.
         if not 'direct' in name.lower():
@@ -169,7 +174,7 @@ class Kuvera:
             'AXISMUTUALFUND_MF':'Axis Mutual Fund',
             'BARODAMUTUALFUND_MF':'Baroda Mutual Fund',
             'BNPPARIBAS_MF':'BNP Paribas Mutual Fund',
-            'BHARTIAXAMUTUALFUND_MF':'BOI AXA Mutual Fund',
+            'BANKOFINDIAMUTUALFUND_MF':'BOI AXA Mutual Fund',
             'CANARAROBECOMUTUALFUND_MF':'Canara Robeco Mutual Fund',
             'DSP_MF':'DSP Mutual Fund',
             'EDELWEISSMUTUALFUND_MF':'Edelweiss Mutual Fund',
@@ -205,6 +210,8 @@ class Kuvera:
             'BANDHANMUTUALFUND_MF':'Bandhan Mutual Fund',
             'BANKOFINDIAMUTUALFUND_MF':'Bank of India Mutual Fund',
             'NAVIMUTUALFUND_MF':'Navi Mutual Fund',
+            'NJMUTUALFUND_MF':'NJ Mutual Fund',
+            'MAHINDRA MANULIFE MUTUAL FUND_MF':'Mahindra Manulife Mutual Fund'
         }
     
     @staticmethod
@@ -222,6 +229,106 @@ class Kuvera:
         if details.get('amfi_fund_type','') == 'Income' or details.get('end_date', '') != '':
             return True
         return False
+    
+    def get_fund_mapping_per_fund_house(self):
+        fund_houses = self.get_supported_fund_houses()
+        for fh in fund_houses:
+            for scheme_plan in ['GROWTH', 'DIVIDEND']:
+                url = f'https://api.kuvera.in/insight/api/v1/mutual_fund_search.json?query={fh.split(" ")[0]}&limit=1000&sort_by=one_year_return&order_by=desc&scheme_plan={scheme_plan}&v=1.239.11'
+                try:
+                    print(f'getting funds from {url}')
+                    page_list_funds = requests.get(url, timeout=15)
+                    if page_list_funds.status_code == 200:
+                        page_list_funds_json = page_list_funds.json()
+                    for fund_details in page_list_funds_json['data']['funds']:
+                        category = fund_details['category']
+                        sub_category = fund_details['sub_category']
+                        amfi_fund_house = Kuvera.get_amfi_kuvera_fund_house_mapping().get(fund_details['amc'])
+                        code = fund_details['unique_fund_code']
+                        if not category in self.fund_schemes:
+                            self.fund_schemes[category] = dict()
+                        self.sub_categories.add(sub_category)
+                        if not sub_category in self.fund_schemes[category]:
+                            self.fund_schemes[category][sub_category] = dict()
+                        self.fund_schemes[category][sub_category][amfi_fund_house] = dict()
+                        self.fund_schemes[category][sub_category][amfi_fund_house][code] = {
+                                            'name': fund_details['name'],
+                                            'nav': fund_details['current_nav']
+                                        }
+                except Exception as e:
+                    print(f'exception {e} getting fund mapping for fund house {fh} with url {url}')
+    
+    def get_supported_fund_houses(self):
+        # Initialize the driver (ensure you have the correct webdriver installed)
+        driver = webdriver.Chrome()
+
+        try:
+            # Open the page
+            driver.get("https://kuvera.in/mutual-funds/all")
+            from selenium.webdriver.common.action_chains import ActionChains
+
+            # 1. Find the body to reset the mouse to the top-left corner
+            body = driver.find_element(By.TAG_NAME, 'body')
+
+            # 2. Move to (0,0) and then offset to where you want to click (e.g., 100, 100)
+            actions = ActionChains(driver)
+            actions.move_to_element_with_offset(body, 0, 0)
+            actions.move_by_offset(100, 100).click().perform()
+
+            # Wait for the footer links to be present (Mutual Fund Companies section)
+            # The links are typically within a section containing 'Mutual Fund Companies' text
+            wait = WebDriverWait(driver, 10)
+            fund_house_elements = wait.until(EC.presence_of_all_elements_located(
+                (By.XPATH, "//div[contains(text(), 'Mutual Fund Companies')]/following-sibling::a | //p[contains(text(), 'Mutual Fund Companies')]/following-sibling::a")
+            ))
+
+            # If the footer layout is a flat list of links:
+            fund_houses = []
+            for element in fund_house_elements:
+                name = element.text.strip()
+                link = element.get_attribute('href')
+                if name:
+                    fund_houses.append({"name": name, "link": link})
+
+            # Display Results
+            print(f"{'Fund House':<35} | {'URL'}")
+            print("-" * 70)
+            for fund in fund_houses:
+                print(f"{fund['name']:<35} | {fund['link']}")
+        except Exception as e:
+            print(f'exception {e} getting supported fund houses from kuvera')
+        finally:
+            driver.quit()
+        return ['Axis Mutual Funds',
+                'Kotak Mutual Funds',
+                'SBI Mutual Funds',
+                'ICICI Mutual Funds',
+                'Quant Mutual Fund',
+                'NJ Mutual Fund',
+                'Nippon India Mutual Fund',
+                'HDFC',
+                'Aditya Birla Sunlife Mutual Fund',
+                'LIC',
+                'Invesco',
+                'Canara Robeco',
+                'Motilal Oswal',
+                'Mirae Asset',
+                'Franklin Templeton',
+                'DSP Mutual Fund',
+                'PGIM Mutual Fund',
+                'Navi Mutual Fund',
+                'BOI Mutual Fund',
+                'White Oak',
+                '360 ONE Mutual Fund',
+                'Groww Mutual Fund',
+                'Jio BlackRock Mutual Fund',
+                'Zerodha Mutual Fund',
+                'Bandhan Mutual Fund',
+                'Edelweiss Mutual Fund',
+                'Union Mutual Fund',
+                'Mahindra Manulife Mutual Fund',
+                'WhiteOak Capital Mutual Fund'
+                ]
 '''
 name = 'Sundaram Banking & PSU Debt Fund - Direct Quarterly Dividend'
 isin = 'INF903J019I1'
