@@ -40,14 +40,16 @@ def populate_amfi(current_data):
         amfi_data = get_details_amfi(code)
         if amfi_data:
             try:
-                return code, {
+                ret = {
                     'name': amfi_data['name'],
-                    'fund_house': amfi_data['fund_house'],
                     'inception_date': amfi_data.get('scheme_start_date', ''),
                     'end_date': amfi_data.get('scheme_end_date', ''),
                     'amfi_fund_type': amfi_data['amfi_fund_type'],
                     'amfi_category': amfi_data['amfi_fund_category']
                 }
+                if not 'open ended' in amfi_data['fund_house'].lower() and amfi_data['fund_house'] != '':
+                    ret['fund_house'] = amfi_data['fund_house']
+                return code, ret
             except Exception as e:
                 print(f'ERROR: exception processing AMFI data for code {code} {amfi_data}: {e}')
                 raise e
@@ -250,7 +252,7 @@ def print_summary_of_changes():
 
 if __name__ == "__main__":
     data = get_amfi()
-    data = populate_amfi(data)
+    #data = populate_amfi(data)
     data = populate_kuvera(data)
     #data = populate_ms(data)
     print_summary_of_changes()

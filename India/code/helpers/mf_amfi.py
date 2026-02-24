@@ -39,9 +39,10 @@ def get_all_schemes()->dict:
                                             'name':scheme[3],
                                             'nav':scheme[4],
                                             'date':scheme[5],
-                                            'fund_house':fund_house,
                                             'amfi_fund_type':amfi_fund_type,
                                             'amfi_category':amfi_fund_category}
+                    if not 'open ended' in fund_house.lower() and fund_house != '':
+                        scheme_info[scheme[0]]['fund_house'] = fund_house
                     dt = get_date_or_none_from_string(scheme[5], '%d-%b-%Y')
                     if dt and dt < month_ago:
                         scheme_info[scheme[0]]['end_date'] = dt.strftime('%d-%m-%Y')

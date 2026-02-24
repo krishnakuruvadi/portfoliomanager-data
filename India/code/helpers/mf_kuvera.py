@@ -79,6 +79,12 @@ class Kuvera:
                         self.isin_to_kuvera_code_mapping[scheme_info.get('isin')] = scheme_info
                         if scheme_info.get('isin') == isin:
                             return scheme_info
+            for fund_details in self.find_probable_fund_name(name):
+                scheme_info = Kuvera.get_scheme_info(fund_details['kuvera_code'])
+                if scheme_info and scheme_info.get('isin', '') != '':
+                    self.isin_to_kuvera_code_mapping[scheme_info.get('isin')] = scheme_info
+                    if scheme_info.get('isin') == isin:
+                        return scheme_info
         except Exception as e:
             print(f'exception {e} getting fund info for name {name} isin {isin} fund type {fund_type} fund categories {fund_categories} amfi fund category {amfi_fund_category} fund house {fund_house}')
         return None
@@ -211,7 +217,11 @@ class Kuvera:
             'BANKOFINDIAMUTUALFUND_MF':'Bank of India Mutual Fund',
             'NAVIMUTUALFUND_MF':'Navi Mutual Fund',
             'NJMUTUALFUND_MF':'NJ Mutual Fund',
-            'MAHINDRA MANULIFE MUTUAL FUND_MF':'Mahindra Manulife Mutual Fund'
+            'MAHINDRA MANULIFE MUTUAL FUND_MF':'Mahindra Manulife Mutual Fund',
+            'THEWEALTHCOMPANYMUTUALFUND_MF':'The Wealth Company Mutual Fund',
+            'UNIFIMUTUALFUND_MF':'Unifi Mutual Fund',
+            'GROWWMUTUALFUND_MF':'Groww Mutual Fund',
+            'JIOBLACKROCKMUTUALFUND_MF':'Jio BlackRock Mutual Fund',
         }
     
     @staticmethod
@@ -229,6 +239,32 @@ class Kuvera:
         if details.get('amfi_fund_type','') == 'Income' or details.get('end_date', '') != '':
             return True
         return False
+    
+    @staticmethod
+    def find_probable_fund_name(amfi_fund_name):
+        url = f'https://api.kuvera.in/insight/api/v1/global_search.json?query={amfi_fund_name.replace(" ", "%20")}&exclude_assets='+'{%22SKIP_ASSETS%22:[%22us_stocks%22]}&v=1.239.11'
+        try:
+            print(f'getting funds from {url}')
+            page_list_funds = requests.get(url, timeout=15)
+            if page_list_funds.status_code != 200:
+                return []
+            page_list_funds_json = page_list_funds.json()
+            if page_list_funds_json['status'] != 'success' or len(page_list_funds_json['data']['funds']) == 0:
+                return None
+            probables = list()
+            for fund in page_list_funds_json['data']['funds'].get('mutual_funds', []):
+                probables.append({
+                    'name': fund['name'],
+                    'kuvera_code': fund['unique_fund_code'],
+                    'fund_house': fund['amc'],
+                    'category': fund['category'],
+                    'sub_category': fund['sub_category'],
+                    'current_nav': fund['current_nav']
+                })
+            return probables
+        except Exception as e:
+            print(f'exception {e} getting probable fund name for {amfi_fund_name} with url {url}')
+        return []
     
     def get_fund_mapping_per_fund_house(self):
         fund_houses = self.get_supported_fund_houses()
