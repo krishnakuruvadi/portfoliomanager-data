@@ -5719,7 +5719,7 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 134494,Quantum Dynamic Bond Fund - Direct Plan Growth Option,INF082J01176,,Quantum Mutual Fund,21-05-2015,,Debt Scheme,Dynamic Bond,Quantum Dynamic Bond Fund Direct Growth Option,Dynamic Bond,,F00000VUCO,Quantum Dynamic Bond Growth Direct Plan,Dynamic Bond,QDBGP-GR
 134495,UTI Medium Duration Fund - Regular Plan - Monthly IDCW,INF789FB1JV2,INF789FB1KP2,UTI Mutual Fund,09-04-2015,,Debt Scheme,Medium Duration Fund,UTI Medium Term Fund Regular Plan Monthly Reinvestment Inc Dist cum Cap Wdrl Option,Medium Duration,,F00000Z9C0,,,
 134496,UTI Medium Duration Fund - Regular Plan - Quarterly IDCW,INF789FB1JW0,INF789FB1JX8,UTI Mutual Fund,09-04-2015,11-07-2025,Debt Scheme,Medium Duration Fund,UTI Medium Term Fund Regular Plan Quarterly Reinvestment Inc Dist cum Cap Wdrl Option,Medium Duration,,F00000Z9C1,,,
-134497,UTI Medium Duration Fund - Regular Plan - Half-Yearly IDCW,INF789FB1JY6,INF789FB1JZ3,UTI Mutual Fund,09-04-2015,,Debt Scheme,Medium Duration Fund,UTI Medium Term Fund Regular Plan Half Yearly Reinvestment Inc Dist cum Cap Wdrl Option,Medium Duration,,F00000Z9BZ,,,
+134497,UTI Medium Duration Fund - Regular Plan - Half-Yearly IDCW,INF789FB1JY6,INF789FB1JZ3,UTI Mutual Fund,09-04-2015,27-01-2026,Debt Scheme,Medium Duration Fund,UTI Medium Term Fund Regular Plan Half Yearly Reinvestment Inc Dist cum Cap Wdrl Option,Medium Duration,,F00000Z9BZ,,,
 134498,UTI Medium Duration Fund - Regular Plan - Flexi IDCW,INF789FB1KC0,INF789FB1KD8,UTI Mutual Fund,25-10-2016,,Debt Scheme,Medium Duration Fund,UTI Medium Term Fund Regular Plan Flexi Reinvestment Inc Dist cum Cap Wdrl Option,Medium Duration,,F00000Z9BY,,,
 134499,UTI Medium Duration Fund - Regular Plan - Growth Option,INF789FB1JU4,,UTI Mutual Fund,09-04-2015,,Debt Scheme,Medium Duration Fund,UTI Medium Term Fund - Regular Plan - Growth Option,Medium Duration,,F00000VN1D,,,
 134500,UTI Medium Duration Fund - Regular Plan - Annual IDCW,INF789FB1KA4,INF789FB1KB2,UTI Mutual Fund,09-04-2015,,Debt Scheme,Medium Duration Fund,UTI Medium Term Fund Regular Plan Annual Reinvestment Inc Dist cum Cap Wdrl Option,Medium Duration,,F00000Z9BX,,,
@@ -12902,13 +12902,13 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 150784,Kotak FMP Series 297-Direct Plan- Payout of IDCW,INF174KA1KF0,,Kotak Mahindra Mutual Fund,21-10-2022,20-03-2023,Income,Retirement Fund,,,,,,,
 150785,Mirae Asset Nifty AAA PSU Bond Plus SDL Apr 2026 50:50 Index Fund - Regular Plan - IDCW,INF769K01IZ0,INF769K01JB9,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,,,
 150786,Mirae Asset Nifty AAA PSU Bond Plus SDL Apr 2026 50:50 Index Fund - Regular Plan - Growth,INF769K01JA1,,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,,,
-150787,Mirae Asset Nifty AAA PSU Bond Plus SDL Apr 2026 50:50 Index Fund - Direct Plan - IDCW,INF769K01JC7,INF769K01JE3,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,,,
+150787,Mirae Asset Nifty AAA PSU Bond Plus SDL Apr 2026 50:50 Index Fund - Direct Plan - IDCW,INF769K01JC7,INF769K01JE3,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,Mirae Asset Nifty Aaa PSU Bond Plus SDL Apr 2026 50:50 Index IDCW Payout Direct Plan,Index Funds - Fixed Income,MANPD2-DP
 150788,Mirae Asset Nifty AAA PSU Bond Plus SDL Apr 2026 50:50 Index Fund - Direct Plan - Growth,INF769K01JD5,,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,Mirae Asset Nifty Aaa PSU Bond Plus SDL Apr 2026 50:50 Index Growth Direct Plan,Index Funds - Fixed Income,MANPD1-GR
-150789,Mirae Asset CRISIL IBX Gilt Index - April 2033 Index Fund - Direct Plan - IDCW,INF769K01IW7,INF769K01IY3,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,,,
+150789,Mirae Asset CRISIL IBX Gilt Index - April 2033 Index Fund - Direct Plan - IDCW,INF769K01IW7,INF769K01IY3,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,Mirae Asset Crisil Ibx Gilt Index April 2033 Index IDCW Payout Direct Plan,Index Funds - Fixed Income,MACID2-DP
 150790,Mirae Asset CRISIL IBX Gilt Index - April 2033 Index Fund - Regular Plan - Growth,INF769K01IU1,,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,,,
 150791,Mirae Asset CRISIL IBX Gilt Index - April 2033 Index Fund - Regular Plan - IDCW,INF769K01IT3,INF769K01IV9,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,,,
-150792,Mirae Asset CRISIL IBX Gilt Index - April 2033 Index Fund - Direct Plan - Growth,INF769K01IX5,,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,,,
-150797,WhiteOak Capital Large Cap Fund Direct Plan Growth,INF03VN01696,,WhiteOak Capital Mutual Fund,02-12-2022,,Equity Scheme,Large Cap Fund,,,,,,,
+150792,Mirae Asset CRISIL IBX Gilt Index - April 2033 Index Fund - Direct Plan - Growth,INF769K01IX5,,Mirae Asset Mutual Fund,21-10-2022,,Other Scheme,Index Funds,,,,,Mirae Asset Crisil Ibx Gilt Index April 2033 Index Growth Direct Plan,Index Funds - Fixed Income,MACID1-GR
+150797,WhiteOak Capital Large Cap Fund Direct Plan Growth,INF03VN01696,,WhiteOak Capital Mutual Fund,02-12-2022,,Equity Scheme,Large Cap Fund,,,,,Whiteoak Capital Large Cap Growth Direct Plan,Large Cap Fund,YED103G-GR
 150798,WhiteOak Capital Large Cap Fund Direct Plan IDCW,INF03VN01704,INF03VN01712,WhiteOak Capital Mutual Fund,02-12-2022,,Equity Scheme,Large Cap Fund,,,,,Whiteoak Capital Large Cap IDCW Payout Direct Plan,Large Cap Fund,YED103P-DP
 150799,WhiteOak Capital Large Cap Fund Regular Plan Growth,INF03VN01662,,WhiteOak Capital Mutual Fund,02-12-2022,,Equity Scheme,Large Cap Fund,,,,,,,
 150800,WhiteOak Capital Large Cap Fund Regular Plan IDCW,INF03VN01670,INF03VN01688,WhiteOak Capital Mutual Fund,02-12-2022,,Equity Scheme,Large Cap Fund,,,,,,,
@@ -12916,7 +12916,7 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 150802,HDFC NIFTY Private Bank ETF - Growth Option,INF179KC1HZ7,,HDFC Mutual Fund,16-11-2022,,Other Scheme,Other  ETFs,,,,,,,
 150803,HDFC Business Cycle Fund - Growth Option,INF179KC1EB5,,HDFC Mutual Fund,30-11-2022,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 150804,HDFC Business Cycle Fund - IDCW Option - Direct Plan,INF179KC1DZ6,INF179KC1EA7,HDFC Mutual Fund,30-11-2022,,Equity Scheme,Sectoral/ Thematic,,,,,,,
-150805,HDFC Business Cycle Fund - Growth Option - Direct Plan,INF179KC1DY9,,HDFC Mutual Fund,30-11-2022,,Equity Scheme,Sectoral/ Thematic,,,,,,,
+150805,HDFC Business Cycle Fund - Growth Option - Direct Plan,INF179KC1DY9,,HDFC Mutual Fund,30-11-2022,,Equity Scheme,Sectoral/ Thematic,,,,,HDFC Business Cycle Growth Direct Plan,Sectoral/Thematic,HDHBDGR-GR
 150806,HDFC Business Cycle Fund - IDCW Option,INF179KC1EC3,INF179KC1ED1,HDFC Mutual Fund,30-11-2022,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 150807,Edelweiss CRISIL IBX 50:50 Gilt Plus SDL Sep 2028 Index Fund - Direct Plan - Growth,INF754K01PV6,,Edelweiss Mutual Fund,14-11-2022,,Other Scheme,Index Funds,,,,,,,
 150808,SBI Fixed Maturity Plan (FMP) - Series 69 (367 Days) - Regular Plan - IDCW Payout,INF200KA18R4,,SBI Mutual Fund,09-11-2022,02-11-2023,IDF,,,,,,,,
@@ -12928,14 +12928,14 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 150814,JM Midcap Fund (Direct) - IDCW,INF192K01MW4,INF192K01MX2,JM Financial Mutual Fund,25-11-2022,,Equity Scheme,Mid Cap Fund,,,,,JM Midcap IDCW Payout Direct Plan,Mid Cap Fund,JMMDDD-DP
 150815,JM Midcap Fund (Direct) - Growth,INF192K01MV6,,JM Financial Mutual Fund,25-11-2022,,Equity Scheme,Mid Cap Fund,,,,,JM Midcap Growth Direct Plan,Mid Cap Fund,JMMDDG-GR
 150816,Canara Robeco Mid Cap Fund- Regular Plan- Growth Option,INF760K01KL5,,Canara Robeco Mutual Fund,06-12-2022,,Equity Scheme,Mid Cap Fund,,,,,,,
-150817,Canara Robeco Mid Cap Fund- Direct Plan- Growth Option,INF760K01KI1,,Canara Robeco Mutual Fund,06-12-2022,,Equity Scheme,Mid Cap Fund,,,,,,,
-150818,Canara Robeco Mid Cap Fund- Direct Plan- IDCW,INF760K01KK7,INF760K01KJ9,Canara Robeco Mutual Fund,06-12-2022,,Equity Scheme,Mid Cap Fund,,,,,,,
+150817,Canara Robeco Mid Cap Fund- Direct Plan- Growth Option,INF760K01KI1,,Canara Robeco Mutual Fund,06-12-2022,,Equity Scheme,Mid Cap Fund,,,,,Canara Robeco Mid Cap Growth Direct Plan,Mid Cap Fund,CAMDDG-GR
+150818,Canara Robeco Mid Cap Fund- Direct Plan- IDCW,INF760K01KK7,INF760K01KJ9,Canara Robeco Mutual Fund,06-12-2022,,Equity Scheme,Mid Cap Fund,,,,,Canara Robeco Mid Cap IDCW Payout Direct Plan,Mid Cap Fund,CAMDDD-DP
 150819,Canara Robeco Mid Cap Fund- Regular Plan- IDCW,INF760K01KN1,INF760K01KM3,Canara Robeco Mutual Fund,06-12-2022,,Equity Scheme,Mid Cap Fund,,,,,,,
 150820,Kotak Income Plus Arbitrage Omni  FOF-Regular Plan-Growth,INF174KA1KG8,,Kotak Mahindra Mutual Fund,21-11-2022,,Other Scheme,FoF Domestic,,,,,,,
 150821,Kotak Income Plus Arbitrage Omni FOF-Regular Plan-IDCW,INF174KA1KH6,INF174KA1KI4,Kotak Mahindra Mutual Fund,21-11-2022,,Other Scheme,FoF Domestic,,,,,,,
-150822,Kotak Income Plus Arbitrage Omni FOF-Direct Plan-Growth,INF174KA1KJ2,,Kotak Mahindra Mutual Fund,21-11-2022,,Other Scheme,FoF Domestic,,,,,,,
+150822,Kotak Income Plus Arbitrage Omni FOF-Direct Plan-Growth,INF174KA1KJ2,,Kotak Mahindra Mutual Fund,21-11-2022,,Other Scheme,FoF Domestic,,,,,Kotak Income Plus Arbitrage Omni FoF Growth Direct Plan,Fund of Funds,KO280D-GR
 150823,Kotak Income Plus Arbitrage Omni FOF-Direct Plan-IDCW,INF174KA1KK0,INF174KA1KL8,Kotak Mahindra Mutual Fund,21-11-2022,,Other Scheme,FoF Domestic,,,,,,,
-150824,Nippon India Nifty SDL Plus G-Sec - Jun 2028 Maturity 70:30 Index Fund-Direct Plan-Growth Option,INF204KC1741,,Nippon India Mutual Fund,25-11-2022,,Other Scheme,Index Funds,,,,,,,
+150824,Nippon India Nifty SDL Plus G-Sec - Jun 2028 Maturity 70:30 Index Fund-Direct Plan-Growth Option,INF204KC1741,,Nippon India Mutual Fund,25-11-2022,,Other Scheme,Index Funds,,,,,Nippon India Nifty SDL Plus G Sec Jun 2028 Maturity 70:30 Index Growth Direct Plan,Index Funds - Fixed Income,RLNJAG-GR
 150825,Nippon India Nifty SDL Plus G-Sec - Jun 2028 Maturity 70:30 Index Fund-Regular Plan-Growth Option,INF204KC1717,,Nippon India Mutual Fund,25-11-2022,,Other Scheme,Index Funds,,,,,,,
 150826,Nippon India Nifty SDL Plus G-Sec - Jun 2028 Maturity 70:30 Index Fund-Direct Plan-IDCW Option,INF204KC1758,INF204KC1766,Nippon India Mutual Fund,25-11-2022,,Other Scheme,Index Funds,,,,,,,
 150827,Nippon India Nifty SDL Plus G-Sec - Jun 2028 Maturity 70:30 Index Fund-Regular Plan IDCW Option,INF204KC1725,INF204KC1733,Nippon India Mutual Fund,25-11-2022,,Other Scheme,Index Funds,,,,,,,
@@ -12948,14 +12948,14 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 150834,UTI Fixed Term Income Fund - Series XXXV-I (1260 Days) - Direct Plan - Quarterly IDCW Option,INF789F1AWH6,,UTI Mutual Fund,16-11-2022,,Income,Retirement Fund,,,,,,,
 150835,UTI Fixed Term Income Fund - Series XXXV-I (1260 Days) - Direct Plan - Annual IDCW Option,INF789F1AWI4,,UTI Mutual Fund,16-11-2022,,Income,Retirement Fund,,,,,,,
 150837,UTI Fixed Term Income Fund - Series XXXV-I (1260 Days) - Direct Plan - Maturity IDCW Option,INF789F1AWJ2,,UTI Mutual Fund,16-11-2022,,Income,Retirement Fund,,,,,,,
-150838,Samco ELSS Tax Saver Fund - Direct Plan - Growth Option,INF0K1H01065,,Samco Mutual Fund,29-12-2022,,Equity Scheme,ELSS,,,,,,,
+150838,Samco ELSS Tax Saver Fund - Direct Plan - Growth Option,INF0K1H01065,,Samco Mutual Fund,29-12-2022,,Equity Scheme,ELSS,,,,,Samco ELSS Tax Saver Growth Direct Plan,ELSS,SAELDG-GR
 150839,Samco ELSS Tax Saver Fund - Regular Plan - Growth Option,INF0K1H01057,,Samco Mutual Fund,29-12-2022,,Equity Scheme,ELSS,,,,,,,
 150840,DSP FMP Series - 267 - 1246 Days - Direct - IDCW,INF740KA1RK0,INF740KA1RJ2,DSP Mutual Fund,15-11-2022,,Income,Retirement Fund,,,,,,,
 150841,DSP FMP Series - 267 - 1246 Days - Regular - IDCW,INF740KA1RH6,INF740KA1RG8,DSP Mutual Fund,15-11-2022,,Income,Retirement Fund,,,,,,,
 150842,DSP FMP Series - 267 - 1246 Days - Direct - Growth,INF740KA1RI4,,DSP Mutual Fund,15-11-2022,,Income,Retirement Fund,,,,,,,
 150843,DSP FMP Series - 267 - 1246 Days - Regular - Growth,INF740KA1RF0,,DSP Mutual Fund,15-11-2022,,Income,Retirement Fund,,,,,,,
 150844,HDFC Nifty G-Sec Dec 2026 Index Fund - Growth Option,INF179KC1EG4,,HDFC Mutual Fund,10-11-2022,,Other Scheme,Index Funds,,,,,,,
-150845,HDFC Nifty G-Sec Dec 2026 Index Fund - Growth Option - Direct Plan,INF179KC1EE9,,HDFC Mutual Fund,10-11-2022,,Other Scheme,Index Funds,,,,,,,
+150845,HDFC Nifty G-Sec Dec 2026 Index Fund - Growth Option - Direct Plan,INF179KC1EE9,,HDFC Mutual Fund,10-11-2022,,Other Scheme,Index Funds,,,,,HDFC Nifty G Sec Dec 2026 Index Growth Direct Plan,Index Funds - Fixed Income,HDNGSDG-GR
 150846,HDFC Nifty G-Sec July 2031 Index Fund - Growth Option,INF179KC1EI0,,HDFC Mutual Fund,10-11-2022,,Other Scheme,Index Funds,,,,,,,
 150847,HDFC Nifty G-Sec July 2031 Index Fund - Growth Option - Direct Plan,INF179KC1EH2,,HDFC Mutual Fund,10-11-2022,,Other Scheme,Index Funds,,,,,,,
 150848,Edelweiss CRISIL IBX 50:50 Gilt Plus SDL Sep 2028 Index Fund - Regular Plan - Growth,INF754K01PR4,,Edelweiss Mutual Fund,14-11-2022,,Other Scheme,Index Funds,,,,,,,
@@ -13421,7 +13421,7 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 151475,SBI Dividend Yield Fund - Direct Plan - Income Distribution cum Capital Withdrawal (IDCW) Option,INF200KA15W0,INF200KA16W8,SBI Mutual Fund,17-03-2023,,Equity Scheme,Dividend Yield Fund,,,,,,,
 151476,SBI Dividend Yield Fund - Regular Plan - Growth,INF200KA11W9,,SBI Mutual Fund,17-03-2023,,Equity Scheme,Dividend Yield Fund,,,,,,,
 151477,SBI Dividend Yield Fund - Regular Plan - Income Distribution cum Capital Withdrawal (IDCW) Option,INF200KA12W7,INF200KA13W5,SBI Mutual Fund,17-03-2023,,Equity Scheme,Dividend Yield Fund,,,,,,,
-151478,SBI Dividend Yield Fund - Direct Plan - Growth,INF200KA14W3,,SBI Mutual Fund,17-03-2023,,Equity Scheme,Dividend Yield Fund,,,,,,,
+151478,SBI Dividend Yield Fund - Direct Plan - Growth,INF200KA14W3,,SBI Mutual Fund,17-03-2023,,Equity Scheme,Dividend Yield Fund,,,,,SBI Dividend Yield Growth Direct Plan,Dividend Yield Fund,SBD676G-GR
 151479,HSBC CRISIL IBX Gilt June 2027 Index Fund - Direct - Growth,INF336L01QT2,,HSBC Mutual Fund,27-03-2023,,Other Scheme,Index Funds,,,,,HSBC Crisil Ibx Gilt June 2027 Index Growth Direct Plan,Index Funds - Fixed Income,HSHCIDG-GR
 151480,HSBC CRISIL IBX Gilt June 2027 Index Fund - Regular - Growth,INF336L01QW6,,HSBC Mutual Fund,27-03-2023,,Other Scheme,Index Funds,,,,,,,
 151481,HSBC CRISIL IBX Gilt June 2027 Index Fund - Regular - IDCW,INF336L01QX4,INF336L01QY2,HSBC Mutual Fund,27-03-2023,,Other Scheme,Index Funds,,,,,,,
@@ -13467,10 +13467,10 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 151547,Bandhan US Treasury Bond 0-1 year specific Debt Passive FOF- REGULAR PLAN- IDCW,INF194KB1FU4,INF194KB1FZ3,Bandhan Mutual Fund,29-03-2023,,Other Scheme,FoF Overseas,,,,,,,
 151548,Bandhan US Treasury Bond 0-1 year specific Debt Passive FOF - DIRECT PLAN - GROWTH,INF194KB1FV2,,Bandhan Mutual Fund,29-03-2023,,Other Scheme,FoF Overseas,,,,,,,
 151549,Bandhan US Treasury Bond 0-1 year specific Debt Passive FOF - DIRECT PLAN - IDCW,INF194KB1FW0,INF194KB1GA4,Bandhan Mutual Fund,29-03-2023,,Other Scheme,FoF Overseas,,,,,,,
-151556,SBI Fixed Maturity Plan (FMP) - Series 79 (1170 Days) - Regular Plan - Growth,INF200KA17W6,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
-151557,SBI Fixed Maturity Plan (FMP) - Series 79 (1170 Days) - Regular Plan - Income Distribution cum Capital Withdrawal Payout,INF200KA18W4,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
-151558,SBI Fixed Maturity Plan (FMP) - Series 79 (1170 Days) - Direct Plan - Income Distribution cum Capital Withdrawal Payout,INF200KA10X9,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
-151559,SBI Fixed Maturity Plan (FMP) - Series 79 (1170 Days) - Direct Plan - Growth,INF200KA19W2,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
+151556,SBI Fixed Maturity Plan (FMP) - Series 79 (1130 Days) - Regular Plan - Growth,INF200KA17W6,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
+151557,SBI Fixed Maturity Plan (FMP) - Series 79 (1130 Days) - Regular Plan - Income Distribution cum Capital Withdrawal Payout,INF200KA18W4,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
+151558,SBI Fixed Maturity Plan (FMP) - Series 79 (1130 Days) - Direct Plan - Income Distribution cum Capital Withdrawal Payout,INF200KA10X9,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
+151559,SBI Fixed Maturity Plan (FMP) - Series 79 (1130 Days) - Direct Plan - Growth,INF200KA19W2,,SBI Mutual Fund,21-03-2023,,Income,Retirement Fund,,,,,,,
 151560,Aditya Birla Sun Life Nifty SDL SEP 2027 Index Fund-Regular Growth,INF209KB14T8,,Aditya Birla Sun Life Mutual Fund,13-03-2023,,Other Scheme,Index Funds,,,,,,,
 151561,Aditya Birla Sun Life Nifty SDL SEP 2027 Index Fund-Regular IDCW,INF209KB15T5,,Aditya Birla Sun Life Mutual Fund,13-03-2023,,Other Scheme,Index Funds,,,,,,,
 151562,Aditya Birla Sun Life Nifty SDL SEP 2027 Index Fund-Direct Growth,INF209KB16T3,,Aditya Birla Sun Life Mutual Fund,13-03-2023,,Other Scheme,Index Funds,,,,,,,
@@ -13627,7 +13627,7 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 151788,quant BFSI Fund - Growth Option - Regular Plan,INF966L01CA6,,quant Mutual Fund,21-06-2023,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 151789,quant BFSI Fund - IDCW Option - Regular Plan,INF966L01CB4,INF966L01CC2,quant Mutual Fund,21-06-2023,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 151790,quant BFSI Fund - IDCW Option - Direct Plan,INF966L01BY8,INF966L01BZ5,quant Mutual Fund,21-06-2023,,Equity Scheme,Sectoral/ Thematic,,,,,,,
-151791,quant BFSI Fund - Growth Option - Direct Plan,INF966L01BX0,,quant Mutual Fund,21-06-2023,,Equity Scheme,Sectoral/ Thematic,,,,,,,
+151791,quant BFSI Fund - Growth Option - Direct Plan,INF966L01BX0,,quant Mutual Fund,21-06-2023,,Equity Scheme,Sectoral/ Thematic,,,,,Quant Bfsi Growth Direct Plan,Sectoral/Thematic,QUBSDG-GR
 151792,Edelweiss Multi Asset Allocation Fund - Direct Plan - Growth,INF754K01RS8,,Edelweiss Mutual Fund,26-06-2023,,Hybrid Scheme,Multi Asset Allocation,,,,,,,
 151793,Edelweiss Multi Asset Allocation Fund - Direct Plan - IDCW Option,INF754K01RT6,INF754K01RU4,Edelweiss Mutual Fund,26-06-2023,,Hybrid Scheme,Multi Asset Allocation,,,,,,,
 151794,Edelweiss Multi Asset Allocation Fund - Regular Plan - IDCW Option,INF754K01RP4,INF754K01RQ2,Edelweiss Mutual Fund,26-06-2023,,Hybrid Scheme,Multi Asset Allocation,,,,,,,
@@ -14786,7 +14786,7 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 153151,SBI Quant Fund- Direct Plan- Income Distribution cum Capital Withdrawal Option (IDCW),INF200KB1514,INF200KB1522,SBI Mutual Fund,31-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 153152,SBI Quant Fund- Regular Plan- Income Distribution Cum Capital Withdrawal Option (IDCW),INF200KB1480,INF200KB1498,SBI Mutual Fund,31-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 153153,SBI Quant Fund- Regular Plan- Growth,INF200KB1472,,SBI Mutual Fund,31-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,,,
-153154,SBI Quant Fund- Direct Plan- Growth,INF200KB1506,,SBI Mutual Fund,31-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,,,
+153154,SBI Quant Fund- Direct Plan- Growth,INF200KB1506,,SBI Mutual Fund,31-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,SBI Quant Growth Direct Plan,Sectoral/Thematic,SBD694G-GR
 153155,BAJAJ FINSERV HEALTHCARE FUND - REGULAR - GROWTH,INF0QA701987,,Bajaj Finserv Mutual Fund,30-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 153156,BAJAJ FINSERV HEALTHCARE FUND - DIRECT - IDCW,INF0QA701AC7,INF0QA701AD5,Bajaj Finserv Mutual Fund,30-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 153157,BAJAJ FINSERV HEALTHCARE FUND - DIRECT - GROWTH,INF0QA701AB9,,Bajaj Finserv Mutual Fund,30-12-2024,,Equity Scheme,Sectoral/ Thematic,,,,,,,
@@ -14958,9 +14958,9 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 153336,Edelweiss CRISIL IBX AAA Bond NBFC HFC Jun 2027 Index Fund - Regular Plan - IDCW Option,INF754K01UL7,INF754K01UM5,Edelweiss Mutual Fund,20-02-2025,,Other Scheme,Index Funds,,,,,,,
 153337,Union Gold ETF,INF582M01KS4,,Union Mutual Fund,20-02-2025,,Other Scheme,Gold ETF,,,,,,,
 153338,Union Gold ETF Fund of Fund - Regular Plan - Growth Option,INF582M01KT2,,Union Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
-153339,Union Gold ETF Fund of Fund - Direct Plan - IDCW Option,INF582M01KW6,,Union Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
+153339,Union Gold ETF Fund of Fund - Direct Plan - IDCW Option,INF582M01KW6,INF582M01KX4,Union Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
 153340,Union Gold ETF Fund of Fund - Direct Plan - Growth Option,INF582M01LA0,,Union Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
-153341,Union Gold ETF Fund of Fund - Regular Plan - IDCW Option,INF582M01KU0,,Union Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
+153341,Union Gold ETF Fund of Fund - Regular Plan - IDCW Option,INF582M01KU0,INF582M01KV8,Union Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
 153342,Groww Nifty 200 ETF FOF - Regular - Growth,INF666M01JT5,,Groww Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
 153343,Groww Nifty 200 ETF FOF - Direct - IDCW,INF666M01JR9,INF666M01JS7,Groww Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
 153344,Groww Nifty 200 ETF FOF - Regular - IDCW,INF666M01JU3,INF666M01JW9,Groww Mutual Fund,04-03-2025,,Other Scheme,FoF Domestic,,,,,,,
@@ -15690,6 +15690,10 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 154162,WhiteOak Capital Consumption Opportunities Fund Regular Plan Growth,INF03VN01AE1,,WhiteOak Capital Mutual Fund,11-02-2026,,Equity Scheme,Sectoral/ Thematic,,,,,,,
 154163,Groww Nifty PSE ETF,INF666M01NQ3,,Groww Mutual Fund,10-02-2026,,Other Scheme,Other  ETFs,,,,,,,
 154164,Groww Nifty PSE ETF FOF Direct Growth,INF666M01NR1,,Groww Mutual Fund,13-02-2026,,Other Scheme,FoF Domestic,,,,,,,
+154165,DSP Multi Asset Omni Fund of Funds - Regular - Growth,INF740KA1YB5,,DSP Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
+154166,DSP Multi Asset Omni Fund of Funds - Direct - IDCW,INF740KA1YF6,INF740KA1YG4,DSP Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
+154167,DSP Multi Asset Omni Fund of Funds - Direct - Growth,INF740KA1YE9,,DSP Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
+154168,DSP Multi Asset Omni Fund of Funds - Regular - IDCW,INF740KA1YC3,INF740KA1YD1,DSP Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
 154169,Mirae Asset Nifty 500 Healthcare ETF,INF769K01QA6,,Mirae Asset Mutual Fund,11-02-2026,,Other Scheme,Other  ETFs,,,,,,,
 154170,Axis BSE India Sectors Leaders Index Fund- Regular Plan- Growth Option,INF846KA1416,,Axis Mutual Fund,16-02-2026,,Other Scheme,Index Funds,,,,,,,
 154171,Axis BSE India Sectors Leaders Index Fund- Direct Plan- Growth Option,INF846KA1424,,Axis Mutual Fund,16-02-2026,,Other Scheme,Index Funds,,,,,,,
@@ -15708,8 +15712,20 @@ code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_cate
 154184,The Wealth Company Balanced Advantage Fund - Regular IDCW,INF2F0001453,INF2F0001461,The Wealth Company Mutual Fund,19-02-2026,,Hybrid Scheme,Dynamic Asset Allocation or Balanced Advantage,,,,,,,
 154185,The Wealth Company Balanced Advantage Fund - Direct Growth,INF2F0001479,,The Wealth Company Mutual Fund,19-02-2026,,Hybrid Scheme,Dynamic Asset Allocation or Balanced Advantage,,,,,,,
 154186,The Wealth Company Balanced Advantage Fund - Direct IDCW,INF2F0001487,INF2F0001495,The Wealth Company Mutual Fund,19-02-2026,,Hybrid Scheme,Dynamic Asset Allocation or Balanced Advantage,,,,,,,
+154187,Mirae Asset BSE India Defence ETF FOF - Direct Plan - Growth,INF769K01QG3,,Mirae Asset Mutual Fund,,,Other Scheme,FoF Overseas,,,,,,,
+154188,Mirae Asset BSE India Defence ETF FOF - Direct Plan - IDCW,INF769K01QI9,INF769K01QH1,Mirae Asset Mutual Fund,,,Other Scheme,FoF Overseas,,,,,,,
+154189,Mirae Asset BSE India Defence ETF FOF - Regular Plan - Growth,INF769K01QD0,,Mirae Asset Mutual Fund,,,Other Scheme,FoF Overseas,,,,,,,
+154190,Mirae Asset BSE India Defence ETF FOF - Regular Plan - IDCW,INF769K01QF5,INF769K01QE8,Mirae Asset Mutual Fund,,,Other Scheme,FoF Overseas,,,,,,,
 154201,Bajaj Finserv Low Duration Fund - Regular - IDCW,INF0QA701CD1,INF0QA701CE9,Bajaj Finserv Mutual Fund,,,Debt Scheme,Low Duration Fund,,,,,,,
 154202,Bajaj Finserv Low Duration Fund - Direct - IDCW,INF0QA701CG4,INF0QA701CH2,Bajaj Finserv Mutual Fund,,,Debt Scheme,Low Duration Fund,,,,,,,
 154203,Bajaj Finserv Low Duration Fund - Regular - Growth,INF0QA701CC3,,Bajaj Finserv Mutual Fund,,,Debt Scheme,Low Duration Fund,,,,,,,
 154204,Bajaj Finserv Low Duration Fund - Direct - Growth,INF0QA701CF6,,Bajaj Finserv Mutual Fund,,,Debt Scheme,Low Duration Fund,,,,,,,
+154216,Mirae Asset Nifty Metal ETF FOF - Direct Plan - Growth,INF769K01QM1,,Mirae Asset Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
+154217,Mirae Asset Nifty Metal ETF FOF - Direct Plan - IDCW,INF769K01QO7,INF769K01QN9,Mirae Asset Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
+154218,Mirae Asset Nifty Metal ETF FOF - Regular Plan - Growth,INF769K01QJ7,,Mirae Asset Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
+154219,Mirae Asset Nifty Metal ETF FOF - Regular Plan - IDCW,INF769K01QL3,INF769K01QK5,Mirae Asset Mutual Fund,,,Other Scheme,FoF Domestic,,,,,,,
 154220,Aditya Birla Sun Life MSCI India ETF,INF209KC1662,,Aditya Birla Sun Life Mutual Fund,20-02-2026,,Other Scheme,Other  ETFs,,,,,,,
+154240,Axis Fixed Maturity Plan - Series 129 (108 Days) - Direct Plan - Growth,INF846KA1440,,Axis Mutual Fund,,,Income,Retirement Fund,,,,,,,
+154241,Axis Fixed Maturity Plan - Series 129 (108 Days) - Regular Plan - Growth,INF846KA1432,,Axis Mutual Fund,,,Income,Retirement Fund,,,,,,,
+154242,Axis Fixed Maturity Plan - Series 129 (108 Days) - Regular Plan - IDCW,INF846KA1457,,Axis Mutual Fund,,,Income,Retirement Fund,,,,,,,
+154243,Axis Fixed Maturity Plan - Series 129 (108 Days) - Direct Plan - IDCW,INF846KA1465,,Axis Mutual Fund,,,Income,Retirement Fund,,,,,,,
