@@ -742,5 +742,17 @@
     "industry": "Specialized Telecommunications",
     "etf": false,
     "status": "Listed"
+  },
+  "USN070592100": {
+    "symbol": "ASML",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "industry": "Semiconductors",
+    "etf": false,
+    "trading_status": "Listed",
+    "delisted_date": null,
+    "listing_date": "1995-03-15",
+    "status": "Listed",
+    "name": "ASML Holding N.V."
   }
 }
