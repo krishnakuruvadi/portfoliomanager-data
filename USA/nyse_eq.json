@@ -465,5 +465,29 @@
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
     "etf": false
+  },
+  "US75513E1010": {
+    "status": "Listed",
+    "listing_date": "01-JAN-1968",
+    "delisted_date": null,
+    "name": "RTX Corporation",
+    "symbol": "RTX",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "industry": "Aerospace & Defense",
+    "sector": "Industrials",
+    "etf": false
+  },
+  "US48242W1062": {
+    "status": "Listed",
+    "listing_date": "01-JAN-1968",
+    "delisted_date": null,
+    "name": "KBR, Inc.",
+    "symbol": "KBR",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "industry": "Technology Services",
+    "sector": "Information Technology Services",
+    "etf": false
   }
 }
