@@ -199,8 +199,8 @@
     "name": "Vanguard Total Stock Market ETF",
     "cap": "Large-Cap",
     "market_cap_type": "Large-Cap",
-    "sector": "Financial Services",
-    "industry": "Asset Management",
+    "sector": null,
+    "industry": null,
     "etf": true
   },
   "US81369Y8030": {
@@ -354,8 +354,8 @@
     "symbol": "EWY",
     "cap": "Large-Cap",
     "market_cap_type": "Large-Cap",
-    "industry": "Exchange Traded Fund",
-    "sector": "Financial Services",
+    "industry": null,
+    "sector": null,
     "etf": true
   },
   "US92840M1027": {
@@ -489,5 +489,17 @@
     "industry": "Technology Services",
     "sector": "Information Technology Services",
     "etf": false
+  },
+  "US9219108167": {
+    "status": "Listed",
+    "listing_date": "17-DEC-2007",
+    "delisted_date": null,
+    "name": "Vanguard Mega Cap Growth ETF",
+    "symbol": "MGK",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "industry": null,
+    "sector": null,
+    "etf": true
   }
 }
