@@ -22,6 +22,13 @@ cd India/code
 python update_share.py
 ```
 
+### Update mutual fund info for India
+```bash
+source venv/bin/activate
+cd India/code
+python update_mf.py
+```
+
 ### Update USA stock info
 ```bash
 source venv/bin/activate
