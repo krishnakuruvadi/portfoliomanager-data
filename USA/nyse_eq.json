@@ -501,5 +501,17 @@
     "industry": null,
     "sector": null,
     "etf": true
+  },
+  "US06368B5049": {
+    "status": "Listed",
+    "listing_date": "12-NOV-2019",
+    "delisted_date": null,
+    "name": "MicroSectors FANG+ ETN",
+    "symbol": "FNGS",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "industry": "Technology",
+    "sector": "Technology",
+    "etf": false
   }
 }

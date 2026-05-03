@@ -61,12 +61,8 @@ def _list_gemini_models(api_key: str) -> list[str]:
 
 def _select_fallback_model(api_key: str, tried: set[str]) -> str | None:
     preferred = (
-        "gemini-flash-latest",
-        "gemini-2.0-flash",
-        "gemini-1.5-flash",
-        "gemini-1.5-pro",
-        "gemini-1.0-pro",
-    )
+        "gemini/gemini-2-flash",
+        )
     models = _list_gemini_models(api_key)
     if not models:
         return None
@@ -80,7 +76,7 @@ def _select_fallback_model(api_key: str, tried: set[str]) -> str | None:
     return None
 
 
-def ask_gemini(prompt: str, model: str = "gemini/gemini-flash-latest") -> str:
+def ask_gemini(prompt: str, model: str = "gemini/gemini-2-flash") -> str:
     _require_litellm()
     load_dotenv("../../.env")
     api_key = os.getenv("GEMINI_API_KEY")
@@ -94,9 +90,8 @@ def ask_gemini(prompt: str, model: str = "gemini/gemini-flash-latest") -> str:
     fallback_models = [
         requested,
         model,
-        "gemini/gemini-2.0-flash",
-        "gemini/gemini-1.5-pro",
-        "gemini/gemini-1.0-pro",
+        #"gemini/gemini-3-flash-preview",
+        "gemini/gemini-2-flash",
     ]
     seen = set()
     models_to_try = []
@@ -112,6 +107,7 @@ def ask_gemini(prompt: str, model: str = "gemini/gemini-flash-latest") -> str:
                 model=model_name,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
+                tools=[{"googleSearch": {}}],
             )
             break
         except Exception as exc:
@@ -126,6 +122,7 @@ def ask_gemini(prompt: str, model: str = "gemini/gemini-flash-latest") -> str:
                 model=selected,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.2,
+                tools=[{"googleSearch": {}}],
             )
         else:
             raise LookupError(
@@ -140,10 +137,11 @@ def ask_gemini(prompt: str, model: str = "gemini/gemini-flash-latest") -> str:
 
 def build_isin_market_cap_exchange_inception_question(ticker: str) -> str:
     return (
+        f"Research (Task) the current status of {ticker} using Google Search grounding (Grounding). "
         "Return a JSON object with keys: isin, cap(Large-Cap, Mid-Cap, Small-Cap, Micro-Cap), market_cap_type(Mega-Cap, Large-Cap, Mid-Cap, Small-Cap, Micro-Cap), exchange, "
         "inception_date, company_name, delisted_date, sector, industry, etf (true or false), status (example Listed, Delisted etc). Use exchange only as NYSE or NASDAQ. "
         "Use DD-MMM-YYYY as dates format. If a value is "
-        f"unknown, use null. Recheck ISIN from multiple sources including tradingview.com.  Target company ticker: {ticker}."
+        f"unknown, use null. Check tradingview.com for the ISIN. Double check the information especially ISIN with a fresh Google search.  Target company ticker: {ticker}."
     )
 
 
