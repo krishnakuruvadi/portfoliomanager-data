@@ -513,5 +513,17 @@
     "industry": "Technology",
     "sector": "Technology",
     "etf": false
+  },
+  "US90353T1007": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "29-APR-2019",
+    "symbol": "UBER",
+    "name": "Uber Technologies, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Information Technology Services",
+    "etf": false
   }
 }
