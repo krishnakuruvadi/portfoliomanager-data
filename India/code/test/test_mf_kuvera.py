@@ -61,18 +61,19 @@ class TestGetFundInfo(unittest.TestCase):
     def test_get_fund_info_with_valid_isin(self):
         """Test get_fund_info retrieves correct scheme info for valid ISIN"""
         kuvera = Kuvera()
-        
+
         isin = 'INF044D01BU9'
         fund_type = 'Equity Scheme'
-        fund_categories = ['Flexi Cap Fund']
+        fund_category = 'Flexi Cap Fund'
         fund_house = 'Taurus Mutual Fund'
         scheme_code = 'TUSSG1G-GR'
         name = 'Taurus Flexi Cap Fund - Direct Plan - Growth'
-        code, fund_info = kuvera.get_fund_info(name, isin, fund_type, fund_categories, fund_house)
-        self.assertIsInstance(fund_info, dict)
-        self.assertEqual(fund_info.get('isin', ''), isin)
-        self.assertEqual(fund_info.get('name', ''), 'Taurus Flexi Cap Growth Direct Plan')
-        self.assertEqual(code, scheme_code)
+        result = kuvera.get_fund_info(name, isin, fund_type, fund_category, fund_house)
+        self.assertIsNotNone(result)
+        self.assertIsInstance(result, dict)
+        self.assertEqual(result.get('isin', ''), isin)
+        self.assertEqual(result.get('name', ''), 'Taurus Flexi Cap Growth Direct Plan')
+        self.assertEqual(result.get('kuvera_code', ''), scheme_code)
 
 class TestGetSchemeInfo(unittest.TestCase):
     """Tests for get_scheme_info static method with actual API calls"""
@@ -138,7 +139,7 @@ class TestGetAmfiKuveraFundHouseMapping(unittest.TestCase):
     def test_fund_house_mapping_count(self):
         """Test that fund house mapping has expected number of entries"""
         mapping = Kuvera.get_amfi_kuvera_fund_house_mapping()
-        self.assertEqual(len(mapping), 28)
+        self.assertEqual(len(mapping), 63)
 
 
 class TestCheckKuveraEntryComplete(unittest.TestCase):
@@ -156,48 +157,43 @@ class TestCheckKuveraEntryComplete(unittest.TestCase):
     
     def test_entry_incomplete_missing_name(self):
         """Test entry validation fails when kuvera_name is missing"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {
             'kuvera_fund_category': 'Equity',
             'kuvera_code': '1001'
         }
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertFalse(result)
     
     def test_entry_incomplete_empty_field(self):
         """Test entry validation fails when field is empty string"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {
             'kuvera_name': '',
             'kuvera_fund_category': 'Equity',
             'kuvera_code': '1001'
         }
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertFalse(result)
     
     def test_entry_incomplete_none_field(self):
         """Test entry validation fails when field is None"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {
             'kuvera_name': 'HDFC Equity Fund',
             'kuvera_fund_category': None,
             'kuvera_code': '1001'
         }
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertFalse(result)
     
     def test_entry_incomplete_missing_multiple_fields(self):
         """Test entry validation fails when multiple fields are missing"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {
             'kuvera_name': 'HDFC Equity Fund'
         }
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertFalse(result)
     
     def test_entry_with_extra_fields(self):
         """Test entry validation ignores extra fields"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {
             'kuvera_name': 'HDFC Equity Fund',
             'kuvera_fund_category': 'Equity',
@@ -205,29 +201,27 @@ class TestCheckKuveraEntryComplete(unittest.TestCase):
             'extra_field': 'extra_value',
             'another_field': 'another_value'
         }
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertTrue(result)
     
     def test_entry_with_zero_value(self):
         """Test entry validation with zero value"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {
             'kuvera_name': 'Fund Name',
             'kuvera_fund_category': 'Equity',
             'kuvera_code': 0
         }
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertFalse(result)
     
     def test_entry_with_whitespace_only_field(self):
         """Test entry validation with whitespace-only field"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {
             'kuvera_name': '   ',
             'kuvera_fund_category': 'Equity',
             'kuvera_code': '1001'
         }
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertIsInstance(result, bool)
 
 
@@ -245,22 +239,20 @@ class TestIntegration(unittest.TestCase):
     
     def test_mapping_retrieval_consistency(self):
         """Test that mapping retrieval is consistent across calls"""
-        kuvera = Kuvera.__new__(Kuvera)
-        mapping1 = Kuvera.get_amfi_kuvera_fund_house_mapping(kuvera)
-        mapping2 = Kuvera.get_amfi_kuvera_fund_house_mapping(kuvera)
+        mapping1 = Kuvera.get_amfi_kuvera_fund_house_mapping()
+        mapping2 = Kuvera.get_amfi_kuvera_fund_house_mapping()
         self.assertEqual(mapping1, mapping2)
     
     def test_entry_validation_with_real_mapping(self):
         """Test entry validation using real fund house mapping"""
-        kuvera = Kuvera.__new__(Kuvera)
-        mapping = Kuvera.get_amfi_kuvera_fund_house_mapping(kuvera)
+        mapping = Kuvera.get_amfi_kuvera_fund_house_mapping()
         first_fund_house_name = list(mapping.values())[0]
         entry = {
             'kuvera_name': first_fund_house_name,
             'kuvera_fund_category': 'Equity',
             'kuvera_code': 'TEST001'
         }
-        is_valid = Kuvera.check_kuvera_entry_complete(kuvera, entry)
+        is_valid = Kuvera.check_kuvera_entry_complete(entry)
         self.assertTrue(is_valid)
     
     def test_api_endpoint_stability(self):
@@ -303,9 +295,21 @@ class TestAmfiKuveraFundCategoryMapping(unittest.TestCase):
         self.assertGreater(len(mapping), 0)
     
     def test_fund_category_mapping_has_expected_keys(self):
-        """Test that fund category mapping has expected AMFI categories"""
-        kuvera = Kuvera()
-        for sc in kuvera.get_sub_categories():
+        """Test that fund category mapping covers all sub-categories from Kuvera's fund_schemes API.
+
+        Uses the fund_schemes/list.json endpoint directly rather than get_sub_categories(),
+        because the search API also returns sub-categories like 'Hybrid Scheme' for Zerodha's
+        lifecycle funds that are not AMFI-registered and thus have no AMFI category mapping.
+        """
+        resp = requests.get("https://api.kuvera.in/mf/api/v4/fund_schemes/list.json", timeout=15)
+        self.assertEqual(resp.status_code, 200)
+        data = resp.json()
+        sub_categories = set()
+        for _, v in data.items():
+            for sc in v.keys():
+                sub_categories.add(sc)
+        self.assertGreater(len(sub_categories), 0)
+        for sc in sub_categories:
             found = False
             for _, value in Kuvera.get_amfi_kuvera_fund_category_mapping().items():
                 if isinstance(value, list):
@@ -323,21 +327,18 @@ class TestEdgeCases(unittest.TestCase):
     
     def test_get_scheme_info_with_empty_string(self):
         """Test get_scheme_info with empty string code"""
-        kuvera = Kuvera.__new__(Kuvera)
-        result = Kuvera.get_scheme_info(kuvera, '')
+        result = Kuvera.get_scheme_info('')
         self.assertTrue(result is None or isinstance(result, str))
     
     def test_check_entry_complete_with_empty_dict(self):
         """Test check_kuvera_entry_complete with empty dictionary"""
-        kuvera = Kuvera.__new__(Kuvera)
         details = {}
-        result = Kuvera.check_kuvera_entry_complete(kuvera, details)
+        result = Kuvera.check_kuvera_entry_complete(details)
         self.assertFalse(result)
     
     def test_fund_house_mapping_no_duplicates(self):
         """Test that fund house mapping has no duplicate keys"""
-        kuvera = Kuvera.__new__(Kuvera)
-        mapping = Kuvera.get_amfi_kuvera_fund_house_mapping(kuvera)
+        mapping = Kuvera.get_amfi_kuvera_fund_house_mapping()
         keys = list(mapping.keys())
         self.assertEqual(len(keys), len(set(keys)), "Duplicate keys found in mapping")
     
@@ -349,14 +350,13 @@ class TestEdgeCases(unittest.TestCase):
     
     def test_mapping_and_validation_integration(self):
         """Test fund house mapping with entry validation"""
-        kuvera = Kuvera.__new__(Kuvera)
-        mapping = Kuvera.get_amfi_kuvera_fund_house_mapping(kuvera)
+        mapping = Kuvera.get_amfi_kuvera_fund_house_mapping()
         entry = {
             'kuvera_name': mapping['HDFCMutualFund_MF'],
             'kuvera_fund_category': 'Equity',
             'kuvera_code': 'HDFC001'
         }
-        is_valid = Kuvera.check_kuvera_entry_complete(kuvera, entry)
+        is_valid = Kuvera.check_kuvera_entry_complete(entry)
         self.assertTrue(is_valid)
 
 
