@@ -1,5 +1,6 @@
 import requests
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -222,6 +223,24 @@ class Kuvera:
             'UNIFIMUTUALFUND_MF':'Unifi Mutual Fund',
             'GROWWMUTUALFUND_MF':'Groww Mutual Fund',
             'JIOBLACKROCKMUTUALFUND_MF':'Jio BlackRock Mutual Fund',
+            'SHRIRAMMUTUALFUND_MF':'Shriram Mutual Fund',
+            'PPFAS_MF':'PPFAS Mutual Fund',
+            'SAMCOMUTUALFUND_MF':'Samco Mutual Fund',
+            'ITI MUTUAL FUND_MF':'ITI Mutual Fund',
+            'HELIOSMUTUALFUND_MF':'Helios Mutual Fund',
+            'CAPITALMINDMUTUALFUND_MF':'Capitalmind Mutual Fund',
+            'OLDBRIDGEMUTUALFUND_MF':'Old Bridge Mutual Fund',
+            'QUANTUMMUTUALFUND_MF':'Quantum Mutual Fund',
+            'L&TMUTUALFUND_MF':'L&T Mutual Fund',
+            'ZERODHAMUTUALFUND_MF':'Zerodha Mutual Fund',
+            'ANGELONEMUTUALFUND_MF':'Angel One Mutual Fund',
+            'EDELWEISSMUTUALFUNDSIF_MF':'Edelweiss Mutual Fund',
+            'SBIMUTUALFUNDSIF_MF':'SBI Mutual Fund',
+            'ITI MUTUAL FUND_MF_SIF':'ITI Mutual Fund',
+            'ICICIPRUDENTIALMUTUALFUND_MF_SIF':'ICICI Prudential Mutual Fund',
+            '360_ONE_MUTUALFUND_MF_SIF':'360 ONE Mutual Fund',
+            'TATAMUTUALFUND_MF_SIF':'Tata Mutual Fund',
+            'BANDHANMUTUALFUND_MF_SIF':'Bandhan Mutual Fund',
         }
     
     @staticmethod
@@ -295,13 +314,25 @@ class Kuvera:
                     print(f'exception {e} getting fund mapping for fund house {fh} with url {url}')
     
     def get_supported_fund_houses(self):
-        # Initialize the driver (ensure you have the correct webdriver installed)
-        driver = webdriver.Chrome()
-
+        driver = None
         try:
+            options = Options()
+            options.add_argument('--headless')
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            driver = webdriver.Chrome(options=options)
+
             # Open the page
             driver.get("https://kuvera.in/mutual-funds/all")
             from selenium.webdriver.common.action_chains import ActionChains
+
+            # Dismiss the security-awareness popup ("Getting messages from Kuvera?")
+            # that appears on every fresh page load before any interaction is possible.
+            wait = WebDriverWait(driver, 10)
+            okay_button = wait.until(EC.element_to_be_clickable(
+                (By.XPATH, "//button[normalize-space(text())='Okay']")
+            ))
+            okay_button.click()
 
             # 1. Find the body to reset the mouse to the top-left corner
             body = driver.find_element(By.TAG_NAME, 'body')
@@ -334,7 +365,8 @@ class Kuvera:
         except Exception as e:
             print(f'exception {e} getting supported fund houses from kuvera')
         finally:
-            driver.quit()
+            if driver:
+                driver.quit()
         return ['Axis Mutual Funds',
                 'Kotak Mutual Funds',
                 'SBI Mutual Funds',
