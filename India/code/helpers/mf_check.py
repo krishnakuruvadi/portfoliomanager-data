@@ -2,51 +2,62 @@ from .mf_entry import get_mf_entries, get_new_entry, write_entries, get_path_to_
 
 
 def update_single_code_in_csv(code, csv_file=None):
-    """Fetch AMFI and Kuvera data for a single scheme code and write it into the MF CSV."""
+    """Fetch AMFI and Kuvera data for one or more scheme codes and write it into the MF CSV."""
     if not csv_file:
         csv_file = get_path_to_csv()
 
-    data = get_mf_entries(csv_file)
-    if str(code) in data:
-        entry = data[str(code)]
+    if isinstance(code, (list, tuple, set)):
+        codes = [str(item) for item in code]
     else:
-        entry = get_new_entry()
+        codes = [str(code)]
+
+    data = get_mf_entries(csv_file)
 
     from helpers.mf_amfi import get_details_amfi
     from helpers.mf_kuvera import Kuvera
 
-    amfi_data = get_details_amfi(code)
-    if amfi_data:
-        entry['name'] = amfi_data.get('name', entry.get('name', ''))
-        entry['fund_house'] = amfi_data.get('fund_house', entry.get('fund_house', ''))
-        entry['inception_date'] = amfi_data.get('scheme_start_date', entry.get('inception_date', ''))
-        entry['end_date'] = amfi_data.get('scheme_end_date', entry.get('end_date', ''))
-        entry['amfi_fund_type'] = amfi_data.get('amfi_fund_type', entry.get('amfi_fund_type', ''))
-        entry['amfi_category'] = amfi_data.get('amfi_fund_category', entry.get('amfi_category', ''))
-
-    current_entry = data.get(str(code), entry)
-    if current_entry.get('isin', '') == '' and current_entry.get('isin2', '') == '':
-        current_entry['isin'] = entry.get('isin', '')
-        current_entry['isin2'] = entry.get('isin2', '')
-
     kuvera = Kuvera()
-    if entry.get('isin', '') or entry.get('isin2', ''):
-        isin = entry.get('isin', '') or entry.get('isin2', '')
-        kuvera_data = kuvera.get_fund_info(
-            entry.get('name', ''),
-            isin,
-            entry.get('amfi_fund_type', ''),
-            entry.get('amfi_category', ''),
-            entry.get('fund_house', '')
-        )
-        if kuvera_data:
-            entry['kuvera_name'] = kuvera_data.get('name', entry.get('kuvera_name', ''))
-            entry['kuvera_fund_category'] = kuvera_data.get('fund_category', entry.get('kuvera_fund_category', ''))
-            entry['kuvera_code'] = kuvera_data.get('kuvera_code', entry.get('kuvera_code', ''))
 
-    data[str(code)] = entry
-    write_entries(data, f'updating code {code}', csv_file)
-    return data[str(code)]
+    for code_value in codes:
+        if str(code_value) in data:
+            entry = data[str(code_value)]
+        else:
+            entry = get_new_entry()
+
+        amfi_data = get_details_amfi(code_value)
+        if amfi_data:
+            entry['name'] = amfi_data.get('name', entry.get('name', ''))
+            entry['fund_house'] = amfi_data.get('fund_house', entry.get('fund_house', ''))
+            entry['inception_date'] = amfi_data.get('scheme_start_date', entry.get('inception_date', ''))
+            entry['end_date'] = amfi_data.get('scheme_end_date', entry.get('end_date', ''))
+            entry['amfi_fund_type'] = amfi_data.get('amfi_fund_type', entry.get('amfi_fund_type', ''))
+            entry['amfi_category'] = amfi_data.get('amfi_fund_category', entry.get('amfi_category', ''))
+
+        current_entry = data.get(str(code_value), entry)
+        if current_entry.get('isin', '') == '' and current_entry.get('isin2', '') == '':
+            current_entry['isin'] = entry.get('isin', '')
+            current_entry['isin2'] = entry.get('isin2', '')
+
+        if entry.get('isin', '') or entry.get('isin2', ''):
+            isin = entry.get('isin', '') or entry.get('isin2', '')
+            kuvera_data = kuvera.get_fund_info(
+                entry.get('name', ''),
+                isin,
+                entry.get('amfi_fund_type', ''),
+                entry.get('amfi_category', ''),
+                entry.get('fund_house', '')
+            )
+            if kuvera_data:
+                entry['kuvera_name'] = kuvera_data.get('name', entry.get('kuvera_name', ''))
+                entry['kuvera_fund_category'] = kuvera_data.get('fund_category', entry.get('kuvera_fund_category', ''))
+                entry['kuvera_code'] = kuvera_data.get('kuvera_code', entry.get('kuvera_code', ''))
+
+        data[str(code_value)] = entry
+        write_entries(data, f'updating code {code_value}', csv_file)
+
+    if len(codes) == 1:
+        return data[str(codes[0])]
+    return {code_value: data[str(code_value)] for code_value in codes}
 
 
 
