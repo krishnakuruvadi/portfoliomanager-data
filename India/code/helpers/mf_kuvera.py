@@ -19,6 +19,48 @@ class Kuvera:
     
     def get_known_isin_mapping(self):
         return self.isin_to_kuvera_code_mapping
+
+    def reset_fund_house_name_change(self, current_data, fund_house_name_changes):
+        """Reset stale Kuvera mappings only when the renamed fund house cannot be found.
+
+        If a fund house name change is detected, this checks whether the new fund-house
+        name can be resolved via the existing Kuvera mapping table. Only when that lookup
+        does not find a matching new-name mapping do we clear the stale Kuvera fields.
+        """
+        if not isinstance(current_data, dict) or not isinstance(fund_house_name_changes, dict):
+            return False
+
+        changed = False
+        reset_fields = ['kuvera_name', 'kuvera_fund_category', 'kuvera_code']
+        fund_house_mapping = Kuvera.get_amfi_kuvera_fund_house_mapping()
+        for _, details in current_data.items():
+            if not isinstance(details, dict):
+                continue
+
+            fund_house = (details.get('fund_house', '') or '').strip()
+            has_existing_mapping = any(bool(details.get(field, '')) for field in reset_fields)
+            if not has_existing_mapping:
+                continue
+
+            for old_name, new_name in fund_house_name_changes.items():
+                old_name = (old_name or '').strip()
+                new_name = (new_name or '').strip()
+                if not old_name or not new_name:
+                    continue
+
+                if fund_house == old_name:
+                    details['fund_house'] = new_name
+                    normalized_new_name = new_name
+                    has_matching_new_name = any(
+                        value == normalized_new_name for value in fund_house_mapping.values()
+                    )
+                    if not has_matching_new_name:
+                        for field in reset_fields:
+                            details[field] = ''
+                        changed = True
+                    break
+
+        return changed
     
     def get_fund_schemes(self):
         att = 0

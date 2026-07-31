@@ -35,3 +35,9 @@ source venv/bin/activate
 cd code
 python update_isin_usa.py <symbol>
 ```
+
+### Find all JSON and CSV files in the repository and verify contents
+```bash
+source venv/bin/activate
+python India/code/helpers/verify_file_content.py
+```

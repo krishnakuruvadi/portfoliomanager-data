@@ -225,6 +225,68 @@ class TestCheckKuveraEntryComplete(unittest.TestCase):
         self.assertIsInstance(result, bool)
 
 
+class TestFundHouseNameChangeReset(unittest.TestCase):
+    """Tests for resetting data when a fund house name changes"""
+
+    def test_reset_fund_house_name_change_resets_existing_kuvera_fields_only_when_new_name_is_missing(self):
+        """Entries should only be reset when the renamed fund house cannot be matched to a new Kuvera name."""
+        kuvera = Kuvera.__new__(Kuvera)
+        current_data = {
+            '1': {
+                'fund_house': 'Old Fund House',
+                'kuvera_name': 'Old Kuvera Name',
+                'kuvera_fund_category': 'Equity',
+                'kuvera_code': 'ABC123',
+            },
+            '2': {
+                'fund_house': 'Different Fund House',
+                'kuvera_name': 'Another Name',
+                'kuvera_fund_category': 'Debt',
+                'kuvera_code': 'XYZ789',
+            },
+            '3': {
+                'fund_house': 'Old Fund House',
+            },
+        }
+
+        changed = kuvera.reset_fund_house_name_change(
+            current_data,
+            {'Old Fund House': 'HDFC Mutual Fund'}
+        )
+
+        self.assertFalse(changed)
+        self.assertEqual(current_data['1']['fund_house'], 'HDFC Mutual Fund')
+        self.assertEqual(current_data['1']['kuvera_name'], 'Old Kuvera Name')
+        self.assertEqual(current_data['1']['kuvera_fund_category'], 'Equity')
+        self.assertEqual(current_data['1']['kuvera_code'], 'ABC123')
+        self.assertEqual(current_data['2']['fund_house'], 'Different Fund House')
+        self.assertEqual(current_data['2']['kuvera_name'], 'Another Name')
+        self.assertEqual(current_data['3'].get('kuvera_name', ''), '')
+
+    def test_reset_fund_house_name_change_resets_when_new_name_is_missing(self):
+        """Entries should be reset when the new fund-house name is not found in Kuvera mappings."""
+        kuvera = Kuvera.__new__(Kuvera)
+        current_data = {
+            '1': {
+                'fund_house': 'Old Fund House',
+                'kuvera_name': 'Old Kuvera Name',
+                'kuvera_fund_category': 'Equity',
+                'kuvera_code': 'ABC123',
+            },
+        }
+
+        changed = kuvera.reset_fund_house_name_change(
+            current_data,
+            {'Old Fund House': 'Completely Unknown Fund House'}
+        )
+
+        self.assertTrue(changed)
+        self.assertEqual(current_data['1']['fund_house'], 'Completely Unknown Fund House')
+        self.assertEqual(current_data['1']['kuvera_name'], '')
+        self.assertEqual(current_data['1']['kuvera_fund_category'], '')
+        self.assertEqual(current_data['1']['kuvera_code'], '')
+
+
 class TestIntegration(unittest.TestCase):
     """Integration tests with actual API calls"""
     

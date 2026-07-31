@@ -77,8 +77,8 @@ def write_entries(data, phase, csv_file=None):
     if not csv_file:
         csv_file = get_path_to_csv()
     fields = ['code','name','isin','isin2','fund_house', 'inception_date','end_date','amfi_fund_type','amfi_category','ms_name','ms_category','ms_investment_style','ms_id', 'kuvera_name', 'kuvera_fund_category', 'kuvera_code']
-    with open(csv_file, 'w') as csvfile:
-        csvwriter = csv.writer(csvfile)
+    with open(csv_file, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile, lineterminator='\n')
         csvwriter.writerow(fields)
         for i in sorted (data.keys()):
             csvwriter.writerow([i, data[i]['name'],
