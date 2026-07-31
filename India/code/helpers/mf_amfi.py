@@ -4,6 +4,28 @@ import requests
 from .utils import get_date_or_none_from_string, get_date_or_none_from_string, get_float_or_zero_from_string
 
 
+def parse_fund_type_info(scheme_data):
+    fund_house = scheme_data.strip()
+    amfi_fund_type = ''
+    amfi_fund_category = ''
+
+    if '(' in scheme_data and ')' in scheme_data and 'Mutual Fund' not in scheme_data:
+        opening_paren = scheme_data.find('(')
+        closing_paren = scheme_data.rfind(')')
+        if opening_paren != -1 and closing_paren != -1 and opening_paren < closing_paren:
+            fund_house = scheme_data[:opening_paren].strip()
+            fund_type_info = scheme_data[opening_paren + 1:closing_paren].strip()
+            if '-' in fund_type_info:
+                splits = fund_type_info.split('-', 1)
+                amfi_fund_type = splits[0].strip() if splits else ''
+                amfi_fund_category = splits[1].strip() if len(splits) > 1 else ''
+                if 'hildren' in amfi_fund_category.lower():
+                    amfi_fund_category = "Children's Fund"
+            else:
+                amfi_fund_type = fund_type_info.strip()
+                amfi_fund_category = ''
+    return fund_house, amfi_fund_type, amfi_fund_category
+
 
 def get_all_schemes()->dict:
     try:
@@ -53,17 +75,7 @@ def get_all_schemes()->dict:
         elif scheme_data.strip() != "":
             if ';' not in scheme_data:
                 if '(' in scheme_data and ')' in scheme_data and 'Mutual Fund' not in scheme_data:
-                    fund_house = scheme_data.strip()
-                    # extract content between parentheses
-                    fund_type_info = scheme_data[scheme_data.find("(")+1:scheme_data.find(")")].strip()
-                    if '-' in fund_type_info:
-                        splits = fund_type_info.split('-')
-                        amfi_fund_type = splits[0].strip() if splits else ''
-                        amfi_fund_category = splits[1].strip() if len(splits) > 1 else ''
-                        if 'hildren' in amfi_fund_category.lower():
-                            amfi_fund_category = "Children's Fund"
-                    else:
-                        amfi_fund_type = fund_type_info.strip()
+                    fund_house, amfi_fund_type, amfi_fund_category = parse_fund_type_info(scheme_data)
                 else:
                     fund_house = scheme_data.strip()
     print(f'found {count} funds. ignored {ignored_zero_nav} zero nav funds and {ignored_no_isin} no isin funds')
