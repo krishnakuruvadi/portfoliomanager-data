@@ -1,6 +1,21 @@
 from .mf_entry import get_mf_entries, get_new_entry, write_entries, get_path_to_csv
 
 
+def update_multiple_entries(csv_file=None):
+    # find all entries that have fund_house='Bandhan Mutual Fund' and have 'IDFC' in their name
+    if not csv_file:
+        csv_file = get_path_to_csv()
+    data = get_mf_entries(csv_file)
+    codes = list()
+    for code, entry in data.items():
+        if entry.get('fund_house') == 'Bandhan Mutual Fund' and 'IDFC' in entry.get('kuvera_name', ''):
+            print(f'Updating code {code} with name {entry.get("kuvera_name")}')
+            codes.append(code)
+    if codes:
+        update_single_code_in_csv(codes, csv_file)
+    else:
+        print('No entries found for Bandhan Mutual Fund with IDFC in kuvera_name')
+
 def update_single_code_in_csv(code, csv_file=None):
     """Fetch AMFI and Kuvera data for one or more scheme codes and write it into the MF CSV."""
     if not csv_file:
