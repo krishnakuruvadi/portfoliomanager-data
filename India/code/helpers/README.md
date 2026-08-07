@@ -57,3 +57,44 @@ You can run the focused tests with:
 source venv/bin/activate
 python -m pytest India/code/test/test_update_mf.py India/code/test/test_mf_kuvera.py -k "update_mf or fund_house_name_change"
 ```
+
+## Manually verify the diff between committed and current change for mutual funds
+'''
+Check the diff of contents in mf.csv with git HEAD.  If there are any changes, you will be prompted to review them and accept or reject each change.
+(venv) portfoliomanager-data % python
+Python 3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18)
+[Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.path.insert(0, 'India/code')
+>>> from update_mf import diff_with_git_head
+>>> diff_with_git_head()
+'''
+
+## Update Kuvera data for a single AMFI code
+'''
+Given a scheme code, this function will fetch the AMFI and Kuvera data for that scheme and update the mf.csv file accordingly. 
+It first checks if the scheme code already exists in the CSV, and if not, it creates a new entry. 
+It then fetches the relevant data from AMFI and Kuvera APIs and updates the entry before writing it back to the CSV file.
+(venv) portfoliomanager-data % python
+Python 3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.path.insert(0, 'India/code')
+>>> from helpers.mf_check import *
+>>> update_single_code_in_csv('149835')
+'''
+
+## Update multiple AMFI codes' Kuvera data
+'''
+Edit function update_multiple_entries to fetch the AMFI and Kuvera data for multiple schemes and update the mf.csv file accordingly. 
+It first checks if the scheme code already exists in the CSV, and if not, it creates a new entry. 
+It then fetches the relevant data from AMFI and Kuvera APIs and updates the entry before writing it back to the CSV file.
+(venv) portfoliomanager-data % python
+Python 3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.path.insert(0, 'India/code')
+>>> from helpers.mf_check import *
+>>> update_multiple_entries()
+'''

@@ -8,9 +8,11 @@ def update_multiple_entries(csv_file=None):
     data = get_mf_entries(csv_file)
     codes = list()
     for code, entry in data.items():
-        if entry.get('fund_house') == 'Bandhan Mutual Fund' and 'IDFC' in entry.get('kuvera_name', ''):
-            print(f'Updating code {code} with name {entry.get("kuvera_name")}')
+        if 'index' in entry.get('name', '').lower() and 'direct' in entry.get('name', '').lower() and entry.get('kuvera_name','') == '':
+            print(f'Updating code {code} with name {entry.get("name")}')
             codes.append(code)
+        if len(codes) > 50:
+            break
     if codes:
         update_single_code_in_csv(codes, csv_file)
     else:
