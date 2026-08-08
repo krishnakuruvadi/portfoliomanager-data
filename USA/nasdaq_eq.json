@@ -242,6 +242,7 @@
   "US90184L1026": {
     "status": "Delisted",
     "delisted_date": "27-OCT-2022",
+    "delisted_price": 54.2,
     "listing_date": "07-NOV-2013",
     "symbol": "TWTR",
     "name": "Twitter, Inc.",
