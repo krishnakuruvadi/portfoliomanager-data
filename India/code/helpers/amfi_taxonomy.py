@@ -13,9 +13,19 @@ _TAXONOMY_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__
 # newly-added correction to rows already written to mf.csv.
 AMFI_FUND_TYPE_ALIASES = {
     'Equity Schemes': 'Equity Scheme',
+    'Hybrid Schemes': 'Hybrid Scheme',
 }
 AMFI_CATEGORY_ALIASES = {
     'Sectoral Fund': 'Sectoral/ Thematic',
+    'Multi Asset Allocation': 'Multi Asset Allocation Fund',
+    'Focussed Fund': 'Focused Fund',
+    'Other  ETFs': 'Other ETFs',
+    'Balanced Advantage Fund/ Dynamic Asset Allocation': 'Dynamic Asset Allocation or Balanced Advantage',
+    'Banking and PSU Fund': 'Banking and PSU Debt Fund',
+    'Thematic Fund': 'Sectoral/ Thematic',
+    'Short Term Fund': 'Short Duration Fund',
+    'Fund of Funds Scheme (Domestic)': 'FoF Domestic',
+    'Fund of Funds investing overseas': 'FoF Overseas',
 }
 
 
