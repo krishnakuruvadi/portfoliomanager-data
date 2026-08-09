@@ -2,6 +2,7 @@ from mftool import Mftool
 import datetime
 import requests
 from .utils import get_date_or_none_from_string, get_date_or_none_from_string, get_float_or_zero_from_string
+from .amfi_taxonomy import apply_known_amfi_aliases
 
 
 def parse_fund_type_info(scheme_data):
@@ -112,6 +113,7 @@ def get_details_amfi(code):
         splits = scheme_data['scheme_category'].split('-')
         fund_type = splits[0].strip() if splits else ''
         fund_category = splits[1].strip() if len(splits) > 1 else ''
+        fund_type, fund_category = apply_known_amfi_aliases(fund_type, fund_category)
         scheme_info['amfi_fund_type'] = fund_type
         scheme_info['amfi_fund_category'] = fund_category
         scheme_info['scheme_code'] = scheme_data['scheme_code']

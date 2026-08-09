@@ -71,12 +71,15 @@ def verify_csv_file(file_path: str) -> Tuple[bool, str]:
             if os.path.basename(file_path) == 'mf.csv':
                 try:
                     from .mf_entry import find_malformed_rows
+                    from .amfi_taxonomy import find_unapproved_taxonomy_rows
                 except ImportError:
                     # Running as a standalone script (no parent package),
                     # e.g. `python helpers/verify_file_content.py`.
                     import sys
                     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
                     from mf_entry import find_malformed_rows
+                    from amfi_taxonomy import find_unapproved_taxonomy_rows
+
                 problems = find_malformed_rows(file_path)
                 if problems:
                     sample = ', '.join(str(lineno) for lineno, _ in problems[:10])
@@ -84,6 +87,22 @@ def verify_csv_file(file_path: str) -> Tuple[bool, str]:
                         f"✗ Invalid CSV in {file_path}: {len(problems)} row(s) have a "
                         f"misaligned isin column (unquoted comma in `name` shifted "
                         f"columns without changing row length) at line(s) {sample}"
+                    )
+
+                taxonomy_problems = find_unapproved_taxonomy_rows(file_path)
+                if taxonomy_problems:
+                    sample = ', '.join(
+                        f"line {lineno} {field}={value!r}"
+                        for lineno, field, value in taxonomy_problems[:10]
+                    )
+                    return False, (
+                        f"✗ Invalid CSV in {file_path}: {len(taxonomy_problems)} row(s) use "
+                        f"an amfi_fund_type/amfi_category not in known_amfi_taxonomy.json "
+                        f"({sample}). If this is a legitimate new or changed category, add "
+                        f"it to known_amfi_taxonomy.json to approve it explicitly; if it's "
+                        f"upstream drift, add a correction to AMFI_FUND_TYPE_ALIASES/"
+                        f"AMFI_CATEGORY_ALIASES in "
+                        f"helpers/amfi_taxonomy.py instead."
                     )
 
             return True, f"✓ Valid CSV: {file_path} ({row_count} rows)"
