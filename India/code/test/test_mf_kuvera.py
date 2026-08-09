@@ -342,6 +342,12 @@ class TestGetDetailsAmfi(unittest.TestCase):
         self.assertEqual(str(result.get('scheme_code', '')), code)
         self.assertEqual(result.get('name', None), 'Invesco India Technology Fund - Direct Plan - Growth')
         self.assertEqual(result.get('fund_house', None), 'Invesco Mutual Fund')
+        # api.mfapi.in currently reports this scheme as 'Equity Schemes -
+        # Sectoral Fund', but get_details_amfi corrects known upstream
+        # drift (see helpers.amfi_taxonomy.AMFI_FUND_TYPE_ALIASES /
+        # AMFI_CATEGORY_ALIASES) back to this repo's established canonical
+        # values so downstream consumers of mf.csv never see the
+        # type/category silently change.
         self.assertEqual(result.get('amfi_fund_type', None), 'Equity Scheme')
         self.assertEqual(result.get('amfi_fund_category', None), 'Sectoral/ Thematic')
         self.assertEqual(result.get('scheme_start_date', None), "25-09-2024")

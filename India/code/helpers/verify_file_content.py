@@ -30,10 +30,19 @@ def verify_json_file(file_path: str) -> Tuple[bool, str]:
 def verify_csv_file(file_path: str) -> Tuple[bool, str]:
     """
     Verify if a CSV file is valid and well-formed.
-    
+
+    Beyond basic parseability, this also checks for rows whose column count
+    doesn't match the header - a row with an unquoted comma inside a field
+    (e.g. a fund name like "... Direct Plan, IDCW Option") parses as valid
+    CSV but silently shifts every later column, so a plain read/row-count
+    check wouldn't catch it. For mf.csv specifically, it also runs the
+    ISIN-aware check from helpers.mf_entry, which catches the case where
+    such a shift happens to land on a row that still has the right column
+    count (see find_malformed_rows for why that's possible).
+
     Args:
         file_path: Path to the CSV file to verify
-        
+
     Returns:
         Tuple of (is_valid: bool, message: str)
     """
@@ -43,11 +52,59 @@ def verify_csv_file(file_path: str) -> Tuple[bool, str]:
             csv.Sniffer().sniff(f.read(1024))
             f.seek(0)
             reader = csv.reader(f)
-            row_count = sum(1 for _ in reader)
-            
+            rows = list(reader)
+            row_count = len(rows)
+
             if row_count == 0:
                 return False, f"✗ Empty CSV file: {file_path}"
-            
+
+            header_len = len(rows[0])
+            ragged = [i for i, row in enumerate(rows[1:], start=2) if len(row) != header_len]
+            if ragged:
+                sample = ', '.join(str(n) for n in ragged[:10])
+                return False, (
+                    f"✗ Invalid CSV in {file_path}: {len(ragged)} row(s) don't match "
+                    f"the header's {header_len} columns (likely an unquoted comma in a "
+                    f"field) at line(s) {sample}"
+                )
+
+            if os.path.basename(file_path) == 'mf.csv':
+                try:
+                    from .mf_entry import find_malformed_rows
+                    from .amfi_taxonomy import find_unapproved_taxonomy_rows
+                except ImportError:
+                    # Running as a standalone script (no parent package),
+                    # e.g. `python helpers/verify_file_content.py`.
+                    import sys
+                    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+                    from mf_entry import find_malformed_rows
+                    from amfi_taxonomy import find_unapproved_taxonomy_rows
+
+                problems = find_malformed_rows(file_path)
+                if problems:
+                    sample = ', '.join(str(lineno) for lineno, _ in problems[:10])
+                    return False, (
+                        f"✗ Invalid CSV in {file_path}: {len(problems)} row(s) have a "
+                        f"misaligned isin column (unquoted comma in `name` shifted "
+                        f"columns without changing row length) at line(s) {sample}"
+                    )
+
+                taxonomy_problems = find_unapproved_taxonomy_rows(file_path)
+                if taxonomy_problems:
+                    sample = ', '.join(
+                        f"line {lineno} {field}={value!r}"
+                        for lineno, field, value in taxonomy_problems[:10]
+                    )
+                    return False, (
+                        f"✗ Invalid CSV in {file_path}: {len(taxonomy_problems)} row(s) use "
+                        f"an amfi_fund_type/amfi_category not in known_amfi_taxonomy.json "
+                        f"({sample}). If this is a legitimate new or changed category, add "
+                        f"it to known_amfi_taxonomy.json to approve it explicitly; if it's "
+                        f"upstream drift, add a correction to AMFI_FUND_TYPE_ALIASES/"
+                        f"AMFI_CATEGORY_ALIASES in "
+                        f"helpers/amfi_taxonomy.py instead."
+                    )
+
             return True, f"✓ Valid CSV: {file_path} ({row_count} rows)"
     except csv.Error as e:
         return False, f"✗ Invalid CSV in {file_path}: {str(e)}"
@@ -144,7 +201,11 @@ def main(repository_root: str = None) -> Dict[str, List[Dict]]:
 
 
 if __name__ == "__main__":
-    results = main()
+    import sys
+    repo_root_arg = sys.argv[1] if len(sys.argv) > 1 else None
+    results = main(repo_root_arg)
+    if results["summary"]["overall"]["invalid"] > 0:
+        sys.exit(1)
 
 
 # To run this script, simply execute it in the terminal. It will automatically find all JSON and CSV files in the repository (excluding common dependency folders) and verify their validity, printing the results and a summary at the end.

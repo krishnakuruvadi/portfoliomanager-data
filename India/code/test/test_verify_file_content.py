@@ -152,6 +152,43 @@ class TestVerifyCsvFile(unittest.TestCase):
         self.assertTrue(is_valid)
         self.assertIn("Valid CSV", message)
 
+    def test_csv_file_with_ragged_row_is_invalid(self):
+        """A row with more fields than the header (e.g. an unquoted comma) should fail"""
+        csv_file = os.path.join(self.temp_dir, "ragged.csv")
+        with open(csv_file, 'w') as f:
+            f.write("code,name,isin\n")
+            f.write("1,Some Fund, Direct Plan,INF123456789\n")
+
+        is_valid, message = verify_csv_file(csv_file)
+        self.assertFalse(is_valid)
+        self.assertIn("don't match the header", message)
+
+    def test_mf_csv_with_misaligned_isin_is_invalid(self):
+        """mf.csv rows with an unquoted comma in `name` that still have the
+        right column count (isin/isin2/fund_house shifted, not overflowed)
+        should be caught by the mf.csv-specific ISIN check."""
+        mf_dir = os.path.join(self.temp_dir, "mf_dir")
+        os.makedirs(mf_dir)
+        csv_file = os.path.join(mf_dir, "mf.csv")
+        header = 'code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_category,ms_name,ms_category,ms_investment_style,ms_id,kuvera_name,kuvera_fund_category,kuvera_code\n'
+        bad_row = '151404,PGIM India Fund - Regular Plan, Growth Option,INF663L01X54,,PGIM India Mutual Fund,27-02-2023,,Other Scheme,Index Funds,,,,,,\n'
+        with open(csv_file, 'w') as f:
+            f.write(header)
+            f.write(bad_row)
+
+        is_valid, message = verify_csv_file(csv_file)
+        self.assertFalse(is_valid)
+        self.assertIn("misaligned isin column", message)
+
+    def test_valid_mf_csv_passes(self):
+        """The real mf.csv (after the PGIM row fix) should pass both the
+        generic ragged-row check and the mf.csv-specific ISIN check."""
+        from helpers.mf_entry import get_path_to_csv
+
+        is_valid, message = verify_csv_file(get_path_to_csv())
+        self.assertTrue(is_valid, message)
+        self.assertIn("Valid CSV", message)
+
 
 class TestMainFunction(unittest.TestCase):
     """Tests for main function"""
@@ -213,6 +250,54 @@ class TestMainFunction(unittest.TestCase):
         self.assertEqual(results["summary"]["json"]["valid"], 1)
         self.assertEqual(results["summary"]["csv"]["total"], 1)
         self.assertEqual(results["summary"]["csv"]["valid"], 1)
+
+
+class TestCliExitCode(unittest.TestCase):
+    """Tests that running verify_file_content.py as a script fails the
+    build (non-zero exit code) when it finds an invalid file - this is what
+    the GitHub Actions workflow relies on to actually fail CI."""
+
+    def setUp(self):
+        self.temp_dir = tempfile.mkdtemp()
+        self.script_path = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            'helpers', 'verify_file_content.py'
+        )
+
+    def tearDown(self):
+        import shutil
+        shutil.rmtree(self.temp_dir)
+
+    def run_script(self, repo_root):
+        import subprocess
+        return subprocess.run(
+            [sys.executable, self.script_path, repo_root],
+            capture_output=True, text=True
+        )
+
+    def test_exits_zero_when_all_files_valid(self):
+        with open(os.path.join(self.temp_dir, 'good.json'), 'w') as f:
+            json.dump({'a': 1}, f)
+        result = self.run_script(self.temp_dir)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_exits_nonzero_when_a_file_is_invalid(self):
+        with open(os.path.join(self.temp_dir, 'bad.json'), 'w') as f:
+            f.write('{ not valid json')
+        result = self.run_script(self.temp_dir)
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_exits_nonzero_for_malformed_mf_csv(self):
+        india_dir = os.path.join(self.temp_dir, 'India')
+        os.makedirs(india_dir)
+        header = 'code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_category,ms_name,ms_category,ms_investment_style,ms_id,kuvera_name,kuvera_fund_category,kuvera_code\n'
+        bad_row = '151404,PGIM India Fund - Regular Plan, Growth Option,INF663L01X54,,PGIM India Mutual Fund,27-02-2023,,Other Scheme,Index Funds,,,,,,\n'
+        with open(os.path.join(india_dir, 'mf.csv'), 'w') as f:
+            f.write(header)
+            f.write(bad_row)
+        result = self.run_script(self.temp_dir)
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn('misaligned isin column', result.stdout)
 
 
 if __name__ == "__main__":

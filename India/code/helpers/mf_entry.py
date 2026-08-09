@@ -1,6 +1,10 @@
 import csv
 import os
 import pathlib
+import re
+
+
+ISIN_RE = re.compile(r'^[A-Z]{2}[A-Z0-9]{9}[0-9]$')
 
 
 def get_path_to_csv():
@@ -11,16 +15,61 @@ def get_path_to_csv():
     csv_file = os.path.join(path, 'mf.csv')
     return csv_file
 
+
+def find_malformed_rows(csv_file):
+    '''
+    find_malformed_rows scans mf.csv for rows that a naive/unquoted comma
+    would have split incorrectly: either the row doesn't have the expected
+    number of columns, or its isin column doesn't look like an ISIN (and
+    isn't blank or the '-' placeholder used for "no ISIN"). Such rows
+    usually mean a `name` contains a literal comma that wasn't CSV-quoted
+    when the row was written (e.g. a bulk import), which makes
+    csv.DictReader silently shift isin/isin2/fund_house into the wrong
+    columns instead of raising an error.
+
+    Returns a list of (line_number, raw_line) tuples for offending rows.
+    '''
+    problems = []
+    if not os.path.exists(csv_file):
+        return problems
+    with open(csv_file, 'r', newline='') as f:
+        reader = csv.reader(f)
+        header = next(reader, [])
+        expected_len = len(header)
+        try:
+            isin_idx = header.index('isin')
+        except ValueError:
+            isin_idx = None
+        for lineno, row in enumerate(reader, start=2):
+            if len(row) != expected_len:
+                problems.append((lineno, ','.join(row)))
+                continue
+            if isin_idx is not None and isin_idx < len(row):
+                value = row[isin_idx].strip()
+                if value and value != '-' and not ISIN_RE.match(value):
+                    problems.append((lineno, ','.join(row)))
+    return problems
+
+
 def get_mf_entries(csv_file=None):
     '''
     get_mf_entries reads mf.csv file and return entries in dict format
-    
+
     :param csv_file: Provide location of mf.csv.  If not provided, gets path using get_path_to_csv function
     '''
     if not csv_file:
         csv_file = get_path_to_csv()
     data = dict()
     if os.path.exists(csv_file):
+        problems = find_malformed_rows(csv_file)
+        if problems:
+            lines = ', '.join(str(lineno) for lineno, _ in problems)
+            raise ValueError(
+                f'{csv_file} has {len(problems)} malformed row(s) at line(s) {lines}: '
+                'a `name` likely contains an unquoted comma, which would silently '
+                'misalign isin/isin2/fund_house on read. Fix these rows (see '
+                'code/fix_mf_csv.py) before reading/writing this file.'
+            )
         with open(csv_file, 'r') as f:
             reader = csv.DictReader(f)
             for row in reader:

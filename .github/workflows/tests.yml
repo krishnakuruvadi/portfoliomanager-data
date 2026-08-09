@@ -37,7 +37,7 @@ jobs:
         cd India/code/test
         python -m unittest test_verify_file_content -v
 
-    - name: Verify all project files
+    - name: Verify all project files (fails build if any JSON/CSV is invalid)
       run: |
         python India/code/helpers/verify_file_content.py
 
