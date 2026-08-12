@@ -134,7 +134,7 @@
   "US19260Q1076": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "14-APR-2017",
+    "listing_date": "14-APR-2021",
     "symbol": "COIN",
     "name": "Coinbase Global, Inc.",
     "cap": "Large-Cap",
@@ -279,7 +279,7 @@
   "US2561631068": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "12-APR-2018",
+    "listing_date": "27-APR-2018",
     "symbol": "DOCU",
     "name": "DocuSign, Inc.",
     "cap": "Large-Cap",
@@ -543,7 +543,7 @@
   "US46438F1012": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "05-JAN-2024",
+    "listing_date": "11-JAN-2024",
     "symbol": "IBIT",
     "name": "iShares Bitcoin Trust",
     "cap": "Large-Cap",
@@ -783,7 +783,7 @@
   "US0420682058": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "12-NOV-1990",
+    "listing_date": "14-SEP-2023",
     "symbol": "ARM",
     "name": "Arm Holdings plc",
     "cap": "Mega-Cap",
