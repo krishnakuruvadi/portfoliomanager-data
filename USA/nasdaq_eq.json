@@ -14,7 +14,7 @@
   "US00724F1012": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "19-AUG-1986",
+    "listing_date": "20-AUG-1986",
     "symbol": "ADBE",
     "name": "Adobe Inc.",
     "cap": "Large-Cap",
@@ -50,7 +50,7 @@
   "US0079031078": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "01-JUN-1980",
+    "listing_date": "15-OCT-1979",
     "symbol": "AMD",
     "name": "Advanced Micro Devices, Inc.",
     "cap": "Large-Cap",
@@ -95,22 +95,10 @@
     "industry": "Consumer Electronics",
     "etf": false
   },
-  "US05962L1070": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "06-SEP-2007",
-    "symbol": "BABA",
-    "name": "Alibaba Group Holding Limited",
-    "cap": "Large-Cap",
-    "market_cap_type": "Mega-Cap",
-    "sector": "Consumer Discretionary",
-    "industry": "Internet Retail",
-    "etf": false
-  },
   "US12623Q1031": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "23-JUN-2014",
+    "listing_date": "23-JUN-2004",
     "symbol": "CRM",
     "name": "Salesforce, Inc.",
     "cap": "Large-Cap",
@@ -122,7 +110,7 @@
   "US17275R1023": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "07-MAR-1990",
+    "listing_date": "16-FEB-1990",
     "symbol": "CSCO",
     "name": "Cisco Systems, Inc.",
     "cap": "Large-Cap",
@@ -158,7 +146,7 @@
   "CA11134P1009": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "02-MAY-2009",
+    "listing_date": "06-AUG-2009",
     "symbol": "AVGO",
     "name": "Broadcom Inc.",
     "cap": "Large-Cap",
@@ -170,7 +158,7 @@
   "US64110L1061": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "29-JUN-2002",
+    "listing_date": "23-MAY-2002",
     "symbol": "NFLX",
     "name": "Netflix, Inc.",
     "cap": "Large-Cap",
@@ -182,7 +170,7 @@
   "US3580541049": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "03-SEP-2015",
+    "listing_date": "22-SEP-2021",
     "symbol": "FRSH",
     "name": "Freshworks Inc.",
     "cap": "Mid-Cap",
@@ -194,7 +182,7 @@
   "US58456U1034": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "06-SEP-2018",
+    "listing_date": "26-OCT-2022",
     "symbol": "MBLY",
     "name": "Mobileye Global Inc.",
     "cap": "Large-Cap",
@@ -218,7 +206,7 @@
   "US67066G1040": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "06-JUN-2013",
+    "listing_date": "22-JAN-1999",
     "symbol": "NVDA",
     "name": "NVIDIA Corporation",
     "cap": "Large-Cap",
@@ -230,7 +218,7 @@
   "US30303M1027": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "02-MAY-2012",
+    "listing_date": "18-MAY-2012",
     "symbol": "META",
     "name": "Meta Platforms, Inc.",
     "cap": "Large-Cap",
@@ -291,7 +279,7 @@
   "US81762P1021": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "06-JUN-2012",
+    "listing_date": "29-JUN-2012",
     "symbol": "NOW",
     "name": "ServiceNow, Inc.",
     "cap": "Large-Cap",
@@ -303,7 +291,7 @@
   "US6974351057": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "02-JUN-2019",
+    "listing_date": "20-JUL-2012",
     "symbol": "PANW",
     "name": "Palo Alto Networks, Inc.",
     "cap": "Large-Cap",
@@ -324,22 +312,10 @@
     "industry": "Beverages - Non-Alcoholic",
     "etf": false
   },
-  "US8030542042": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "10-JAN-1999",
-    "symbol": "SAP",
-    "name": "SAP SE",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Technology",
-    "industry": "Software - Infrastructure",
-    "etf": false
-  },
   "US86800U3023": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "14-SEP-2010",
+    "listing_date": "29-MAR-2007",
     "symbol": "SMCI",
     "name": "Super Micro Computer, Inc.",
     "cap": "Mid-Cap",
@@ -375,25 +351,13 @@
   "ARBCOM460358": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "19-SEP-2019",
+    "listing_date": "16-SEP-2020",
     "symbol": "SNOW",
     "name": "Snowflake Inc.",
     "cap": "Large-Cap",
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
-  },
-  "US8740391003": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "05-JUL-1994",
-    "symbol": "TSM",
-    "name": "Taiwan Semiconductor Manufacturing Company",
-    "cap": "Large-Cap",
-    "market_cap_type": "Mega-Cap",
-    "sector": "Technology",
-    "industry": "Semiconductors",
     "etf": false
   },
   "CA93267X1006": {
@@ -411,7 +375,7 @@
   "US7475251036": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "06-APR-1994",
+    "listing_date": "13-DEC-1991",
     "symbol": "QCOM",
     "name": "Qualcomm Incorporated",
     "cap": "Large-Cap",
@@ -591,7 +555,7 @@
   "US5951121038": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "16-MAY-1984",
+    "listing_date": "01-JUN-1984",
     "symbol": "MU",
     "name": "Micron Technology, Inc.",
     "cap": "Large-Cap",
@@ -615,7 +579,7 @@
   "US9581021055": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "08-NOV-1985",
+    "listing_date": "17-MAR-1980",
     "symbol": "WDC",
     "name": "Western Digital Corp.",
     "cap": "Large-Cap",
@@ -663,7 +627,7 @@
   "US21037T1097": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "19-JAN-2022",
+    "listing_date": "01-FEB-2022",
     "symbol": "CEG",
     "name": "Constellation Energy Corporation",
     "cap": "Large-Cap",
@@ -712,7 +676,7 @@
     "status": "Listed",
     "cap": "Small-Cap",
     "market_cap_type": "Small-Cap",
-    "listing_date": "09-APR-1987",
+    "listing_date": "12-DEC-1991",
     "symbol": "AMSC",
     "name": "American Superconductor Corporation",
     "delisted_date": null,
@@ -747,7 +711,7 @@
   "US0382221051": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "10-NOV-1967",
+    "listing_date": "05-OCT-1972",
     "symbol": "AMAT",
     "name": "Applied Materials, Inc.",
     "cap": "Large-Cap",
@@ -795,7 +759,7 @@
   "US00217D1000": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "31-MAY-2017",
+    "listing_date": "07-APR-2021",
     "symbol": "ASTS",
     "name": "AST SpaceMobile, Inc.",
     "cap": "Large-Cap",
@@ -831,7 +795,7 @@
   "US4581401001": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "18-JUL-1968",
+    "listing_date": "13-OCT-1971",
     "symbol": "INTC",
     "name": "Intel Corporation",
     "cap": "Large-Cap",
@@ -843,7 +807,7 @@
   "AU0000185993": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "06-NOV-2018",
+    "listing_date": "17-NOV-2021",
     "symbol": "IREN",
     "name": "IREN Limited",
     "cap": "Large-Cap",
@@ -855,7 +819,7 @@
   "US5738741041": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "15-MAR-1995",
+    "listing_date": "27-JUN-2000",
     "symbol": "MRVL",
     "name": "Marvell Technology, Inc.",
     "cap": "Large-Cap",
@@ -891,7 +855,7 @@
   "US80004C2008": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "13-FEB-2025",
+    "listing_date": "24-FEB-2025",
     "symbol": "SNDK",
     "name": "SanDisk Corporation",
     "cap": "Large-Cap",
