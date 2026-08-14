@@ -14,7 +14,7 @@
   "US87612E1064": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "19-APR-1983",
+    "listing_date": "06-APR-1983",
     "symbol": "TGT",
     "name": "Target Corporation",
     "cap": "Large-Cap",
@@ -26,7 +26,7 @@
   "US2546871060": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "11-DEC-1957",
+    "listing_date": "12-NOV-1957",
     "symbol": "DIS",
     "name": "The Walt Disney Company",
     "cap": "Large-Cap",
@@ -38,7 +38,7 @@
   "US1912161007": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "01-MAY-1960",
+    "listing_date": "05-SEP-1919",
     "symbol": "KO",
     "name": "Coca-Cola Company",
     "cap": "Large-Cap",
@@ -98,7 +98,7 @@
   "US02156V1098": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "11-MAY-2024",
+    "listing_date": "10-MAY-2024",
     "symbol": "OKLO",
     "name": "Oklo Inc.",
     "cap": "Large-Cap",
@@ -336,7 +336,7 @@
   },
   "US92537N1081": {
     "status": "Listed",
-    "listing_date": "02-AUG-2018",
+    "listing_date": "07-FEB-2020",
     "delisted_date": null,
     "name": "Vertiv Holdings Co",
     "symbol": "VRT",
@@ -384,7 +384,7 @@
   },
   "US5024311095": {
     "status": "Listed",
-    "listing_date": "31-DEC-1981",
+    "listing_date": "29-JUN-2019",
     "delisted_date": null,
     "name": "L3Harris Technologies, Inc.",
     "symbol": "LHX",
@@ -468,7 +468,7 @@
   },
   "US75513E1010": {
     "status": "Listed",
-    "listing_date": "01-JAN-1968",
+    "listing_date": "03-APR-2020",
     "delisted_date": null,
     "name": "RTX Corporation",
     "symbol": "RTX",
@@ -480,7 +480,7 @@
   },
   "US48242W1062": {
     "status": "Listed",
-    "listing_date": "01-JAN-1968",
+    "listing_date": "16-NOV-2006",
     "delisted_date": null,
     "name": "KBR, Inc.",
     "symbol": "KBR",
@@ -517,7 +517,7 @@
   "US90353T1007": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "29-APR-2019",
+    "listing_date": "10-MAY-2019",
     "symbol": "UBER",
     "name": "Uber Technologies, Inc.",
     "cap": "Large-Cap",
@@ -645,5 +645,41 @@
     "sector": "Trading--Leveraged Equity",
     "industry": "Technology Hardware Storage & Peripheral",
     "etf": true
+  },
+  "US05962L1070": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "19-SEP-2014",
+    "symbol": "BABA",
+    "name": "Alibaba Group Holding Limited",
+    "cap": "Large-Cap",
+    "market_cap_type": "Mega-Cap",
+    "sector": "Consumer Discretionary",
+    "industry": "Internet Retail",
+    "etf": false
+  },
+  "US8030542042": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "03-AUG-1998",
+    "symbol": "SAP",
+    "name": "SAP SE",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "etf": false
+  },
+  "US8740391003": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "08-OCT-1997",
+    "symbol": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing Company",
+    "cap": "Large-Cap",
+    "market_cap_type": "Mega-Cap",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "etf": false
   }
 }
