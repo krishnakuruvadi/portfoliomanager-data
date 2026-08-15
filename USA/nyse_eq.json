@@ -62,7 +62,7 @@
   "US18915M1071": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "12-SEP-2019",
+    "listing_date": "13-SEP-2019",
     "symbol": "NET",
     "name": "Cloudflare, Inc.",
     "cap": "Mid-Cap",
@@ -170,7 +170,7 @@
   "US85208P3038": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "03-DEC-2019",
+    "listing_date": "04-DEC-2019",
     "symbol": "URNM",
     "name": "Sprott Uranium Miners ETF",
     "cap": "Small-Cap",
@@ -182,7 +182,7 @@
   "GB00BMHVL512": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "10-SEP-2025",
+    "listing_date": "11-SEP-2025",
     "symbol": "KLAR",
     "name": "Klarna Group plc",
     "cap": "Large-Cap",
@@ -504,7 +504,7 @@
   },
   "US06368B5049": {
     "status": "Listed",
-    "listing_date": "12-NOV-2019",
+    "listing_date": "13-NOV-2019",
     "delisted_date": null,
     "name": "MicroSectors FANG+ ETN",
     "symbol": "FNGS",
@@ -637,7 +637,7 @@
   "US88636X2291": {
     "status": "Listed",
     "delisted_date": null,
-    "listing_date": "21-APR-2026",
+    "listing_date": "23-APR-2026",
     "symbol": "STXL",
     "name": "Defiance Daily Target 2X Long STX ETF",
     "cap": "Micro-Cap",
