@@ -681,5 +681,29 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false
+  },
+  "US4859241048": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "13-FEB-2025",
+    "symbol": "KRMN",
+    "name": "Karman Holdings Inc.",
+    "cap": "Small-Cap",
+    "market_cap_type": "Small-Cap",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "etf": false
+  },
+  "US5253271028": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "13-OCT-2006",
+    "symbol": "LDOS",
+    "name": "Leidos Holdings, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "etf": false
   }
 }
