@@ -24,6 +24,10 @@ AMFI_CATEGORY_ALIASES = {
     'Banking and PSU Fund': 'Banking and PSU Debt Fund',
     'Thematic Fund': 'Sectoral/ Thematic',
     'Short Term Fund': 'Short Duration Fund',
+    'Ultra Short Term Fund': 'Ultra Short Duration Fund',
+    'Medium Term Fund': 'Medium Duration Fund',
+    'Medium to Long Term Fund': 'Medium to Long Duration Fund',
+    'Long Term Fund': 'Long Duration Fund',
     'Fund of Funds Scheme (Domestic)': 'FoF Domestic',
     'Fund of Funds investing overseas': 'FoF Overseas',
 }

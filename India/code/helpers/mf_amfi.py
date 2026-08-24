@@ -1,8 +1,73 @@
 from mftool import Mftool
 import datetime
+import re
 import requests
 from .utils import get_date_or_none_from_string, get_date_or_none_from_string, get_float_or_zero_from_string
 from .amfi_taxonomy import apply_known_amfi_aliases
+from .mf_entry import ISIN_RE
+
+# AMFI's NAVAll.txt uses these as section headers (each followed by
+# "(fund_type - fund_category)"), not as an actual fund house name. Without
+# excluding them, a section whose per-house name line is missing or
+# differently formatted (seen for "Close Ended Schemes" and "Interval Fund
+# Schemes") leaves the state-machine's `fund_house` tracking variable set to
+# the section label itself, which then gets attributed to every scheme row
+# that follows until the next real fund house name line.
+SECTION_HEADER_FUND_HOUSE_LABELS = {'open ended schemes', 'close ended schemes', 'interval fund schemes'}
+
+
+def _name_tokens(name):
+    return set(re.findall(r'[a-z0-9]+', (name or '').lower()))
+
+
+def name_has_new_info(old_name, new_name):
+    '''
+    Decide whether a freshly-parsed AMFI name should replace the name
+    already stored for a scheme. AMFI's Aug 2026 NAVAll.txt format split
+    plan/option out of the name into separate fields (see
+    parse_scheme_name_nav_date); those fields come back blank for many
+    legacy/closed schemes, so naively reconstructing the name from them
+    would silently drop real detail that's still accurate (e.g. "Direct
+    Plan - Growth" disappearing entirely). Comparing token sets instead of
+    exact strings also avoids flagging pure reordering/case/punctuation
+    differences (e.g. "Direct - Growth" vs "Direct Plan - Growth Option")
+    as a change worth writing. Only treat it as an update when the new
+    name contains a word the old one didn't.
+    '''
+    return not _name_tokens(new_name).issubset(_name_tokens(old_name))
+
+
+PLAN_WORD_RE = re.compile(r'\bplan\b', re.IGNORECASE)
+IDCW_BOILERPLATE_RE = re.compile(r'income\s+distribution\s+cum\s+capital\s+withdrawal', re.IGNORECASE)
+IDCW_FILLER_WORDS_RE = re.compile(r'\b(of|options?|optio)\b', re.IGNORECASE)
+
+
+def _simplify_plan(plan):
+    '''"Direct Plan"/"Regular Plan" -> "Direct"/"Regular": the word "Plan" is
+    redundant once it's a separate name segment on its own.'''
+    return re.sub(r'\s+', ' ', PLAN_WORD_RE.sub('', plan)).strip()
+
+
+def _simplify_idcw_option(option):
+    '''
+    Collapse AMFI's verbose "Income Distribution cum Capital Withdrawal"
+    phrasing down to "IDCW", while preserving whatever else is in the
+    option text (frequency like "Monthly", distribution type like "Payout"
+    vs "Reinvestment") - those are still needed to tell apart otherwise
+    identical scheme codes that only differ by option (e.g. code 108274's
+    "Quarterly Payout" vs code 110282's "Monthly Payout" for the same fund
+    and plan). Options that aren't an IDCW expansion (e.g. "GROWTH", "Bonus
+    Option") are returned unchanged.
+    '''
+    if not IDCW_BOILERPLATE_RE.search(option):
+        return option.strip()
+    result = IDCW_BOILERPLATE_RE.sub('', option)
+    result = IDCW_FILLER_WORDS_RE.sub('', result)
+    result = result.replace('(', '').replace(')', '')
+    result = re.sub(r'\s+', ' ', result).strip(' -&')
+    if 'idcw' not in result.lower():
+        result = (result + ' IDCW').strip()
+    return result
 
 
 def parse_fund_type_info(scheme_data):
@@ -28,6 +93,26 @@ def parse_fund_type_info(scheme_data):
     return fund_house, amfi_fund_type, amfi_fund_category
 
 
+def parse_scheme_name_nav_date(scheme):
+    '''
+    Extract (name, nav, date) from a semicolon-split AMFI NAVAll.txt data
+    row. AMFI's historical format is 6 fields - code;isin;isin2;name;nav;
+    date - with the plan/option (e.g. "Direct Plan - Growth Option") baked
+    into the name. As of Aug 2026 AMFI started emitting 8 fields instead,
+    splitting plan and option into their own fields - code;isin;isin2;
+    name;plan;option;nav;date - which silently shifted nav/date for every
+    row under the old fixed-position parsing (nav became the literal text
+    "Direct Plan", breaking float conversion, and date became the option
+    text, breaking '%d-%b-%Y' parsing). Handle both shapes so a future
+    reversion or partial rollout doesn't break either format.
+    '''
+    if len(scheme) >= 8:
+        parts = [scheme[3].strip(), _simplify_plan(scheme[4]), _simplify_idcw_option(scheme[5])]
+        name = ' - '.join(part for part in parts if part)
+        return name, scheme[6], scheme[7]
+    return scheme[3], scheme[4], scheme[5]
+
+
 def get_all_schemes()->dict:
     try:
         mf = Mftool()
@@ -50,23 +135,20 @@ def get_all_schemes()->dict:
         if ";INF" in scheme_data:
             try:
                 scheme = scheme_data.rstrip().split(";")
-                if get_float_or_zero_from_string(scheme[4]) > 0:
-                    isin = ''
-                    if scheme[1] and scheme[1] != '' and scheme[1] != '-':
-                        isin = scheme[1]
-                    isin2 = ''
-                    if scheme[2] and scheme[2] != '' and scheme[2] != '-':
-                        isin2 = scheme[2]
+                name, nav, date = parse_scheme_name_nav_date(scheme)
+                if get_float_or_zero_from_string(nav) > 0:
+                    isin = scheme[1].strip() if ISIN_RE.match(scheme[1].strip()) else ''
+                    isin2 = scheme[2].strip() if ISIN_RE.match(scheme[2].strip()) else ''
                     scheme_info[scheme[0]] = {'isin': isin,
                                             'isin2':isin2,
-                                            'name':scheme[3],
-                                            'nav':scheme[4],
-                                            'date':scheme[5],
+                                            'name':name,
+                                            'nav':nav,
+                                            'date':date,
                                             'amfi_fund_type':amfi_fund_type,
                                             'amfi_category':amfi_fund_category}
-                    if not 'open ended' in fund_house.lower() and fund_house != '':
+                    if fund_house != '' and fund_house.strip().lower() not in SECTION_HEADER_FUND_HOUSE_LABELS:
                         scheme_info[scheme[0]]['fund_house'] = fund_house
-                    dt = get_date_or_none_from_string(scheme[5], '%d-%b-%Y')
+                    dt = get_date_or_none_from_string(date, '%d-%b-%Y')
                     if dt and dt < month_ago:
                         scheme_info[scheme[0]]['end_date'] = dt.strftime('%d-%m-%Y')
                     count += 1
@@ -77,6 +159,7 @@ def get_all_schemes()->dict:
             if ';' not in scheme_data:
                 if '(' in scheme_data and ')' in scheme_data and 'Mutual Fund' not in scheme_data:
                     fund_house, amfi_fund_type, amfi_fund_category = parse_fund_type_info(scheme_data)
+                    amfi_fund_type, amfi_fund_category = apply_known_amfi_aliases(amfi_fund_type, amfi_fund_category)
                 else:
                     fund_house = scheme_data.strip()
     print(f'found {count} funds. ignored {ignored_zero_nav} zero nav funds and {ignored_no_isin} no isin funds')
