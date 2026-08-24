@@ -1,10 +1,29 @@
 import csv
+import datetime
 import os
 import pathlib
 import re
 
 
 ISIN_RE = re.compile(r'^[A-Z]{2}[A-Z0-9]{9}[0-9]$')
+DATE_FORMAT = '%d-%m-%Y'
+KUVERA_FIELDS = ('kuvera_name', 'kuvera_fund_category', 'kuvera_code')
+
+
+def _is_valid_isin_field(value):
+    '''An isin/isin2 field is valid if blank, the '-' no-ISIN placeholder, or a real ISIN.'''
+    value = (value or '').strip()
+    return value == '' or value == '-' or bool(ISIN_RE.match(value))
+
+
+def _parse_date_or_none(value):
+    value = (value or '').strip()
+    if not value:
+        return None
+    try:
+        return datetime.datetime.strptime(value, DATE_FORMAT)
+    except ValueError:
+        return None
 
 
 def get_path_to_csv():
@@ -48,6 +67,62 @@ def find_malformed_rows(csv_file):
                 value = row[isin_idx].strip()
                 if value and value != '-' and not ISIN_RE.match(value):
                     problems.append((lineno, ','.join(row)))
+    return problems
+
+
+def find_invalid_field_rows(csv_file):
+    '''
+    Scan mf.csv for rows with per-field data problems that are still valid,
+    well-aligned CSV (unlike find_malformed_rows) but wrong on their own
+    terms: a non-numeric code, a blank name, an isin/isin2 that isn't a
+    real ISIN, isin and isin2 being identical, an inception_date/end_date
+    that isn't a parseable dd-mm-yyyy date, an end_date before its
+    inception_date, or a kuvera_name/kuvera_fund_category/kuvera_code
+    mapping that's only partially filled in (all three should be set
+    together or not at all).
+
+    Returns a list of (line_number, field, message) tuples for offending rows.
+    '''
+    problems = []
+    if not os.path.exists(csv_file):
+        return problems
+    with open(csv_file, 'r', newline='') as f:
+        reader = csv.DictReader(f)
+        for lineno, row in enumerate(reader, start=2):
+            code = (row.get('code') or '').strip()
+            if not code:
+                problems.append((lineno, 'code', 'code is blank'))
+            elif not code.isdigit():
+                problems.append((lineno, 'code', f'code {code!r} is not numeric'))
+
+            name = (row.get('name') or '').strip()
+            if not name:
+                problems.append((lineno, 'name', 'name is blank'))
+
+            isin = (row.get('isin') or '').strip()
+            isin2 = (row.get('isin2') or '').strip()
+            if not _is_valid_isin_field(isin):
+                problems.append((lineno, 'isin', f'{isin!r} is not a valid ISIN'))
+            if not _is_valid_isin_field(isin2):
+                problems.append((lineno, 'isin2', f'{isin2!r} is not a valid ISIN'))
+            if isin and isin2 and isin != '-' and isin == isin2:
+                problems.append((lineno, 'isin2', f'isin2 {isin2!r} is identical to isin'))
+
+            inception_date = (row.get('inception_date') or '').strip()
+            end_date = (row.get('end_date') or '').strip()
+            inception_dt = _parse_date_or_none(inception_date)
+            end_dt = _parse_date_or_none(end_date)
+            if inception_date and inception_dt is None:
+                problems.append((lineno, 'inception_date', f'{inception_date!r} is not a valid dd-mm-yyyy date'))
+            if end_date and end_dt is None:
+                problems.append((lineno, 'end_date', f'{end_date!r} is not a valid dd-mm-yyyy date'))
+            if inception_dt and end_dt and end_dt < inception_dt:
+                problems.append((lineno, 'end_date', f'end_date {end_date!r} is before inception_date {inception_date!r}'))
+
+            kuvera_values = [(row.get(field) or '').strip() for field in KUVERA_FIELDS]
+            if any(kuvera_values) and not all(kuvera_values):
+                filled = ', '.join(f'{field}={value!r}' for field, value in zip(KUVERA_FIELDS, kuvera_values) if value)
+                problems.append((lineno, 'kuvera_name/kuvera_fund_category/kuvera_code', f'incomplete kuvera mapping ({filled})'))
     return problems
 
 

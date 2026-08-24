@@ -70,14 +70,14 @@ def verify_csv_file(file_path: str) -> Tuple[bool, str]:
 
             if os.path.basename(file_path) == 'mf.csv':
                 try:
-                    from .mf_entry import find_malformed_rows
+                    from .mf_entry import find_malformed_rows, find_invalid_field_rows
                     from .amfi_taxonomy import find_unapproved_taxonomy_rows
                 except ImportError:
                     # Running as a standalone script (no parent package),
                     # e.g. `python helpers/verify_file_content.py`.
                     import sys
                     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-                    from mf_entry import find_malformed_rows
+                    from mf_entry import find_malformed_rows, find_invalid_field_rows
                     from amfi_taxonomy import find_unapproved_taxonomy_rows
 
                 problems = find_malformed_rows(file_path)
@@ -87,6 +87,17 @@ def verify_csv_file(file_path: str) -> Tuple[bool, str]:
                         f"✗ Invalid CSV in {file_path}: {len(problems)} row(s) have a "
                         f"misaligned isin column (unquoted comma in `name` shifted "
                         f"columns without changing row length) at line(s) {sample}"
+                    )
+
+                field_problems = find_invalid_field_rows(file_path)
+                if field_problems:
+                    sample = ', '.join(
+                        f"line {lineno} {field}: {message}"
+                        for lineno, field, message in field_problems[:10]
+                    )
+                    return False, (
+                        f"✗ Invalid CSV in {file_path}: {len(field_problems)} row(s) have "
+                        f"invalid field data ({sample})"
                     )
 
                 taxonomy_problems = find_unapproved_taxonomy_rows(file_path)

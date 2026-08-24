@@ -1,5 +1,5 @@
 from helpers.mf_entry import get_mf_entries, write_entries, get_path_to_csv
-from helpers.mf_amfi import get_all_schemes, check_amfi_entry_complete, get_details_amfi
+from helpers.mf_amfi import get_all_schemes, check_amfi_entry_complete, get_details_amfi, name_has_new_info
 from helpers.mf_kuvera import Kuvera
 from helpers.mf_ms import update_ms_details
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -9,8 +9,25 @@ import io
 import csv
 
 
-def review_data_changes(original_data, updated_data, phase):
-    """Interactively review per-field changes and new entries before writing."""
+# Fields where a blank value from a fresh AMFI parse should never overwrite
+# a value we already have on file. AMFI's Aug 2026 NAVAll.txt rework left
+# these blank for thousands of legacy/closed schemes that previously had
+# real values (see get_all_schemes/apply_known_amfi_aliases); silently
+# accepting the blank would regress real data.
+FIELDS_THAT_SHOULD_NOT_BE_BLANKED = {'isin', 'isin2', 'amfi_fund_type', 'amfi_category'}
+
+
+def review_data_changes(original_data, updated_data, phase, auto_accept=None):
+    """Review per-field changes and new entries before writing.
+
+    By default, prompts interactively for every new entry and every changed
+    field. Pass auto_accept=True (or set env var MF_AUTO_ACCEPT=1) to accept
+    every change without prompting - intended for a one-off run after the
+    changes have already been vetted by other means (e.g. a scratch-copy
+    diff review), not as the everyday default.
+    """
+    if auto_accept is None:
+        auto_accept = os.environ.get('MF_AUTO_ACCEPT') == '1'
     if not isinstance(original_data, dict) or not isinstance(updated_data, dict):
         return updated_data
 
@@ -20,6 +37,9 @@ def review_data_changes(original_data, updated_data, phase):
         updated_entry = updated_data.get(code, {}) or {}
 
         if code not in original_data:
+            if auto_accept:
+                reviewed_data[code] = updated_entry
+                continue
             print(f'\nNew entry: {code}')
             for field in sorted(updated_entry.keys()):
                 value = updated_entry.get(field, '')
@@ -42,6 +62,9 @@ def review_data_changes(original_data, updated_data, phase):
             new_value = updated_entry.get(field, '')
             if (old_value or '') != (new_value or ''):
                 changed_fields.append(field)
+                if auto_accept:
+                    reviewed_entry[field] = new_value
+                    continue
                 print(f'\nEntry {code}: field {field}')
                 print(f'  old: {old_value}')
                 print(f'  new: {new_value}')
@@ -52,7 +75,7 @@ def review_data_changes(original_data, updated_data, phase):
                     reviewed_entry[field] = old_value
                     print(f'Reverted field {field} for {code}')
 
-        if changed_fields:
+        if changed_fields and not auto_accept:
             print(f'\nReview summary for entry {code}:')
             for field in changed_fields:
                 print(f'- {field}: {reviewed_entry.get(field, "")}')
@@ -68,13 +91,18 @@ def review_data_changes(original_data, updated_data, phase):
     return reviewed_data
 
 
-def get_amfi():
-    # Step 1: Get the current data from CSV and the latest schemes from AMFI, merge them to add any missing entries, and write back to CSV
-    current_data = get_mf_entries()
-    amfi_schemes = get_all_schemes()
+def merge_amfi_schemes(current_data, amfi_schemes):
+    '''
+    Merge freshly-parsed AMFI scheme data into current_data in place: add
+    any code missing from current_data, and for codes already present,
+    overwrite fields that changed - subject to the name/blanking guards
+    above. Returns (needs_write, fund_house_name_changes) so callers can
+    decide whether/how to persist the result; kept side-effect-free beyond
+    mutating current_data so it can be exercised (e.g. for diff previews)
+    without going through the interactive review/write step in get_amfi().
+    '''
     needs_write = False
     fund_house_name_changes = {}
-    # merge these two datasets to add any missing entries in current_data
     for code, details in amfi_schemes.items():
         if code not in current_data:
             current_data[code] = details
@@ -83,6 +111,10 @@ def get_amfi():
             previous_fund_house = current_data[code].get('fund_house', '')
             for key, value in details.items():
                 if key in current_data[code] and current_data[code][key] != value:
+                    if key == 'name' and not name_has_new_info(current_data[code][key], value):
+                        continue
+                    if key in FIELDS_THAT_SHOULD_NOT_BE_BLANKED and not value and current_data[code][key]:
+                        continue
                     current_data[code][key] = value
                     needs_write = True
                     if key == 'fund_house' and previous_fund_house and previous_fund_house != value:
@@ -92,6 +124,14 @@ def get_amfi():
                         )
                         if has_existing_mapping:
                             fund_house_name_changes[previous_fund_house] = value
+    return needs_write, fund_house_name_changes
+
+
+def get_amfi():
+    # Step 1: Get the current data from CSV and the latest schemes from AMFI, merge them to add any missing entries, and write back to CSV
+    current_data = get_mf_entries()
+    amfi_schemes = get_all_schemes()
+    needs_write, fund_house_name_changes = merge_amfi_schemes(current_data, amfi_schemes)
     if needs_write:
         reset_kuvera_helper = Kuvera.__new__(Kuvera)
         reset_kuvera_helper.reset_fund_house_name_change(current_data, fund_house_name_changes)
