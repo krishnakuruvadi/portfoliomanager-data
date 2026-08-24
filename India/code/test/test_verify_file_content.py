@@ -180,6 +180,24 @@ class TestVerifyCsvFile(unittest.TestCase):
         self.assertFalse(is_valid)
         self.assertIn("misaligned isin column", message)
 
+    def test_mf_csv_with_invalid_field_is_invalid(self):
+        """mf.csv rows that are well-formed CSV and pass the malformed-row
+        heuristic, but have bad field data (e.g. a blank name), should fail
+        the field check. (A bad isin/isin2 value is deliberately not used
+        here since that's already caught earlier by find_malformed_rows.)"""
+        mf_dir = os.path.join(self.temp_dir, "mf_dir")
+        os.makedirs(mf_dir)
+        csv_file = os.path.join(mf_dir, "mf.csv")
+        header = 'code,name,isin,isin2,fund_house,inception_date,end_date,amfi_fund_type,amfi_category,ms_name,ms_category,ms_investment_style,ms_id,kuvera_name,kuvera_fund_category,kuvera_code\n'
+        bad_row = '100001,,INF123456789,,Some Fund House,01-01-2020,,Equity Scheme,Large Cap Fund,,,,,,,\n'
+        with open(csv_file, 'w') as f:
+            f.write(header)
+            f.write(bad_row)
+
+        is_valid, message = verify_csv_file(csv_file)
+        self.assertFalse(is_valid)
+        self.assertIn("invalid field data", message)
+
     def test_valid_mf_csv_passes(self):
         """The real mf.csv (after the PGIM row fix) should pass both the
         generic ragged-row check and the mf.csv-specific ISIN check."""
