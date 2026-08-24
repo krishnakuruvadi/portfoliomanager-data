@@ -899,5 +899,30 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false
+  },
+  "US2787681061": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "02-JAN-2008",
+    "symbol": "ECHO",
+    "old_symbols": "SATS",
+    "name": "EchoStar Corporation",
+    "cap": "Mid-Cap",
+    "market_cap_type": "Mid-Cap",
+    "sector": "Communication Services",
+    "industry": "Telecom Services",
+    "etf": false
+  },
+  "US52661A1088": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "29-NOV-2022",
+    "symbol": "DRS",
+    "name": "Leonardo DRS, Inc.",
+    "cap": "Large-Cap",
+    "market_cap_type": "Large-Cap",
+    "sector": "Industrials",
+    "industry": "Aerospace & Defense",
+    "etf": false
   }
 }
