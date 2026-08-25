@@ -45,3 +45,7 @@ jobs:
       run: |
         cd code
         python -m unittest discover -s . -p "test_*.py" -v 2>/dev/null || echo "No tests found in main code directory"
+
+    - name: Verify USA equity files have no duplicate entries (fails build if duplicates found)
+      run: |
+        python code/helpers/verify_usa_eq.py
