@@ -208,7 +208,7 @@ def write_entries(data, phase, csv_file=None):
             csvwriter.writerow([i, data[i]['name'],
                                 data[i]['isin'],
                                 data[i]['isin2'],
-                                data[i]['fund_house'],
+                                data[i].get('fund_house', ''),
                                 data[i].get('inception_date', ''),
                                 data[i].get('end_date', ''),
                                 data[i].get('amfi_fund_type', ''),
