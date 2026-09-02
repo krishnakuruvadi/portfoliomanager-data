@@ -158,8 +158,17 @@ def get_all_schemes()->dict:
         elif scheme_data.strip() != "":
             if ';' not in scheme_data:
                 if '(' in scheme_data and ')' in scheme_data and 'Mutual Fund' not in scheme_data:
-                    fund_house, amfi_fund_type, amfi_fund_category = parse_fund_type_info(scheme_data)
+                    header_fund_house, amfi_fund_type, amfi_fund_category = parse_fund_type_info(scheme_data)
                     amfi_fund_type, amfi_fund_category = apply_known_amfi_aliases(amfi_fund_type, amfi_fund_category)
+                    # A category header (e.g. "Open Ended Schemes(...)") only
+                    # repeats the real fund house name once per AMC section;
+                    # later category headers for the same AMC omit it, so
+                    # header_fund_house here is just the section label. Keep
+                    # the last real fund_house instead of clobbering it with
+                    # the label - otherwise the next scheme row (and any
+                    # brand-new code first seen here) loses its fund house.
+                    if header_fund_house.strip().lower() not in SECTION_HEADER_FUND_HOUSE_LABELS:
+                        fund_house = header_fund_house
                 else:
                     fund_house = scheme_data.strip()
     print(f'found {count} funds. ignored {ignored_zero_nav} zero nav funds and {ignored_no_isin} no isin funds')
