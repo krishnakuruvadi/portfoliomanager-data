@@ -14,6 +14,7 @@ _TAXONOMY_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__
 AMFI_FUND_TYPE_ALIASES = {
     'Equity Schemes': 'Equity Scheme',
     'Hybrid Schemes': 'Hybrid Scheme',
+    'Solution Oriented Schemes **': 'Solution Oriented Scheme',
 }
 AMFI_CATEGORY_ALIASES = {
     'Sectoral Fund': 'Sectoral/ Thematic',

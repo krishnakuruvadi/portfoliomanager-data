@@ -87,6 +87,17 @@ def parse_fund_type_info(scheme_data):
                 amfi_fund_category = splits[1].strip() if len(splits) > 1 else ''
                 if 'hildren' in amfi_fund_category.lower():
                     amfi_fund_category = "Children's Fund"
+                if 'hildren' in amfi_fund_type.lower():
+                    # AMFI's NAVAll.txt has at least one section header for
+                    # this category shaped "Childrenâ€™s Fund - Childrens'
+                    # Fund)" - missing the real "Solution Oriented Scheme"
+                    # type prefix that every other occurrence of this
+                    # category in the same file has, and with a mis-decoded
+                    # apostrophe. Fall back to the canonical type/category
+                    # used everywhere else for this section instead of
+                    # writing the garbled text into amfi_fund_type.
+                    amfi_fund_type = 'Solution Oriented Scheme'
+                    amfi_fund_category = "Children's Fund"
             else:
                 amfi_fund_type = fund_type_info.strip()
                 amfi_fund_category = ''
