@@ -242,6 +242,8 @@ def add_new_data(delete_downloaded_files, delete_processed_files):
         if nk not in orig_data:
             if '-RE' in nv['bse_security_id']:
                 continue
+            if nv['bse_security_id'].endswith('BBPH'):
+                continue
             if nv['status'] in ['Delisted', 'Suspended']:
                 continue
             accept_data = print_as_table(nk, nv, "", dict())
