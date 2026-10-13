@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait, Select
 from selenium.webdriver.support import expected_conditions as EC
 import csv
 import json
@@ -22,29 +22,46 @@ def pull_bse(download_dir):
     service = Service()
 
     driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver.maximize_window()
     driver.get(bse_url)
     timeout = 10
     try:
         time.sleep(3)
         WebDriverWait(driver, timeout).until(EC.visibility_of_element_located((By.ID, "ddlsegment")))
         print('select element located')
-        time.sleep(3)
-        driver.find_element("xpath", "//select[@id='ddlsegment']/option[text()='Equity T+1']").click()
+        # The segment dropdown is populated asynchronously by Angular after it
+        # becomes visible, so wait for the actual option to be present rather
+        # than relying on a fixed sleep.
+        WebDriverWait(driver, 20).until(
+            EC.presence_of_element_located(
+                (By.XPATH, "//select[@id='ddlsegment']/option[normalize-space(text())='Equity T+1']")
+            )
+        )
+        Select(driver.find_element(By.ID, "ddlsegment")).select_by_visible_text("Equity T+1")
         print('select element clicked')
         time.sleep(3)
         driver.find_element("xpath", "//input[@id='btnSubmit']").click()
         print('submit element clicked')
         time.sleep(3)
-        dload = WebDriverWait(driver, timeout).until(EC.visibility_of_element_located((By.ID,'lnkDownload')))
+        # The old site exposed the export control as an <a id="lnkDownload">;
+        # the current site renders it as an unlabeled icon button instead.
+        dload = WebDriverWait(driver, timeout).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "button.dwnld-icon"))
+        )
         print('download element located')
         time.sleep(3)
         dload.click()
         print('download element clicked')
         time.sleep(3)
         dload_file_name = None
-        for _ in range(5):
+        # The BSE export API can take a while to respond, so poll longer
+        # than a typical page interaction before giving up.
+        for _ in range(15):
             time.sleep(5)
-            new_file_list = get_new_files_added(download_dir, existing_files)        
+            # Ignore Chrome's in-progress ".crdownload" file so we don't grab
+            # and rename a download that hasn't finished yet.
+            new_file_list = [f for f in get_new_files_added(download_dir, existing_files)
+                              if not f.endswith('.crdownload')]
             if len(new_file_list) == 1:
                 dload_file_name = new_file_list[0]
                 break
@@ -81,6 +98,9 @@ def add_or_append(inp, new_str):
     if new_str in l:
         return inp
     return inp + ';' + new_str
+
+def clean_name(name):
+    return name.replace('-$', '').strip()
 
 def clean(d):
     res = dict()
@@ -128,10 +148,13 @@ def update_bse(download_dir, delete_downloaded_files, delete_processed_files):
                 # dont track rights entitled shares
                 if '-RE' in row['Security Id']:
                     continue
+                # dont track BBPH suffixed entries, e.g. RILBBPH
+                if row['Security Id'].endswith('BBPH'):
+                    continue
                 stocks[isin] = {
                                 'bse_security_code':row['Security Code'], 
                                 'bse_security_id':row['Security Id'], 
-                                'bse_name': row['Security Name'].replace('-$', ''),
+                                'bse_name': clean_name(row['Security Name']),
                                 'status':row['Status'], 
                                 'face_value':row['Face Value'], 
                                 'industry':row.get('Industry', ""),
@@ -157,7 +180,7 @@ def update_bse(download_dir, delete_downloaded_files, delete_processed_files):
                 stocks[isin]['status'] = row['Status']
                 stocks[isin]['face_value'] = row['Face Value']
                 stocks[isin]['industry'] = row.get('Industry', "")
-                stocks[isin]['bse_name'] = row['Security Name']
+                stocks[isin]['bse_name'] = clean_name(row['Security Name'])
 
     
     with open(n_b_path, 'w') as json_file:
