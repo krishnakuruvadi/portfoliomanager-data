@@ -213,7 +213,12 @@ class Kuvera:
             "Children's Fund":'Childrens Fund',
             'Childrens Fund':'Childrens Fund',
             'Retirement Fund':'Retirement Fund',
-            'Low Duration Fund':'Low Duration Fund'
+            'Low Duration Fund':'Low Duration Fund',
+            'Equity Long-Short Fund':'Equity Long-Short Fund',
+            'Hybrid Long-Short Fund':'Hybrid Long-Short Fund',
+            'Equity Ex-Top 100 Long-Short Fund':'Equity Ex-Top 100 Long-Short Fund',
+            'Active Asset Allocator Long-Short Fund':'Active Asset Allocator Long-Short Fund',
+            'Sector Rotation Long-Short Fund':'Sector Rotation Long-Short Fund',
         }
     
     @staticmethod
