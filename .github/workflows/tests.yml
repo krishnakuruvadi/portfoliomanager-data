@@ -41,6 +41,10 @@ jobs:
       run: |
         python India/code/helpers/verify_file_content.py
 
+    - name: Verify index_returns.json has only expected indices
+      run: |
+        python code/helpers/verify_index_returns.py
+
     - name: Run main code tests
       run: |
         cd code
