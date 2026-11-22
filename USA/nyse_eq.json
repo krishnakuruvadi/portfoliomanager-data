@@ -9,7 +9,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Materials",
     "industry": "Gold",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US87612E1064": {
     "status": "Listed",
@@ -21,7 +22,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Defensive",
     "industry": "Discount Stores",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US2546871060": {
     "status": "Listed",
@@ -33,7 +35,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Communication Services",
     "industry": "Entertainment",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US1912161007": {
     "status": "Listed",
@@ -45,7 +48,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Defensive",
     "industry": "Beverages - Non-Alcoholic",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US68389X1054": {
     "status": "Listed",
@@ -57,7 +61,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US18915M1071": {
     "status": "Listed",
@@ -69,7 +74,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US3168411052": {
     "status": "Listed",
@@ -81,7 +87,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Application",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "KYG169101204": {
     "status": "Listed",
@@ -93,7 +100,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US02156V1098": {
     "status": "Listed",
@@ -105,7 +113,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Energy",
     "industry": "Renewable Electricity",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US67079K1007": {
     "status": "Listed",
@@ -117,7 +126,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Energy",
     "industry": "Renewable Electricity",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US03945R1023": {
     "status": "Listed",
@@ -129,7 +139,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "KYG651631007": {
     "status": "Listed",
@@ -141,7 +152,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46222L1089": {
     "status": "Listed",
@@ -153,7 +165,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Computer Hardware",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US26740W1099": {
     "status": "Listed",
@@ -165,7 +178,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Computer Hardware",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US85208P3038": {
     "status": "Listed",
@@ -177,7 +191,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Materials",
     "industry": "Uranium Mining",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "GB00BMHVL512": {
     "status": "Listed",
@@ -189,7 +204,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Credit Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US9229087690": {
     "status": "Listed",
@@ -201,7 +217,8 @@
     "market_cap_type": "Large-Cap",
     "sector": null,
     "industry": null,
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US81369Y8030": {
     "status": "Listed",
@@ -213,7 +230,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Information Technology",
     "industry": "Broad-based/Sector Technology ETF",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US3647601083": {
     "status": "Listed",
@@ -225,7 +243,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Consumer Cyclical",
     "industry": "Specialty Retail",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US00436Q1067": {
     "status": "Listed",
@@ -237,7 +256,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Consumer Services",
     "industry": "Movies/Entertainment",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US75776W1036": {
     "symbol": "RDW",
@@ -249,7 +269,8 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
-    "status": "Listed"
+    "status": "Listed",
+    "leveraged": false
   },
   "US6153942023": {
     "symbol": "MOG.A",
@@ -261,7 +282,8 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
-    "status": "Listed"
+    "status": "Listed",
+    "leveraged": false
   },
   "US6153943013": {
     "symbol": "MOG.B",
@@ -273,7 +295,8 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
-    "status": "Listed"
+    "status": "Listed",
+    "leveraged": false
   },
   "US8793601050": {
     "status": "Listed",
@@ -284,7 +307,8 @@
     "etf": false,
     "listing_date": "23-NOV-1999",
     "delisted_date": null,
-    "name": "Teledyne Technologies Incorporated"
+    "name": "Teledyne Technologies Incorporated",
+    "leveraged": false
   },
   "US29082A1079": {
     "status": "Listed",
@@ -296,7 +320,8 @@
     "market_cap_type": "Mid-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US72703X1063": {
     "status": "Listed",
@@ -308,7 +333,8 @@
     "market_cap_type": "Small-Cap",
     "industry": "Scientific & Technical Instruments",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US18539C2044": {
     "status": "Listed",
@@ -320,7 +346,8 @@
     "market_cap_type": "Mid-Cap",
     "industry": "Independent Power Producers & Energy Traders",
     "sector": "Utilities",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US36828A1016": {
     "status": "Listed",
@@ -332,7 +359,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Electrical Equipment",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US92537N1081": {
     "status": "Listed",
@@ -344,7 +372,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Electrical Equipment",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US4642867729": {
     "status": "Listed",
@@ -356,7 +385,8 @@
     "market_cap_type": "Large-Cap",
     "industry": null,
     "sector": null,
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US92840M1027": {
     "status": "Listed",
@@ -368,7 +398,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Independent Power and Renewable Electricity Producers",
     "sector": "Utilities",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US4228061093": {
     "status": "Listed",
@@ -380,7 +411,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US5024311095": {
     "status": "Listed",
@@ -392,7 +424,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US47759T1007": {
     "status": "Listed",
@@ -404,7 +437,8 @@
     "market_cap_type": "Mid-Cap",
     "industry": "Solar",
     "sector": "Technology",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US3695501086": {
     "status": "Listed",
@@ -416,7 +450,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0970231058": {
     "status": "Listed",
@@ -428,7 +463,8 @@
     "market_cap_type": "Mega-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US5398301094": {
     "status": "Listed",
@@ -440,7 +476,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US2315611010": {
     "status": "Listed",
@@ -452,7 +489,8 @@
     "market_cap_type": "Mega-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US6668071029": {
     "status": "Listed",
@@ -464,7 +502,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US75513E1010": {
     "status": "Listed",
@@ -476,7 +515,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Aerospace & Defense",
     "sector": "Industrials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US48242W1062": {
     "status": "Listed",
@@ -488,7 +528,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Technology Services",
     "sector": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US9219108167": {
     "status": "Listed",
@@ -500,7 +541,8 @@
     "market_cap_type": "Large-Cap",
     "industry": null,
     "sector": null,
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US06368B5049": {
     "status": "Listed",
@@ -512,7 +554,8 @@
     "market_cap_type": "Large-Cap",
     "industry": "Technology",
     "sector": "Technology",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US90353T1007": {
     "status": "Listed",
@@ -524,7 +567,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0320951017": {
     "status": "Listed",
@@ -536,7 +580,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Electronic Components",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US00215W1009": {
     "status": "Listed",
@@ -548,7 +593,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46152A5699": {
     "status": "Listed",
@@ -560,7 +606,8 @@
     "market_cap_type": "Micro-Cap",
     "sector": null,
     "industry": "ETF",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US77926X3200": {
     "status": "Listed",
@@ -572,7 +619,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductor memory industry",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US25461A3876": {
     "status": "Listed",
@@ -584,7 +632,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Investment Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US37960A5294": {
     "status": "Listed",
@@ -596,7 +645,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US26923W2153": {
     "status": "Listed",
@@ -608,7 +658,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Computer Hardware",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US25459W4583": {
     "status": "Listed",
@@ -620,7 +671,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Semiconductors",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US78409V1044": {
     "status": "Listed",
@@ -632,7 +684,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Financial Data & Stock Exchanges",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US88636X2291": {
     "status": "Listed",
@@ -644,7 +697,8 @@
     "market_cap_type": "Micro-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Technology Hardware Storage & Peripheral",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US05962L1070": {
     "status": "Listed",
@@ -656,7 +710,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Consumer Discretionary",
     "industry": "Internet Retail",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US8030542042": {
     "status": "Listed",
@@ -668,7 +723,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US8740391003": {
     "status": "Listed",
@@ -680,7 +736,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US4859241048": {
     "status": "Listed",
@@ -692,7 +749,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US5253271028": {
     "status": "Listed",
@@ -704,7 +762,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "IE00B4BNMY34": {
     "status": "Listed",
@@ -716,7 +775,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US00130H1059": {
     "status": "Listed",
@@ -728,7 +788,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Utilities",
     "industry": "Utilities - Diversified",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0239391016": {
     "status": "Listed",
@@ -740,7 +801,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Engineering & Construction",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US74347G4405": {
     "status": "Listed",
@@ -752,7 +814,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US09263B2079": {
     "status": "Listed",
@@ -764,7 +827,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Specialty Business Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US05605H1005": {
     "status": "Listed",
@@ -776,7 +840,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US1271903049": {
     "status": "Listed",
@@ -788,7 +853,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US23703Q2030": {
     "status": "Listed",
@@ -800,7 +866,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Technology",
     "industry": "Semiconductor Equipment & Materials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US26874R1086": {
     "status": "Listed",
@@ -812,7 +879,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Energy",
     "industry": "Oil & Gas Integrated",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US78463V1070": {
     "status": "Listed",
@@ -824,7 +892,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US3687361044": {
     "status": "Listed",
@@ -836,7 +905,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Specialty Industrial Machinery",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US40412C1018": {
     "status": "Listed",
@@ -848,7 +918,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Medical Care Facilities",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US4464131063": {
     "status": "Listed",
@@ -860,7 +931,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46436F1030": {
     "status": "Listed",
@@ -872,7 +944,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US4642875151": {
     "status": "Listed",
@@ -884,7 +957,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US5324571083": {
     "status": "Listed",
@@ -896,7 +970,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Drug Manufacturers - General",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US57636Q1040": {
     "status": "Listed",
@@ -908,7 +983,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financials",
     "industry": "Credit Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US60744M1062": {
     "status": "Listed",
@@ -920,7 +996,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US65339F1012": {
     "status": "Listed",
@@ -932,7 +1009,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Utilities",
     "industry": "Utilities - Regulated Electric",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US6701002056": {
     "status": "Listed",
@@ -944,7 +1022,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Drug Manufacturers - General",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US6866881021": {
     "status": "Listed",
@@ -956,7 +1035,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Utilities",
     "industry": "Utilities - Renewable",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US70202L1026": {
     "status": "Listed",
@@ -968,7 +1048,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46137V2824": {
     "status": "Listed",
@@ -980,7 +1061,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US7709201062": {
     "status": "Listed",
@@ -992,7 +1074,8 @@
     "market_cap_type": "Micro-Cap",
     "sector": "Financials",
     "industry": "Asset Management",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US8485603067": {
     "status": "Listed",
@@ -1004,7 +1087,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Specialty Business Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US35834F1049": {
     "status": "Listed",
@@ -1016,7 +1100,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Electrical Equipment & Parts",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US8835561023": {
     "status": "Listed",
@@ -1028,7 +1113,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Diagnostics & Research",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US91324P1021": {
     "status": "Listed",
@@ -1040,7 +1126,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Healthcare Plans",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US92826C8394": {
     "status": "Listed",
@@ -1052,7 +1139,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financials",
     "industry": "Credit Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US9224751084": {
     "status": "Listed",
@@ -1064,7 +1152,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Health Information Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US92892B1035": {
     "status": "Listed",
@@ -1076,7 +1165,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US92939U1060": {
     "status": "Listed",
@@ -1088,7 +1178,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Utilities",
     "industry": "Utilities - Regulated Electric",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US81369Y2090": {
     "status": "Listed",
@@ -1100,7 +1191,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US9870841007": {
     "status": "Listed",
@@ -1112,6 +1204,7 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   }
 }
