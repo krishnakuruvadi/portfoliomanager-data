@@ -9,7 +9,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Discretionary",
     "industry": "Online Travel Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US00724F1012": {
     "status": "Listed",
@@ -21,7 +22,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US02079K3059": {
     "status": "Listed",
@@ -33,7 +35,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Communication Services",
     "industry": "Internet Content & Information",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US02079K1079": {
     "status": "Listed",
@@ -45,7 +48,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Communication Services",
     "industry": "Internet Content & Information",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0079031078": {
     "status": "Listed",
@@ -57,7 +61,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0231351067": {
     "status": "Listed",
@@ -69,7 +74,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Consumer Discretionary",
     "industry": "E-Commerce",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0404131064": {
     "status": "Listed",
@@ -81,7 +87,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Networking & Communication Devices",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0378331005": {
     "status": "Listed",
@@ -93,7 +100,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Consumer Electronics",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US12623Q1031": {
     "status": "Listed",
@@ -105,7 +113,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US17275R1023": {
     "status": "Listed",
@@ -117,7 +126,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Communication Equipment",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US19260Q1076": {
     "status": "Listed",
@@ -129,7 +139,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financials",
     "industry": "Capital Markets",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US2291941060": {
     "status": "Listed",
@@ -141,7 +152,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "CA11134P1009": {
     "status": "Listed",
@@ -153,7 +165,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US64110L1061": {
     "status": "Listed",
@@ -165,7 +178,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Communication Services",
     "industry": "Television Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US3580541049": {
     "status": "Listed",
@@ -177,7 +191,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Software",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US58456U1034": {
     "status": "Listed",
@@ -189,7 +204,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US5949181045": {
     "status": "Listed",
@@ -201,7 +217,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Software",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US67066G1040": {
     "status": "Listed",
@@ -213,7 +230,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US30303M1027": {
     "status": "Listed",
@@ -225,7 +243,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US90184L1026": {
     "status": "Delisted",
@@ -238,7 +257,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46090E1038": {
     "status": "Listed",
@@ -250,7 +270,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US9229083632": {
     "status": "Listed",
@@ -262,7 +283,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US2561631068": {
     "status": "Listed",
@@ -274,7 +296,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US81762P1021": {
     "status": "Listed",
@@ -286,7 +309,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US6974351057": {
     "status": "Listed",
@@ -298,7 +322,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US7134481081": {
     "status": "Listed",
@@ -310,7 +335,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Defensive",
     "industry": "Beverages - Non-Alcoholic",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US86800U3023": {
     "status": "Listed",
@@ -322,7 +348,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Computer Hardware",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US92189F6768": {
     "status": "Listed",
@@ -334,7 +361,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US83304A1060": {
     "status": "Listed",
@@ -346,7 +374,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Communication Services",
     "industry": "Internet Content & Information",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "ARBCOM460358": {
     "status": "Listed",
@@ -358,7 +387,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "CA93267X1006": {
     "status": "Listed",
@@ -370,7 +400,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Defensive",
     "industry": "Discount Stores",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US7475251036": {
     "status": "Listed",
@@ -382,7 +413,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US8552441094": {
     "status": "Listed",
@@ -394,7 +426,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Cyclical",
     "industry": "Restaurants",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US88160R1014": {
     "status": "Listed",
@@ -406,7 +439,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Consumer Cyclical",
     "industry": "Auto Manufacturers",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US69608A1088": {
     "status": "Listed",
@@ -418,7 +452,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software & IT Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "CA82509L1076": {
     "status": "Listed",
@@ -430,7 +465,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software & IT Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US21873S1087": {
     "status": "Listed",
@@ -442,7 +478,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US03831W1080": {
     "status": "Listed",
@@ -454,7 +491,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Application Software",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US63010H1086": {
     "status": "Listed",
@@ -466,7 +504,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Energy",
     "industry": "Renewable Electricity",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US76655K1034": {
     "status": "Listed",
@@ -478,7 +517,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Computer Hardware",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US7731211089": {
     "status": "Listed",
@@ -490,7 +530,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46438R1059": {
     "status": "Listed",
@@ -502,7 +543,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US46438F1012": {
     "status": "Listed",
@@ -514,7 +556,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US3493811034": {
     "status": "Listed",
@@ -526,7 +569,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Credit Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US36866J1051": {
     "status": "Listed",
@@ -538,7 +582,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US25809K1051": {
     "status": "Listed",
@@ -550,7 +595,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Discretionary",
     "industry": "Internet Retail",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US5951121038": {
     "status": "Listed",
@@ -562,7 +608,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46138G6492": {
     "status": "Listed",
@@ -574,7 +621,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US9581021055": {
     "status": "Listed",
@@ -586,7 +634,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "IE00BKVD2N49": {
     "status": "Listed",
@@ -598,7 +647,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US25381A1088": {
     "status": "Listed",
@@ -610,7 +660,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Technology",
     "industry": "Communications Equipment",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US55024U1097": {
     "status": "Listed",
@@ -622,7 +673,8 @@
     "market_cap_type": "Mid-Cap",
     "industry": "Communications Equipment",
     "sector": "Technology",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US21037T1097": {
     "status": "Listed",
@@ -634,7 +686,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Utilities",
     "industry": "Electric Utilities",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US83417M1045": {
     "status": "Listed",
@@ -646,7 +699,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Energy",
     "industry": "Renewable Electricity",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US65290E1010": {
     "status": "Listed",
@@ -658,7 +712,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Electronic Technology",
     "industry": "Electronic Equipment & Instruments",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0301112076": {
     "status": "Listed",
@@ -670,7 +725,8 @@
     "delisted_date": null,
     "sector": "Industrials",
     "industry": "Electrical Equipment & Components",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "CA8795123097": {
     "symbol": "TSAT",
@@ -682,7 +738,8 @@
     "sector": "Communication Services",
     "industry": "Specialized Telecommunications",
     "etf": false,
-    "status": "Listed"
+    "status": "Listed",
+    "leveraged": false
   },
   "USN070592100": {
     "symbol": "ASML",
@@ -694,7 +751,8 @@
     "delisted_date": null,
     "listing_date": "15-MAR-1995",
     "status": "Listed",
-    "name": "ASML Holding N.V."
+    "name": "ASML Holding N.V.",
+    "leveraged": false
   },
   "US0382221051": {
     "status": "Listed",
@@ -706,7 +764,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Semiconductor Equipment & Materials",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US88636Y7711": {
     "status": "Listed",
@@ -718,7 +777,8 @@
     "market_cap_type": "Micro-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Semiconductors and Semiconductor Equipment",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US0381692070": {
     "status": "Listed",
@@ -730,7 +790,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0420682058": {
     "status": "Listed",
@@ -742,7 +803,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US00217D1000": {
     "status": "Listed",
@@ -754,7 +816,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Satellite Service Operators",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "KYG254571055": {
     "status": "Listed",
@@ -766,7 +829,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US7707001027": {
     "status": "Listed",
@@ -778,7 +842,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Capital Markets",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US4581401001": {
     "status": "Listed",
@@ -790,7 +855,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "AU0000185993": {
     "status": "Listed",
@@ -802,7 +868,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Data Processing Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US5738741041": {
     "status": "Listed",
@@ -814,7 +881,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US25461H6484": {
     "status": "Listed",
@@ -826,7 +894,8 @@
     "market_cap_type": "Micro-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Semiconductors",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US25461A5285": {
     "status": "Listed",
@@ -838,7 +907,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Semiconductors",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US80004C2008": {
     "status": "Listed",
@@ -850,7 +920,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Technology Hardware, Storage & Peripherals",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US83406F1021": {
     "status": "Listed",
@@ -862,7 +933,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Financial Services",
     "industry": "Financial Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US84615Q1031": {
     "status": "Listed",
@@ -874,7 +946,8 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "IL0010823792": {
     "status": "Listed",
@@ -886,7 +959,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Semiconductors",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US2787681061": {
     "status": "Listed",
@@ -899,7 +973,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Communication Services",
     "industry": "Telecom Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US52661A1088": {
     "status": "Listed",
@@ -911,7 +986,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "NL0009805522": {
     "status": "Listed",
@@ -923,7 +999,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Communication Services",
     "industry": "Internet Content & Information",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0094221068": {
     "status": "Listed",
@@ -935,7 +1012,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US04271T1007": {
     "status": "Listed",
@@ -947,7 +1025,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Technology",
     "industry": "Solar",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US0080731088": {
     "status": "Listed",
@@ -959,7 +1038,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US05464C1018": {
     "status": "Listed",
@@ -971,7 +1051,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US1844991018": {
     "status": "Listed",
@@ -983,7 +1064,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Energy",
     "industry": "Oil & Gas Refining & Marketing",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US22160K1051": {
     "status": "Listed",
@@ -995,7 +1077,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Staples",
     "industry": "Discount Stores",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US2172041061": {
     "status": "Listed",
@@ -1007,7 +1090,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Specialty Business Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "CA1366351098": {
     "status": "Listed",
@@ -1019,7 +1103,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Technology",
     "industry": "Solar",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US26603R1068": {
     "status": "Listed",
@@ -1031,7 +1116,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Software - Application",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "IL0007200111": {
     "status": "Listed",
@@ -1043,7 +1129,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Utilities",
     "industry": "Utilities - Renewable",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US29355A1079": {
     "status": "Listed",
@@ -1055,7 +1142,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Solar",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "IL0010811243": {
     "status": "Listed",
@@ -1067,7 +1155,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US34379V1035": {
     "status": "Listed",
@@ -1079,7 +1168,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Electrical Equipment & Parts",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US3364331070": {
     "status": "Listed",
@@ -1091,7 +1181,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Solar",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US25461A8412": {
     "status": "Listed",
@@ -1103,7 +1194,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Trading--Leveraged Equity",
     "industry": "Internet Content & Information",
-    "etf": true
+    "etf": true,
+    "leveraged": true
   },
   "US3789735079": {
     "status": "Listed",
@@ -1115,7 +1207,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Communication Services",
     "industry": "Telecom Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46269C1027": {
     "status": "Listed",
@@ -1127,7 +1220,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Communication Services",
     "industry": "Telecom Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46120E6023": {
     "status": "Listed",
@@ -1139,7 +1233,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Healthcare",
     "industry": "Medical Instruments & Supplies",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US50077B2079": {
     "status": "Listed",
@@ -1151,7 +1246,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US58733R1023": {
     "status": "Listed",
@@ -1163,7 +1259,8 @@
     "market_cap_type": "Large-Cap",
     "sector": "Consumer Discretionary",
     "industry": "Internet Retail",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US5893781089": {
     "status": "Listed",
@@ -1175,7 +1272,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US25459Y2072": {
     "status": "Listed",
@@ -1187,7 +1285,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "GB00BNQMPN80": {
     "status": "Listed",
@@ -1199,7 +1298,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Utilities",
     "industry": "Utilities - Renewable",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US86771W1053": {
     "status": "Listed",
@@ -1211,7 +1311,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Solar",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US8086251076": {
     "status": "Listed",
@@ -1223,7 +1324,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Information Technology Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US80401C1009": {
     "status": "Listed",
@@ -1235,7 +1337,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US82489W1071": {
     "status": "Listed",
@@ -1247,7 +1350,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Technology",
     "industry": "Solar",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US8299331004": {
     "status": "Listed",
@@ -1259,7 +1363,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Communication Services",
     "industry": "Entertainment",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US88023B1035": {
     "status": "Listed",
@@ -1271,7 +1376,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Healthcare",
     "industry": "Health Information Services",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US89377M1099": {
     "status": "Listed",
@@ -1283,7 +1389,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Healthcare",
     "industry": "Medical Devices",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "US46434V7617": {
     "status": "Listed",
@@ -1295,7 +1402,8 @@
     "market_cap_type": "Small-Cap",
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
-    "etf": true
+    "etf": true,
+    "leveraged": false
   },
   "US92552V1008": {
     "status": "Listed",
@@ -1307,7 +1415,8 @@
     "market_cap_type": "Mid-Cap",
     "sector": "Technology",
     "industry": "Communication Equipment",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   },
   "GB00BYW6GV68": {
     "status": "Listed",
@@ -1319,6 +1428,7 @@
     "market_cap_type": "Small-Cap",
     "sector": "Materials",
     "industry": "Other Industrial Metals & Mining",
-    "etf": false
+    "etf": false,
+    "leveraged": false
   }
 }
