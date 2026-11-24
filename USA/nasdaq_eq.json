@@ -1430,5 +1430,18 @@
     "industry": "Other Industrial Metals & Mining",
     "etf": false,
     "leveraged": false
+  },
+  "US03703U1079": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "19-NOV-2026",
+    "symbol": "ANT",
+    "name": "Anthropic, PBC (Class A)",
+    "cap": "Large-Cap",
+    "market_cap_type": "Mega-Cap",
+    "sector": "Technology",
+    "industry": "Software",
+    "etf": false,
+    "leveraged": false
   }
 }
