@@ -1206,5 +1206,18 @@
     "industry": "Aerospace & Defense",
     "etf": false,
     "leveraged": false
+  },
+  "US0846707026": {
+    "status": "Listed",
+    "delisted_date": null,
+    "listing_date": "09-MAY-1996",
+    "symbol": "BRK.B",
+    "name": "Berkshire Hathaway Inc. Class B",
+    "cap": "Large-Cap",
+    "market_cap_type": "Mega-Cap",
+    "sector": "Financials",
+    "industry": "Insurance - Diversified",
+    "etf": false,
+    "leveraged": false
   }
 }
