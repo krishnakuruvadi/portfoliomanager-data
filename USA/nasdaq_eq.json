@@ -77,19 +77,6 @@
     "etf": false,
     "leveraged": false
   },
-  "US0404131064": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "10-JUN-2014",
-    "symbol": "ANET",
-    "name": "Arista Networks, Inc.",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Technology",
-    "industry": "Networking & Communication Devices",
-    "etf": false,
-    "leveraged": false
-  },
   "US0378331005": {
     "status": "Listed",
     "delisted_date": null,
@@ -100,19 +87,6 @@
     "market_cap_type": "Mega-Cap",
     "sector": "Technology",
     "industry": "Consumer Electronics",
-    "etf": false,
-    "leveraged": false
-  },
-  "US12623Q1031": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "23-JUN-2004",
-    "symbol": "CRM",
-    "name": "Salesforce, Inc.",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Technology",
-    "industry": "Software",
     "etf": false,
     "leveraged": false
   },
@@ -273,19 +247,6 @@
     "etf": true,
     "leveraged": false
   },
-  "US9229083632": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "09-Sep-2010",
-    "symbol": "VOO",
-    "name": "Vanguard S&P 500 ETF",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Financials",
-    "industry": "Exchange-Traded Funds",
-    "etf": true,
-    "leveraged": false
-  },
   "US2561631068": {
     "status": "Listed",
     "delisted_date": null,
@@ -296,19 +257,6 @@
     "market_cap_type": "Large-Cap",
     "sector": "Technology",
     "industry": "Software - Infrastructure",
-    "etf": false,
-    "leveraged": false
-  },
-  "US81762P1021": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "29-JUN-2012",
-    "symbol": "NOW",
-    "name": "ServiceNow, Inc.",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Technology",
-    "industry": "Software",
     "etf": false,
     "leveraged": false
   },
@@ -362,32 +310,6 @@
     "sector": "Technology",
     "industry": "Exchange-Traded Funds",
     "etf": true,
-    "leveraged": false
-  },
-  "US83304A1060": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "02-MAR-2017",
-    "symbol": "SNAP",
-    "name": "Snap Inc.",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Communication Services",
-    "industry": "Internet Content & Information",
-    "etf": false,
-    "leveraged": false
-  },
-  "ARBCOM460358": {
-    "status": "Listed",
-    "delisted_date": null,
-    "listing_date": "16-SEP-2020",
-    "symbol": "SNOW",
-    "name": "Snowflake Inc.",
-    "cap": "Large-Cap",
-    "market_cap_type": "Large-Cap",
-    "sector": "Technology",
-    "industry": "Software - Infrastructure",
-    "etf": false,
     "leveraged": false
   },
   "CA93267X1006": {
