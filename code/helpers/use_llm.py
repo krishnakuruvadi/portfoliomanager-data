@@ -139,7 +139,7 @@ def build_isin_market_cap_exchange_inception_question(ticker: str) -> str:
     return (
         f"Research (Task) the current status of {ticker} using Google Search grounding (Grounding). "
         "Return a JSON object with keys: isin, cap(Large-Cap, Mid-Cap, Small-Cap, Micro-Cap), market_cap_type(Mega-Cap, Large-Cap, Mid-Cap, Small-Cap, Micro-Cap), exchange, "
-        "inception_date, company_name, delisted_date, sector, industry, etf (true or false), leveraged (true if the security is a leveraged or inverse-leveraged fund/ETF, e.g. 2X or 3X daily targets, otherwise false), status (example Listed, Delisted etc). Use exchange only as NYSE or NASDAQ. "
+        "inception_date, company_name, delisted_date, sector, industry, etf (true or false), etn (true if the security is an exchange-traded note, otherwise false), leveraged (true if the security is a leveraged or inverse-leveraged fund/ETF, e.g. 2X or 3X daily targets, otherwise false), status (example Listed, Delisted etc). Use exchange only as NYSE or NASDAQ. "
         "Use DD-MMM-YYYY as dates format. If a value is "
         f"unknown, use null. Check tradingview.com for the ISIN. Double check the information especially ISIN with a fresh Google search.  Target company ticker: {ticker}."
     )

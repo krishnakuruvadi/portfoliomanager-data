@@ -10,6 +10,7 @@
     "sector": "Consumer Discretionary",
     "industry": "Online Travel Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US00724F1012": {
@@ -23,6 +24,7 @@
     "sector": "Technology",
     "industry": "Software",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US02079K3059": {
@@ -36,6 +38,7 @@
     "sector": "Communication Services",
     "industry": "Internet Content & Information",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US02079K1079": {
@@ -49,6 +52,7 @@
     "sector": "Communication Services",
     "industry": "Internet Content & Information",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US0079031078": {
@@ -62,6 +66,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US0231351067": {
@@ -75,6 +80,7 @@
     "sector": "Consumer Discretionary",
     "industry": "E-Commerce",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US0378331005": {
@@ -88,6 +94,7 @@
     "sector": "Technology",
     "industry": "Consumer Electronics",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US17275R1023": {
@@ -101,6 +108,7 @@
     "sector": "Technology",
     "industry": "Communication Equipment",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US19260Q1076": {
@@ -114,6 +122,7 @@
     "sector": "Financials",
     "industry": "Capital Markets",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US2291941060": {
@@ -127,6 +136,7 @@
     "sector": "Technology",
     "industry": "Software",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "CA11134P1009": {
@@ -140,6 +150,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US64110L1061": {
@@ -153,6 +164,7 @@
     "sector": "Communication Services",
     "industry": "Television Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US3580541049": {
@@ -166,6 +178,7 @@
     "sector": "Technology",
     "industry": "Software",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US58456U1034": {
@@ -179,6 +192,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US5949181045": {
@@ -192,6 +206,7 @@
     "sector": "Technology",
     "industry": "Software",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US67066G1040": {
@@ -205,6 +220,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US30303M1027": {
@@ -218,6 +234,7 @@
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US90184L1026": {
@@ -232,6 +249,7 @@
     "sector": "Communication Services",
     "industry": "Interactive Media & Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US46090E1038": {
@@ -245,6 +263,7 @@
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
     "etf": true,
+    "etn": false,
     "leveraged": false
   },
   "US2561631068": {
@@ -258,6 +277,7 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US6974351057": {
@@ -271,6 +291,7 @@
     "sector": "Technology",
     "industry": "Information Technology Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US7134481081": {
@@ -284,6 +305,7 @@
     "sector": "Consumer Defensive",
     "industry": "Beverages - Non-Alcoholic",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US86800U3023": {
@@ -297,6 +319,7 @@
     "sector": "Technology",
     "industry": "Computer Hardware",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US92189F6768": {
@@ -310,6 +333,7 @@
     "sector": "Technology",
     "industry": "Exchange-Traded Funds",
     "etf": true,
+    "etn": false,
     "leveraged": false
   },
   "CA93267X1006": {
@@ -323,6 +347,7 @@
     "sector": "Consumer Defensive",
     "industry": "Discount Stores",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US7475251036": {
@@ -336,6 +361,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US8552441094": {
@@ -349,6 +375,7 @@
     "sector": "Consumer Cyclical",
     "industry": "Restaurants",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US88160R1014": {
@@ -362,6 +389,7 @@
     "sector": "Consumer Cyclical",
     "industry": "Auto Manufacturers",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US69608A1088": {
@@ -375,6 +403,7 @@
     "sector": "Technology",
     "industry": "Software & IT Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "CA82509L1076": {
@@ -388,6 +417,7 @@
     "sector": "Technology",
     "industry": "Software & IT Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US21873S1087": {
@@ -401,6 +431,7 @@
     "sector": "Technology",
     "industry": "Software - Infrastructure",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US03831W1080": {
@@ -414,6 +445,7 @@
     "sector": "Technology",
     "industry": "Application Software",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US63010H1086": {
@@ -427,6 +459,7 @@
     "sector": "Energy",
     "industry": "Renewable Electricity",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US76655K1034": {
@@ -440,6 +473,7 @@
     "sector": "Technology",
     "industry": "Computer Hardware",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US7731211089": {
@@ -453,6 +487,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US46438R1059": {
@@ -466,6 +501,7 @@
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
     "etf": true,
+    "etn": false,
     "leveraged": false
   },
   "US46438F1012": {
@@ -479,6 +515,7 @@
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
     "etf": true,
+    "etn": false,
     "leveraged": false
   },
   "US3493811034": {
@@ -492,6 +529,7 @@
     "sector": "Financial Services",
     "industry": "Credit Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US36866J1051": {
@@ -505,6 +543,7 @@
     "sector": "Financial Services",
     "industry": "Cryptocurrency",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US25809K1051": {
@@ -518,6 +557,7 @@
     "sector": "Consumer Discretionary",
     "industry": "Internet Retail",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US5951121038": {
@@ -531,6 +571,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US46138G6492": {
@@ -544,6 +585,7 @@
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
     "etf": true,
+    "etn": false,
     "leveraged": false
   },
   "US9581021055": {
@@ -557,6 +599,7 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "IE00BKVD2N49": {
@@ -570,6 +613,7 @@
     "sector": "Information Technology",
     "industry": "Technology Hardware, Storage & Peripherals",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US25381A1088": {
@@ -583,6 +627,7 @@
     "sector": "Technology",
     "industry": "Communications Equipment",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US55024U1097": {
@@ -596,6 +641,7 @@
     "industry": "Communications Equipment",
     "sector": "Technology",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US21037T1097": {
@@ -609,6 +655,7 @@
     "sector": "Utilities",
     "industry": "Electric Utilities",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US83417M1045": {
@@ -622,6 +669,7 @@
     "sector": "Energy",
     "industry": "Renewable Electricity",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US65290E1010": {
@@ -635,6 +683,7 @@
     "sector": "Electronic Technology",
     "industry": "Electronic Equipment & Instruments",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US0301112076": {
@@ -648,6 +697,7 @@
     "sector": "Industrials",
     "industry": "Electrical Equipment & Components",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "CA8795123097": {
@@ -660,6 +710,7 @@
     "sector": "Communication Services",
     "industry": "Specialized Telecommunications",
     "etf": false,
+    "etn": false,
     "status": "Listed",
     "leveraged": false
   },
@@ -669,6 +720,7 @@
     "market_cap_type": "Large-Cap",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "trading_status": "Listed",
     "delisted_date": null,
     "listing_date": "15-MAR-1995",
@@ -687,6 +739,7 @@
     "sector": "Technology",
     "industry": "Semiconductor Equipment & Materials",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US88636Y7711": {
@@ -700,6 +753,7 @@
     "sector": "Trading--Leveraged Equity",
     "industry": "Semiconductors and Semiconductor Equipment",
     "etf": true,
+    "etn": false,
     "leveraged": true
   },
   "US0381692070": {
@@ -713,6 +767,7 @@
     "sector": "Technology",
     "industry": "Information Technology Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US0420682058": {
@@ -726,6 +781,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US00217D1000": {
@@ -739,6 +795,7 @@
     "sector": "Technology",
     "industry": "Satellite Service Operators",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "KYG254571055": {
@@ -752,6 +809,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US7707001027": {
@@ -765,6 +823,7 @@
     "sector": "Financial Services",
     "industry": "Capital Markets",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US4581401001": {
@@ -778,6 +837,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "AU0000185993": {
@@ -791,6 +851,7 @@
     "sector": "Financial Services",
     "industry": "Data Processing Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US5738741041": {
@@ -804,6 +865,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US25461H6484": {
@@ -817,6 +879,7 @@
     "sector": "Trading--Leveraged Equity",
     "industry": "Semiconductors",
     "etf": true,
+    "etn": false,
     "leveraged": true
   },
   "US25461A5285": {
@@ -830,6 +893,7 @@
     "sector": "Trading--Leveraged Equity",
     "industry": "Semiconductors",
     "etf": true,
+    "etn": false,
     "leveraged": true
   },
   "US80004C2008": {
@@ -843,6 +907,7 @@
     "sector": "Technology",
     "industry": "Technology Hardware, Storage & Peripherals",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US83406F1021": {
@@ -856,6 +921,7 @@
     "sector": "Financial Services",
     "industry": "Financial Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US84615Q1031": {
@@ -869,6 +935,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "IL0010823792": {
@@ -882,6 +949,7 @@
     "sector": "Technology",
     "industry": "Semiconductors",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US2787681061": {
@@ -896,6 +964,7 @@
     "sector": "Communication Services",
     "industry": "Telecom Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US52661A1088": {
@@ -909,6 +978,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "NL0009805522": {
@@ -922,6 +992,7 @@
     "sector": "Communication Services",
     "industry": "Internet Content & Information",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US0094221068": {
@@ -935,6 +1006,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US04271T1007": {
@@ -948,6 +1020,7 @@
     "sector": "Technology",
     "industry": "Solar",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US0080731088": {
@@ -961,6 +1034,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US05464C1018": {
@@ -974,6 +1048,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US1844991018": {
@@ -987,6 +1062,7 @@
     "sector": "Energy",
     "industry": "Oil & Gas Refining & Marketing",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US22160K1051": {
@@ -1000,6 +1076,7 @@
     "sector": "Consumer Staples",
     "industry": "Discount Stores",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US2172041061": {
@@ -1013,6 +1090,7 @@
     "sector": "Industrials",
     "industry": "Specialty Business Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "CA1366351098": {
@@ -1026,6 +1104,7 @@
     "sector": "Technology",
     "industry": "Solar",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US26603R1068": {
@@ -1039,6 +1118,7 @@
     "sector": "Technology",
     "industry": "Software - Application",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "IL0007200111": {
@@ -1052,6 +1132,7 @@
     "sector": "Utilities",
     "industry": "Utilities - Renewable",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US29355A1079": {
@@ -1065,6 +1146,7 @@
     "sector": "Technology",
     "industry": "Solar",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "IL0010811243": {
@@ -1078,6 +1160,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US34379V1035": {
@@ -1091,6 +1174,7 @@
     "sector": "Industrials",
     "industry": "Electrical Equipment & Parts",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US3364331070": {
@@ -1104,6 +1188,7 @@
     "sector": "Technology",
     "industry": "Solar",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US25461A8412": {
@@ -1117,6 +1202,7 @@
     "sector": "Trading--Leveraged Equity",
     "industry": "Internet Content & Information",
     "etf": true,
+    "etn": false,
     "leveraged": true
   },
   "US3789735079": {
@@ -1130,6 +1216,7 @@
     "sector": "Communication Services",
     "industry": "Telecom Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US46269C1027": {
@@ -1143,6 +1230,7 @@
     "sector": "Communication Services",
     "industry": "Telecom Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US46120E6023": {
@@ -1156,6 +1244,7 @@
     "sector": "Healthcare",
     "industry": "Medical Instruments & Supplies",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US50077B2079": {
@@ -1169,6 +1258,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US58733R1023": {
@@ -1182,6 +1272,7 @@
     "sector": "Consumer Discretionary",
     "industry": "Internet Retail",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US5893781089": {
@@ -1195,6 +1286,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US25459Y2072": {
@@ -1208,6 +1300,7 @@
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
     "etf": true,
+    "etn": false,
     "leveraged": false
   },
   "GB00BNQMPN80": {
@@ -1221,6 +1314,7 @@
     "sector": "Utilities",
     "industry": "Utilities - Renewable",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US86771W1053": {
@@ -1234,6 +1328,7 @@
     "sector": "Technology",
     "industry": "Solar",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US8086251076": {
@@ -1247,6 +1342,7 @@
     "sector": "Technology",
     "industry": "Information Technology Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US80401C1009": {
@@ -1260,6 +1356,7 @@
     "sector": "Industrials",
     "industry": "Aerospace & Defense",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US82489W1071": {
@@ -1273,6 +1370,7 @@
     "sector": "Technology",
     "industry": "Solar",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US8299331004": {
@@ -1286,6 +1384,7 @@
     "sector": "Communication Services",
     "industry": "Entertainment",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US88023B1035": {
@@ -1299,6 +1398,7 @@
     "sector": "Healthcare",
     "industry": "Health Information Services",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US89377M1099": {
@@ -1312,6 +1412,7 @@
     "sector": "Healthcare",
     "industry": "Medical Devices",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US46434V7617": {
@@ -1325,6 +1426,7 @@
     "sector": "Financials",
     "industry": "Exchange-Traded Funds",
     "etf": true,
+    "etn": false,
     "leveraged": false
   },
   "US92552V1008": {
@@ -1338,6 +1440,7 @@
     "sector": "Technology",
     "industry": "Communication Equipment",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "GB00BYW6GV68": {
@@ -1351,6 +1454,7 @@
     "sector": "Materials",
     "industry": "Other Industrial Metals & Mining",
     "etf": false,
+    "etn": false,
     "leveraged": false
   },
   "US03703U1079": {
@@ -1364,6 +1468,7 @@
     "sector": "Technology",
     "industry": "Software",
     "etf": false,
+    "etn": false,
     "leveraged": false
   }
 }

@@ -30,6 +30,7 @@ def get_stock_isin_info(country:str, symbol: str):
                     "industry": res.get("industry", None),
                     "sector": res.get("sector", None),
                     "etf": res.get("etf", False),
+                    "etn": bool(res.get("etn", False)),
                     "leveraged": bool(res.get("leveraged", False)),
                 }
                 return ret, res["exchange"]
